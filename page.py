@@ -5,16 +5,17 @@ import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 
 import plotly
+import plotly.graph_objects as go
+import plotly.express as px
 
 import pandas as pd
 import numpy as np
+
 from datetime import datetime
-import plotly.graph_objects as go
-import plotly.express as px
-from datetime import datetime
+
 
 word_heading = html.H2(children="Let us know what other efforts you'd like to see prioritized", className='lead text-center')
-
+#word_title
 #title and survey info 
 
 title = dbc.Jumbotron(
