@@ -4,18 +4,20 @@ import dash_core_components as dcc
 import dash_html_components as html
 
 #from navbar import dash_navbar
-from page import DEI_title#, wordcloud
+from page import DEI_title, wordcloud, about_
 
 
 #nav = dash_navbar()
 title = DEI_title()
-#dei_wordcloud = wordcloud()
+dei_wordcloud = wordcloud()
+dei_about = about_()
 
 def Dashboard():
     layout = html.Div([
     #nav, 
     title,
-    #dei_wordcloud
+    dei_about,
+    dei_wordcloud
     ])
     return layout 
 #to test if running uncomment below: 
