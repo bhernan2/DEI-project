@@ -29,19 +29,25 @@ word_heading = html.H2(children="Let us know what other efforts you'd like to se
 #word_title
 #title and survey info 
 
-title = dbc.Jumbotron(
-    [
-        dbc.Container(
-            [
-            html.Img(src='assets/foundcom-logo-ffce54.png'),
+logo = dbc.Card([
+    dbc.CardBody([
+        dbc.Row([html.Img(src='assets/foundcom-logo-ffce54.png', className='image-center'),
+        ])
+    ])
+])
+
+title = dbc.Jumbotron([
+    dbc.Container([
+        html.Img(src='assets/foundcom-logo-ffce54.png')
+    ], style={'textAlign': 'center'}),
+    dbc.Container([
             html.H1("DEI Survey Dashboard", className='display-3 text-center'),
-            html.H4("Dashboard contributors: DeShan Allison, Bianca A. Hernandez, Michelle Le, Kenya Lewis, Stephanie Perrone, Julie Roebuck, Ebonie Trice, Mary Young and Tiffany Nicely-Williams"),
-            html.H4("The Diversity, Equity and Inclusion (DEI) Survey Subcommittee created a survey to gather more information about your experience working at Foundation Communities. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.")
-            ]
-            ,style={'textAlign': 'center'}
-        )
-    ]
-)
+            html.Br(),
+            html.H4("Dashboard contributors: DeShan Allison, Bianca A. Hernandez, Michelle Le, Kenya Lewis, Stephanie Perrone, Julie Roebuck, Ebonie Trice, Mary Young and Tiffany Nicely-Williams", className='text-center'),
+            html.Br(),
+            html.H3("The Diversity, Equity and Inclusion (DEI) Survey Subcommittee created a survey to gather more information about your experience working at Foundation Communities. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.", className='text-justify')
+            ])
+    ])
 
 about = dbc.Card([
     dbc.CardBody([
@@ -54,11 +60,12 @@ about = dbc.Card([
                     
             ]),
                 dbc.Col([
-                    html.Ul(id='my-list', children=[html.Li(i) for i in dei_list], className='lead text-left'),
+                    html.Ul(id='my-list', children=[html.Li(i) for i in dei_list], className= 'mb-10 lead text-left'),
                 ])   
         ])
     ])
 ], color= "secondary", inverse=True)
+
 
 figures_col = dbc.Card([
     dbc.CardBody([
@@ -96,6 +103,10 @@ figures_col = dbc.Card([
         ])
     ])
 ])
+
+def FC_logo():
+    heading = logo
+    return heading 
 
 def DEI_title():
     heading = title
