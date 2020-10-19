@@ -4,7 +4,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 
 #from navbar import dash_navbar
-from page import DEI_title, FC_figures, about_, FC_wordcloud
+from page import DEI_title, FC_figures, about_, FC_wordcloud, FC_stats
 
 
 
@@ -14,12 +14,14 @@ from page import DEI_title, FC_figures, about_, FC_wordcloud
 title = DEI_title()
 dei_figures = FC_figures()
 dei_about = about_()
+dei_stats = FC_stats()
 dei_wordcloud = FC_wordcloud()
 
 def Dashboard():
     layout = html.Div([
     #nav, 
     title,
+    dei_stats,
     dei_about,
     dei_figures,
     dei_wordcloud
