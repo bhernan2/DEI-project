@@ -54,6 +54,104 @@ about = dbc.Jumbotron([
            
 ])
 
+#descriptive stats cards 
+
+card_content1 = [
+    #dbc.CardHeader("Descriptive Stats"),
+    dbc.CardBody([
+            html.H2("Card title", className="card-title"),
+            html.H3(
+                "This is some card content that we'll reuse",
+                className="card-text",),
+        ]),
+]
+card_content2 = [
+    #dbc.CardHeader("Descriptive Stats"),
+    dbc.CardBody([
+            html.H2("Card title", className="card-title"),
+            html.H3(
+                "This is some card content that we'll reuse",
+                className="card-text",),
+        ]),
+]
+card_content3 = [
+    #dbc.CardHeader("Descriptive Stats"),
+    dbc.CardBody([
+            html.H2("Card title", className="card-title"),
+            html.H3(
+                "This is some card content that we'll reuse",
+                className="card-text",),
+        ]),
+]
+card_content4 = [
+    #dbc.CardHeader("Descriptive Stats"),
+    dbc.CardBody([
+            html.H2("Card title", className="card-title"),
+            html.H3(
+                "This is some card content that we'll reuse",
+                className="card-text",),
+        ]),
+]
+card_content5 = [
+    #dbc.CardHeader("Descriptive Stats"),
+    dbc.CardBody([
+            html.H2("Card title", className="card-title"),
+            html.H3(
+                "This is some card content that we'll reuse",
+                className="card-text",),
+        ]),
+]
+card_content6 = [
+    #dbc.CardHeader("Descriptive Stats"),
+    dbc.CardBody([
+            html.H2("Card title", className="card-title"),
+            html.H3(
+                "This is some card content that we'll reuse",
+                className="card-text",),
+        ]),
+]
+card_content7 = [
+    #dbc.CardHeader("Descriptive Stats"),
+    dbc.CardBody([
+            html.H2("Card title", className="card-title"),
+            html.H3(
+                "This is some card content that we'll reuse",
+                className="card-text",),
+        ]),
+]
+card_content8 = [
+    #dbc.CardHeader("Descriptive Stats"),
+    dbc.CardBody([
+            html.H2("Card title", className="card-title"),
+            html.H3(
+                "This is some card content that we'll reuse",
+                className="card-text",),
+        ]),
+]
+descriptive_stats = html.Div([
+            dbc.Row([
+                dbc.Col(
+                    dbc.Card(card_content1, color="primary", inverse=True)),
+                dbc.Col(
+                    dbc.Card(card_content2, color="secondary", inverse=True)), 
+                dbc.Col(
+                    dbc.Card(card_content3, color="success", inverse=True)),
+                dbc.Col(
+                    dbc.Card(card_content4, color="dark", inverse=True)),
+            ], className="mb-5"),
+            
+            dbc.Row([
+                dbc.Col(
+                    dbc.Card(card_content5, color="warning", inverse=True)),
+                dbc.Col(
+                    dbc.Card(card_content6, color="danger", inverse=True)),
+                dbc.Col(
+                    dbc.Card(card_content7, color="info", inverse=True)),
+                dbc.Col(
+                    dbc.Card(card_content8, color="light", inverse=True))
+                ], className="mb-5")          
+            ])
+
 figures_col = dbc.Jumbotron([
     html.H4("Explore results", className='text-center'),
     html.Br(),
@@ -99,6 +197,10 @@ def DEI_title():
 
 def about_():
     heading = about
+    return heading 
+
+def FC_stats():
+    heading = descriptive_stats
     return heading 
 
 def FC_figures():
