@@ -117,10 +117,14 @@ def FC_fig1():
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus,
+            active=0,
+            x = 0.3,
+            y = -0.1,
             type = 'buttons', 
             bordercolor = "#3f3f3f",
-            xanchor='right',
-            yanchor='top')
+            xanchor='left',
+            yanchor='bottom',
+            direction='left')
         ]),
         barmode='stack',
         width=1400, 
