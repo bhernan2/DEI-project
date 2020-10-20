@@ -5,7 +5,6 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import plotly.offline as py
 import plotly.tools as tls
-import plotly.io as pio
 
 dei = pd.read_csv("DEISurveyFinal.csv")
 
@@ -59,38 +58,89 @@ def FC_fig1():
     x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["At work, I am treated with respect.  "]
     #defining data
     data=[
-        go.Histogram(x=x_total,name='  ',opacity = .5),
-        go.Histogram(x=x_white,name='White',opacity = .5),
-        go.Histogram(x=x_latinx,name='Latino/Hispanic',opacity = .5),
-        go.Histogram(x=x_black,name='Black/African American',opacity = .5),
-        go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .5),
-        go.Histogram(x=x_asian,name='Asian',opacity = .5),
+        go.Histogram(x=x_total,name='   ',opacity = .75),
+        go.Histogram(x=x_white,name='White',opacity = .75),
+        go.Histogram(x=x_latinx,name='Latino/Hispanic',opacity = .75),
+        go.Histogram(x=x_black,name='Black/African American',opacity = .75),
+        go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .75),
+        go.Histogram(x=x_asian,name='Asian',opacity = .75),
         go.Histogram(x=x_first_peoples,name='Indian/Native American',opacity = .5),
-        go.Histogram(x=x_age1,name='25-34', opacity = .5),
-        go.Histogram(x=x_age2,name='35-44',opacity = .5),
-        go.Histogram(x=x_age3,name='45-54',opacity = .5),
-        go.Histogram(x=x_age4,name='55-64',opacity = .5),
-        go.Histogram(x=x_age5,name='18-24',opacity = .5),
-        go.Histogram(x=x_age6,name='65-74',opacity = .5),
-        go.Histogram(x=x_straight,name='Straight',opacity = .5),
-        go.Histogram(x=x_lgbtq,name='LGBTQ+',opacity = .5),
-        go.Histogram(x=x_tenure1,name='1-3 years',opacity = .5),
-        go.Histogram(x=x_tenure2,name='3-5 years',opacity = .5),
-        go.Histogram(x=x_tenure3,name='< than a year',opacity = .5),
-        go.Histogram(x=x_tenure4,name='5-10 years',opacity = .5),
-        go.Histogram(x=x_tenure5,name='10+ years',opacity = .5),
-        go.Histogram(x=x_tenure6,name='1 year',opacity = .5),
-        go.Histogram(x=x_status1,name='Full-time',opacity = .5),
-        go.Histogram(x=x_status2,name='Part-time',opacity = .5),
-        go.Histogram(x=x_status2,name='Seasonal',opacity = .5),
-        go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .5) 
+        go.Histogram(x=x_age1,name='25-34', opacity = .75),
+        go.Histogram(x=x_age2,name='35-44',opacity = .75),
+        go.Histogram(x=x_age3,name='45-54',opacity = .75),
+        go.Histogram(x=x_age4,name='55-64',opacity = .75),
+        go.Histogram(x=x_age5,name='18-24',opacity = .75),
+        go.Histogram(x=x_age6,name='65-74',opacity = .75),
+        go.Histogram(x=x_straight,name='Straight',opacity = .75),
+        go.Histogram(x=x_lgbtq,name='LGBTQ+',opacity = .75),
+        go.Histogram(x=x_tenure1,name='1-3 years',opacity = .75),
+        go.Histogram(x=x_tenure2,name='3-5 years',opacity = .75),
+        go.Histogram(x=x_tenure3,name='< than a year',opacity = .75),
+        go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
+        go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
+        go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75) 
      ]
+
     #defining layout
-    for fig in ["plotly_dark"]:
-        layout=go.Layout(title='At work, I am treated with respect.',updatemenus=list([dict(buttons= list_updatemenus,type = 'buttons')]), barmode='stack', width=1400, height=800)
-        #defining layout and plotting
-        fig = go.Figure(data,layout)
-        return fig 
+    layout=go.Layout(
+        title=dict(
+            text='At work, I am treated with respect.',
+            x=0.5,
+            y=0.95,
+            xanchor='right',
+            yanchor= 'top',
+            font=dict(
+                size=25,
+                color='#000000'
+            )
+
+        ),
+        margin=dict(
+            l=50,
+            r=50,
+            b=100,
+            t=100,
+            pad=4
+        ),
+        font=dict(
+            size=18,
+            color='#000000',
+        ), 
+        legend=dict(
+        # Adjust click behavior
+        itemclick="toggleothers",
+        itemdoubleclick="toggle",
+        ),  
+        updatemenus=list([dict(
+            buttons= list_updatemenus,
+            type = 'buttons', 
+            bordercolor = "#3f3f3f",
+            xanchor='right',
+            yanchor='top')
+        ]),
+        barmode='stack',
+        width=1400, 
+        height=800,
+        paper_bgcolor='#FFFFFF',
+        plot_bgcolor='#FFFFFF')
+    #defining layout and plotting
+    fig = go.Figure(data,layout)
+    #fig.add_layout_image(
+        #dict(
+            #source="/assets/foundcom-logo-ffce54.png",
+            #xref="paper", yref="paper",
+            #x=1, y=1.05,
+            #sizex=0.1, sizey=0.1,
+            #xanchor="right", yanchor="bottom"
+        #)
+    #)
+    fig.update_xaxes(showgrid=False, zeroline=False)
+    fig.update_yaxes(showgrid=False, zeroline=False)
+    return fig
 
 
 
