@@ -181,11 +181,13 @@ figures_col = html.Div([
        dcc.Graph(
                 id='fig1-viz',
                 figure=FC_fig1(),
-                className='container', style={'maxWidth': '1200px'}
-                ),  
-        ]),
+                className='container', style={'maxWidth': '1400px'}
+                )
+        ]), 
         html.Br(),      
-    ])
+    ]),
+    html.Br(),
+    html.Br()
 ])
 
 wordcloud = dbc.Jumbotron([
