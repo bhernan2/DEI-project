@@ -85,7 +85,7 @@ def FC_fig1():
         go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .5) 
      ]
     #defining layout
-    layout=go.Layout(title='At work, I am treated with respect.',updatemenus=list([dict(buttons= list_updatemenus,type = 'buttons')]),barmode='stack')
+    layout=go.Layout(title='At work, I am treated with respect.',updatemenus=list([dict(buttons= list_updatemenus,type = 'buttons')]), barmode='stack', width=1200, height=800)
 
     #defining layout and plotting
     fig = go.Figure(data,layout)
