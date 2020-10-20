@@ -177,11 +177,13 @@ figures_col = html.Div([
                         dbc.DropdownMenuItem("My workplace is committed to building the strengths of each employee.")
                         ]
                     )
-                    ], 'text-align', className='text-center'),
+                    ],style ={'maxwidth': '100px'}),
        dcc.Graph(
                 id='fig1-viz',
                 figure=FC_fig1(),
-                className='container', style={'maxWidth': '1400px'}
+                className='container', 
+                style={'maxWidth': '1400px'},
+                #'paper_bgcolor'= 'secondary',
                 )
         ]), 
         html.Br(),      
