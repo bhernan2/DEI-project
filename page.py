@@ -40,13 +40,17 @@ title = dbc.Jumbotron([
             html.Br(),
             html.H4("Dashboard contributors: DeShan Allison, Bianca A. Hernandez, Michelle Le, Kenya Lewis, Stephanie Perrone, Julie Roebuck, Ebonie Trice, Mary Young and Tiffany Nicely-Williams", className='text-center'),
             html.Br(),
-            html.H3("The Diversity, Equity and Inclusion (DEI) Survey Subcommittee created a survey to gather more information about your experience working at Foundation Communities. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.", className='text-justify')
-            ])
-    ])
-
+            html.Br(),
+            dbc.Row([
+                        html.Br(),
+                        html.Br(),
+                        html.H3("The Diversity, Equity and Inclusion (DEI) Survey team created a survey to gather more information about your experience working at Foundation Communities. We researched both Gallup Diversity and Inclusion and Building Movement Project Race to Lead surveys and decided to merge them together to make up the FC DEI survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.", className='mb-75'),                                                                                                                                            
+                    ]), 
+    ], style={'textAlign': 'justify'})    
+])
 about = dbc.Jumbotron([
         dbc.Container([
-            html.H3("The subcommittee gathered on __/__/__ to develop an all staff survey. It was relased on __/__/__ and participants had X # of days to complete the survey. The questions selected for the survey included general demographics (race, age, sexual orientation, tenure, etc.) and DEI specific questions ('At work I am treated with respect', 'At work, I feel comfortable being myself', etc.). In addition, there was an open ended question that allowed survey participants to share efforts that they would like to see prioritized. The subcommittee investigated 1) how the distribution of demographics compared to the DEI specific responses, 2) to see if there were any correlations between DEI related question responses and 3) design a wordcloud to address the open ended question mentioned earlier.", className='text-justify'),
+            html.H3("The subcommittee gathered on __/__/__ to develop the all staff survey and it was relased on __/__/__. Participants had X # of days to complete the survey. The team investigated 1) how the distribution of demographics compared to the DEI specific responses, 2) to see if there were any correlations between DEI related question responses and 3) design a wordcloud to address the open ended question mentioned earlier.", className='text-justify'),
         ]),
         #dbc.Container([
             #html.Ul(id='my-list', children=[html.Li(i) for i in dei_list], className= 'mb-10 lead text-left'),  
@@ -55,7 +59,6 @@ about = dbc.Jumbotron([
 ])
 
 #descriptive stats cards 
-
 card_content1 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
@@ -151,12 +154,10 @@ descriptive_stats = html.Div([
                     dbc.Card(card_content8, color="light", inverse=True))
                 ], className="mb-5")          
             ])
-
-figures_col = dbc.Jumbotron([
-    html.H4("Explore results", className='text-center'),
-    html.Br(),
-    html.Br(),
-        dbc.Row([
+#figures row
+figures_col = html.Div([
+    dbc.Row([
+        dbc.Col([
             dbc.Container([
                 dbc.DropdownMenu( 
                     label="Compare DEI related questions to demographics",
@@ -175,14 +176,17 @@ figures_col = dbc.Jumbotron([
                         dbc.DropdownMenuItem("My supervisor tries to understand my point of view."),
                         dbc.DropdownMenuItem("My workplace is committed to building the strengths of each employee.")
                         ]
-                    ),
-            dcc.Graph(
+                    )
+                    ], 'text-align', className='text-center'),
+       dcc.Graph(
                 id='fig1-viz',
-                figure=FC_fig1()
-                ),        
-            ], 'text-align', className='text-left')
-        ])
+                figure=FC_fig1(),
+                className='container', style={'maxWidth': '1200px'}
+                ),  
+        ]),
+        html.Br(),      
     ])
+])
 
 wordcloud = dbc.Jumbotron([
     dbc.Container([
@@ -198,6 +202,9 @@ def DEI_title():
 def about_():
     heading = about
     return heading 
+#def FC_introduction():
+    #heading = introduction
+    #return heading 
 
 def FC_stats():
     heading = descriptive_stats
