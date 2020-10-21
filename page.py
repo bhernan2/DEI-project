@@ -13,7 +13,7 @@ import numpy as np
 
 from datetime import datetime
 
-from figures import FC_fig1
+from figures import FC_fig1, FC_fig2
 
 dei_list = ['At work I am treated with respect.', 
             'At work, I feel comfortable being myself.', 
@@ -36,29 +36,29 @@ title = dbc.Jumbotron([
         html.Img(src='assets/foundcom-logo-ffce54.png')
         ], style={'textAlign': 'center'}),
     dbc.Container([
-            html.H1("DEI Survey Dashboard", className='display-3 text-center'),
+            html.H1("FC DEI Survey Dashboard", className='display-3 text-center', style={'maxWidth': '1440px'}),
             html.Br(),
-            html.H4("Dashboard contributors: DeShan Allison, Bianca A. Hernandez, Michelle Le, Kenya Lewis, Stephanie Perrone, Julie Roebuck, Ebonie Trice, Mary Young and Tiffany Nicely-Williams", className='lead text-center'),
+            html.H4("Contributors: DeShan Allison, Bianca A. Hernandez, Michelle Le, Kenya Lewis, Stephanie Perrone, Julie Roebuck, Ebonie Trice, Mary Young and Tiffany Nicely-Williams", className='lead text-center', style={'maxWidth': '1440px'}),
             html.Br(),
             html.Br(),
         dbc.Row([
             html.Br(),
             html.Br(),
-            dbc.Col(),
-            html.H3("The Diversity, Equity and Inclusion (DEI) Survey team created a survey to gather more information about your experience working at Foundation Communities. We researched both Gallup Diversity and Inclusion and Building Movement Project Race to Lead surveys and decided to merge them together to create the FC DEI survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.", className='text-justify'),                                                                                                                                            
-            dbc.Col(),    
+            dbc.Col(width=2),
+            html.H3("The Diversity, Equity and Inclusion (DEI) Survey team created a survey to gather more information about your experience working at Foundation Communities. We researched two surveys: 1) Gallup Diversity and Inclusion and 2) Building Movement Project Race to Lead. We decided to merge questions from both surveys to create the FC DEI Survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.", className='text-justify'),                                                                                                                                            
+            dbc.Col(width=2),  
             ]),
-        ], style={'maxWidth': '1400px'},fluid=True), 
+        ], style={'maxWidth': '1440px'}, fluid=True), 
     ])     
 
 about = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
-                dbc.Col(),
-                html.H3("The subcommittee gathered on __/__/__ to develop the all staff survey and it was relased on __/__/__. Participants had X # of days to complete the survey. The team investigated 1) how the distribution of demographics compared to the DEI specific responses, 2) to see if there were any correlations between DEI related question responses and 3) design a wordcloud to address the open ended question mentioned earlier.", className='text-justify'),
-                dbc.Col(),         
+                html.H2("Process", className='display-4 text-right', style={'maxWidth': '1440px'}),
+                html.Br(),
+                html.H3("The subcommittee gathered on __/__/__ to develop the all staff survey and it was relased on __/__/__. Participants had X # of days to complete the survey. The team investigated 1) how the distribution of demographics compared to the DEI specific responses, 2) to see if there were any correlations between DEI related question responses and 3) design a wordcloud to address the open ended question mentioned earlier.", className='text-justify'),        
             ]),
-        ], style={'maxWidth': '1400px'}, fluid=True),
+        ], style={'maxWidth': '1440px'}, fluid=True),
         #dbc.Container([
             #html.Ul(id='my-list', children=[html.Li(i) for i in dei_list], className= 'mb-10 lead text-left'),  
             #])
@@ -69,9 +69,9 @@ about = dbc.Jumbotron([
 card_content1 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H2("Gender", className="card-title"),
+            html.H2("Card title", className="card-title"),
             html.H3(
-                "77'%' female",
+                "This is some card content that we'll reuse",
                 className="card-text",),
         ]),
 ]
@@ -140,6 +140,12 @@ card_content8 = [
 ]
 descriptive_stats = html.Div([
             dbc.Row([
+                dbc.Col(width=2),
+                html.H2("Interesting Findings", className='display-4 text-center', style={'maxWidth': '1440px'}),
+                dbc.Col(width=2),    
+            ]),
+            html.Br(),
+            dbc.Row([
                 dbc.Col(),
                 dbc.Col(
                     dbc.Card(card_content1, color="primary", inverse=True)),
@@ -189,6 +195,9 @@ figures_col = html.Div([
                         ],
                     right=True,
                     className="mb-4",
+                    style = {
+                        'fontSize' : '20px',
+                        'display': 'inline-block'}
                     ),
         ]),
         dbc.Col(),
@@ -196,19 +205,16 @@ figures_col = html.Div([
     ]),
     dbc.Row([
         dbc.Col(),
-        dbc.Col(),
         dbc.Container([
                 dcc.Graph(
-                    id='fig1-viz',
-                    figure=FC_fig1(),
+                    id='fig2-viz',
+                    figure=FC_fig2(),
                     className='container', 
-                    style={'maxWidth': '1200px'},
+                    style={'maxWidth': '1460px'},
                     ),
                 html.Br(),
                 html.Br(),     
             ]),
-        dbc.Col(),
-        dbc.Col(),
         dbc.Col(),
         dbc.Col(),
         ]),
