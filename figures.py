@@ -100,10 +100,10 @@ def FC_fig1():
 
         ),
         margin=dict(
-            l=50,
-            r=50,
-            b=100,
-            t=100,
+            l=200,
+            r=200,
+            b=150,
+            t=150,
             pad=4
         ),
         font=dict(
@@ -118,8 +118,8 @@ def FC_fig1():
         updatemenus=list([dict(
             buttons= list_updatemenus,
             active=0,
-            x = 0.3,
-            y = -0.1,
+            x = 0.2,
+            y = -0.2,
             type = 'buttons', 
             bordercolor = "#3f3f3f",
             xanchor='left',
