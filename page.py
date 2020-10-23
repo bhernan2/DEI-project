@@ -174,32 +174,32 @@ descriptive_stats = html.Div([
 #figures row
 figures_col = html.Div([
     dbc.Row([
+                dbc.Col(width=2),
+                html.H2("Compare individual experience to demographics", className='display-4 text-center', style={'maxWidth': '1440px'}),
+                dbc.Col(width=2),    
+            ]),
+    html.Br(),
+    dbc.Row([
         dbc.Col(width=2),
         dbc.Container([
-                dbc.DropdownMenu(
+                dcc.Dropdown(
                     id='dei-dropdown', 
-                    label="Compare DEI related questions to demographics",
-                    bs_size="lg",
-                    children=[
-                        dbc.DropdownMenuItem("At work I am treated with respect.", id ='item1'),
-                        dbc.DropdownMenuItem("At work, I feel comfortable being myself.", id='item2'),
-                        dbc.DropdownMenuItem("Diversity and inclusiveness issues are openly discussed.", id='item3'),
-                        dbc.DropdownMenuItem("Employees in my organization are treated with respect and dignity", id='item4'),
-                        dbc.DropdownMenuItem("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.", id='item5'),
-                        dbc.DropdownMenuItem("I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.", id='item6'),
-                        dbc.DropdownMenuItem("If I raised a concern about ethics and integrity, I am confident my employer would do what is right.", id='item7'),
-                        dbc.DropdownMenuItem("My organization treasures diverse opinions and ideas.", id='item8'),
-                        dbc.DropdownMenuItem("My team members appreciate my contributions.", id='item9'),
-                        dbc.DropdownMenuItem("My supervisor tries to understand my point of view.", id='item10'),
-                        dbc.DropdownMenuItem("My workplace is committed to building the strengths of each employee.", id='item11')
+                    value = 'Select a question',
+                    options=[
+                        ({"label":"At work I am treated with respect.", "value":"item1"}),
+                        ({"label":"At work, I feel comfortable being myself.", "value":'item2'}),
+                        #dbc.DropdownMenuItem("Diversity and inclusiveness issues are openly discussed.", id='item3'),
+                        #dbc.DropdownMenuItem("Employees in my organization are treated with respect and dignity", id='item4'),
+                        #dbc.DropdownMenuItem("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.", id='item5'),
+                        #dbc.DropdownMenuItem("I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.", id='item6'),
+                        #dbc.DropdownMenuItem("If I raised a concern about ethics and integrity, I am confident my employer would do what is right.", id='item7'),
+                        #dbc.DropdownMenuItem("My organization treasures diverse opinions and ideas.", id='item8'),
+                        #dbc.DropdownMenuItem("My team members appreciate my contributions.", id='item9'),
+                        #dbc.DropdownMenuItem("My supervisor tries to understand my point of view.", id='item10'),
+                        #dbc.DropdownMenuItem("My workplace is committed to building the strengths of each employee.", id='item11')
                         ],
-                    right=True,
-                    className="mb-4",
-                    style = {
-                        'fontSize' : '20px',
-                        'display': 'inline-block'}
                     ),
-        ]),
+        ], className="mb-5"),
         dbc.Col(),
         dbc.Col(),
     ]),
@@ -249,4 +249,3 @@ def FC_figures():
 def FC_wordcloud():
     heading = wordcloud
     return heading 
-
