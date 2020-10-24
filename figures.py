@@ -281,9 +281,6 @@ def FC_fig2():
     fig.update_yaxes(showgrid=False, zeroline=False)
     return fig
 
-figures = [FC_fig1, FC_fig2]
-def dei_figures():
-    heading=figures
-    return heading 
+
 
 
