@@ -139,6 +139,7 @@ card_content8 = [
         ]),
 ]
 descriptive_stats = html.Div([
+            html.Br(),
             dbc.Row([
                 dbc.Col(width=2),
                 html.H2("Interesting Findings", className='display-4 text-center', style={'maxWidth': '1440px'}),
@@ -169,60 +170,77 @@ descriptive_stats = html.Div([
                 dbc.Col(
                     dbc.Card(card_content8, color="light", inverse=True)),
                 dbc.Col(),
-                ], className="mb-5")          
+                ], className="mb-5"), 
+                html.Br(),          
             ])
 #figures row
-figures_col = html.Div([
-    dbc.Row([
-                dbc.Col(width=2),
-                html.H2("Compare individual experience to demographics", className='display-4 text-center', style={'maxWidth': '1440px'}),
-                dbc.Col(width=2),    
-            ]),
+demo_row = html.Div([
     html.Br(),
     dbc.Row([
         dbc.Col(width=2),
-        dbc.Container([
-                dcc.Dropdown(
-                    id='dei-dropdown', 
-                    value = 'Select a question',
-                    options=[
-                        ({"label":"At work I am treated with respect.", "value":"item1"}),
-                        ({"label":"At work, I feel comfortable being myself.", "value":'item2'}),
-                        #dbc.DropdownMenuItem("Diversity and inclusiveness issues are openly discussed.", id='item3'),
-                        #dbc.DropdownMenuItem("Employees in my organization are treated with respect and dignity", id='item4'),
-                        #dbc.DropdownMenuItem("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.", id='item5'),
-                        #dbc.DropdownMenuItem("I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.", id='item6'),
-                        #dbc.DropdownMenuItem("If I raised a concern about ethics and integrity, I am confident my employer would do what is right.", id='item7'),
-                        #dbc.DropdownMenuItem("My organization treasures diverse opinions and ideas.", id='item8'),
-                        #dbc.DropdownMenuItem("My team members appreciate my contributions.", id='item9'),
-                        #dbc.DropdownMenuItem("My supervisor tries to understand my point of view.", id='item10'),
-                        #dbc.DropdownMenuItem("My workplace is committed to building the strengths of each employee.", id='item11')
-                        ],
-                    ),
-        ], className="mb-5"),
-        dbc.Col(),
-        dbc.Col(),
-    ]),
-    dbc.Row([
-        dbc.Col(),
-        dbc.Container([
-                dcc.Graph(
-                    id='fig2-viz',
-                    figure=FC_fig2(),
-                    className='container', 
-                    style={'maxWidth': '1460px'},
-                    ),
-                html.Br(),
-                html.Br(),     
+        html.H2("Compare individual experience to demographics", className='display-4 text-center', style={'maxWidth': '1440px'}),
+        dbc.Col(width=2),    
             ]),
-        dbc.Col(),
-        dbc.Col(),
-        ]),
-    ])
+    html.Br()
+    
+])
+#dropdown row
 
+
+dropdown_row = html.Div([
+    dbc.Row([
+        dbc.Col(width=2),
+        dbc.Container([
+            dcc.Dropdown(
+            id='dei-dropdown', 
+            value = 'item1',
+            style={'backgroundColor': '#cdd3dc'},
+            options=[
+                ({"label":"At work I am treated with respect.", "value":"item1"}),
+                ({"label":"At work, I feel comfortable being myself.", "value":'item2'}),
+                #dbc.DropdownMenuItem("Diversity and inclusiveness issues are openly discussed.", id='item3'),
+                #dbc.DropdownMenuItem("Employees in my organization are treated with respect and dignity", id='item4'),
+                #dbc.DropdownMenuItem("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.", id='item5'),
+                #dbc.DropdownMenuItem("I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.", id='item6'),
+                #dbc.DropdownMenuItem("If I raised a concern about ethics and integrity, I am confident my employer would do what is right.", id='item7'),
+                #dbc.DropdownMenuItem("My organization treasures diverse opinions and ideas.", id='item8'),
+                #dbc.DropdownMenuItem("My team members appreciate my contributions.", id='item9'),
+                #dbc.DropdownMenuItem("My supervisor tries to understand my point of view.", id='item10'),
+                #dbc.DropdownMenuItem("My workplace is committed to building the strengths of each employee.", id='item11')
+                    ]
+                )
+
+        ], className="mb-5"),
+        dbc.Col(), 
+        dbc.Col(),
+    ])
+])
+
+#output row
+output_row=html.Div([
+    dbc.Row([ 
+        dbc.Col(width=2),
+        dbc.Container(
+            children = [
+                dcc.Graph(
+                    id='figure1', 
+                    style={'maxWidth': '1460px'}, 
+                    config={'displayModeBar': False}),
+                dcc.Graph(
+                    id='figure2',
+                    style={'maxWidth': '1460px'}, 
+                    config={'displayModeBar': False}),
+                ]),
+        dbc.Col(),
+    ])            
+])
+            
 wordcloud = dbc.Jumbotron([
     dbc.Container([
-                    html.Img(src='assets/final_word_cloud.png', style={'height': '100%','width': '100%'}, className='image-center')
+                    html.Img(
+                        src='assets/final_word_cloud.png', 
+                        style={'height': '100%','width': '100%'}, 
+                        className='image-center')
                 ])
             ])
                 
@@ -234,17 +252,22 @@ def DEI_title():
 def about_():
     heading = about
     return heading 
-#def FC_introduction():
-    #heading = introduction
-    #return heading 
+
 
 def FC_stats():
-    heading = descriptive_stats
+    cards = descriptive_stats
+    return cards 
+
+def FC_demo_row():
+    heading = demo_row
+    return heading
+def FC_dropdown_row():
+    heading = dropdown_row
     return heading 
 
-def FC_figures():
-    figure = figures_col
-    return figure 
+def FC_output():
+    heading = output_row
+    return heading
 
 def FC_wordcloud():
     heading = wordcloud
