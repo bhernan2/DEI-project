@@ -2,3 +2,6 @@ venv
 *.pyc
 .env
 .DS_Store
+sheets.googleapis.com-python.json
+deisurvey-052c3b4db8fc.json
+client_secret.json
