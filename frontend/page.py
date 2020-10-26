@@ -220,7 +220,7 @@ dropdown_row = html.Div([
 #output row
 output_row=html.Div([
     dbc.Row([ 
-        dbc.Col(width=2),
+        dbc.Col(),
         dbc.Container(id='outputs',
             children = [
                 dcc.Graph(
