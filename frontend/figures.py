@@ -639,7 +639,7 @@ def FC_fig5():
     #defining layout
     layout=go.Layout(
         title=dict(
-            text='Diversity and Inclusiveness issues are openly discussed.',
+            text='Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.',
             x=0.5,
             y=0.95,
             xanchor='center',
