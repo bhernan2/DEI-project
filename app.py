@@ -3,8 +3,10 @@ import dash_bootstrap_components as dbc
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
+import sys
 
-from page import DEI_title, FC_demo_row, FC_output,  about_, FC_stats #FC_dropdown_row
+from frontend.page import DEI_title, FC_demo_row, FC_output,  about_, FC_stats #FC_dropdown_row
+
 
 dei_title = DEI_title()
 dei_stats = FC_stats()
@@ -28,8 +30,10 @@ def Dashboard():
     return layout 
 
 #to test if running uncomment below: 
+
 app = dash.Dash(__name__, external_stylesheets = [dbc.themes.SUPERHERO])
 app.layout = Dashboard()
 if __name__ == "__main__":
     app.run_server(debug=True)
+   
 
