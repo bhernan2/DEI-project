@@ -2,10 +2,11 @@ Brotli @ file:///opt/concourse/worker/volumes/live/6f34e4d0-4572-4e67-52c6-90034
 certifi==2020.6.20
 click==7.1.2
 dash @ file:///tmp/build/80754af9/dash_1602169941850/work
-dash-core-components==1.3.1
-dash-html-components==1.0.1
-dash-renderer==1.1.2
-dash-table==4.4.1
+dash-bootstrap-components==0.10.7
+dash-core-components==1.12.1
+dash-html-components==1.1.1
+dash-renderer==1.8.2
+dash-table==4.10.1
 Flask==1.1.2
 Flask-Compress @ file:///tmp/build/80754af9/flask-compress_1602519300251/work
 future==0.18.2
