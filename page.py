@@ -13,7 +13,7 @@ import numpy as np
 
 from datetime import datetime
 
-from figures import FC_fig1, FC_fig2
+from figures import FC_fig1, FC_fig2, FC_fig3, FC_fig4, FC_fig5
 
 dei_list = ['At work I am treated with respect.', 
             'At work, I feel comfortable being myself.', 
@@ -189,12 +189,13 @@ demo_row = html.Div([
 
 dropdown_row = html.Div([
     dbc.Row([
-        dbc.Col(width=2),
+        dbc.Col(),
+        dbc.Col(),
         dbc.Container([
             dcc.Dropdown(
             id='dei-dropdown', 
             value = 'item1',
-            style={'backgroundColor': '#cdd3dc'},
+            style={'backgroundColor': '#cdd3dc', 'maxWidth': '1460px'},
             options=[
                 ({"label":"At work I am treated with respect.", "value":"item1"}),
                 ({"label":"At work, I feel comfortable being myself.", "value":'item2'}),
@@ -220,16 +221,43 @@ dropdown_row = html.Div([
 output_row=html.Div([
     dbc.Row([ 
         dbc.Col(width=2),
-        dbc.Container(
+        dbc.Container(id='outputs',
             children = [
                 dcc.Graph(
-                    id='figure1', 
+                    figure = FC_fig1(),
+                    id='plot', 
                     style={'maxWidth': '1460px'}, 
                     config={'displayModeBar': False}),
+                html.Br(),
+                html.Br(),
                 dcc.Graph(
-                    id='figure2',
+                    figure = FC_fig2(),
+                    id='plot2', 
                     style={'maxWidth': '1460px'}, 
                     config={'displayModeBar': False}),
+                html.Br(),
+                html.Br(),
+                dcc.Graph(
+                    figure = FC_fig3(),
+                    id='plot3', 
+                    style={'maxWidth': '1460px'}, 
+                    config={'displayModeBar': False}),
+                html.Br(),
+                html.Br(),
+                dcc.Graph(
+                    figure = FC_fig4(),
+                    id='plot4', 
+                    style={'maxWidth': '1460px'}, 
+                    config={'displayModeBar': False}),
+                html.Br(),
+                html.Br(),
+                dcc.Graph(
+                    figure = FC_fig5(),
+                    id='plot5', 
+                    style={'maxWidth': '1460px'}, 
+                    config={'displayModeBar': False}),
+                html.Br(),
+                html.Br(),
                 ]),
         dbc.Col(),
     ])            
