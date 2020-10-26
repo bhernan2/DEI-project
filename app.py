@@ -5,7 +5,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 import sys
 
-from frontend.page import DEI_title, FC_demo_row, FC_output,  about_, FC_stats #FC_dropdown_row
+from page import DEI_title, FC_demo_row, FC_output,  about_, FC_stats #FC_dropdown_row
 
 
 dei_title = DEI_title()
