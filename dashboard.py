@@ -4,13 +4,13 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
-from page import DEI_title, FC_demo_row, FC_dropdown_row, FC_output,  about_, FC_stats
+from page import DEI_title, FC_demo_row, FC_output,  about_, FC_stats #FC_dropdown_row
 
 dei_title = DEI_title()
 dei_stats = FC_stats()
 dei_about = about_()
 dei_demo = FC_demo_row()
-dei_dropdown = FC_dropdown_row()
+#dei_dropdown = FC_dropdown_row()
 dei_output = FC_output()
 
 #dei_wordcloud = FC_wordcloud()
@@ -21,7 +21,7 @@ def Dashboard():
     dei_stats,
     dei_about,
     dei_demo,
-    dei_dropdown,
+    #dei_dropdown,
     dei_output,
     #dei_wordcloud
     ])
