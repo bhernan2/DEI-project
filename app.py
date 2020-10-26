@@ -32,6 +32,7 @@ def Dashboard():
 #to test if running uncomment below: 
 
 app = dash.Dash(__name__, external_stylesheets = [dbc.themes.SUPERHERO])
+
 app.layout = Dashboard()
 if __name__ == "__main__":
     app.run_server(debug=True)
