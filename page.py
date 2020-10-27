@@ -36,7 +36,7 @@ title = dbc.Jumbotron([
         html.Img(src='assets/foundcom-logo-ffce54.png')
         ], style={'textAlign': 'center'}),
     dbc.Container([
-            html.H1("FC DEI Survey Dashboard", className='display-3 text-center', style={'maxWidth': '1440px'}),
+            html.H1("FC DEI Survey Dashboard", className='display-3 text-center', style={'maxWidth': '1560px'}),
             html.Br(),
             html.H5("Contributors: DeShan Allison, Bianca A. Hernandez, Michelle Le, Kenya Lewis, Stephanie Perrone, Julie Roebuck, Ebonie Trice, Mary Young and Tiffany Nicely-Williams", className='lead text-center', style={'maxWidth': '1440px'}),
             html.Br(),
@@ -44,17 +44,21 @@ title = dbc.Jumbotron([
         dbc.Row([
             html.Br(),
             html.Br(),
+            dbc.Col(),
             html.H4("The Diversity, Equity and Inclusion (DEI) Survey team created a survey to gather more information about your experience working at Foundation Communities. We researched two surveys: 1) Gallup Diversity and Inclusion and 2) Building Movement Project Race to Lead. We decided to merge questions from both surveys to create the FC DEI Survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.", className='text-justify'),                                                                                                                                              
+            dbc.Col(),
             ]),
-        ], style={'maxWidth': '1440px'}, fluid=True), 
+        ], style={'maxWidth': '1560px'}, fluid=True), 
     ])     
 
 about = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
-                html.H3("Process", className='display-4 text-right', style={'maxWidth': '1440px'}),
+                html.H3("Process", className='display-4 text-right', style={'maxWidth': '1560px'}),
                 html.Br(),
-                html.H4("The subcommittee gathered on __/__/__ to develop the all staff survey and it was relased on __/__/__. Participants had X # of days to complete the survey. The team investigated 1) how the distribution of demographics compared to the DEI specific responses, 2) to see if there were any correlations between DEI related question responses and 3) design a wordcloud to address the open ended question mentioned earlier.", className='text-justify'),        
+                dbc.Col(),
+                html.H4("The subcommittee gathered on __/__/__ to develop the all staff survey and it was relased on __/__/__. Participants had X # of days to complete the survey. The team investigated 1) how the distribution of demographics compared to the DEI specific responses, 2) to see if there were any correlations between DEI related question responses and 3) design a wordcloud to address the open ended question mentioned earlier.", className='text-justify'),  
+                dbc.Col(),      
             ]),
         ], style={'maxWidth': '1440px'}, fluid=True),
         #dbc.Container([
@@ -140,7 +144,7 @@ descriptive_stats = html.Div([
             html.Br(),
             dbc.Row([
                 dbc.Col(),
-                html.H3("Interesting Findings", className='display-4 text-center', style={'maxWidth': '1440px'}),
+                html.H3("Interesting Findings", className='display-4 text-center', style={'maxWidth': '1560px'}),
                 dbc.Col(),  
             ]),
             html.Br(),
