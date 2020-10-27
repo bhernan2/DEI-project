@@ -36,7 +36,7 @@ title = dbc.Jumbotron([
         html.Img(src='assets/foundcom-logo-ffce54.png')
         ], style={'textAlign': 'center'}),
     dbc.Container([
-            html.H1("FC DEI Survey Dashboard", className='display-3 text-center', style={'maxWidth': '1560px'}),
+            html.H1("FC DEI Survey Dashboard", className='display-3 text-center', style={'maxWidth': '1500px'}),
             html.Br(),
             html.H5("Contributors: DeShan Allison, Bianca A. Hernandez, Michelle Le, Kenya Lewis, Stephanie Perrone, Julie Roebuck, Ebonie Trice, Mary Young and Tiffany Nicely-Williams", className='lead text-center', style={'maxWidth': '1440px'}),
             html.Br(),
@@ -54,13 +54,13 @@ title = dbc.Jumbotron([
 about = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
-                html.H3("Process", className='display-4 text-right', style={'maxWidth': '1560px'}),
+                html.H3("Process", className='display-4 text-right', style={'maxWidth': '1500px'}),
                 html.Br(),
                 dbc.Col(),
                 html.H4("The subcommittee gathered on __/__/__ to develop the all staff survey and it was relased on __/__/__. Participants had X # of days to complete the survey. The team investigated 1) how the distribution of demographics compared to the DEI specific responses, 2) to see if there were any correlations between DEI related question responses and 3) design a wordcloud to address the open ended question mentioned earlier.", className='text-justify'),  
                 dbc.Col(),      
             ]),
-        ], style={'maxWidth': '1440px'}, fluid=True),
+        ], style={'maxWidth': '1500px'}, fluid=True),
         #dbc.Container([
             #html.Ul(id='my-list', children=[html.Li(i) for i in dei_list], className= 'mb-10 lead text-left'),  
             #])
@@ -149,6 +149,7 @@ descriptive_stats = html.Div([
             ]),
             html.Br(),
             dbc.Row([
+                dbc.Col(width=1),
                 dbc.Col(
                     dbc.Card(card_content1, color="primary", inverse=True)),
                 dbc.Col(
@@ -157,9 +158,11 @@ descriptive_stats = html.Div([
                     dbc.Card(card_content3, color="success", inverse=True)),
                 dbc.Col(
                     dbc.Card(card_content4, color="dark", inverse=True)),
+                dbc.Col(width=1),
             ], className="mb-5", style={'maxWidth': '1500px'}),
             
             dbc.Row([
+                dbc.Col(width=1),
                 dbc.Col(
                     dbc.Card(card_content5, color="warning", inverse=True)),
                 dbc.Col(
@@ -168,6 +171,7 @@ descriptive_stats = html.Div([
                     dbc.Card(card_content7, color="info", inverse=True)),
                 dbc.Col(
                     dbc.Card(card_content8, color="light", inverse=True)),
+                dbc.Col(width=1),
                 ], className="mb-5", style={'maxWidth': '1500px'}), 
                 html.Br(),          
             ])
@@ -175,7 +179,7 @@ descriptive_stats = html.Div([
 demo_row = html.Div([
     html.Br(),
     dbc.Row([
-        html.H3("Compare individual experience to demographics", className='display-4 text-center', style={'maxWidth': '1560px'}),   
+        html.H3("Compare individual experience to demographics", className='display-4 text-center', style={'maxWidth': '1500px'}),   
             ]),
     html.Br()
     
