@@ -258,6 +258,13 @@ output_row=html.Div([
                     config={'displayModeBar': False}),
                 html.Br(),
                 html.Br(),
+                dcc.Graph(
+                    figure = FC_fig6(),
+                    id='plot5', 
+                    style={'maxWidth': '1200px'}, 
+                    config={'displayModeBar': False}),
+                html.Br(),
+                html.Br(),
                 ]),
         dbc.Col(width=2)
     ])            
