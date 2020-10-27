@@ -13,7 +13,7 @@ import numpy as np
 
 from datetime import datetime
 
-from figures import FC_fig1, FC_fig2, FC_fig3, FC_fig4, FC_fig5, FC_fig6, FC_fig7, FC_fig8
+from figures import FC_fig1, FC_fig2, FC_fig3, FC_fig4, FC_fig5, FC_fig6, FC_fig7, FC_fig8, FC_fig9, FC_fig10, FC_fig11
 
 dei_list = ['At work I am treated with respect.', 
             'At work, I feel comfortable being myself.', 
@@ -272,9 +272,30 @@ output_row=html.Div([
                     config={'displayModeBar': False}),
                 html.Br(),
                 html.Br(),
-                 dcc.Graph(
+                dcc.Graph(
                     figure = FC_fig8(),
                     id='plot8', 
+                    style={'maxWidth': '1200px'}, 
+                    config={'displayModeBar': False}),
+                html.Br(),
+                html.Br(),
+                dcc.Graph(
+                    figure = FC_fig9(),
+                    id='plot9', 
+                    style={'maxWidth': '1200px'}, 
+                    config={'displayModeBar': False}),
+                html.Br(),
+                html.Br(),
+                dcc.Graph(
+                    figure = FC_fig10(),
+                    id='plot10', 
+                    style={'maxWidth': '1200px'}, 
+                    config={'displayModeBar': False}),
+                html.Br(),
+                html.Br(),
+                dcc.Graph(
+                    figure = FC_fig11(),
+                    id='plot11', 
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
