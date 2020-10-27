@@ -639,7 +639,7 @@ def FC_fig5():
             text='Everyone at this organization is treated fairly regardless of ethnic background, <br>race, gender, age, disability, or other differences not related to job performance.',
             x=0.5,
             y=0.95,
-            xanchor='center',
+            xanchor='left',
             yanchor= 'top',
             font=dict(
                 size=16,
@@ -648,14 +648,14 @@ def FC_fig5():
 
         ),
         margin=dict(
-            l=100,
-            r=100,
-            b=50,
-            t=50,
+            l=150,
+            r=150,
+            b=75,
+            t=75,
             pad=4
         ),
         font=dict(
-            size=14,
+            size=16,
             color='#000000',
         ), 
         legend=dict(
@@ -666,7 +666,7 @@ def FC_fig5():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=3,
-            x = 0.1,
+            x = 0.2,
             y = -0.1,
             type = 'buttons', 
             bordercolor = "#000000",
