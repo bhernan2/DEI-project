@@ -259,7 +259,7 @@ output_row=html.Div([
                 html.Br(),
                 html.Br(),
                 ]),
-        dbc.Col(width=1)
+        dbc.Col(width=2)
     ])            
 ])
             
