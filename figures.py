@@ -830,5 +830,137 @@ def FC_fig6():
     fig.update_yaxes(showgrid=False, zeroline=False)
     return fig 
 
+def FC_fig7():
+    list_updatemenus = [{'label': 'Total',
+                     'method': 'update',
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am confident my employer would do what is right.'}]},
+                    {'label': 'Race',
+                     'method': 'update',
+                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am confident my employer would do what is right.'}]},
+                    {'label': 'Age',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am confident my employer would do what is right.'}]},
+                    {'label': 'Sexual Orientation',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am confident my employer would do what is right.'}]},
+                   {'label': 'Tenure',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am confident my employer would do what is right. '}]},
+                   {'label': 'Status',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'If I raised a concern about ethics and integrity, I am confident my employer would do what is right.'}]}
+                   ]
+                   
+    x_total = dei["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_white = dei[dei['What is your race? ']=="White"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_latinx = dei[dei['What is your race? ']=="Latino/Hispanic"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_black = dei[dei['What is your race? ']=="Black/ African American"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_asian = dei[dei['What is your race? ']=="Asian"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_age1 = dei[dei["What is your age?"]=="25-34"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_age2 = dei[dei["What is your age?"]=="35-44"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_age3 = dei[dei["What is your age?"]=="45-54"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_age4 = dei[dei["What is your age?"]=="55-64"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_age5 = dei[dei["What is your age?"]=="18-24"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_age6 = dei[dei["What is your age?"]=="65-74"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_straight = dei[dei["What is your sexual orientation?"]=="Straight"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_lgbtq = dei[dei["What is your sexual orientation?"]=="LGBTQ+"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_tenure1 = dei[dei["How long have you worked for FC?"]=="1-3 years"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_tenure2 = dei[dei["How long have you worked for FC?"]=="3-5 years"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_tenure3 = dei[dei["How long have you worked for FC?"]=="Less than a year"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    #defining data
+    data=[
+        go.Histogram(x=x_total,name='   ',opacity = .75),
+        go.Histogram(x=x_white,name='White',opacity = .75),
+        go.Histogram(x=x_latinx,name='Latino/Hispanic',opacity = .75),
+        go.Histogram(x=x_black,name='Black/African American',opacity = .75),
+        go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .75),
+        go.Histogram(x=x_asian,name='Asian',opacity = .5),
+        go.Histogram(x=x_first_peoples,name='Indian/Native American',opacity = .75),
+        go.Histogram(x=x_age1,name='25-34', opacity = .75),
+        go.Histogram(x=x_age2,name='35-44',opacity = .75),
+        go.Histogram(x=x_age3,name='45-54',opacity = .75),
+        go.Histogram(x=x_age4,name='55-64',opacity = .75),
+        go.Histogram(x=x_age5,name='18-24',opacity = .75),
+        go.Histogram(x=x_age6,name='65-74',opacity = .75),
+        go.Histogram(x=x_straight,name='Straight',opacity = .75),
+        go.Histogram(x=x_lgbtq,name='LGBTQ+',opacity = .75),
+        go.Histogram(x=x_tenure1,name='1-3 years',opacity = .75),
+        go.Histogram(x=x_tenure2,name='3-5 years',opacity = .75),
+        go.Histogram(x=x_tenure3,name='< than a year',opacity = .75),
+        go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
+        go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
+        go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75)
+     
+     ]
+    layout=go.Layout(
+        title=dict(
+            text='If I raised a concern about ethics and integrity, <br>I am confident my employer would do what is right.',
+            x=0.5,
+            y=0.95,
+            xanchor='center',
+            yanchor= 'top',
+            font=dict(
+                size=16,
+                color='#000000'
+            )
+
+        ),
+        margin=dict(
+            l=150,
+            r=150,
+            b=75,
+            t=75,
+            pad=4
+        ),
+        font=dict(
+            size=16,
+            color='#000000',
+        ), 
+        legend=dict(
+        # Adjust click behavior
+        itemclick="toggleothers",
+        itemdoubleclick="toggle",
+        ),  
+        updatemenus=list([dict(
+            buttons= list_updatemenus, 
+            active=3,
+            x = 0.1,
+            y = -0.3,
+            type = 'buttons', 
+            bordercolor = "#000000",
+            xanchor='left',
+            yanchor='bottom',
+            direction='left',
+            pad=dict(
+                l=10,
+                r=10,
+                t=10,
+                b=10)
+                )
+        ]),
+        barmode='stack',
+        width=1000, 
+        height=500,
+        paper_bgcolor='#cdd3dc',
+        plot_bgcolor='#cdd3dc')
+
+    #defining layout and plotting
+    fig = go.Figure(data,layout)
+    fig.update_xaxes(showgrid=False, zeroline=False)
+    fig.update_yaxes(showgrid=False, zeroline=False)
+    return fig 
 
 
