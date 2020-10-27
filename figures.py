@@ -499,7 +499,7 @@ def FC_fig4():
      #defining layout
     layout=go.Layout(
         title=dict(
-            text='Diversity and Inclusiveness issues are openly discussed.',
+            text='Diversity and inclusiveness issues are openly discussed.',
             x=0.5,
             y=0.95,
             xanchor='center',
