@@ -45,7 +45,7 @@ title = dbc.Jumbotron([
             html.Br(),
             html.Br(),
             dbc.Col(width=1),
-            html.H4("The Diversity, Equity and Inclusion (DEI) Survey team created a survey to gather more information about your experience working at Foundation Communities. We researched two surveys: 1) Gallup Diversity and Inclusion and 2) Building Movement Project Race to Lead. We decided to merge questions from both surveys to create the FC DEI Survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.", className='text-justify', style={'maxWidth': '1400px'}),                                                                                                                                              
+            html.P("The Diversity, Equity and Inclusion (DEI) Survey team created a survey to gather more information about your experience working at Foundation Communities. We researched two surveys: 1) Gallup Diversity and Inclusion and 2) Building Movement Project Race to Lead. We decided to merge questions from both surveys to create the FC DEI Survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.", className='text-justify', style={'maxWidth': '1400px'}),                                                                                                                                              
             dbc.Col(width=1),
             ]),
         ], style={'maxWidth': '1560px'}, fluid=True), 
@@ -56,7 +56,7 @@ about = dbc.Jumbotron([
             dbc.Row([
                 html.Br(),
                 dbc.Col(width=1),
-                html.H4("The subcommittee gathered on __/__/__ to develop the all staff survey and it was relased on __/__/__. Participants had X # of days to complete the survey. The team investigated 1) how the distribution of demographics compared to the DEI specific responses, 2) to see if there were any correlations between DEI related question responses and 3) design a wordcloud to address the open ended question mentioned earlier.", className='text-justify', style={'maxWidth': '1400px'}),  
+                html.P("The subcommittee gathered on __/__/__ to develop the all staff survey and it was relased on __/__/__. Participants had X # of days to complete the survey. The team investigated 1) how the distribution of demographics compared to the DEI specific responses, 2) to see if there were any correlations between DEI related question responses and 3) design a wordcloud to address the open ended question mentioned earlier.", className='text-justify', style={'maxWidth': '1400px'}),  
                 dbc.Col(width=1),      
             ]),
         ], style={'maxWidth': '1500px'}, fluid=True),
@@ -143,7 +143,7 @@ descriptive_stats = html.Div([
             html.Br(),
             dbc.Row([
                 dbc.Col(width=1),
-                html.H4("Interesting findings", className='text-center', style={'maxWidth': '1500px'}),
+                html.H3("Interesting findings", className='text-center', style={'maxWidth': '1500px'}),
                 dbc.Col(width=1),  
             ]),
             html.Br(),
@@ -179,7 +179,7 @@ demo_row = html.Div([
     html.Br(),
     dbc.Row([
         dbc.Col(width=1),
-        html.H4("Personal experience X demographics", className='text-center', style={'maxWidth': '1500px'}), 
+        html.H3("Personal experience X demographics", className='text-center', style={'maxWidth': '1500px'}), 
         dbc.Col(width=1),  
             ]),
     html.Br()
