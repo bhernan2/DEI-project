@@ -667,7 +667,7 @@ def FC_fig5():
             buttons= list_updatemenus, 
             active=3,
             x = 0.2,
-            y = -0.3,
+            y = -0.1,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
