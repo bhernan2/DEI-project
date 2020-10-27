@@ -743,8 +743,36 @@ def FC_fig6():
     x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
     x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
     x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-        #defining data
-
+    #defining data
+    data=[
+        go.Histogram(x=x_total,name='   ',opacity = .75),
+        go.Histogram(x=x_white,name='White',opacity = .75),
+        go.Histogram(x=x_latinx,name='Latino/Hispanic',opacity = .75),
+        go.Histogram(x=x_black,name='Black/African American',opacity = .75),
+        go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .75),
+        go.Histogram(x=x_asian,name='Asian',opacity = .5),
+        go.Histogram(x=x_first_peoples,name='Indian/Native American',opacity = .75),
+        go.Histogram(x=x_age1,name='25-34', opacity = .75),
+        go.Histogram(x=x_age2,name='35-44',opacity = .75),
+        go.Histogram(x=x_age3,name='45-54',opacity = .75),
+        go.Histogram(x=x_age4,name='55-64',opacity = .75),
+        go.Histogram(x=x_age5,name='18-24',opacity = .75),
+        go.Histogram(x=x_age6,name='65-74',opacity = .75),
+        go.Histogram(x=x_straight,name='Straight',opacity = .75),
+        go.Histogram(x=x_lgbtq,name='LGBTQ+',opacity = .75),
+        go.Histogram(x=x_tenure1,name='1-3 years',opacity = .75),
+        go.Histogram(x=x_tenure2,name='3-5 years',opacity = .75),
+        go.Histogram(x=x_tenure3,name='< than a year',opacity = .75),
+        go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
+        go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
+        go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75)
+     
+     ]
+    #defining layout 
     layout=go.Layout(
         title=dict(
             text='Everyone at this organization is treated fairly regardless of ethnic background, <br>race, gender, age, disability, or other differences not related to job performance.',
