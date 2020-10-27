@@ -110,7 +110,7 @@ card_content5 = [
                 "This is some card content that we'll reuse",
                 className="card-text",),
         ]),
-]
+] 
 card_content6 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
