@@ -130,8 +130,8 @@ def FC_fig1():
                 )
         ]),
         barmode='stack',
-        width=720, 
-        height=400,
+        width=1440, 
+        height=800,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
     
@@ -267,8 +267,8 @@ def FC_fig2():
                 )
         ]),
         barmode='stack',
-        width=720, 
-        height=400,
+        width=1440, 
+        height=800,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
     
@@ -407,8 +407,8 @@ def FC_fig3():
                 )
         ]),
         barmode='stack',
-        width=720, 
-        height=400,
+        width=1440, 
+        height=800,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -544,8 +544,8 @@ def FC_fig4():
                 )
         ]),
         barmode='stack',
-        width=720, 
-        height=400,
+        width=1440, 
+        height=800,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -681,8 +681,8 @@ def FC_fig5():
                 )
         ]),
         barmode='stack',
-        width=720, 
-        height=400,
+        width=1440, 
+        height=800,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
