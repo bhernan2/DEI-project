@@ -13,7 +13,7 @@ import numpy as np
 
 from datetime import datetime
 
-from figures import FC_fig1, FC_fig2, FC_fig3, FC_fig4, FC_fig5, FC_fig6, FC_fig7
+from figures import FC_fig1, FC_fig2, FC_fig3, FC_fig4, FC_fig5, FC_fig6, FC_fig7, FC_fig8
 
 dei_list = ['At work I am treated with respect.', 
             'At work, I feel comfortable being myself.', 
@@ -158,7 +158,7 @@ descriptive_stats = html.Div([
                 dbc.Col(
                     dbc.Card(card_content4, color="dark", inverse=True)),
                 dbc.Col(width=1),
-            ], className="mb-5", style={'maxWidth': '1200px'}),
+            ], className="mb-5", style={'maxWidth': '1400px'}),
             
             dbc.Row([
                 dbc.Col(width=2),
@@ -171,7 +171,7 @@ descriptive_stats = html.Div([
                 dbc.Col(
                     dbc.Card(card_content8, color="light", inverse=True)),
                 dbc.Col(width=1),
-                ], className="mb-5", style={'maxWidth': '1200px'}), 
+                ], className="mb-5", style={'maxWidth': '1400px'}), 
                 html.Br(),          
             ])
 #figures row
@@ -267,6 +267,13 @@ output_row=html.Div([
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig7(),
+                    id='plot7', 
+                    style={'maxWidth': '1200px'}, 
+                    config={'displayModeBar': False}),
+                html.Br(),
+                html.Br(),
+                 dcc.Graph(
+                    figure = FC_fig8(),
                     id='plot7', 
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
