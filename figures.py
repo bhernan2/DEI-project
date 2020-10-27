@@ -697,7 +697,112 @@ def FC_fig5():
     fig.update_yaxes(showgrid=False, zeroline=False)
     return fig 
 
-    #def FC_fig6():
+def FC_fig6():
+    list_updatemenus = [{'label': 'Total',
+                     'method': 'update',
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'}]},
+                    {'label': 'Race',
+                     'method': 'update',
+                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'}]},
+                    {'label': 'Age',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'}]},
+                    {'label': 'Sexual Orientation',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'}]},
+                   {'label': 'Tenure',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  '}]},
+                   {'label': 'Status',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  '}]}
+                   ]
+                   
+    x_total = dei["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_white = dei[dei['What is your race? ']=="White"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_latinx = dei[dei['What is your race? ']=="Latino/Hispanic"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_black = dei[dei['What is your race? ']=="Black/ African American"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_asian = dei[dei['What is your race? ']=="Asian"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_age1 = dei[dei["What is your age?"]=="25-34"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_age2 = dei[dei["What is your age?"]=="35-44"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_age3 = dei[dei["What is your age?"]=="45-54"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_age4 = dei[dei["What is your age?"]=="55-64"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_age5 = dei[dei["What is your age?"]=="18-24"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_age6 = dei[dei["What is your age?"]=="65-74"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_straight = dei[dei["What is your sexual orientation?"]=="Straight"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_lgbtq = dei[dei["What is your sexual orientation?"]=="LGBTQ+"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_tenure1 = dei[dei["How long have you worked for FC?"]=="1-3 years"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_tenure2 = dei[dei["How long have you worked for FC?"]=="3-5 years"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_tenure3 = dei[dei["How long have you worked for FC?"]=="Less than a year"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+        #defining data
+
+    layout=go.Layout(
+        title=dict(
+            text='Everyone at this organization is treated fairly regardless of ethnic background, <br>race, gender, age, disability, or other differences not related to job performance.',
+            x=0.5,
+            y=0.95,
+            xanchor='center',
+            yanchor= 'top',
+            font=dict(
+                size=16,
+                color='#000000'
+            )
+
+        ),
+        margin=dict(
+            l=150,
+            r=150,
+            b=75,
+            t=75,
+            pad=4
+        ),
+        font=dict(
+            size=16,
+            color='#000000',
+        ), 
+        legend=dict(
+        # Adjust click behavior
+        itemclick="toggleothers",
+        itemdoubleclick="toggle",
+        ),  
+        updatemenus=list([dict(
+            buttons= list_updatemenus, 
+            active=3,
+            x = 0.1,
+            y = -0.3,
+            type = 'buttons', 
+            bordercolor = "#000000",
+            xanchor='left',
+            yanchor='bottom',
+            direction='left',
+            pad=dict(
+                l=10,
+                r=10,
+                t=10,
+                b=10)
+                )
+        ]),
+        barmode='stack',
+        width=1000, 
+        height=500,
+        paper_bgcolor='#cdd3dc',
+        plot_bgcolor='#cdd3dc')
+
+    #defining layout and plotting
+    fig = go.Figure(data,layout)
+    fig.update_xaxes(showgrid=False, zeroline=False)
+    fig.update_yaxes(showgrid=False, zeroline=False)
+    return fig 
+
 
 
 
