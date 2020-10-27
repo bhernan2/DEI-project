@@ -511,14 +511,14 @@ def FC_fig4():
 
         ),
         margin=dict(
-            l=200,
-            r=200,
-            b=150,
-            t=150,
+            l=150,
+            r=150,
+            b=75,
+            t=75,
             pad=4
         ),
         font=dict(
-            size=14,
+            size=16,
             color='#000000',
         ), 
         legend=dict(
@@ -529,8 +529,8 @@ def FC_fig4():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=3,
-            x = 1,
-            y = -1,
+            x = 0.1,
+            y = -0.3,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
@@ -549,12 +549,11 @@ def FC_fig4():
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
-
     #defining layout and plotting
     fig = go.Figure(data,layout)
     fig.update_xaxes(showgrid=False, zeroline=False)
     fig.update_yaxes(showgrid=False, zeroline=False)
-    return fig
+    return fig 
 
 def FC_fig5():
     list_updatemenus = [{'label': 'Total',
