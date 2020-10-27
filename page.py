@@ -56,7 +56,7 @@ about = dbc.Jumbotron([
             dbc.Row([
                 html.Br(),
                 dbc.Col(width=1),
-                html.H5("The subcommittee gathered on __/__/__ to develop the all staff survey and it was relased on __/__/__. Participants had X # of days to complete the survey. The team investigated 1) how the distribution of demographics compared to the DEI specific responses, 2) to see if there were any correlations between DEI related question responses and 3) design a wordcloud to address the open ended question mentioned earlier.", className='text-justify', style={'maxWidth': '1400px'}),  
+                html.H5("The subcommittee gathered on __/__/__ to develop the all staff survey, it was relased on __/__/__ and participants had X # of days to complete it. Survey participants were asked to rank individual experience questions from 1 to 5 (1 = strongly disagree, 2 = disagree, 3 = neutral, 4 = agree, 5 = strongly agree). The team investigated 1) how the distribution of demographics compared to the individual expierence question responses, 2) to see if there were any correlations between individual experience question responses and 3) designed a wordcloud to analyze an open ended question.", className='text-justify', style={'maxWidth': '1400px'}),  
                 dbc.Col(width=1),      
             ]),
         ], style={'maxWidth': '1500px'}, fluid=True),
