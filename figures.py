@@ -718,31 +718,31 @@ def FC_fig6():
                      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  '}]}
                    ]
                    
-    x_total = dei["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_white = dei[dei['What is your race? ']=="White"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_latinx = dei[dei['What is your race? ']=="Latino/Hispanic"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_black = dei[dei['What is your race? ']=="Black/ African American"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_asian = dei[dei['What is your race? ']=="Asian"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_age1 = dei[dei["What is your age?"]=="25-34"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_age2 = dei[dei["What is your age?"]=="35-44"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_age3 = dei[dei["What is your age?"]=="45-54"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_age4 = dei[dei["What is your age?"]=="55-64"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_age5 = dei[dei["What is your age?"]=="18-24"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_age6 = dei[dei["What is your age?"]=="65-74"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_straight = dei[dei["What is your sexual orientation?"]=="Straight"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_lgbtq = dei[dei["What is your sexual orientation?"]=="LGBTQ+"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_tenure1 = dei[dei["How long have you worked for FC?"]=="1-3 years"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_tenure2 = dei[dei["How long have you worked for FC?"]=="3-5 years"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_tenure3 = dei[dei["How long have you worked for FC?"]=="Less than a year"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_total = dei["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_white = dei[dei['What is your race? ']=="White"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_latinx = dei[dei['What is your race? ']=="Latino/Hispanic"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]   
+    x_black = dei[dei['What is your race? ']=="Black/ African American"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_asian = dei[dei['What is your race? ']=="Asian"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_age1 = dei[dei["What is your age?"]=="25-34"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_age2 = dei[dei["What is your age?"]=="35-44"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_age3 = dei[dei["What is your age?"]=="45-54"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_age4 = dei[dei["What is your age?"]=="55-64"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_age5 = dei[dei["What is your age?"]=="18-24"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_age6 = dei[dei["What is your age?"]=="65-74"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_straight = dei[dei["What is your sexual orientation?"]=="Straight"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_lgbtq = dei[dei["What is your sexual orientation?"]=="LGBTQ+"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_tenure1 = dei[dei["How long have you worked for FC?"]=="1-3 years"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_tenure2 = dei[dei["How long have you worked for FC?"]=="3-5 years"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_tenure3 = dei[dei["How long have you worked for FC?"]=="Less than a year"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -772,10 +772,9 @@ def FC_fig6():
         go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75)
      
      ]
-    #defining layout 
     layout=go.Layout(
         title=dict(
-            text='Everyone at this organization is treated fairly regardless of ethnic background, <br>race, gender, age, disability, or other differences not related to job performance.',
+            text='I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -830,7 +829,6 @@ def FC_fig6():
     fig.update_xaxes(showgrid=False, zeroline=False)
     fig.update_yaxes(showgrid=False, zeroline=False)
     return fig 
-
 
 
 
