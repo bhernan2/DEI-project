@@ -13,7 +13,7 @@ import numpy as np
 
 from datetime import datetime
 
-from figures import FC_fig1, FC_fig2, FC_fig3, FC_fig4, FC_fig5
+from figures import FC_fig1, FC_fig2, FC_fig3, FC_fig4, FC_fig5, FC_fig6
 
 dei_list = ['At work I am treated with respect.', 
             'At work, I feel comfortable being myself.', 
