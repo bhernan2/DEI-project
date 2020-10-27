@@ -642,17 +642,17 @@ def FC_fig5():
             xanchor='center',
             yanchor= 'top',
             font=dict(
-                size=16,
+                size=12,
                 color='#000000'
             )
 
         ),
         margin=dict(
-            l=200,
-            r=200,
-            b=150,
-            t=150,
-            pad=4
+            l=100,
+            r=100,
+            b=50,
+            t=50,
+            pad=2
         ),
         font=dict(
             size=14,
