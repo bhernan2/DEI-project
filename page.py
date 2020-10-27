@@ -260,7 +260,7 @@ output_row=html.Div([
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig6(),
-                    id='plot5', 
+                    id='plot6', 
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
