@@ -157,7 +157,7 @@ descriptive_stats = html.Div([
                     dbc.Card(card_content3, color="success", inverse=True)),
                 dbc.Col(
                     dbc.Card(card_content4, color="dark", inverse=True)),
-            ], className="mb-5"),
+            ], className="mb-5", style={'maxWidth': '1500px'}),
             
             dbc.Row([
                 dbc.Col(
@@ -168,7 +168,7 @@ descriptive_stats = html.Div([
                     dbc.Card(card_content7, color="info", inverse=True)),
                 dbc.Col(
                     dbc.Card(card_content8, color="light", inverse=True)),
-                ], className="mb-5"), 
+                ], className="mb-5", style={'maxWidth': '1500px'}), 
                 html.Br(),          
             ])
 #figures row
