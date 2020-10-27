@@ -642,7 +642,7 @@ def FC_fig5():
             xanchor='center',
             yanchor= 'top',
             font=dict(
-                size=12,
+                size=16,
                 color='#000000'
             )
 
@@ -652,7 +652,7 @@ def FC_fig5():
             r=100,
             b=50,
             t=50,
-            pad=2
+            pad=4
         ),
         font=dict(
             size=14,
@@ -666,8 +666,8 @@ def FC_fig5():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=3,
-            x = 0.3,
-            y = -0.3,
+            x = 0.1,
+            y = -0.4,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
