@@ -666,8 +666,8 @@ def FC_fig5():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=3,
-            x = 0.1,
-            y = -0.4,
+            x = 0.2,
+            y = -0.3,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
