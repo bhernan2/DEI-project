@@ -179,7 +179,7 @@ demo_row = html.Div([
     html.Br(),
     dbc.Row([
         dbc.Col(width=1),
-        html.H4("Compare individual experience to demographics", className='display-4 text-center', style={'maxWidth': '1500px'}), 
+        html.H4("Personal experience X demographics", className='display-4 text-left', style={'maxWidth': '1500px'}), 
         dbc.Col(width=1),  
             ]),
     html.Br()
