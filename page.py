@@ -141,9 +141,9 @@ card_content8 = [
 descriptive_stats = html.Div([
             html.Br(),
             dbc.Row([
-                dbc.Col(width=2),
+                dbc.Col(),
                 html.H2("Interesting Findings", className='display-4 text-center', style={'maxWidth': '1440px'}),
-                dbc.Col(width=2),    
+                dbc.Col(),  
             ]),
             html.Br(),
             dbc.Row([
