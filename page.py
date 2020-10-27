@@ -54,7 +54,6 @@ title = dbc.Jumbotron([
 about = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
-                html.Br(),
                 dbc.Col(width=1),
                 html.H5("The subcommittee gathered on __/__/__ to develop the all staff survey, it was relased on __/__/__ and participants had X # of days to complete it. Survey participants were asked to rank individual experience questions from 1 to 5 (1 = strongly disagree, 2 = disagree, 3 = neutral, 4 = agree, 5 = strongly agree). The team investigated 1) how the distribution of demographics compared to the individual expierence question responses, 2) to see if there were any correlations between individual experience question responses and 3) designed a wordcloud to analyze an open ended question.", className='text-justify', style={'maxWidth': '1400px'}),  
                 dbc.Col(width=1),      
@@ -229,6 +228,7 @@ output_row=html.Div([
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig2(),
