@@ -173,9 +173,9 @@ descriptive_stats = html.Div([
 demo_row = html.Div([
     html.Br(),
     dbc.Row([
-        dbc.Col(width=2),
+        dbc.Col(),
         html.H2("Compare individual experience to demographics", className='display-4 text-center', style={'maxWidth': '1440px'}),
-        dbc.Col(width=2),    
+        dbc.Col(),    
             ]),
     html.Br()
     
@@ -216,7 +216,6 @@ dropdown_row = html.Div([
 #output row
 output_row=html.Div([
     dbc.Row([ 
-        dbc.Col(),
         dbc.Container(id='outputs',
             children = [
                 dcc.Graph(
@@ -255,7 +254,6 @@ output_row=html.Div([
                 html.Br(),
                 html.Br(),
                 ]),
-        dbc.Col(),
     ])            
 ])
             
