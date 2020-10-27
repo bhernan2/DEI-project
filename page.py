@@ -54,8 +54,6 @@ title = dbc.Jumbotron([
 about = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
-                dbc.Col(width=1),
-                html.H3("Process", className='display-4 text-right', style={'maxWidth': '1500px'}),
                 html.Br(),
                 dbc.Col(width=1),
                 html.H4("The subcommittee gathered on __/__/__ to develop the all staff survey and it was relased on __/__/__. Participants had X # of days to complete the survey. The team investigated 1) how the distribution of demographics compared to the DEI specific responses, 2) to see if there were any correlations between DEI related question responses and 3) design a wordcloud to address the open ended question mentioned earlier.", className='text-justify', style={'maxWidth': '1400px'}),  
@@ -180,7 +178,9 @@ descriptive_stats = html.Div([
 demo_row = html.Div([
     html.Br(),
     dbc.Row([
-        html.H3("Compare individual experience to demographics", className='display-4 text-center', style={'maxWidth': '1500px'}),   
+        dbc.Col(width=1),
+        html.H3("Compare individual experience to demographics", className='display-4 text-center', style={'maxWidth': '1500px'}), 
+        dbc.Col(width=1),  
             ]),
     html.Br()
     
@@ -190,8 +190,7 @@ demo_row = html.Div([
 
 dropdown_row = html.Div([
     dbc.Row([
-        dbc.Col(),
-        dbc.Col(),
+        dbc.Col(width=1),
         dbc.Container([
             dcc.Dropdown(
             id='dei-dropdown', 
@@ -221,6 +220,7 @@ dropdown_row = html.Div([
 #output row
 output_row=html.Div([
     dbc.Row([ 
+        dbc.Col(width=1),
         dbc.Container(id='outputs',
             children = [
                 dcc.Graph(
@@ -259,6 +259,7 @@ output_row=html.Div([
                 html.Br(),
                 html.Br(),
                 ]),
+        dbc.Col(width=1)
     ])            
 ])
             
