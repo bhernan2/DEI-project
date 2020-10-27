@@ -55,7 +55,7 @@ about = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
                 dbc.Col(width=1),
-                html.H3("Process", className='display-4 text-right', style={'maxWidth': '1500px'}),
+                html.H3("Process", className='display-4 text-right', style={'maxWidth': '1400px'}),
                 html.Br(),
                 dbc.Col(width=1),
                 html.H4("The subcommittee gathered on __/__/__ to develop the all staff survey and it was relased on __/__/__. Participants had X # of days to complete the survey. The team investigated 1) how the distribution of demographics compared to the DEI specific responses, 2) to see if there were any correlations between DEI related question responses and 3) design a wordcloud to address the open ended question mentioned earlier.", className='text-justify'),  
