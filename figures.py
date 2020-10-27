@@ -636,7 +636,7 @@ def FC_fig5():
     #defining layout
     layout=go.Layout(
         title=dict(
-            text='Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.',
+            text='Everyone at this organization is treated fairly regardless of ethnic background, <br>race, gender, age, disability, or other differences not related to job performance.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -666,8 +666,8 @@ def FC_fig5():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=3,
-            x = 0.2,
-            y = -0.2,
+            x = 0.3,
+            y = -0.3,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
