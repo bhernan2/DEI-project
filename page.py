@@ -142,7 +142,7 @@ descriptive_stats = html.Div([
             html.Br(),
             dbc.Row([
                 dbc.Col(width=1),
-                html.H3("Interesting findings", className='text-center', style={'maxWidth': '1200px'}),
+                html.H3("Interesting findings", className='lead text-center', style={'maxWidth': '1200px'}),
                 dbc.Col(width=1),  
             ]),
             html.Br(),
@@ -178,7 +178,7 @@ demo_row = html.Div([
     html.Br(),
     dbc.Row([
         dbc.Col(width=1),
-        html.H3("Personal experience X demographics", className='text-center', style={'maxWidth': '1200px'}), 
+        html.H3("Personal experience X demographics", className='lead text-center', style={'maxWidth': '1200px'}), 
         dbc.Col(width=1),  
             ]),
     html.Br()
