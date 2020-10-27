@@ -236,6 +236,7 @@ output_row=html.Div([
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig3(),
@@ -243,6 +244,7 @@ output_row=html.Div([
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig4(),
@@ -250,6 +252,7 @@ output_row=html.Div([
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig5(),
@@ -257,6 +260,7 @@ output_row=html.Div([
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig6(),
@@ -264,6 +268,7 @@ output_row=html.Div([
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig7(),
@@ -271,6 +276,7 @@ output_row=html.Div([
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig8(),
@@ -278,6 +284,7 @@ output_row=html.Div([
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig9(),
@@ -285,6 +292,7 @@ output_row=html.Div([
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig10(),
@@ -292,6 +300,7 @@ output_row=html.Div([
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig11(),
@@ -299,6 +308,7 @@ output_row=html.Div([
                     style={'maxWidth': '1200px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
                 ]),
         dbc.Col(width=2)
