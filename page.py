@@ -54,11 +54,12 @@ title = dbc.Jumbotron([
 about = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
+                dbc.Col(width=1),
                 html.H3("Process", className='display-4 text-right', style={'maxWidth': '1500px'}),
                 html.Br(),
-                dbc.Col(),
+                dbc.Col(width=1),
                 html.H4("The subcommittee gathered on __/__/__ to develop the all staff survey and it was relased on __/__/__. Participants had X # of days to complete the survey. The team investigated 1) how the distribution of demographics compared to the DEI specific responses, 2) to see if there were any correlations between DEI related question responses and 3) design a wordcloud to address the open ended question mentioned earlier.", className='text-justify'),  
-                dbc.Col(),      
+                dbc.Col(width=1),      
             ]),
         ], style={'maxWidth': '1500px'}, fluid=True),
         #dbc.Container([
@@ -225,35 +226,35 @@ output_row=html.Div([
                 dcc.Graph(
                     figure = FC_fig1(),
                     id='plot', 
-                    style={'maxWidth': '1560px'}, 
+                    style={'maxWidth': '1500px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig2(),
                     id='plot2', 
-                    style={'maxWidth': '1560px'}, 
+                    style={'maxWidth': '1500px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig3(),
                     id='plot3', 
-                    style={'maxWidth': '1560px'}, 
+                    style={'maxWidth': '1500px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig4(),
                     id='plot4', 
-                    style={'maxWidth': '1560px'}, 
+                    style={'maxWidth': '1500px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig5(),
                     id='plot5', 
-                    style={'maxWidth': '1560px'}, 
+                    style={'maxWidth': '1500px'}, 
                     config={'displayModeBar': False}),
                 html.Br(),
                 html.Br(),
