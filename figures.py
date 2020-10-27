@@ -91,7 +91,7 @@ def FC_fig1():
             xanchor='center',
             yanchor= 'top',
             font=dict(
-                size=25,
+                size=16,
                 color='#000000'
             )
 
@@ -104,7 +104,7 @@ def FC_fig1():
             pad=4
         ),
         font=dict(
-            size=18,
+            size=14,
             color='#000000',
         ), 
         legend=dict(
@@ -130,8 +130,8 @@ def FC_fig1():
                 )
         ]),
         barmode='stack',
-        width=1240, 
-        height=600,
+        width=1000, 
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
     
@@ -228,7 +228,7 @@ def FC_fig2():
             xanchor='center',
             yanchor= 'top',
             font=dict(
-                size=25,
+                size=16,
                 color='#000000'
             )
 
@@ -241,7 +241,7 @@ def FC_fig2():
             pad=4
         ),
         font=dict(
-            size=18,
+            size=14,
             color='#000000',
         ), 
         legend=dict(
@@ -267,8 +267,8 @@ def FC_fig2():
                 )
         ]),
         barmode='stack',
-        width=1240, 
-        height=600,
+        width=1000, 
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
     
@@ -368,7 +368,7 @@ def FC_fig3():
             xanchor='center',
             yanchor= 'top',
             font=dict(
-                size=25,
+                size=16,
                 color='#000000'
             )
 
@@ -381,7 +381,7 @@ def FC_fig3():
             pad=4
         ),
         font=dict(
-            size=18,
+            size=14,
             color='#000000',
         ), 
         legend=dict(
@@ -407,8 +407,8 @@ def FC_fig3():
                 )
         ]),
         barmode='stack',
-        width=1240, 
-        height=600,
+        width=1000, 
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -505,7 +505,7 @@ def FC_fig4():
             xanchor='center',
             yanchor= 'top',
             font=dict(
-                size=25,
+                size=16,
                 color='#000000'
             )
 
@@ -518,7 +518,7 @@ def FC_fig4():
             pad=4
         ),
         font=dict(
-            size=18,
+            size=14,
             color='#000000',
         ), 
         legend=dict(
@@ -544,8 +544,8 @@ def FC_fig4():
                 )
         ]),
         barmode='stack',
-        width=1240, 
-        height=600,
+        width=1000, 
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -642,7 +642,7 @@ def FC_fig5():
             xanchor='center',
             yanchor= 'top',
             font=dict(
-                size=25,
+                size=16,
                 color='#000000'
             )
 
@@ -655,7 +655,7 @@ def FC_fig5():
             pad=4
         ),
         font=dict(
-            size=18,
+            size=14,
             color='#000000',
         ), 
         legend=dict(
@@ -681,8 +681,8 @@ def FC_fig5():
                 )
         ]),
         barmode='stack',
-        width=1240, 
-        height=600,
+        width=1000, 
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
