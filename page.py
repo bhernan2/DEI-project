@@ -227,7 +227,7 @@ output_row=html.Div([
                     dcc.Graph(
                         figure = FC_fig1(),
                         id='plot', 
-                        style={'maxWidth': '1200px'}, 
+                        style={'maxWidth': '1350px'}, 
                         config={'displayModeBar': False}),
                     html.Br(),
                     html.H4('This is where we will add figure summaries focusing on what stood out.'),
