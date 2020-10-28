@@ -311,7 +311,7 @@ output_row=html.Div([
                 html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
                 ], style={'maxWidth': '1350px', 'textAlign': 'center'}),
-        dbc.Col(width=2)
+        dbc.Col(width=1)
     ])            
 ])
             
