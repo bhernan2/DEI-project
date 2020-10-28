@@ -156,7 +156,7 @@ descriptive_stats = html.Div([
                     dbc.Card(card_content3, color="success", inverse=True)),
                 dbc.Col(
                     dbc.Card(card_content4, color="dark", inverse=True)),
-                dbc.Col(width=1),
+                #dbc.Col(width=1),
             ], className="mb-5", style={'maxWidth': '1350px', 'textAlign': 'center'}),
             
             dbc.Row([
@@ -169,7 +169,7 @@ descriptive_stats = html.Div([
                     dbc.Card(card_content7, color="info", inverse=True)),
                 dbc.Col(
                     dbc.Card(card_content8, color="light", inverse=True)),
-                dbc.Col(width=1),
+                #dbc.Col(width=1),
                 ], className="mb-5", style={'maxWidth': '1350px', 'textAlign': 'center'}), 
                 html.Br(),          
             ])
@@ -219,7 +219,7 @@ dropdown_row = html.Div([
 #output row
 output_row=html.Div([
     dbc.Row([ 
-        dbc.Col(width=2),
+        dbc.Col(width=1),
         dbc.Container(id='outputs',
             children = [
                 dcc.Graph(
