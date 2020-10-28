@@ -223,12 +223,12 @@ output_row=dbc.Jumbotron([
                 figure = FC_fig1(),
                 id='plot1', 
                 config={'displayModeBar': False}),
-            ]),
+            ], width=9),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
                 ], width=3),
             html.Br(),
-        ],className='text-justify'), 
+        ],className='text-left'), 
         html.Br(), 
         dbc.Row([
             dbc.Col([
@@ -239,7 +239,7 @@ output_row=dbc.Jumbotron([
             ]),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+                ]width=3),
             html.Br(),
         ],className='text-justify'), 
         html.Br(), 
@@ -252,7 +252,7 @@ output_row=dbc.Jumbotron([
             ]),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+                ]width=3),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),
@@ -265,7 +265,7 @@ output_row=dbc.Jumbotron([
             ]),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+                ]width=3),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),
@@ -278,7 +278,7 @@ output_row=dbc.Jumbotron([
             ]),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+                ]width=3),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),
@@ -291,7 +291,7 @@ output_row=dbc.Jumbotron([
             ]),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+                ]width=3),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),
@@ -304,7 +304,7 @@ output_row=dbc.Jumbotron([
             ]),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+                ]width=3),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),  
@@ -317,7 +317,7 @@ output_row=dbc.Jumbotron([
             ]),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+                ]width=3),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),
@@ -330,7 +330,7 @@ output_row=dbc.Jumbotron([
             ]),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+                ]width=3),
             html.Br(),
         ],className='text-justify'), 
         html.Br(), 
@@ -343,7 +343,7 @@ output_row=dbc.Jumbotron([
             ]),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+                ]width=3),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),
@@ -356,7 +356,7 @@ output_row=dbc.Jumbotron([
             ]),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+                ]width=3),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),      
