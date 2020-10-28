@@ -219,7 +219,7 @@ dropdown_row = html.Div([
 #output row
 output_row=html.Div([
     dbc.Row([ 
-        dbc.Col(width=1),
+        #dbc.Col(width=1),
         dbc.Container(id='outputs',
             children = [
                 dcc.Graph(
@@ -311,7 +311,7 @@ output_row=html.Div([
                 html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
                 ], style={'maxWidth': '1350px'}),
-        dbc.Col(width=1),
+        #dbc.Col(width=1),
     ])            
 ])
             
