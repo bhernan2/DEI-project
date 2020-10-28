@@ -130,7 +130,7 @@ def FC_fig1():
                 )
         ]),
         barmode='stack',
-        width=1200, 
+        width=1100, 
         height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
