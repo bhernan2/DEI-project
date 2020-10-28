@@ -231,6 +231,7 @@ output_row=html.Div([
             ]),
     dbc.Row([
         dbc.Col(width=1),
+        html.Br(),
         html.H4('This is where we will add figure summaries focusing on what stood out.'),
         html.Br(),
         dbc.Col(width=1),
@@ -248,6 +249,7 @@ output_row=html.Div([
             ]),
     dbc.Row([
         dbc.Col(width=1),
+        html.Br(),
         html.H4('This is where we will add figure summaries focusing on what stood out.'),
         html.Br(),
         dbc.Col(width=1),
@@ -265,6 +267,7 @@ output_row=html.Div([
             ]),
     dbc.Row([
         dbc.Col(width=1),
+        html.Br(),
         html.H4('This is where we will add figure summaries focusing on what stood out.'),
         html.Br(),
         dbc.Col(width=1),
@@ -281,6 +284,7 @@ output_row=html.Div([
             ]),
     dbc.Row([
         dbc.Col(width=1),
+        html.Br(),
         html.H4('This is where we will add figure summaries focusing on what stood out.'),
         html.Br(),
         dbc.Col(width=1),
@@ -297,6 +301,7 @@ output_row=html.Div([
             ]),
     dbc.Row([
         dbc.Col(width=1),
+        html.Br(),
         html.H4('This is where we will add figure summaries focusing on what stood out.'),
         html.Br(),
         dbc.Col(width=1),
@@ -313,6 +318,7 @@ output_row=html.Div([
             ]),
     dbc.Row([
         dbc.Col(width=1),
+        html.Br(),
         html.H4('This is where we will add figure summaries focusing on what stood out.'),
         html.Br(),
         dbc.Col(width=1),
@@ -329,6 +335,7 @@ output_row=html.Div([
             ]),
     dbc.Row([
         dbc.Col(width=1),
+        html.Br(),
         html.H4('This is where we will add figure summaries focusing on what stood out.'),
         html.Br(),
         dbc.Col(width=1),
@@ -361,6 +368,7 @@ output_row=html.Div([
             ]),
     dbc.Row([
         dbc.Col(width=1),
+        html.Br(),
         html.H4('This is where we will add figure summaries focusing on what stood out.'),
         html.Br(),
         dbc.Col(width=1),
@@ -377,6 +385,7 @@ output_row=html.Div([
             ]),
     dbc.Row([
         dbc.Col(width=1),
+        html.Br(),
         html.H4('This is where we will add figure summaries focusing on what stood out.'),
         html.Br(),
         dbc.Col(width=1),
@@ -393,6 +402,7 @@ output_row=html.Div([
             ]),
     dbc.Row([
         dbc.Col(width=1),
+        html.Br(),
         html.H4('This is where we will add figure summaries focusing on what stood out.'),
         html.Br(),
         dbc.Col(width=1),
