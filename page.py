@@ -226,7 +226,7 @@ output_row=dbc.Jumbotron([
             ]),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+                ], width=3),
             html.Br(),
         ],className='text-justify'), 
         html.Br(), 
