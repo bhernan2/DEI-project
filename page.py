@@ -223,7 +223,7 @@ output_row=html.Div([
         dbc.Col(width=1),
         dcc.Graph(
             figure = FC_fig1(),
-            id='plot', 
+            id='plot1', 
             style={'maxWidth': '1350px'}, 
             config={'displayModeBar': False}),
         html.Br(),
@@ -240,7 +240,7 @@ output_row=html.Div([
         dbc.Col(width=1),
         dcc.Graph(
             figure = FC_fig2(),
-            id='plot', 
+            id='plot2', 
             style={'maxWidth': '1350px'}, 
             config={'displayModeBar': False}),
         html.Br(),
@@ -257,7 +257,7 @@ output_row=html.Div([
         dbc.Col(width=1),
         dcc.Graph(
             figure = FC_fig3(),
-            id='plot', 
+            id='plot3', 
             style={'maxWidth': '1350px'}, 
             config={'displayModeBar': False}),
         html.Br(),
@@ -273,7 +273,7 @@ output_row=html.Div([
         dbc.Col(width=1),
         dcc.Graph(
             figure = FC_fig4(),
-            id='plot', 
+            id='plot4', 
             style={'maxWidth': '1350px'}, 
             config={'displayModeBar': False}),
         html.Br(),
@@ -289,7 +289,7 @@ output_row=html.Div([
         dbc.Col(width=1),
         dcc.Graph(
             figure = FC_fig5(),
-            id='plot', 
+            id='plot5', 
             style={'maxWidth': '1350px'}, 
             config={'displayModeBar': False}),
         html.Br(),
@@ -305,7 +305,7 @@ output_row=html.Div([
         dbc.Col(width=1),
         dcc.Graph(
             figure = FC_fig6(),
-            id='plot', 
+            id='plot6', 
             style={'maxWidth': '1350px'}, 
             config={'displayModeBar': False}),
         html.Br(),
@@ -321,7 +321,7 @@ output_row=html.Div([
         dbc.Col(width=1),
         dcc.Graph(
             figure = FC_fig7(),
-            id='plot', 
+            id='plot7', 
             style={'maxWidth': '1350px'}, 
             config={'displayModeBar': False}),
         html.Br(),
@@ -337,7 +337,7 @@ output_row=html.Div([
         dbc.Col(width=1),
         dcc.Graph(
             figure = FC_fig8(),
-            id='plot', 
+            id='plot8', 
             style={'maxWidth': '1350px'}, 
             config={'displayModeBar': False}),
         html.Br(),
@@ -353,7 +353,7 @@ output_row=html.Div([
         dbc.Col(width=1),
         dcc.Graph(
             figure = FC_fig9(),
-            id='plot', 
+            id='plot9', 
             style={'maxWidth': '1350px'}, 
             config={'displayModeBar': False}),
         html.Br(),
@@ -369,7 +369,7 @@ output_row=html.Div([
         dbc.Col(width=1),
         dcc.Graph(
             figure = FC_fig10(),
-            id='plot', 
+            id='plot10', 
             style={'maxWidth': '1350px'}, 
             config={'displayModeBar': False}),
         html.Br(),
@@ -385,7 +385,7 @@ output_row=html.Div([
         dbc.Col(width=1),
         dcc.Graph(
             figure = FC_fig11(),
-            id='plot', 
+            id='plot11', 
             style={'maxWidth': '1350px'}, 
             config={'displayModeBar': False}),
         html.Br(),
