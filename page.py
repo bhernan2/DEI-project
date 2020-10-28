@@ -222,7 +222,7 @@ output_row=dbc.Jumbotron([
             dcc.Graph(
                 figure = FC_fig1(),
                 id='plot1', 
-                style={'maxWidth': '1400px'}, 
+                style={'Align':'center'}, 
                 config={'displayModeBar': False}),
             html.Br(),
             html.H4('This is where we will add figure summaries focusing on what stood out.'),
