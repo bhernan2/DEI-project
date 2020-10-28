@@ -218,145 +218,102 @@ output_row=dbc.Jumbotron([
         ]),
     html.Br(), 
         dbc.Row([
-            dbc.Col([
-                dcc.Graph(
+            dcc.Graph(
                 figure = FC_fig1(),
                 id='plot1', 
                 config={'displayModeBar': False}),
-            ]),
-            dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
             html.Br(),
-        ],className='text-justify'), 
+            html.H4('This is where we will add figure summaries focusing on what stood out.'),
+            html.Br(),
+            ],className='text-justify'), 
         html.Br(), 
         dbc.Row([
-            dbc.Col([
-                dcc.Graph(
+            dcc.Graph(
                 figure = FC_fig2(),
                 id='plot2', 
                 config={'displayModeBar': False}),
-            ]),
-            dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+            html.H4('This is where we will add figure summaries focusing on what stood out.'),
             html.Br(),
-        ],className='text-justify'), 
+            ],className='text-justify'),
         html.Br(), 
         dbc.Row([
-            dbc.Col([
-                dcc.Graph(
+            dcc.Graph(
                 figure = FC_fig3(),
                 id='plot3', 
                 config={'displayModeBar': False}),
-            ]),
-            dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+            html.H4('This is where we will add figure summaries focusing on what stood out.'),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),
         dbc.Row([
-            dbc.Col([
-                dcc.Graph(
+            dcc.Graph(
                 figure = FC_fig4(),
                 id='plot4', 
                 config={'displayModeBar': False}),
-            ]),
-            dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+            html.H4('This is where we will add figure summaries focusing on what stood out.'),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),
         dbc.Row([
-            dbc.Col([
-                dcc.Graph(
+            dcc.Graph(
                 figure = FC_fig5(),
                 id='plot5', 
                 config={'displayModeBar': False}),
-            ]),
-            dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),
         dbc.Row([
-            dbc.Col([
-                dcc.Graph(
+            dcc.Graph(
                 figure = FC_fig6(),
                 id='plot6', 
                 config={'displayModeBar': False}),
-            ]),
-            dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+            html.H4('This is where we will add figure summaries focusing on what stood out.'),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),
         dbc.Row([
-            dbc.Col([
-                dcc.Graph(
+            dcc.Graph(
                 figure = FC_fig7(),
                 id='plot7', 
                 config={'displayModeBar': False}),
-            ]),
-            dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+            html.H4('This is where we will add figure summaries focusing on what stood out.'),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),  
         dbc.Row([
-            dbc.Col([
-                dcc.Graph(
+            dcc.Graph(
                 figure = FC_fig8(),
                 id='plot8', 
                 config={'displayModeBar': False}),
-            ]),
-            dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+            html.H4('This is where we will add figure summaries focusing on what stood out.'),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),
         dbc.Row([
-            dbc.Col([
-                dcc.Graph(
+            dcc.Graph(
                 figure = FC_fig9(),
                 id='plot9', 
                 config={'displayModeBar': False}),
-            ]),
-            dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+            html.H4('This is where we will add figure summaries focusing on what stood out.'),
             html.Br(),
         ],className='text-justify'), 
         html.Br(), 
         dbc.Row([
-            dbc.Col([
-                dcc.Graph(
+            dcc.Graph(
                 figure = FC_fig10(),
                 id='plot10', 
                 config={'displayModeBar': False}),
-            ]),
-            dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+            html.H4('This is where we will add figure summaries focusing on what stood out.'),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),
         dbc.Row([
-            dbc.Col([
-                dcc.Graph(
+            dcc.Graph(
                 figure = FC_fig11(),
                 id='plot11', 
                 config={'displayModeBar': False}),
-            ]),
-            dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ]),
+            html.H4('This is where we will add figure summaries focusing on what stood out.'),
             html.Br(),
         ],className='text-justify'), 
         html.Br(),      
