@@ -222,13 +222,17 @@ output_row=html.Div([
         #dbc.Col(width=1),
         dbc.Container(id='outputs',
             children = [
-                dcc.Graph(
-                    figure = FC_fig1(),
-                    id='plot', 
-                    style={'maxWidth': '1200px'}, 
-                    config={'displayModeBar': False}),
-                html.Br(),
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
+                dbc.Row([
+                    dbc.Col(width=1),
+                    dcc.Graph(
+                        figure = FC_fig1(),
+                        id='plot', 
+                        style={'maxWidth': '1200px'}, 
+                        config={'displayModeBar': False}),
+                    html.Br(),
+                    html.H4('This is where we will add figure summaries focusing on what stood out.'),
+                    dbc.Col(width=1), 
+                    ], className="mb-5", style={'maxWidth': '1350px'}),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig2(),
