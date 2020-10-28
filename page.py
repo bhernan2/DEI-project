@@ -222,11 +222,11 @@ output_row=dbc.Jumbotron([
                 dcc.Graph(
                 figure = FC_fig1(),
                 id='plot1', 
-                config={'displayModeBar': False}),
-            ], width=9),
+                config={'displayModeBar': False}), 
+            ], style={"display": "block", "width": "100%"}),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ], width=3),
+                ], width=5),
             html.Br(),
         ],className='text-left'), 
         html.Br(), 
