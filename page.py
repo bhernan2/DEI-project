@@ -217,111 +217,188 @@ dropdown_row = html.Div([
 ])
 
 #output row
-output_row=html.Div([
-    dbc.Row([ 
-        #dbc.Col(width=1),
-        dbc.Container(id='outputs',
-            children = [
-                dbc.Row([
-                    dbc.Col(width=1),
-                    dcc.Graph(
-                        figure = FC_fig1(),
-                        id='plot', 
-                        style={'maxWidth': '1350px'}, 
-                        config={'displayModeBar': False}),
-                    html.Br(),
-                    dbc.Col(),
-                ]),
-                dbc.Row([
-                    dbc.Col(width=1),
-                    html.H4('This is where we will add figure summaries focusing on what stood out.'),
-                    dbc.Col(width=1),
-                    ], className="mb-5", style={'maxWidth': '1350px'}),
-                html.Br(),
-                dcc.Graph(
-                    figure = FC_fig2(),
-                    id='plot2', 
-                    style={'maxWidth': '1200px'}, 
-                    config={'displayModeBar': False}),
-                html.Br(),
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-                html.Br(),
-                dcc.Graph(
-                    figure = FC_fig3(),
-                    id='plot3', 
-                    style={'maxWidth': '1200px'}, 
-                    config={'displayModeBar': False}),
-                html.Br(),
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-                html.Br(),
-                dcc.Graph(
-                    figure = FC_fig4(),
-                    id='plot4', 
-                    style={'maxWidth': '1200px'}, 
-                    config={'displayModeBar': False}),
-                html.Br(),
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-                html.Br(),
-                dcc.Graph(
-                    figure = FC_fig5(),
-                    id='plot5', 
-                    style={'maxWidth': '1200px'}, 
-                    config={'displayModeBar': False}),
-                html.Br(),
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-                html.Br(),
-                dcc.Graph(
-                    figure = FC_fig6(),
-                    id='plot6', 
-                    style={'maxWidth': '1200px'}, 
-                    config={'displayModeBar': False}),
-                html.Br(),
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-                html.Br(),
-                dcc.Graph(
-                    figure = FC_fig7(),
-                    id='plot7', 
-                    style={'maxWidth': '1200px'}, 
-                    config={'displayModeBar': False}),
-                html.Br(),
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-                html.Br(),
-                dcc.Graph(
-                    figure = FC_fig8(),
-                    id='plot8', 
-                    style={'maxWidth': '1200px'}, 
-                    config={'displayModeBar': False}),
-                html.Br(),
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-                html.Br(),
-                dcc.Graph(
-                    figure = FC_fig9(),
-                    id='plot9', 
-                    style={'maxWidth': '1200px'}, 
-                    config={'displayModeBar': False}),
-                html.Br(),
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-                html.Br(),
-                dcc.Graph(
-                    figure = FC_fig10(),
-                    id='plot10', 
-                    style={'maxWidth': '1200px'}, 
-                    config={'displayModeBar': False}),
-                html.Br(),
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-                html.Br(),
-                dcc.Graph(
-                    figure = FC_fig11(),
-                    id='plot11', 
-                    style={'maxWidth': '1200px'}, 
-                    config={'displayModeBar': False}),
-                html.Br(),
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-                html.Br(),
-                ], style={'maxWidth': '1350px'}),
-        #dbc.Col(width=1),
+output_row=html.Div([ 
+    #fig1
+    dbc.Row([
+        dbc.Col(width=1),
+        dcc.Graph(
+            figure = FC_fig1(),
+            id='plot', 
+            style={'maxWidth': '1350px'}, 
+            config={'displayModeBar': False}),
+        html.Br(),
+        dbc.Col(width=1),
+            ]),
+    dbc.Row([
+        dbc.Col(width=1),
+        html.H4('This is where we will add figure summaries focusing on what stood out.'),
+        html.Br(),
+        dbc.Col(width=1),
+        ], className="mb-5", style={'maxWidth': '1350px'}),
+    #fig2
+    dbc.Row([
+        dbc.Col(width=1),
+        dcc.Graph(
+            figure = FC_fig2(),
+            id='plot', 
+            style={'maxWidth': '1350px'}, 
+            config={'displayModeBar': False}),
+        html.Br(),
+        dbc.Col(width=1),
+            ]),
+    dbc.Row([
+        dbc.Col(width=1),
+        html.H4('This is where we will add figure summaries focusing on what stood out.'),
+        html.Br(),
+        dbc.Col(width=1),
+        ], className="mb-5", style={'maxWidth': '1350px'}),
+    #fig3 
+    dbc.Row([
+        dbc.Col(width=1),
+        dcc.Graph(
+            figure = FC_fig3(),
+            id='plot', 
+            style={'maxWidth': '1350px'}, 
+            config={'displayModeBar': False}),
+        html.Br(),
+        dbc.Col(width=1),
+            ]),
+    dbc.Row([
+        dbc.Col(width=1),
+        html.H4('This is where we will add figure summaries focusing on what stood out.'),
+        html.Br(),
+        dbc.Col(width=1),
+        ], className="mb-5", style={'maxWidth': '1350px'}),
+    dbc.Row([
+        dbc.Col(width=1),
+        dcc.Graph(
+            figure = FC_fig4(),
+            id='plot', 
+            style={'maxWidth': '1350px'}, 
+            config={'displayModeBar': False}),
+        html.Br(),
+        dbc.Col(width=1),
+            ]),
+    dbc.Row([
+        dbc.Col(width=1),
+        html.H4('This is where we will add figure summaries focusing on what stood out.'),
+        html.Br(),
+        dbc.Col(width=1),
+        ], className="mb-5", style={'maxWidth': '1350px'}),
+    dbc.Row([
+        dbc.Col(width=1),
+        dcc.Graph(
+            figure = FC_fig5(),
+            id='plot', 
+            style={'maxWidth': '1350px'}, 
+            config={'displayModeBar': False}),
+        html.Br(),
+        dbc.Col(width=1),
+            ]),
+    dbc.Row([
+        dbc.Col(width=1),
+        html.H4('This is where we will add figure summaries focusing on what stood out.'),
+        html.Br(),
+        dbc.Col(width=1),
+        ], className="mb-5", style={'maxWidth': '1350px'}),
+    dbc.Row([
+        dbc.Col(width=1),
+        dcc.Graph(
+            figure = FC_fig6(),
+            id='plot', 
+            style={'maxWidth': '1350px'}, 
+            config={'displayModeBar': False}),
+        html.Br(),
+        dbc.Col(width=1),
+            ]),
+    dbc.Row([
+        dbc.Col(width=1),
+        html.H4('This is where we will add figure summaries focusing on what stood out.'),
+        html.Br(),
+        dbc.Col(width=1),
+        ], className="mb-5", style={'maxWidth': '1350px'}),
+    dbc.Row([
+        dbc.Col(width=1),
+        dcc.Graph(
+            figure = FC_fig7(),
+            id='plot', 
+            style={'maxWidth': '1350px'}, 
+            config={'displayModeBar': False}),
+        html.Br(),
+        dbc.Col(width=1),
+            ]),
+    dbc.Row([
+        dbc.Col(width=1),
+        html.H4('This is where we will add figure summaries focusing on what stood out.'),
+        html.Br(),
+        dbc.Col(width=1),
+        ], className="mb-5", style={'maxWidth': '1350px'}),
+    dbc.Row([
+        dbc.Col(width=1),
+        dcc.Graph(
+            figure = FC_fig8(),
+            id='plot', 
+            style={'maxWidth': '1350px'}, 
+            config={'displayModeBar': False}),
+        html.Br(),
+        dbc.Col(width=1),
+            ]),
+    dbc.Row([
+        dbc.Col(width=1),
+        html.H4('This is where we will add figure summaries focusing on what stood out.'),
+        html.Br(),
+        dbc.Col(width=1),
+        ], className="mb-5", style={'maxWidth': '1350px'}),
+    dbc.Row([
+        dbc.Col(width=1),
+        dcc.Graph(
+            figure = FC_fig9(),
+            id='plot', 
+            style={'maxWidth': '1350px'}, 
+            config={'displayModeBar': False}),
+        html.Br(),
+        dbc.Col(width=1),
+            ]),
+    dbc.Row([
+        dbc.Col(width=1),
+        html.H4('This is where we will add figure summaries focusing on what stood out.'),
+        html.Br(),
+        dbc.Col(width=1),
+        ], className="mb-5", style={'maxWidth': '1350px'}),
+    dbc.Row([
+        dbc.Col(width=1),
+        dcc.Graph(
+            figure = FC_fig10(),
+            id='plot', 
+            style={'maxWidth': '1350px'}, 
+            config={'displayModeBar': False}),
+        html.Br(),
+        dbc.Col(width=1),
+            ]),
+    dbc.Row([
+        dbc.Col(width=1),
+        html.H4('This is where we will add figure summaries focusing on what stood out.'),
+        html.Br(),
+        dbc.Col(width=1),
+        ], className="mb-5", style={'maxWidth': '1350px'}),
+    dbc.Row([
+        dbc.Col(width=1),
+        dcc.Graph(
+            figure = FC_fig11(),
+            id='plot', 
+            style={'maxWidth': '1350px'}, 
+            config={'displayModeBar': False}),
+        html.Br(),
+        dbc.Col(width=1),
+            ]),
+    dbc.Row([
+        dbc.Col(width=1),
+        html.H4('This is where we will add figure summaries focusing on what stood out.'),
+        html.Br(),
+        dbc.Col(width=1),
+        ], className="mb-5", style={'maxWidth': '1350px'}),
+
     ])            
-])
             
 wordcloud = dbc.Jumbotron([
     dbc.Container([
