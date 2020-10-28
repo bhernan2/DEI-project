@@ -36,28 +36,28 @@ title = dbc.Jumbotron([
         html.Img(src='assets/foundcom-logo-ffce54.png')
         ], style={'textAlign': 'center'}),
     dbc.Container([
-            html.H1("FC DEI Survey Dashboard", className='display-3 text-center', style={'maxWidth': '1400px'}),
+            html.H1("FC DEI Survey Dashboard", className='display-3 text-center'),
             html.Br(),
-            html.H6("Contributors: DeShan Allison, Bianca A. Hernandez, Michelle Le, Kenya Lewis, Stephanie Perrone, Julie Roebuck, Ebonie Trice, Mary Young and Tiffany Nicely-Williams", className='lead text-center', style={'maxWidth': '1400px'}),
+            html.H6("Contributors: DeShan Allison, Bianca A. Hernandez, Michelle Le, Kenya Lewis, Stephanie Perrone, Julie Roebuck, Ebonie Trice, Mary Young and Tiffany Nicely-Williams", className='lead text-center', ),
             html.Br(),
             html.Br(),
         dbc.Row([
             html.Br(),
             html.Br(),
-            html.H5("The Diversity, Equity and Inclusion (DEI) Survey team created a survey to gather more information about your experience working at Foundation Communities. We researched two surveys: 1) Gallup Diversity and Inclusion and 2) Building Movement Project Race to Lead. We decided to merge questions from both surveys to create the FC DEI Survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.", className='text-justify', style={'maxWidth': '1400px'}),                                                                                                                                              
+            html.H5("The Diversity, Equity and Inclusion (DEI) Survey team created a survey to gather more information about your experience working at Foundation Communities. We researched two surveys: 1) Gallup Diversity and Inclusion and 2) Building Movement Project Race to Lead. We decided to merge questions from both surveys to create the FC DEI Survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.", className='text-justify', ),                                                                                                                                              
             
             ]),
-        ], style={'maxWidth': '1400px'}, fluid=True), 
+        ], fluid=True), 
     ])     
 
 about = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
                 
-                html.H5("The subcommittee gathered on __/__/__ to develop the all staff survey, it was relased on __/__/__ and participants had X # of days to complete it. Survey participants were asked to rank individual experience questions from 1 to 5 (1 = strongly disagree, 2 = disagree, 3 = neutral, 4 = agree, 5 = strongly agree). The team investigated 1) how the distribution of demographics compared to the individual expierence question responses, 2) to see if there were any correlations between individual experience question responses and 3) designed a wordcloud to analyze an open ended question.", className='text-justify', style={'maxWidth': '1400px'}),  
+                html.H5("The subcommittee gathered on __/__/__ to develop the all staff survey, it was relased on __/__/__ and participants had X # of days to complete it. Survey participants were asked to rank individual experience questions from 1 to 5 (1 = strongly disagree, 2 = disagree, 3 = neutral, 4 = agree, 5 = strongly agree). The team investigated 1) how the distribution of demographics compared to the individual expierence question responses, 2) to see if there were any correlations between individual experience question responses and 3) designed a wordcloud to analyze an open ended question.", className='text-justify', ),  
                       
             ]),
-        ], style={'maxWidth': '1400px'}, fluid=True),
+        ], fluid=True),
         #dbc.Container([
             #html.Ul(id='my-list', children=[html.Li(i) for i in dei_list], className= 'mb-10 lead text-left'),  
             #])
@@ -141,8 +141,8 @@ descriptive_stats = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
         dbc.Row([
-            html.H3("Interesting findings", className='text-left', style={'maxWidth': '1400px'})
-        ], style={'maxWidth': '1400px'}), 
+            html.H3("Interesting findings", className='text-left', )
+        ], ), 
         html.Br(),
         dbc.Row([  
             dbc.Col(
@@ -153,7 +153,7 @@ descriptive_stats = dbc.Jumbotron([
                 dbc.Card(card_content3, color="success", inverse=True)),
             dbc.Col(
                 dbc.Card(card_content4, color="dark", inverse=True)),
-            ], className="mb-5", style={'maxWidth': '1400px'}),        
+            ], className="mb-5", ),        
         dbc.Row([
             dbc.Col(
                 dbc.Card(card_content5, color="warning", inverse=True)),
@@ -163,15 +163,15 @@ descriptive_stats = dbc.Jumbotron([
                 dbc.Card(card_content7, color="info", inverse=True)),
             dbc.Col(
                 dbc.Card(card_content8, color="light", inverse=True)),
-            ], className="mb-5", style={'maxWidth': '1400px'}),
-    ], style={'maxWidth': '1400px'}, fluid=True),
+            ], className="mb-5", ),
+    ], fluid=True),
 ])
 #figures row
 demo_row = html.Div([
     html.Br(),
     dbc.Row([
         
-        html.H3("Personal experience X demographics", className='lead text-center', style={'maxWidth': '1400px'}), 
+        html.H3("Personal experience X demographics", className='lead text-center', ), 
           
             ]),
     html.Br()
@@ -211,155 +211,156 @@ dropdown_row = html.Div([
 #output row
 output_row=dbc.Jumbotron([
     dbc.Container([
-    dbc.Row([
-        html.Br(),
-        html.H3("Individual experience X demographics", className='text-left', style={'maxWidth': '1400px'}),
-        html.Br(),
-        ], style={'maxWidth': '1400px'}),
-    html.Br(), 
-    dbc.Container([
         dbc.Row([
-            dcc.Graph(
+            html.Br(),
+            html.H3("Individual experience X demographics", className='text-left', ),
+            html.Br(),
+        ]),
+    html.Br(), 
+        dbc.Row([
+            dbc.Col([
+                dcc.Graph(
                 figure = FC_fig1(),
                 id='plot1', 
-                style={'Align':'center'}, 
                 config={'displayModeBar': False}),
+            ]),
+            dbc.Col([
+                html.H4('This is where we will add figure summaries focusing on what stood out.')
+                ]),
             html.Br(),
-            html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            html.Br(),
-        ], className="mb-5", style={'maxWidth': '1400px'})
-        ], fluid=True), 
-    html.Br(), 
-    dbc.Container([
+        ],className='text-justify'), 
+        html.Br(), 
         dbc.Row([
-            dcc.Graph(
+            dbc.Col([
+                dcc.Graph(
                 figure = FC_fig2(),
                 id='plot2', 
-                style={'maxWidth': '1400px'}, 
                 config={'displayModeBar': False}),
+            ]),
+            dbc.Col([
+                html.H4('This is where we will add figure summaries focusing on what stood out.')
+                ]),
             html.Br(),
-            html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            html.Br(),
-        ], className="mb-5", style={'maxWidth': '1400px'})
-        ], fluid=True),
-    html.Br(), 
-    dbc.Container([
+        ],className='text-justify'), 
+        html.Br(), 
         dbc.Row([
-            dcc.Graph(
+            dbc.Col([
+                dcc.Graph(
                 figure = FC_fig3(),
                 id='plot3', 
-                style={'maxWidth': '1400px'}, 
                 config={'displayModeBar': False}),
+            ]),
+            dbc.Col([
+                html.H4('This is where we will add figure summaries focusing on what stood out.')
+                ]),
             html.Br(),
-            html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            html.Br(),
-        ], className="mb-5", style={'maxWidth': '1400px'})
-        ], fluid=True),
-    html.Br(), 
-    dbc.Container([
+        ],className='text-justify'), 
+        html.Br(),
         dbc.Row([
-            dcc.Graph(
+            dbc.Col([
+                dcc.Graph(
                 figure = FC_fig4(),
                 id='plot4', 
-                style={'maxWidth': '1400px'}, 
                 config={'displayModeBar': False}),
+            ]),
+            dbc.Col([
+                html.H4('This is where we will add figure summaries focusing on what stood out.')
+                ]),
             html.Br(),
-            html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            html.Br(),
-        ], className="mb-5", style={'maxWidth': '1400px'})
-        ], fluid=True),
-    html.Br(), 
-    dbc.Container([
+        ],className='text-justify'), 
+        html.Br(),
         dbc.Row([
-            dcc.Graph(
+            dbc.Col([
+                dcc.Graph(
                 figure = FC_fig5(),
                 id='plot5', 
-                style={'maxWidth': '1400px'}, 
                 config={'displayModeBar': False}),
+            ]),
+            dbc.Col([
+                html.H4('This is where we will add figure summaries focusing on what stood out.')
+                ]),
             html.Br(),
-            html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            html.Br(),
-        ], className="mb-5", style={'maxWidth': '1400px'})
-        ], fluid=True),
-    html.Br(), 
-    dbc.Container([
+        ],className='text-justify'), 
+        html.Br(),
         dbc.Row([
-            dcc.Graph(
+            dbc.Col([
+                dcc.Graph(
                 figure = FC_fig6(),
                 id='plot6', 
-                style={'maxWidth': '1400px'}, 
                 config={'displayModeBar': False}),
+            ]),
+            dbc.Col([
+                html.H4('This is where we will add figure summaries focusing on what stood out.')
+                ]),
             html.Br(),
-            html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            html.Br(),
-        ], className="mb-5", style={'maxWidth': '1400px'})
-        ], fluid=True),
-        html.Br(), 
-    dbc.Container([
+        ],className='text-justify'), 
+        html.Br(),
         dbc.Row([
-            dcc.Graph(
+            dbc.Col([
+                dcc.Graph(
                 figure = FC_fig7(),
                 id='plot7', 
-                style={'maxWidth': '1400px'}, 
                 config={'displayModeBar': False}),
+            ]),
+            dbc.Col([
+                html.H4('This is where we will add figure summaries focusing on what stood out.')
+                ]),
             html.Br(),
-            html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            html.Br(),
-        ], className="mb-5", style={'maxWidth': '1400px'})
-        ], fluid=True),
-    html.Br(), 
-    dbc.Container([
+        ],className='text-justify'), 
+        html.Br(),  
         dbc.Row([
-            dcc.Graph(
+            dbc.Col([
+                dcc.Graph(
                 figure = FC_fig8(),
                 id='plot8', 
-                style={'maxWidth': '1400px'}, 
                 config={'displayModeBar': False}),
+            ]),
+            dbc.Col([
+                html.H4('This is where we will add figure summaries focusing on what stood out.')
+                ]),
             html.Br(),
-            html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            html.Br(),
-        ], className="mb-5", style={'maxWidth': '1400px'})
-        ], fluid=True),
-    html.Br(), 
-    dbc.Container([
+        ],className='text-justify'), 
+        html.Br(),
         dbc.Row([
-            dcc.Graph(
+            dbc.Col([
+                dcc.Graph(
                 figure = FC_fig9(),
                 id='plot9', 
-                style={'maxWidth': '1400px'}, 
                 config={'displayModeBar': False}),
+            ]),
+            dbc.Col([
+                html.H4('This is where we will add figure summaries focusing on what stood out.')
+                ]),
             html.Br(),
-            html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            html.Br(),
-        ], className="mb-5", style={'maxWidth': '1400px'})
-        ], fluid=True),
-    html.Br(), 
-    dbc.Container([
+        ],className='text-justify'), 
+        html.Br(), 
         dbc.Row([
-            dcc.Graph(
+            dbc.Col([
+                dcc.Graph(
                 figure = FC_fig10(),
                 id='plot10', 
-                style={'maxWidth': '1400px'}, 
                 config={'displayModeBar': False}),
+            ]),
+            dbc.Col([
+                html.H4('This is where we will add figure summaries focusing on what stood out.')
+                ]),
             html.Br(),
-            html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            html.Br(),
-        ], className="mb-5", style={'maxWidth': '1400px'})
-        ], fluid=True),
-    html.Br(), 
-    dbc.Container([
+        ],className='text-justify'), 
+        html.Br(),
         dbc.Row([
-            dcc.Graph(
+            dbc.Col([
+                dcc.Graph(
                 figure = FC_fig11(),
                 id='plot11', 
-                style={'maxWidth': '1400px'}, 
                 config={'displayModeBar': False}),
+            ]),
+            dbc.Col([
+                html.H4('This is where we will add figure summaries focusing on what stood out.')
+                ]),
             html.Br(),
-            html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            html.Br(),
-        ], className="mb-5", style={'maxWidth': '1400px'})
-        ], fluid=True),
-    ], style={'maxWidth': '1400px'}, fluid=True), 
+        ],className='text-justify'), 
+        html.Br(),      
+    ], fluid=True), 
 ])            
             
 wordcloud = dbc.Jumbotron([
