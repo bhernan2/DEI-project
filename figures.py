@@ -130,8 +130,8 @@ def FC_fig1():
                 )
         ]),
         barmode='stack',
-        width=1200, 
-        height=500,
+        width=900, 
+        height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
     
@@ -267,8 +267,8 @@ def FC_fig2():
                 )
         ]),
         barmode='stack',
-        width=1200, 
-        height=500,
+        width=900, 
+        height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
     
@@ -407,8 +407,8 @@ def FC_fig3():
                 )
         ]),
         barmode='stack',
-        width=1200, 
-        height=500,
+        width=900, 
+        height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -550,8 +550,8 @@ def FC_fig4():
                 )
         ]),
         barmode='stack',
-        width=1200, 
-        height=500,
+        width=900, 
+        height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -686,8 +686,8 @@ def FC_fig5():
                 )
         ]),
         barmode='stack',
-        width=1200, 
-        height=500,
+        width=900, 
+        height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -819,8 +819,8 @@ def FC_fig6():
                 )
         ]),
         barmode='stack',
-        width=1200, 
-        height=500,
+        width=900, 
+        height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -952,8 +952,8 @@ def FC_fig7():
                 )
         ]),
         barmode='stack',
-        width=1200, 
-        height=500,
+        width=900, 
+        height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -1085,8 +1085,8 @@ def FC_fig8():
                 )
         ]),
         barmode='stack',
-        width=1200, 
-        height=500,
+        width=900, 
+        height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -1218,8 +1218,8 @@ def FC_fig9():
                 )
         ]),
         barmode='stack',
-        width=1200, 
-        height=500,
+        width=900, 
+        height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -1351,8 +1351,8 @@ def FC_fig10():
                 )
         ]),
         barmode='stack',
-        width=1200, 
-        height=500,
+        width=900, 
+        height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -1484,8 +1484,8 @@ def FC_fig11():
                 )
         ]),
         barmode='stack',
-        width=1200, 
-        height=500,
+        width=900, 
+        height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
