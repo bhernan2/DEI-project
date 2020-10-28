@@ -5,13 +5,13 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 import sys
 
-from page import DEI_title, FC_demo_row, FC_output,  about_, FC_stats #FC_dropdown_row
+from page import DEI_title, FC_output,  about_, FC_stats #FC_dropdown_row, FC_demo_row
 
 
 dei_title = DEI_title()
 dei_stats = FC_stats()
 dei_about = about_()
-dei_demo = FC_demo_row()
+#dei_demo = FC_demo_row()
 #dei_dropdown = FC_dropdown_row()
 dei_output = FC_output()
 
@@ -22,7 +22,7 @@ def Dashboard():
     dei_title,
     dei_stats,
     dei_about,
-    dei_demo,
+    #dei_demo,
     #dei_dropdown,
     dei_output,
     #dei_wordcloud
@@ -31,7 +31,7 @@ def Dashboard():
 
 #to test if running uncomment below: 
 
-app = dash.Dash(__name__, external_stylesheets = [dbc.themes.SUPERHERO])
+app = dash.Dash(__name__, meta_tags = [{"name":"viewport", "content":"width=device-width, initial-scale=1"}], external_stylesheets = [dbc.themes.SUPERHERO])
 
 app.layout = Dashboard()
 server = app.server
