@@ -236,10 +236,10 @@ output_row=dbc.Jumbotron([
                 figure = FC_fig2(),
                 id='plot2', 
                 config={'displayModeBar': False}),
-            ]),
+            ],width=6, style={"display": "block", "width": "100%"}),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ], width=3),
+                ], width=6),
             html.Br(),
         ],className='text-left'), 
         html.Br(), 
@@ -249,10 +249,10 @@ output_row=dbc.Jumbotron([
                 figure = FC_fig3(),
                 id='plot3', 
                 config={'displayModeBar': False}),
-            ]),
+            ],width=6, style={"display": "block", "width": "100%"}),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ], width=3),
+                ], width=6),
             html.Br(),
         ],className='text-left'), 
         html.Br(),
@@ -262,10 +262,10 @@ output_row=dbc.Jumbotron([
                 figure = FC_fig4(),
                 id='plot4', 
                 config={'displayModeBar': False}),
-            ]),
+            ],width=6, style={"display": "block", "width": "100%"}),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ], width=3),
+                ], width=6),
             html.Br(),
         ],className='text-left'), 
         html.Br(),
@@ -275,10 +275,10 @@ output_row=dbc.Jumbotron([
                 figure = FC_fig5(),
                 id='plot5', 
                 config={'displayModeBar': False}),
-            ]),
+            ],width=6, style={"display": "block", "width": "100%"}),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ], width=3),
+                ], width=6),
             html.Br(),
         ],className='text-left'), 
         html.Br(),
@@ -288,10 +288,10 @@ output_row=dbc.Jumbotron([
                 figure = FC_fig6(),
                 id='plot6', 
                 config={'displayModeBar': False}),
-            ]),
+            ],width=6, style={"display": "block", "width": "100%"}),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ], width=3),
+                ], width=6),
             html.Br(),
         ],className='text-left'), 
         html.Br(),
@@ -301,10 +301,10 @@ output_row=dbc.Jumbotron([
                 figure = FC_fig7(),
                 id='plot7', 
                 config={'displayModeBar': False}),
-            ]),
+            ],width=6, style={"display": "block", "width": "100%"}),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ], width=3),
+                ], width=6),
             html.Br(),
         ],className='text-left'), 
         html.Br(),  
@@ -314,10 +314,10 @@ output_row=dbc.Jumbotron([
                 figure = FC_fig8(),
                 id='plot8', 
                 config={'displayModeBar': False}),
-            ]),
+            ],width=6, style={"display": "block", "width": "100%"}),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ], width=3),
+                ], width=6),
             html.Br(),
         ],className='text-left'), 
         html.Br(),
@@ -327,10 +327,10 @@ output_row=dbc.Jumbotron([
                 figure = FC_fig9(),
                 id='plot9', 
                 config={'displayModeBar': False}),
-            ]),
+            ],width=6, style={"display": "block", "width": "100%"}),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ], width=3),
+                ], width=6),
             html.Br(),
         ],className='text-left'), 
         html.Br(), 
@@ -340,10 +340,10 @@ output_row=dbc.Jumbotron([
                 figure = FC_fig10(),
                 id='plot10', 
                 config={'displayModeBar': False}),
-            ]),
+            ],width=6, style={"display": "block", "width": "100%"}),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ], width=3),
+                ], width=6),
             html.Br(),
         ],className='text-left'), 
         html.Br(),
@@ -353,10 +353,10 @@ output_row=dbc.Jumbotron([
                 figure = FC_fig11(),
                 id='plot11', 
                 config={'displayModeBar': False}),
-            ]),
+            ],width=6, style={"display": "block", "width": "100%"}),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ], width=3),
+                ], width=6),
             html.Br(),
         ],className='text-left'), 
         html.Br(),      
