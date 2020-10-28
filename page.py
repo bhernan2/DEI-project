@@ -231,8 +231,12 @@ output_row=html.Div([
                         config={'displayModeBar': False}),
                     html.Br(),
                     dbc.Col(),
-                    html.H4('This is where we will add figure summaries focusing on what stood out.'), 
-                    ], className="mb-5", style={'maxWidth': '1350px', 'textAlign': 'right'}),
+                ]),
+                dbc.Row([
+                    dbc.Col(width=1),
+                    html.H4('This is where we will add figure summaries focusing on what stood out.'),
+                    dbc.Col(width=1), 
+                    ], className="mb-5", style={'maxWidth': '1350px'}),
                 html.Br(),
                 dcc.Graph(
                     figure = FC_fig2(),
