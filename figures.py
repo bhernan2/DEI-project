@@ -84,6 +84,7 @@ def FC_fig1():
 
     #defining layout
     layout=go.Layout(
+        autosize=True,
         title=dict(
             text='At work, I am treated with respect.',
             x=0.5,
@@ -130,8 +131,8 @@ def FC_fig1():
                 )
         ]),
         barmode='stack',
-        width=850, 
-        height=400,
+        width=1020, 
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
     
