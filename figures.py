@@ -125,15 +125,15 @@ def FC_fig1():
             yanchor='bottom',
             direction='left',
             pad=dict(
-                l=10,
-                r=10,
-                t=10,
-                b=10)
+                l=20,
+                r=20,
+                t=20,
+                b=20)
                 )
         ]),
         barmode='stack',
-        width=900, 
-        height=400,
+        width=1000, 
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
     
@@ -1506,7 +1506,7 @@ def FC_fig11():
                 )
         ]),
         barmode='stack',
-        width=900, 
+        width=1000, 
         height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
