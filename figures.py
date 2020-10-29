@@ -543,6 +543,7 @@ def FC_fig4():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
+            showactive=True,
             x = 0.15,
             y = -0.5,
             type = 'buttons', 

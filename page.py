@@ -226,7 +226,7 @@ output_row=dbc.Jumbotron([
                             'displayModeBar': False, 
                             'responsive': True, 
                             #'autosizable':True,
-                            #'fillFrame':True 
+                            'fillFrame':True 
                             },
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
                         ),
@@ -234,13 +234,13 @@ output_row=dbc.Jumbotron([
             ],
             align="center", 
             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
+            width={"sm": 12, "md":8},
             ),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.'),
             ],
             align="center", 
-            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
+            width={"sm": 12, "md":4},
             ),
         
         html.Br(),
