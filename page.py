@@ -228,7 +228,7 @@ output_row=dbc.Jumbotron([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
                 ], width=6),
             html.Br(),
-        ],className='text-left'), 
+        ],className="mb-5",), 
         html.Br(), 
         dbc.Row([
             dbc.Col([
