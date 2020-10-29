@@ -229,39 +229,53 @@ output_row=dbc.Jumbotron([
                             'fillFrame':True 
                             }
                         )    
-            ], width={"sm": 12, "md": {"size": 8, "order": 4}, "lg": 6}),
-            dbc.Col(),
+            ], width={"sm": 12, "md": {"size": 8, "order": 2}, "lg": 4}),
+            dbc.Col(width=1),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-            ], width={"sm": 12, "md": {"size": 4, "order": 2}, "lg": 6}),
+            ], className='text-left', width={"sm": 12, "md": {"size": 4, "order": 2}, "lg": 6}),
             html.Br(),
         ]), 
         html.Br(), 
-        dbc.Row([
+         dbc.Row([
             dbc.Col([
                 dcc.Graph(
-                figure = FC_fig2(),
-                id='plot2', 
-                config={'displayModeBar': False}),
-            ],md=8, style={"display": "block", "width": "100%"}),
+                    figure = FC_fig2(),
+                    id='plot2', 
+                    config={
+                            'displayModeBar': False, 
+                            'responsive': True, 
+                            'autosizable':True,
+                            'fillFrame':True 
+                            }
+                        )    
+            ], width={"sm": 12, "md": {"size": 8, "order": 2}, "lg": 4}),
+            dbc.Col(width=1),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ],md=4),
+            ], className='text-left', width={"sm": 12, "md": {"size": 4, "order": 2}, "lg": 6}),
             html.Br(),
-        ],className='text-left'), 
+        ]),  
         html.Br(), 
-        dbc.Row([
+         dbc.Row([
             dbc.Col([
                 dcc.Graph(
-                figure = FC_fig3(),
-                id='plot3', 
-                config={'displayModeBar': False}),
-            ],md=8),
+                    figure = FC_fig3(),
+                    id='plot3', 
+                    config={
+                            'displayModeBar': False, 
+                            'responsive': True, 
+                            'autosizable':True,
+                            'fillFrame':True 
+                            }
+                        )    
+            ], width={"sm": 12, "md": {"size": 8, "order": 2}, "lg": 4}),
+            dbc.Col(width=1),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ],md=4),
+            ], className='text-left', width={"sm": 12, "md": {"size": 4, "order": 2}, "lg": 6}),
             html.Br(),
-        ],className='text-left'), 
+        ]), 
         html.Br(),
         dbc.Row([
             dbc.Col([
