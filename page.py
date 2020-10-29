@@ -234,13 +234,13 @@ output_row=dbc.Jumbotron([
             ],
             align="center", 
             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-            width={"sm": 12, "md":8},
+            width={"sm": 12, "md":8, "lg":5},
             ),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.'),
             ],
             align="center", 
-            width={"sm": 12, "md":4},
+            width={"sm": 12, "md":4, "lg":2},
             ),
         
         html.Br(),
@@ -526,7 +526,7 @@ output_row=dbc.Jumbotron([
             html.Br(),
             ],className='text-left'), 
         html.Br(),      
-    ], fluid=True), 
+    ]), 
 ])            
             
 wordcloud = dbc.Jumbotron([
