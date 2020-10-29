@@ -262,7 +262,7 @@ output_row=dbc.Jumbotron([
                 figure = FC_fig4(),
                 id='plot4', 
                 config={'displayModeBar': False}),
-            ],md=8}),
+            ],md=8),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
                 ],md=4),
