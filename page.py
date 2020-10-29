@@ -219,10 +219,14 @@ output_row=dbc.Jumbotron([
     html.Br(), 
         dbc.Row([
             dbc.Col([
-                dcc.Graph(
-                figure = FC_fig1(),
-                id='plot1', 
-                config={'displayModeBar': False}), 
+                dbc.Card([
+                    dbc.CardBody(
+                        dcc.Graph(
+                            figure = FC_fig1(),
+                            id='plot1', 
+                            config={'displayModeBar': False}),      
+                    )
+                ]),
             ], md=8),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
