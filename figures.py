@@ -128,12 +128,12 @@ def FC_fig1():
                 l=20,
                 r=20,
                 t=20,
-                b=20)
+                b=10)
                 )
         ]),
         barmode='stack',
-        width=1000, 
-        height=500,
+        width=900, 
+        height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
     
