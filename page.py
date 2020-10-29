@@ -229,7 +229,7 @@ output_row=dbc.Jumbotron([
                             'fillFrame':True 
                             }
                         )    
-            ], className='mb-5', width={"sm": 12, "md": {"size": 8, "order": 2}, "lg": 6}),
+            ], className='mb-5', width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 6}),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
             ], className='text-left', width={"sm": 12, "md": {"size": 4, "order": 2}, "lg": 2}),
