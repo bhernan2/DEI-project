@@ -243,7 +243,7 @@ output_row=dbc.Jumbotron([
             ),
         
         html.Br(),
-        ]), 
+        ],justify="center"), 
         html.Br(), 
          dbc.Row([
             dbc.Col([
