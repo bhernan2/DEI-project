@@ -231,21 +231,23 @@ output_row=dbc.Jumbotron([
                         ),
                                     
             ],
-            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}, 
-            className='mb-6', 
-            width={"sm": 12, "md": {"size": 6, "order": 1}, "lg": 4}
+            style={'width': '50%', 'display': 'inline-block', 'vertical-align': 'middle'}, 
+            className='mb-8', 
+            width={"sm": 12, "md": {"size": 6, "order": 1}}
             ),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.'),
-                html.Br(),
-                html.H4('Finding 1'),
-                html.H4('Finding 2'),
-                html.H4('Finding 3'),
-                html.H4('Finding 4'),
-
-            ], className='mb-6', width={"sm": 12, "md": {"size": 6, "order": 1, "offset":1}, "lg": 4}),
-            html.Br(),
-        ], align="start"), 
+                # html.Br(),
+                # html.H4('Finding 1'),
+                # html.H4('Finding 2'),
+                # html.H4('Finding 3'),
+                # html.H4('Finding 4'),
+            ], 
+            className='mb-4', 
+            width={"sm": 12, "md": {"size": 4, "order": 1}}),
+        
+        html.Br(),
+        ]), 
         html.Br(), 
          dbc.Row([
             dbc.Col([
