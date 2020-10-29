@@ -229,11 +229,11 @@ output_row=dbc.Jumbotron([
                             'fillFrame':True 
                             }
                         )    
-            ], width={"sm": 12, "md": {"size": 8, "order": 2}, "lg": 4}),
+            ], className='mb-5', width={"sm": 12, "md": {"size": 8, "order": 2}, "lg": 6}),
             dbc.Col(width=1),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-            ], className='text-left', width={"sm": 12, "md": {"size": 4, "order": 2}, "lg": 6}),
+            ], className='text-left', width={"sm": 12, "md": {"size": 4, "order": 2}, "lg": 2}),
             html.Br(),
         ]), 
         html.Br(), 
@@ -249,11 +249,11 @@ output_row=dbc.Jumbotron([
                             'fillFrame':True 
                             }
                         )    
-            ], width={"sm": 12, "md": {"size": 8, "order": 2}, "lg": 4}),
+            ], className='mb-5', width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 6}),
             dbc.Col(width=1),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-            ], className='text-left', width={"sm": 12, "md": {"size": 4, "order": 2}, "lg": 6}),
+            ], className='text-left', width={"sm": 12, "md": {"size": 4, "order": 2}, "lg": 2}),
             html.Br(),
         ]),  
         html.Br(), 
@@ -269,11 +269,11 @@ output_row=dbc.Jumbotron([
                             'fillFrame':True 
                             }
                         )    
-            ], width={"sm": 12, "md": {"size": 8, "order": 2}, "lg": 4}),
+            ], width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}),
             dbc.Col(width=1),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-            ], className='text-left', width={"sm": 12, "md": {"size": 4, "order": 2}, "lg": 6}),
+            ], className='text-left', width={"sm": 6, "md": {"size": 4, "order": 2}, "lg": 2}),
             html.Br(),
         ]), 
         html.Br(),
