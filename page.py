@@ -227,19 +227,19 @@ output_row=dbc.Jumbotron([
                             'responsive': True, 
                             #'autosizable':True,
                             #'fillFrame':True 
-                            }
+                            },
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
                         ),
                                     
             ],
-            align="center",
-            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},  
+            align="center",  
             width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},
             ),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.'),
             ],
             align="center", 
-            width={"sm": 12, "md": {"size": 4, "order":1, "offset":2}, "lg":4},
+            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
             ),
         
         html.Br(),
