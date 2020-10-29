@@ -264,9 +264,9 @@ def FC_fig2():
             yanchor='bottom',
             direction='left',
             pad=dict(
-                l=10,
-                r=10,
-                t=10,
+                l=20,
+                r=20,
+                t=20,
                 b=10)
                 )
         ]),
@@ -406,9 +406,9 @@ def FC_fig3():
             yanchor='bottom',
             direction='left',
             pad=dict(
-                l=10,
-                r=10,
-                t=10,
+                l=20,
+                r=20,
+                t=20,
                 b=10)
                 )
         ]),
@@ -551,9 +551,9 @@ def FC_fig4():
             yanchor='bottom',
             direction='left',
             pad=dict(
-                l=10,
-                r=10,
-                t=10,
+                l=20,
+                r=20,
+                t=20,
                 b=10)
                 )
         ]),
@@ -689,9 +689,9 @@ def FC_fig5():
             yanchor='bottom',
             direction='left',
             pad=dict(
-                l=10,
-                r=10,
-                t=10,
+                l=20,
+                r=20,
+                t=20,
                 b=10)
                 )
         ]),
@@ -824,9 +824,9 @@ def FC_fig6():
             yanchor='bottom',
             direction='left',
             pad=dict(
-                l=10,
-                r=10,
-                t=10,
+                l=20,
+                r=20,
+                t=20,
                 b=10)
                 )
         ]),
@@ -959,9 +959,9 @@ def FC_fig7():
             yanchor='bottom',
             direction='left',
             pad=dict(
-                l=10,
-                r=10,
-                t=10,
+                l=20,
+                r=20,
+                t=20,
                 b=10)
                 )
         ]),
@@ -1094,9 +1094,9 @@ def FC_fig8():
             yanchor='bottom',
             direction='left',
             pad=dict(
-                l=10,
-                r=10,
-                t=10,
+                l=20,
+                r=20,
+                t=20,
                 b=10)
                 )
         ]),
@@ -1229,9 +1229,9 @@ def FC_fig9():
             yanchor='bottom',
             direction='left',
             pad=dict(
-                l=10,
-                r=10,
-                t=10,
+                l=20,
+                r=20,
+                t=20,
                 b=10)
                 )
         ]),
@@ -1364,9 +1364,9 @@ def FC_fig10():
             yanchor='bottom',
             direction='left',
             pad=dict(
-                l=10,
-                r=10,
-                t=10,
+                l=20,
+                r=20,
+                t=20,
                 b=10)
                 )
         ]),
@@ -1499,14 +1499,14 @@ def FC_fig11():
             yanchor='bottom',
             direction='left',
             pad=dict(
-                l=10,
-                r=10,
-                t=10,
+                l=20,
+                r=20,
+                t=20,
                 b=10)
                 )
         ]),
         barmode='stack',
-        width=1000, 
+        width=900, 
         height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
