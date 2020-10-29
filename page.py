@@ -142,7 +142,7 @@ descriptive_stats = dbc.Jumbotron([
         html.Br(),
         dbc.Row([
             html.H3("Interesting findings", className='text-left', )
-        ], ), 
+        ]), 
         html.Br(),
         dbc.Row([  
             dbc.Col(
@@ -216,8 +216,9 @@ output_row=dbc.Jumbotron([
             html.H3("Individual experience X demographics", className='text-left', ),
             html.Br(),
         ]),
-    html.Br(), 
+        html.Br(), 
         dbc.Row([
+            dbc.Col(width=4),
             dbc.Col([
                 dcc.Graph(
                     figure = FC_fig1(),
@@ -226,27 +227,15 @@ output_row=dbc.Jumbotron([
                             'displayModeBar': False, 
                             'responsive': True, 
                             #'autosizable':True,
-                            'fillFrame':True 
+                            #'fillFrame':True 
                             },
-                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-                        ),
-                                    
-            ],
-            align="center", 
-            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-            width={"sm": 12, "md":8, "lg":5},
-            ),
-            dbc.Col([
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                 html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            ],
-            align="center", 
-            width={"sm": 12, "md":4, "lg":2},
-            ),
-        
-        html.Br(),
+            ]),
+            dbc.Col(width=4)
         ]), 
         html.Br(), 
-         dbc.Row([
+        dbc.Row([
              dbc.Col([
                 dcc.Graph(
                     figure = FC_fig2(),
