@@ -224,7 +224,7 @@ def FC_fig2():
 #defining layout
     layout=go.Layout(
         title=dict(
-            text='At work, I am treated with respect.',
+            text='At work, I feel comfortable being myself.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -366,7 +366,7 @@ def FC_fig3():
     #defining layout
     layout=go.Layout(
         title=dict(
-            text='At work, I am treated with respect.',
+            text='Employees in my organization are treated with respect and dignity.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -511,7 +511,7 @@ def FC_fig4():
      #defining layout
     layout=go.Layout(
         title=dict(
-            text='At work, I am treated with respect.',
+            text='Diversity and inclusiveness issues are openly discussed.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -649,9 +649,9 @@ def FC_fig5():
     #defining layout
     layout=go.Layout(
         title=dict(
-            text='At work, I am treated with respect.',
+            text='Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.',
             x=0.5,
-            y=0.95,
+            y=0.9,
             xanchor='center',
             yanchor= 'top',
             font=dict(
@@ -784,9 +784,9 @@ def FC_fig6():
      ]
     layout=go.Layout(
         title=dict(
-            text='At work, I am treated with respect.',
+            text='I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.',
             x=0.5,
-            y=0.95,
+            y=0.9,
             xanchor='center',
             yanchor= 'top',
             font=dict(
@@ -919,9 +919,9 @@ def FC_fig7():
      ]
     layout=go.Layout(
         title=dict(
-            text='At work, I am treated with respect.',
+            text='If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.',
             x=0.5,
-            y=0.95,
+            y=0.9,
             xanchor='center',
             yanchor= 'top',
             font=dict(
@@ -1054,7 +1054,7 @@ def FC_fig8():
      ]
     layout=go.Layout(
         title=dict(
-            text='At work, I am treated with respect.',
+            text='My organization treasures diverse opinions and ideas.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -1189,7 +1189,7 @@ def FC_fig9():
      ]
     layout=go.Layout(
         title=dict(
-            text='At work, I am treated with respect.',
+            text='My team members appreciate my contributions.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -1324,7 +1324,7 @@ def FC_fig10():
      ]
     layout=go.Layout(
         title=dict(
-            text='At work, I am treated with respect.',
+            text='My supervisor tries to understand my point of view.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -1459,7 +1459,7 @@ def FC_fig11():
      ]
     layout=go.Layout(
         title=dict(
-            text='At work, I am treated with respect.',
+            text='My workplace is committed to building the strengths of each employee.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -1498,6 +1498,7 @@ def FC_fig11():
             xanchor='left',
             yanchor='bottom',
             direction='left',
+            showactive=True,
             pad=dict(
                 l=20,
                 r=20,
@@ -1509,7 +1510,8 @@ def FC_fig11():
         width=900, 
         height=400,
         paper_bgcolor='#cdd3dc',
-        plot_bgcolor='#cdd3dc')
+        plot_bgcolor='#cdd3dc'
+        )
 
     #defining layout and plotting
     fig = go.Figure(data,layout)
