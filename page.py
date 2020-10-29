@@ -219,16 +219,16 @@ output_row=dbc.Jumbotron([
     html.Br(), 
         dbc.Row([
             dbc.Col([
-                        dcc.Graph(
-                            figure = FC_fig1(),
-                            id='plot1', 
-                            config={
-                                'displayModeBar': False, 
-                                'responsive': True, 
-                                'autosizable':True,
-                                'fillFrame':True 
-                                }
-                            )    
+                dcc.Graph(
+                    figure = FC_fig1(),
+                    id='plot1', 
+                    config={
+                            'displayModeBar': False, 
+                            'responsive': True, 
+                            'autosizable':True,
+                            'fillFrame':True 
+                            }
+                        )    
             ], width="auto"),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
