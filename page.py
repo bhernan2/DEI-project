@@ -229,10 +229,10 @@ output_row=dbc.Jumbotron([
                             'fillFrame':True 
                             }
                         )    
-            ], width=6),
+            ], width="auto"),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-            ], width=6),
+            ], width="auto"),
             html.Br(),
         ]), 
         html.Br(), 
