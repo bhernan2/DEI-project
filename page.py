@@ -232,8 +232,9 @@ output_row=dbc.Jumbotron([
                         ),
                                     
             ],
-            align="center",  
-            width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},
+            align="center", 
+            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
+            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
             ),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.'),
@@ -246,79 +247,115 @@ output_row=dbc.Jumbotron([
         ]), 
         html.Br(), 
          dbc.Row([
-            dbc.Col([
+             dbc.Col([
                 dcc.Graph(
                     figure = FC_fig2(),
-                    id='plot2',
-                    className ='mb-6', 
+                    id='plot2', 
                     config={
                             'displayModeBar': False, 
                             'responsive': True, 
-                            'autosizable':True,
-                            'fillFrame':True 
-                            }
-                        )    
-            ], 
-                align="center",
-                className='mb-6', 
-                width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}),
-            dbc.Col(width=1),
-            dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-            ], 
-                align="center",
-                className='mb-6', 
-                width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}
+                            #'autosizable':True,
+                            #'fillFrame':True 
+                            },
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
+                        ),
+                                    
+            ],
+            align="center", 
+            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
+            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
             ),
-            html.Br(),
+            dbc.Col([
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
+            ],
+            align="center", 
+            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
+            ),
+        html.Br(),
         ]),  
         html.Br(), 
          dbc.Row([
-            dbc.Col([
+             dbc.Col([
                 dcc.Graph(
                     figure = FC_fig3(),
                     id='plot3', 
                     config={
                             'displayModeBar': False, 
                             'responsive': True, 
-                            'autosizable':True,
-                            'fillFrame':True 
-                            }
-                        )    
-            ], 
-                className='mb-6',            
-                width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}),
-            dbc.Col(width=1),
+                            #'autosizable':True,
+                            #'fillFrame':True 
+                            },
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
+                        ),
+                                    
+            ],
+            align="center", 
+            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
+            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
+            ),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-            ], className='text-left', width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}),
-            html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
+            ],
+            align="center", 
+            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
+            ),
+        html.Br(),
         ]), 
         html.Br(),
         dbc.Row([
             dbc.Col([
                 dcc.Graph(
-                figure = FC_fig4(),
-                id='plot4', 
-                config={'displayModeBar': False}),
-            ],md=8),
+                    figure = FC_fig4(),
+                    id='plot4', 
+                    config={
+                            'displayModeBar': False, 
+                            'responsive': True, 
+                            #'autosizable':True,
+                            #'fillFrame':True 
+                            },
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
+                        ),
+                                    
+            ],
+            align="center", 
+            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
+            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
+            ),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ],md=4),
-            html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
+            ],
+            align="center", 
+            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
+            ),
+        html.Br(),
         ],className='text-left'), 
         html.Br(),
         dbc.Row([
-            dbc.Col([
+             dbc.Col([
                 dcc.Graph(
-                figure = FC_fig5(),
-                id='plot5', 
-                config={'displayModeBar': False}),
-            ],md=8),
+                    figure = FC_fig5(),
+                    id='plot5', 
+                    config={
+                            'displayModeBar': False, 
+                            'responsive': True, 
+                            #'autosizable':True,
+                            #'fillFrame':True 
+                            },
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
+                        ),
+                                    
+            ],
+            align="center", 
+            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
+            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
+            ),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ],md=4),
-            html.Br(),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
+            ],
+            align="center", 
+            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
+            ),
+        html.Br(),
         ],className='text-left'), 
         html.Br(),
         dbc.Row([
