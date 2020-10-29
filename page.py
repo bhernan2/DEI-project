@@ -223,10 +223,10 @@ output_row=dbc.Jumbotron([
                 figure = FC_fig1(),
                 id='plot1', 
                 config={'displayModeBar': False}), 
-            ], md=8, lg=6),
+            ], md=8),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ],md=4, lg=6),
+                ],md=4),
             html.Br(),
         ],className="mb-5",), 
         html.Br(), 
