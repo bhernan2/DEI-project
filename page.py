@@ -229,14 +229,19 @@ output_row=dbc.Jumbotron([
                             'fillFrame':True 
                             }
                         ),
-                   
-            ], width={"sm": 12, "md":8, "lg":12}),
+                                    
+            ], sm=12, md=6),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.') 
-            ], width={"sm": 12, "md":6, "lg": 4}),
+                html.H4('This is where we will add figure summaries focusing on what stood out.'),
+                html.Br(),
+                html.H4('Finding 1'),
+                html.H4('Finding 2'),
+                html.H4('Finding 3'),
+                html.H4('Finding 4'),
+
+            ], sm=12, md=6),
             html.Br(),
-            
-        ], align="center"), 
+        ], align="start"), 
         html.Br(), 
          dbc.Row([
             dbc.Col([
