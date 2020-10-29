@@ -231,20 +231,15 @@ output_row=dbc.Jumbotron([
                         ),
                                     
             ],
-            align="start",
+            align="center",
             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},  
-            width={"sm": 12, "md": {"size": 4, "order": 1}, "lg":4},
+            width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},
             ),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.'),
-                html.Br(),
-                html.H4('Finding 1'),
-                html.H4('Finding 2'),
-                html.H4('Finding 3'),
-                html.H4('Finding 4'),
             ],
-            align="end",  
-            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
+            align="center", 
+            width={"sm": 12, "md": {"size": 4, "order":1, "offset":2}, "lg":4},
             ),
         
         html.Br(),
@@ -254,7 +249,8 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 dcc.Graph(
                     figure = FC_fig2(),
-                    id='plot2', 
+                    id='plot2',
+                    className ='mb-6', 
                     config={
                             'displayModeBar': False, 
                             'responsive': True, 
@@ -263,14 +259,15 @@ output_row=dbc.Jumbotron([
                             }
                         )    
             ], 
-                className='mb-8', 
+                align="center",
+                className='mb-6', 
                 width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}),
             dbc.Col(width=1),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
             ], 
                 align="center",
-                className='mb-4', 
+                className='mb-6', 
                 width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}
             ),
             html.Br(),
@@ -288,11 +285,13 @@ output_row=dbc.Jumbotron([
                             'fillFrame':True 
                             }
                         )    
-            ], width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}),
+            ], 
+                className='mb-6',            
+                width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}),
             dbc.Col(width=1),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-            ], className='text-left', width={"sm": 12, "md": {"size": 5, "order": 1}, "lg": 2}),
+            ], className='text-left', width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}),
             html.Br(),
         ]), 
         html.Br(),
