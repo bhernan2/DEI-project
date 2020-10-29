@@ -218,6 +218,7 @@ output_row=dbc.Jumbotron([
         ]),
     html.Br(), 
         dbc.Row([
+            dbc.Col(width=1),
             dbc.Col([
                 dcc.Graph(
                     figure = FC_fig1(),
@@ -229,11 +230,14 @@ output_row=dbc.Jumbotron([
                             'fillFrame':True 
                             }
                         )    
-            ], className='mb-5', width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 6}),
+            ], className='mb-5', width={"sm": 12, "md":5, "lg": 4}),
+            dbc.Col(width=1),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-            ], className='text-left', width={"sm": 12, "md": {"size": 4, "order": 2}, "lg": 2}),
+            ], className='text-left', width={"sm": 12, "md":3, "lg": 2}),
+            dbc.Col(width=1),
             html.Br(),
+            
         ]), 
         html.Br(), 
          dbc.Row([
