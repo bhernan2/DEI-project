@@ -219,21 +219,22 @@ output_row=dbc.Jumbotron([
     html.Br(), 
         dbc.Row([
             dbc.Col([
-                dbc.Card([
-                    dbc.CardBody(
                         dcc.Graph(
                             figure = FC_fig1(),
                             id='plot1', 
-                            config={'displayModeBar': False}),
-                            style={"height": "50%", "width": "40%"}      
-                    )
-                ]),
-            ], md=6),
+                            config={
+                                'displayModeBar': False, 
+                                'responsive': True, 
+                                'autosizable':True,
+                                'fillFrame':True 
+                                }
+                            )    
+            ], width="auto"),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-                ], md=6),
+            ], width="auto"),
             html.Br(),
-        ],className="mb-5",), 
+        ]), 
         html.Br(), 
         dbc.Row([
             dbc.Col([
