@@ -225,12 +225,12 @@ output_row=dbc.Jumbotron([
                     config={
                             'displayModeBar': False, 
                             'responsive': True, 
-                            'autosizable':True,
-                            'fillFrame':True 
+                            #'autosizable':True,
+                            #'fillFrame':True 
                             }
                         ),
                                     
-            ], sm=12, md=6),
+            ], className='mb-6', width={"sm": 12, "md": {"size": 6, "order": 1}, "lg": 4}),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.'),
                 html.Br(),
@@ -239,7 +239,7 @@ output_row=dbc.Jumbotron([
                 html.H4('Finding 3'),
                 html.H4('Finding 4'),
 
-            ], sm=12, md=6),
+            ], className='mb-6', width={"sm": 12, "md": {"size": 6, "order": 1, "offset":1}, "lg": 4}),
             html.Br(),
         ], align="start"), 
         html.Br(), 
@@ -255,11 +255,11 @@ output_row=dbc.Jumbotron([
                             'fillFrame':True 
                             }
                         )    
-            ], className='mb-5', width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 6}),
+            ], className='mb-6', width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}),
             dbc.Col(width=1),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-            ], className='text-left', width={"sm": 12, "md": {"size": 4, "order": 2}, "lg": 2}),
+            ], className='mb-6', width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}),
             html.Br(),
         ]),  
         html.Br(), 
