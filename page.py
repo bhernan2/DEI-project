@@ -273,7 +273,7 @@ output_row=dbc.Jumbotron([
             dbc.Col(width=1),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
-            ], className='text-left', width={"sm": 6, "md": {"size": 4, "order": 2}, "lg": 2}),
+            ], className='text-left', width={"sm": 12, "md": {"size": 5, "order": 1}, "lg": 2}),
             html.Br(),
         ]), 
         html.Br(),
