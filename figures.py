@@ -84,7 +84,6 @@ def FC_fig1():
 
     #defining layout
     layout=go.Layout(
-        autosize=True,
         title=dict(
             text='At work, I am treated with respect.',
             x=0.5,
@@ -97,15 +96,17 @@ def FC_fig1():
             )
 
         ),
+        xaxis_title = "1=SD, 2=D, 3=N, 4=A, 5=SA",
+        yaxis_title = "count",
         margin=dict(
-            l=150,
-            r=150,
-            b=75,
+            l=75,
+            r=75,
+            b=100,
             t=75,
             pad=4
         ),
         font=dict(
-            size=16,
+            size=12,
             color='#000000',
         ), 
         legend=dict(
@@ -115,9 +116,9 @@ def FC_fig1():
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
-            active=3,
-            x = -0.1,
-            y = -0.3,
+            active=0,
+            x = 0.15,
+            y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
@@ -223,7 +224,7 @@ def FC_fig2():
 #defining layout
     layout=go.Layout(
         title=dict(
-            text='At work, I feel comfortable being myself.',
+            text='At work, I am treated with respect.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -234,15 +235,17 @@ def FC_fig2():
             )
 
         ),
+        xaxis_title = "1=SD, 2=D, 3=N, 4=A, 5=SA",
+        yaxis_title = "count",
         margin=dict(
-            l=150,
-            r=150,
-            b=75,
+            l=75,
+            r=75,
+            b=100,
             t=75,
             pad=4
         ),
         font=dict(
-            size=16,
+            size=12,
             color='#000000',
         ), 
         legend=dict(
@@ -252,9 +255,9 @@ def FC_fig2():
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
-            active=3,
-            x = 0.0,
-            y = -0.3,
+            active=0,
+            x = 0.15,
+            y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
@@ -363,7 +366,7 @@ def FC_fig3():
     #defining layout
     layout=go.Layout(
         title=dict(
-            text='Employees in my organization are treated with respect and dignity.',
+            text='At work, I am treated with respect.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -374,15 +377,17 @@ def FC_fig3():
             )
 
         ),
+        xaxis_title = "1=SD, 2=D, 3=N, 4=A, 5=SA",
+        yaxis_title = "count",
         margin=dict(
-            l=150,
-            r=150,
-            b=75,
+            l=75,
+            r=75,
+            b=100,
             t=75,
             pad=4
         ),
         font=dict(
-            size=16,
+            size=12,
             color='#000000',
         ), 
         legend=dict(
@@ -392,9 +397,9 @@ def FC_fig3():
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
-            active=3,
-            x = 0.0,
-            y = -0.3,
+            active=0,
+            x = 0.15,
+            y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
@@ -506,7 +511,7 @@ def FC_fig4():
      #defining layout
     layout=go.Layout(
         title=dict(
-            text='Diversity and inclusiveness issues are openly discussed.',
+            text='At work, I am treated with respect.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -517,15 +522,17 @@ def FC_fig4():
             )
 
         ),
+        xaxis_title = "1=SD, 2=D, 3=N, 4=A, 5=SA",
+        yaxis_title = "count",
         margin=dict(
-            l=150,
-            r=150,
-            b=75,
+            l=75,
+            r=75,
+            b=100,
             t=75,
             pad=4
         ),
         font=dict(
-            size=16,
+            size=12,
             color='#000000',
         ), 
         legend=dict(
@@ -535,9 +542,9 @@ def FC_fig4():
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
-            active=3,
-            x = 0.0,
-            y = -0.3,
+            active=0,
+            x = 0.15,
+            y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
@@ -642,7 +649,7 @@ def FC_fig5():
     #defining layout
     layout=go.Layout(
         title=dict(
-            text='Everyone at this organization is treated fairly regardless of ethnic background, <br>race, gender, age, disability, or other differences not related to job performance.',
+            text='At work, I am treated with respect.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -653,15 +660,17 @@ def FC_fig5():
             )
 
         ),
+        xaxis_title = "1=SD, 2=D, 3=N, 4=A, 5=SA",
+        yaxis_title = "count",
         margin=dict(
-            l=150,
-            r=150,
-            b=75,
+            l=75,
+            r=75,
+            b=100,
             t=75,
             pad=4
         ),
         font=dict(
-            size=16,
+            size=12,
             color='#000000',
         ), 
         legend=dict(
@@ -671,9 +680,9 @@ def FC_fig5():
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
-            active=3,
-            x = 0.0,
-            y = -0.3,
+            active=0,
+            x = 0.15,
+            y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
@@ -775,7 +784,7 @@ def FC_fig6():
      ]
     layout=go.Layout(
         title=dict(
-            text='I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.',
+            text='At work, I am treated with respect.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -786,15 +795,17 @@ def FC_fig6():
             )
 
         ),
+        xaxis_title = "1=SD, 2=D, 3=N, 4=A, 5=SA",
+        yaxis_title = "count",
         margin=dict(
-            l=150,
-            r=150,
-            b=75,
+            l=75,
+            r=75,
+            b=100,
             t=75,
             pad=4
         ),
         font=dict(
-            size=16,
+            size=12,
             color='#000000',
         ), 
         legend=dict(
@@ -804,9 +815,9 @@ def FC_fig6():
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
-            active=3,
-            x = 0.0,
-            y = -0.3,
+            active=0,
+            x = 0.15,
+            y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
@@ -908,7 +919,7 @@ def FC_fig7():
      ]
     layout=go.Layout(
         title=dict(
-            text='If I raised a concern about ethics and integrity, <br>I am confident my employer would do what is right.',
+            text='At work, I am treated with respect.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -919,15 +930,17 @@ def FC_fig7():
             )
 
         ),
+        xaxis_title = "1=SD, 2=D, 3=N, 4=A, 5=SA",
+        yaxis_title = "count",
         margin=dict(
-            l=150,
-            r=150,
-            b=75,
+            l=75,
+            r=75,
+            b=100,
             t=75,
             pad=4
         ),
         font=dict(
-            size=16,
+            size=12,
             color='#000000',
         ), 
         legend=dict(
@@ -937,9 +950,9 @@ def FC_fig7():
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
-            active=3,
-            x = 0.0,
-            y = -0.3,
+            active=0,
+            x = 0.15,
+            y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
@@ -1041,7 +1054,7 @@ def FC_fig8():
      ]
     layout=go.Layout(
         title=dict(
-            text='My organization treasures diverse opinions and ideas.',
+            text='At work, I am treated with respect.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -1052,15 +1065,17 @@ def FC_fig8():
             )
 
         ),
+        xaxis_title = "1=SD, 2=D, 3=N, 4=A, 5=SA",
+        yaxis_title = "count",
         margin=dict(
-            l=150,
-            r=150,
-            b=75,
+            l=75,
+            r=75,
+            b=100,
             t=75,
             pad=4
         ),
         font=dict(
-            size=16,
+            size=12,
             color='#000000',
         ), 
         legend=dict(
@@ -1070,9 +1085,9 @@ def FC_fig8():
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
-            active=3,
-            x = 0.0,
-            y = -0.3,
+            active=0,
+            x = 0.15,
+            y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
@@ -1174,7 +1189,7 @@ def FC_fig9():
      ]
     layout=go.Layout(
         title=dict(
-            text='My team members appreciate my contributions.',
+            text='At work, I am treated with respect.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -1185,15 +1200,17 @@ def FC_fig9():
             )
 
         ),
+        xaxis_title = "1=SD, 2=D, 3=N, 4=A, 5=SA",
+        yaxis_title = "count",
         margin=dict(
-            l=150,
-            r=150,
-            b=75,
+            l=75,
+            r=75,
+            b=100,
             t=75,
             pad=4
         ),
         font=dict(
-            size=16,
+            size=12,
             color='#000000',
         ), 
         legend=dict(
@@ -1203,9 +1220,9 @@ def FC_fig9():
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
-            active=3,
-            x = 0.0,
-            y = -0.3,
+            active=0,
+            x = 0.15,
+            y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
@@ -1307,7 +1324,7 @@ def FC_fig10():
      ]
     layout=go.Layout(
         title=dict(
-            text='My supervisor tries to understand my point of view.',
+            text='At work, I am treated with respect.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -1318,15 +1335,17 @@ def FC_fig10():
             )
 
         ),
+        xaxis_title = "1=SD, 2=D, 3=N, 4=A, 5=SA",
+        yaxis_title = "count",
         margin=dict(
-            l=150,
-            r=150,
-            b=75,
+            l=75,
+            r=75,
+            b=100,
             t=75,
             pad=4
         ),
         font=dict(
-            size=16,
+            size=12,
             color='#000000',
         ), 
         legend=dict(
@@ -1336,9 +1355,9 @@ def FC_fig10():
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
-            active=3,
-            x = 0.0,
-            y = -0.3,
+            active=0,
+            x = 0.15,
+            y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
@@ -1440,7 +1459,7 @@ def FC_fig11():
      ]
     layout=go.Layout(
         title=dict(
-            text='My workplace is committed to building the strengths of each employee.',
+            text='At work, I am treated with respect.',
             x=0.5,
             y=0.95,
             xanchor='center',
@@ -1451,15 +1470,17 @@ def FC_fig11():
             )
 
         ),
+        xaxis_title = "1=SD, 2=D, 3=N, 4=A, 5=SA",
+        yaxis_title = "count",
         margin=dict(
-            l=150,
-            r=150,
-            b=75,
+            l=75,
+            r=75,
+            b=100,
             t=75,
             pad=4
         ),
         font=dict(
-            size=16,
+            size=12,
             color='#000000',
         ), 
         legend=dict(
@@ -1469,9 +1490,9 @@ def FC_fig11():
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
-            active=3,
-            x = 0.0,
-            y = -0.3,
+            active=0,
+            x = 0.15,
+            y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
             xanchor='left',
