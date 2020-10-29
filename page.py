@@ -231,8 +231,7 @@ output_row=dbc.Jumbotron([
                         ),
                                     
             ],
-            style={'width': '50%', 'display': 'inline-block', 'vertical-align': 'middle'}, 
-            className='mb-8', 
+            style={'width': '50%', 'display': 'inline-block', 'vertical-align': 'middle'},  
             width={"sm": 12, "md": {"size": 6, "order": 1}}
             ),
             dbc.Col([
@@ -242,9 +241,10 @@ output_row=dbc.Jumbotron([
                 # html.H4('Finding 2'),
                 # html.H4('Finding 3'),
                 # html.H4('Finding 4'),
-            ], 
-            className='mb-4', 
-            width={"sm": 12, "md": {"size": 4, "order": 1}}),
+            ],
+            align="center",  
+            width={"sm": 12, "md": {"size": 4, "order": 1}},
+            ),
         
         html.Br(),
         ]), 
@@ -261,12 +261,15 @@ output_row=dbc.Jumbotron([
                             'fillFrame':True 
                             }
                         )    
-            ], className='mb-6', width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}),
+            ], 
+                className='mb-8', 
+                width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}),
             dbc.Col(width=1),
             dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.')
             ], 
-                className='mb-6', 
+                align="center",
+                className='mb-4', 
                 width={"sm": 12, "md": {"size": 6, "order": 2}, "lg": 4}
             ),
             html.Br(),
