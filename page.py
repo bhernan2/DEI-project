@@ -231,12 +231,12 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
+                html.H4('This is where we will add figure summary.'),
             ]),
         ],align="center"), 
         html.Br(), 
         dbc.Row([
-             dbc.Col([
+            dbc.Col([
                 dcc.Graph(
                     figure = FC_fig2(),
                     id='plot2', 
@@ -246,25 +246,15 @@ output_row=dbc.Jumbotron([
                             #'autosizable':True,
                             #'fillFrame':True 
                             },
-                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-                        ),
-                                    
-            ],
-            align="center", 
-            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
-            ),
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            ],
-            align="center", 
-            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
-            ),
-        html.Br(),
-        ]),  
+                html.H4('This is where we will add figure summary.'),
+            ]),
+        ],align="center"), 
         html.Br(), 
          dbc.Row([
-             dbc.Col([
+            dbc.Col([
                 dcc.Graph(
                     figure = FC_fig3(),
                     id='plot3', 
@@ -274,22 +264,12 @@ output_row=dbc.Jumbotron([
                             #'autosizable':True,
                             #'fillFrame':True 
                             },
-                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-                        ),
-                                    
-            ],
-            align="center", 
-            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
-            ),
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            ],
-            align="center", 
-            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
-            ),
-        html.Br(),
-        ]), 
+                html.H4('This is where we will add figure summary.'),
+            ]),
+        ],align="center"), 
         html.Br(),
         dbc.Row([
             dbc.Col([
@@ -302,25 +282,15 @@ output_row=dbc.Jumbotron([
                             #'autosizable':True,
                             #'fillFrame':True 
                             },
-                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-                        ),
-                                    
-            ],
-            align="center", 
-            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
-            ),
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            ],
-            align="center", 
-            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
-            ),
-        html.Br(),
-        ],className='text-left'), 
+                html.H4('This is where we will add figure summary.'),
+            ]),
+        ],align="center"), 
         html.Br(),
         dbc.Row([
-             dbc.Col([
+            dbc.Col([
                 dcc.Graph(
                     figure = FC_fig5(),
                     id='plot5', 
@@ -330,22 +300,12 @@ output_row=dbc.Jumbotron([
                             #'autosizable':True,
                             #'fillFrame':True 
                             },
-                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-                        ),
-                                    
-            ],
-            align="center", 
-            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
-            ),
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            ],
-            align="center", 
-            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
-            ),
-        html.Br(),
-        ],className='text-left'), 
+                html.H4('This is where we will add figure summary.'),
+            ]),
+        ],align="center"), 
         html.Br(),
         dbc.Row([
             dbc.Col([
@@ -358,22 +318,12 @@ output_row=dbc.Jumbotron([
                             #'autosizable':True,
                             #'fillFrame':True 
                             },
-                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-                        ),
-                                    
-            ],
-            align="center", 
-            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
-            ),
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            ],
-            align="center", 
-            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
-            ),
-            html.Br(),
-            ],className='text-left'),
+                html.H4('This is where we will add figure summary.'),
+            ]),
+        ],align="center"), 
         html.Br(),
         dbc.Row([
             dbc.Col([
@@ -386,23 +336,13 @@ output_row=dbc.Jumbotron([
                             #'autosizable':True,
                             #'fillFrame':True 
                             },
-                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-                        ),
-                                    
-            ],
-            align="center", 
-            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
-            ),
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            ],
-            align="center", 
-            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
-            ),
-            html.Br(),
-            ],className='text-left'), 
-        html.Br(),  
+                html.H4('This is where we will add figure summary.'),
+            ]),
+        ],align="center"), 
+        html.Br(),
         dbc.Row([
             dbc.Col([
                 dcc.Graph(
@@ -414,22 +354,12 @@ output_row=dbc.Jumbotron([
                             #'autosizable':True,
                             #'fillFrame':True 
                             },
-                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-                        ),
-                                    
-            ],
-            align="center", 
-            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
-            ),
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            ],
-            align="center", 
-            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
-            ),
-            html.Br(),
-            ],className='text-left'),
+                html.H4('This is where we will add figure summary.'),
+            ]),
+        ],align="center"), 
         html.Br(),
         dbc.Row([
             dbc.Col([
@@ -442,22 +372,12 @@ output_row=dbc.Jumbotron([
                             #'autosizable':True,
                             #'fillFrame':True 
                             },
-                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-                        ),
-                                    
-            ],
-            align="center", 
-            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
-            ),
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            ],
-            align="center", 
-            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
-            ),
-            html.Br(),
-            ],className='text-left'), 
+                html.H4('This is where we will add figure summary.'),
+            ]),
+        ],align="center"), 
         html.Br(), 
         dbc.Row([
             dbc.Col([
@@ -470,22 +390,12 @@ output_row=dbc.Jumbotron([
                             #'autosizable':True,
                             #'fillFrame':True 
                             },
-                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-                        ),
-                                    
-            ],
-            align="center", 
-            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
-            ),
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            ],
-            align="center", 
-            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
-            ),
-            html.Br(),
-            ],className='text-left'),
+                html.H4('This is where we will add figure summary.'),
+            ]),
+        ],align="center"), 
         html.Br(),
         dbc.Row([
             dbc.Col([
@@ -498,23 +408,13 @@ output_row=dbc.Jumbotron([
                             #'autosizable':True,
                             #'fillFrame':True 
                             },
-                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-                        ),
-                                    
-            ],
-            align="center", 
-            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'},
-            width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},
-            ),
+                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summaries focusing on what stood out.'),
-            ],
-            align="center", 
-            width={"sm": 12, "md": {"size": 4, "order":1}, "lg":4},
-            ),
-            html.Br(),
-            ],className='text-left'), 
-        html.Br(),      
+                html.H4('This is where we will add figure summary.'),
+            ]),
+        ],align="center"), 
+        html.Br(),   
     ], fluid=True), 
 ])            
             
