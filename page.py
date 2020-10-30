@@ -213,12 +213,11 @@ output_row=dbc.Jumbotron([
     dbc.Container([
         dbc.Row([
             html.Br(),
-            html.H3("Individual experience X demographics", className='text-left', ),
+            html.H3("Individual experience X demographics", className='text-center', ),
             html.Br(),
         ]),
         html.Br(), 
         dbc.Row([
-            dbc.Col(width=1),
             dbc.Col([
                 dcc.Graph(
                     figure = FC_fig1(),
@@ -230,10 +229,11 @@ output_row=dbc.Jumbotron([
                             #'fillFrame':True 
                             },
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
+            dbc.Col([
                 html.H4('This is where we will add figure summaries focusing on what stood out.'),
             ]),
-            dbc.Col(width=1)
-        ]), 
+        ],align="center"), 
         html.Br(), 
         dbc.Row([
              dbc.Col([
@@ -515,7 +515,7 @@ output_row=dbc.Jumbotron([
             html.Br(),
             ],className='text-left'), 
         html.Br(),      
-    ]), 
+    ], fluid=True), 
 ])            
             
 wordcloud = dbc.Jumbotron([
