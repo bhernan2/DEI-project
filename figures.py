@@ -8,7 +8,7 @@ dei = pd.read_csv("DEISurveyFinal.csv")
 def FC_fig1():
     #defining list_updatemenus
     list_updatemenus = [
-        {'label': 'Total',
+        {'label': 'Total responses',
         'method': 'update',
         'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
         {'label': 'Race',
@@ -435,22 +435,22 @@ def FC_fig3():
 def FC_fig4():
     list_updatemenus = [{'label': 'Total',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and Inclusiveness issues are openly discussed.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and Inclusiveness issues are openly discussed.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and Inclusiveness issues are openly discussed.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Diversity and Inclusiveness issues are openly discussed.  '}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.  '}]},
                    {'label': 'Status',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Diversity and Inclusiveness issues are openly discussed.  '}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Diversity and nclusiveness issues are openly discussed.  '}]}
                    ]
     #defining graph objects
     x_total = dei["Diversity and Inclusiveness issues are openly discussed.  "]
@@ -573,22 +573,22 @@ def FC_fig4():
 def FC_fig5():
     list_updatemenus = [{'label': 'Total',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  '}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                    {'label': 'Status',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  '}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]}
                    ]
     #defining graph objects
     x_total = dei["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
@@ -711,22 +711,22 @@ def FC_fig5():
 def FC_fig6():
     list_updatemenus = [{'label': 'Total',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  '}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                    {'label': 'Status',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  '}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]}
                    ]
                    
     x_total = dei["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
