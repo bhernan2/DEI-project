@@ -218,7 +218,7 @@ output_row=dbc.Jumbotron([
         ]),
         html.Br(), 
         dbc.Row([
-            dbc.Col(width=2),
+            dbc.Col(width=1),
             dbc.Col([
                 dcc.Graph(
                     figure = FC_fig1(),
@@ -232,7 +232,7 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                 html.H4('This is where we will add figure summaries focusing on what stood out.'),
             ]),
-            dbc.Col(width=2)
+            dbc.Col(width=1)
         ]), 
         html.Br(), 
         dbc.Row([
