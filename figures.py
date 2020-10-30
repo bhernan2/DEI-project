@@ -147,7 +147,7 @@ def FC_fig1():
 def FC_fig2():
 #At work, I feel comfortable being myself.  
 #defining list_updatemenus
-    list_updatemenus = [{'label': 'Total',
+    list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
                      'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
                     {'label': 'Race',
@@ -287,7 +287,7 @@ def FC_fig3():
     #Employees in my organization are treated with respect and dignity.  
     #defining list_updatemenus
     #defining list_updatemenus
-    list_updatemenus = [{'label': 'Total',
+    list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
                      'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
                     {'label': 'Race',
@@ -433,7 +433,7 @@ def FC_fig3():
 
 
 def FC_fig4():
-    list_updatemenus = [{'label': 'Total',
+    list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
                      'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
                     {'label': 'Race',
@@ -571,7 +571,7 @@ def FC_fig4():
     return fig 
 
 def FC_fig5():
-    list_updatemenus = [{'label': 'Total',
+    list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
                      'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                     {'label': 'Race',
@@ -709,7 +709,7 @@ def FC_fig5():
     return fig 
 
 def FC_fig6():
-    list_updatemenus = [{'label': 'Total',
+    list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
                      'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                     {'label': 'Race',
@@ -844,7 +844,7 @@ def FC_fig6():
     return fig 
 
 def FC_fig7():
-    list_updatemenus = [{'label': 'Total',
+    list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
                      'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
                     {'label': 'Race',
@@ -979,7 +979,7 @@ def FC_fig7():
     return fig 
 
 def FC_fig8():
-    list_updatemenus = [{'label': 'Total',
+    list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
                      'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
                     {'label': 'Race',
@@ -1114,7 +1114,7 @@ def FC_fig8():
     return fig 
 
 def FC_fig9():
-    list_updatemenus = [{'label': 'Total',
+    list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
                      'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
                     {'label': 'Race',
@@ -1249,7 +1249,7 @@ def FC_fig9():
     return fig
 
 def FC_fig10():
-    list_updatemenus = [{'label': 'Total',
+    list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
                      'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
                     {'label': 'Race',
@@ -1384,7 +1384,7 @@ def FC_fig10():
     return fig
 
 def FC_fig11():
-    list_updatemenus = [{'label': 'Total',
+    list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
                      'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
                     {'label': 'Race',
