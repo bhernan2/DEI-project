@@ -113,6 +113,7 @@ def FC_fig1():
         # Adjust click behavior
         itemclick="toggleothers",
         itemdoubleclick="toggle",
+        traceorder="normal",
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
@@ -136,6 +137,7 @@ def FC_fig1():
         height=400,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
+
     
     #defining layout and plotting
     fig = go.Figure(data,layout)
@@ -252,6 +254,7 @@ def FC_fig2():
         # Adjust click behavior
         itemclick="toggleothers",
         itemdoubleclick="toggle",
+        traceorder="normal"
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
@@ -394,6 +397,7 @@ def FC_fig3():
         # Adjust click behavior
         itemclick="toggleothers",
         itemdoubleclick="toggle",
+        traceorder="normal",
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
@@ -539,6 +543,7 @@ def FC_fig4():
         # Adjust click behavior
         itemclick="toggleothers",
         itemdoubleclick="toggle",
+        traceorder="normal",
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
@@ -678,6 +683,7 @@ def FC_fig5():
         # Adjust click behavior
         itemclick="toggleothers",
         itemdoubleclick="toggle",
+        traceorder="normal",
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
@@ -813,6 +819,7 @@ def FC_fig6():
         # Adjust click behavior
         itemclick="toggleothers",
         itemdoubleclick="toggle",
+        traceorder="normal",
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
@@ -948,6 +955,7 @@ def FC_fig7():
         # Adjust click behavior
         itemclick="toggleothers",
         itemdoubleclick="toggle",
+        traceorder="normal",
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
@@ -1083,6 +1091,7 @@ def FC_fig8():
         # Adjust click behavior
         itemclick="toggleothers",
         itemdoubleclick="toggle",
+        traceorder="normal",
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
@@ -1218,6 +1227,7 @@ def FC_fig9():
         # Adjust click behavior
         itemclick="toggleothers",
         itemdoubleclick="toggle",
+        traceorder="normal",
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
@@ -1353,6 +1363,7 @@ def FC_fig10():
         # Adjust click behavior
         itemclick="toggleothers",
         itemdoubleclick="toggle",
+        traceorder="normal",
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
@@ -1488,6 +1499,7 @@ def FC_fig11():
         # Adjust click behavior
         itemclick="toggleothers",
         itemdoubleclick="toggle",
+        traceorder="normal",
         ),  
         updatemenus=list([dict(
             buttons= list_updatemenus, 
