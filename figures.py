@@ -10,22 +10,22 @@ def FC_fig1():
     list_updatemenus = [
         {'label': 'Total responses',
         'method': 'update',
-        'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+        'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
         {'label': 'Race',
         'method': 'update',
-        'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+        'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
         {'label': 'Age',
         'method': 'update',
-        'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+        'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
         {'label': 'Sexual Orientation',
         'method': 'update',
-        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
         {'label': 'Tenure',
         'method': 'update',
-        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
         {'label': 'Status',
         'method': 'update',
-        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'At work, I am treated with respect.'}]}
+        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'At work, I am treated with respect.'}]}
                    ]
     #defining graph objects
     x_total = dei['At work, I am treated with respect.  ']
@@ -35,6 +35,8 @@ def FC_fig1():
     x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["At work, I am treated with respect.  "]
     x_asian = dei[dei['What is your race? ']=="Asian"]["At work, I am treated with respect.  "]
     x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["At work, I am treated with respect.  "]
+    x_other = dei[dei['What is your race? ']=="Other"]["At work, I am treated with respect.  "]
+    x_notsure= dei[dei['What is your race? ']=="Not sure"]["At work, I am treated with respect.  "]
     x_age1 = dei[dei["What is your age?"]=="25-34"]["At work, I am treated with respect.  "]
     x_age2 = dei[dei["What is your age?"]=="35-44"]["At work, I am treated with respect.  "]
     x_age3 = dei[dei["What is your age?"]=="45-54"]["At work, I am treated with respect.  "]
@@ -62,6 +64,8 @@ def FC_fig1():
         go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .75),
         go.Histogram(x=x_asian,name='Asian',opacity = .75),
         go.Histogram(x=x_first_peoples,name='Indian/Native American',opacity = .5),
+        go.Histogram(x=x_other,name='Other',opacity = .5),
+        go.Histogram(x=x_notsure,name='Not sure',opacity = .5),
         go.Histogram(x=x_age1,name='25-34', opacity = .75),
         go.Histogram(x=x_age2,name='35-44',opacity = .75),
         go.Histogram(x=x_age3,name='45-54',opacity = .75),
@@ -151,22 +155,22 @@ def FC_fig2():
 #defining list_updatemenus
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
                    {'label': 'Status',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'At work, I feel comfortable being myself.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'At work, I feel comfortable being myself.'}]}
                    ]
 #defining graph objects
     x_total = dei['At work, I feel comfortable being myself.  ']
@@ -176,6 +180,8 @@ def FC_fig2():
     x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["At work, I feel comfortable being myself.  "]
     x_asian = dei[dei['What is your race? ']=="Asian"]["At work, I feel comfortable being myself.  "]
     x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["At work, I feel comfortable being myself.  "]
+    x_other = dei[dei['What is your race? ']=="Other"]["At work, I feel comfortable being myself.  "]
+    x_notsure= dei[dei['What is your race? ']=="Not sure"]["At work, I feel comfortable being myself.  "]
     x_age1 = dei[dei["What is your age?"]=="25-34"]["At work, I feel comfortable being myself.  "]
     x_age2 = dei[dei["What is your age?"]=="35-44"]["At work, I feel comfortable being myself.  "]
     x_age3 = dei[dei["What is your age?"]=="45-54"]["At work, I feel comfortable being myself.  "]
@@ -203,6 +209,8 @@ def FC_fig2():
         go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .75),
         go.Histogram(x=x_asian,name='Asian',opacity = .5),
         go.Histogram(x=x_first_peoples,name='Indian/Native American',opacity = .75),
+        go.Histogram(x=x_other,name='Other',opacity = .5),
+        go.Histogram(x=x_notsure,name='Not sure',opacity = .5),
         go.Histogram(x=x_age1,name='25-34', opacity = .75),
         go.Histogram(x=x_age2,name='35-44',opacity = .75),
         go.Histogram(x=x_age3,name='45-54',opacity = .75),
@@ -292,22 +300,22 @@ def FC_fig3():
     #defining list_updatemenus
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
                    {'label': 'Status',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]}
                    ]
     #defining graph objects
     x_total = dei["Employees in my organization are treated with respect and dignity.  "]
@@ -317,6 +325,8 @@ def FC_fig3():
     x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["Employees in my organization are treated with respect and dignity.  "]
     x_asian = dei[dei['What is your race? ']=="Asian"]["Employees in my organization are treated with respect and dignity.  "]
     x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["Employees in my organization are treated with respect and dignity.  "]
+    x_other = dei[dei['What is your race? ']=="Other"]["Employees in my organization are treated with respect and dignity.  "]
+    x_notsure= dei[dei['What is your race? ']=="Not sure"]["Employees in my organization are treated with respect and dignity.  "]
     x_age1 = dei[dei["What is your age?"]=="25-34"]["Employees in my organization are treated with respect and dignity.  "]
     x_age2 = dei[dei["What is your age?"]=="35-44"]["Employees in my organization are treated with respect and dignity.  "]
     x_age3 = dei[dei["What is your age?"]=="45-54"]["Employees in my organization are treated with respect and dignity.  "]
@@ -345,6 +355,8 @@ def FC_fig3():
         go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .75),
         go.Histogram(x=x_asian,name='Asian',opacity = .5),
         go.Histogram(x=x_first_peoples,name='Indian/Native American',opacity = .75),
+        go.Histogram(x=x_other,name='Other',opacity = .5),
+        go.Histogram(x=x_notsure,name='Not sure',opacity = .5),
         go.Histogram(x=x_age1,name='25-34', opacity = .75),
         go.Histogram(x=x_age2,name='35-44',opacity = .75),
         go.Histogram(x=x_age3,name='45-54',opacity = .75),
@@ -439,22 +451,22 @@ def FC_fig3():
 def FC_fig4():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.  '}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.  '}]},
                    {'label': 'Status',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Diversity and nclusiveness issues are openly discussed.  '}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Diversity and nclusiveness issues are openly discussed.  '}]}
                    ]
     #defining graph objects
     x_total = dei["Diversity and Inclusiveness issues are openly discussed.  "]
@@ -464,6 +476,8 @@ def FC_fig4():
     x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["Diversity and Inclusiveness issues are openly discussed.  "]
     x_asian = dei[dei['What is your race? ']=="Asian"]["Diversity and Inclusiveness issues are openly discussed.  "]
     x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["Diversity and Inclusiveness issues are openly discussed.  "]
+    x_other = dei[dei['What is your race? ']=="Other"]["Diversity and Inclusiveness issues are openly discussed.  "]
+    x_notsure= dei[dei['What is your race? ']=="Not sure"]["Diversity and Inclusiveness issues are openly discussed.  "]
     x_age1 = dei[dei["What is your age?"]=="25-34"]["Diversity and Inclusiveness issues are openly discussed.  "]
     x_age2 = dei[dei["What is your age?"]=="35-44"]["Diversity and Inclusiveness issues are openly discussed.  "]
     x_age3 = dei[dei["What is your age?"]=="45-54"]["Diversity and Inclusiveness issues are openly discussed.  "]
@@ -491,6 +505,8 @@ def FC_fig4():
         go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .75),
         go.Histogram(x=x_asian,name='Asian',opacity = .5),
         go.Histogram(x=x_first_peoples,name='Indian/Native American',opacity = .75),
+        go.Histogram(x=x_other,name='Other',opacity = .5),
+        go.Histogram(x=x_notsure,name='Not sure',opacity = .5),
         go.Histogram(x=x_age1,name='25-34', opacity = .75),
         go.Histogram(x=x_age2,name='35-44',opacity = .75),
         go.Histogram(x=x_age3,name='45-54',opacity = .75),
@@ -578,22 +594,22 @@ def FC_fig4():
 def FC_fig5():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                    {'label': 'Status',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]}
                    ]
     #defining graph objects
     x_total = dei["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
@@ -603,6 +619,8 @@ def FC_fig5():
     x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
     x_asian = dei[dei['What is your race? ']=="Asian"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
     x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_other = dei[dei['What is your race? ']=="Other"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_notsure= dei[dei['What is your race? ']=="Not sure"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
     x_age1 = dei[dei["What is your age?"]=="25-34"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
     x_age2 = dei[dei["What is your age?"]=="35-44"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
     x_age3 = dei[dei["What is your age?"]=="45-54"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
@@ -630,6 +648,8 @@ def FC_fig5():
         go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .75),
         go.Histogram(x=x_asian,name='Asian',opacity = .5),
         go.Histogram(x=x_first_peoples,name='Indian/Native American',opacity = .75),
+        go.Histogram(x=x_other,name='Other',opacity = .5),
+        go.Histogram(x=x_notsure,name='Not sure',opacity = .5),
         go.Histogram(x=x_age1,name='25-34', opacity = .75),
         go.Histogram(x=x_age2,name='35-44',opacity = .75),
         go.Histogram(x=x_age3,name='45-54',opacity = .75),
@@ -717,22 +737,22 @@ def FC_fig5():
 def FC_fig6():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                    {'label': 'Status',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]}
                    ]
                    
     x_total = dei["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
@@ -742,6 +762,8 @@ def FC_fig6():
     x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
     x_asian = dei[dei['What is your race? ']=="Asian"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
     x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_other = dei[dei['What is your race? ']=="Other"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_notsure= dei[dei['What is your race? ']=="Not sure"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
     x_age1 = dei[dei["What is your age?"]=="25-34"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
     x_age2 = dei[dei["What is your age?"]=="35-44"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
     x_age3 = dei[dei["What is your age?"]=="45-54"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
@@ -769,6 +791,8 @@ def FC_fig6():
         go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .75),
         go.Histogram(x=x_asian,name='Asian',opacity = .5),
         go.Histogram(x=x_first_peoples,name='Indian/Native American',opacity = .75),
+        go.Histogram(x=x_other,name='Other',opacity = .5),
+        go.Histogram(x=x_notsure,name='Not sure',opacity = .5),
         go.Histogram(x=x_age1,name='25-34', opacity = .75),
         go.Histogram(x=x_age2,name='35-44',opacity = .75),
         go.Histogram(x=x_age3,name='45-54',opacity = .75),
@@ -853,22 +877,22 @@ def FC_fig6():
 def FC_fig7():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
                    {'label': 'Status',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]}
                    ]
                    
     x_total = dei["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
@@ -878,8 +902,8 @@ def FC_fig7():
     x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
     x_asian = dei[dei['What is your race? ']=="Asian"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
     x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
-    x_other = dei[dei['What is your race? ']=="Other"]["At work, I am treated with respect.  "]
-    x_notsure= dei[dei['What is your race? ']=="Not sure"]["At work, I am treated with respect.  "] 
+    x_other = dei[dei['What is your race? ']=="Other"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_notsure= dei[dei['What is your race? ']=="Not sure"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
     x_age1 = dei[dei["What is your age?"]=="25-34"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
     x_age2 = dei[dei["What is your age?"]=="35-44"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
     x_age3 = dei[dei["What is your age?"]=="45-54"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
@@ -991,24 +1015,24 @@ def FC_fig7():
     return fig 
 
 def FC_fig8():
-    list_updatemenus = [{'label': 'Total',
+    list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+                     'args': [{'visible': [False, False, False,False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
                    {'label': 'Status',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'At work, I am treated with respect.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My organization treasures diverse opinions and ideas.'}]}
                    ]
                    
     x_total = dei["My organization treasures diverse opinions and ideas."]
@@ -1018,6 +1042,8 @@ def FC_fig8():
     x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["My organization treasures diverse opinions and ideas."]
     x_asian = dei[dei['What is your race? ']=="Asian"]["My organization treasures diverse opinions and ideas."]
     x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["My organization treasures diverse opinions and ideas."]
+    x_other = dei[dei['What is your race? ']=="Other"]["My organization treasures diverse opinions and ideas."]
+    x_notsure= dei[dei['What is your race? ']=="Not sure"]["My organization treasures diverse opinions and ideas."]
     x_age1 = dei[dei["What is your age?"]=="25-34"]["My organization treasures diverse opinions and ideas."]
     x_age2 = dei[dei["What is your age?"]=="35-44"]["My organization treasures diverse opinions and ideas."]
     x_age3 = dei[dei["What is your age?"]=="45-54"]["My organization treasures diverse opinions and ideas."]
@@ -1045,6 +1071,8 @@ def FC_fig8():
         go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .75),
         go.Histogram(x=x_asian,name='Asian',opacity = .5),
         go.Histogram(x=x_first_peoples,name='Indian/Native American',opacity = .75),
+        go.Histogram(x=x_other,name='Other',opacity = .5),
+        go.Histogram(x=x_notsure,name='Not sure',opacity = .5),
         go.Histogram(x=x_age1,name='25-34', opacity = .75),
         go.Histogram(x=x_age2,name='35-44',opacity = .75),
         go.Histogram(x=x_age3,name='45-54',opacity = .75),
@@ -1129,22 +1157,22 @@ def FC_fig8():
 def FC_fig9():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
                    {'label': 'Status',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My team members appreciate my contributions.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My team members appreciate my contributions.'}]}
                    ]
                    
     x_total = dei["My team members appreciate my contributions. "]
@@ -1154,6 +1182,8 @@ def FC_fig9():
     x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["My team members appreciate my contributions. "]
     x_asian = dei[dei['What is your race? ']=="Asian"]["My team members appreciate my contributions. "]
     x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["My team members appreciate my contributions. "]
+    x_other = dei[dei['What is your race? ']=="Other"]["My team members appreciate my contributions. "]
+    x_notsure= dei[dei['What is your race? ']=="Not sure"]["My team members appreciate my contributions. "]
     x_age1 = dei[dei["What is your age?"]=="25-34"]["My team members appreciate my contributions. "]
     x_age2 = dei[dei["What is your age?"]=="35-44"]["My team members appreciate my contributions. "]
     x_age3 = dei[dei["What is your age?"]=="45-54"]["My team members appreciate my contributions. "]
@@ -1181,6 +1211,8 @@ def FC_fig9():
         go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .75),
         go.Histogram(x=x_asian,name='Asian',opacity = .5),
         go.Histogram(x=x_first_peoples,name='Indian/Native American',opacity = .75),
+        go.Histogram(x=x_other,name='Other',opacity = .5),
+        go.Histogram(x=x_notsure,name='Not sure',opacity = .5),
         go.Histogram(x=x_age1,name='25-34', opacity = .75),
         go.Histogram(x=x_age2,name='35-44',opacity = .75),
         go.Histogram(x=x_age3,name='45-54',opacity = .75),
@@ -1265,22 +1297,22 @@ def FC_fig9():
 def FC_fig10():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
                    {'label': 'Status',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My supervisor tries to understand my point of view.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My supervisor tries to understand my point of view.'}]}
                    ]
                    
     x_total = dei["My supervisor tries to understand my point of view.  "]
@@ -1290,6 +1322,8 @@ def FC_fig10():
     x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["My supervisor tries to understand my point of view.  "]
     x_asian = dei[dei['What is your race? ']=="Asian"]["My supervisor tries to understand my point of view.  "]
     x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["My supervisor tries to understand my point of view.  "]
+    x_other = dei[dei['What is your race? ']=="Other"]["My supervisor tries to understand my point of view.  "]
+    x_notsure= dei[dei['What is your race? ']=="Not sure"]["My supervisor tries to understand my point of view.  "]
     x_age1 = dei[dei["What is your age?"]=="25-34"]["My supervisor tries to understand my point of view.  "]
     x_age2 = dei[dei["What is your age?"]=="35-44"]["My supervisor tries to understand my point of view.  "]
     x_age3 = dei[dei["What is your age?"]=="45-54"]["My supervisor tries to understand my point of view.  "]
@@ -1317,6 +1351,8 @@ def FC_fig10():
         go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .75),
         go.Histogram(x=x_asian,name='Asian',opacity = .5),
         go.Histogram(x=x_first_peoples,name='Indian/Native American',opacity = .75),
+        go.Histogram(x=x_other,name='Other',opacity = .5),
+        go.Histogram(x=x_notsure,name='Not sure',opacity = .5),
         go.Histogram(x=x_age1,name='25-34', opacity = .75),
         go.Histogram(x=x_age2,name='35-44',opacity = .75),
         go.Histogram(x=x_age3,name='45-54',opacity = .75),
@@ -1401,22 +1437,22 @@ def FC_fig10():
 def FC_fig11():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
                    {'label': 'Status',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]}
                    ]
                    
     x_total = dei["My workplace is committed to building the strengths of each employee.   "]
@@ -1426,6 +1462,8 @@ def FC_fig11():
     x_two_plus = dei[dei['What is your race? ']=="Two or more Races"]["My workplace is committed to building the strengths of each employee.   "]
     x_asian = dei[dei['What is your race? ']=="Asian"]["My workplace is committed to building the strengths of each employee.   "]
     x_first_peoples = dei[dei['What is your race? ']=="Indian/ Native American"]["My workplace is committed to building the strengths of each employee.   "]
+    x_other = dei[dei['What is your race? ']=="Other"]["My workplace is committed to building the strengths of each employee.   "]
+    x_notsure= dei[dei['What is your race? ']=="Not sure"]["My workplace is committed to building the strengths of each employee.   "]
     x_age1 = dei[dei["What is your age?"]=="25-34"]["My workplace is committed to building the strengths of each employee.   "]
     x_age2 = dei[dei["What is your age?"]=="35-44"]["My workplace is committed to building the strengths of each employee.   "]
     x_age3 = dei[dei["What is your age?"]=="45-54"]["My workplace is committed to building the strengths of each employee.   "]
@@ -1453,6 +1491,8 @@ def FC_fig11():
         go.Histogram(x=x_two_plus,name='Two or more Races',opacity = .75),
         go.Histogram(x=x_asian,name='Asian',opacity = .5),
         go.Histogram(x=x_first_peoples,name='Indian/Native American',opacity = .75),
+        go.Histogram(x=x_other,name='Other',opacity = .5),
+        go.Histogram(x=x_notsure,name='Not sure',opacity = .5),
         go.Histogram(x=x_age1,name='25-34', opacity = .75),
         go.Histogram(x=x_age2,name='35-44',opacity = .75),
         go.Histogram(x=x_age3,name='45-54',opacity = .75),
