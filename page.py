@@ -67,18 +67,23 @@ about = dbc.Jumbotron([
 card_content1 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H3("Card title", className="card-title"),
-            html.H4(
-                "This is some card content that we'll reuse",
-                className="card-text",),
+            html.H1("34%", className="card-title"),
+            html.H4([
+                'of LGBTQ+ staff members either strongly disagree or disagree that FC treasures diverse opnions',
+                html.Br(),
+                html.Br(),
+                html.Br(),
+                html.Br(),
+                ],className="card-text"),
+        
         ]),
 ]
 card_content2 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H3("Card title", className="card-title"),
+            html.H1("33%", className="card-title"),
             html.H4(
-                "This is some card content that we'll reuse",
+                "of Black employees strongly disagree with the statement that everyone at FC is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance",
                 className="card-text",),
         ]),
 ]
@@ -152,7 +157,7 @@ descriptive_stats = dbc.Jumbotron([
                 dbc.Card(card_content3, color="success", inverse=True)),
             dbc.Col(
                 dbc.Card(card_content4, color="dark", inverse=True)),
-            ], className="mb-5", ),        
+            ], className="mb-5", align="stretch"),        
         dbc.Row([
             dbc.Col(
                 dbc.Card(card_content5, color="warning", inverse=True)),
@@ -356,7 +361,7 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summary.'),
+                html.H4('22 percent of respondents strongly disagree or disagree, 25 percent neither agree or disagree and 53 percent agree and strongly agree. However, when focusing on race, we found that respondents who identified as Latino/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50 percent, respectively), compared to their white counterparts at 20 percent.'),
             ]),
         ],align="center"), 
         html.Br(),
