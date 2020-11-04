@@ -70,7 +70,8 @@ card_content1 = [
         dbc.CardHeader([
             ("My organization treasurese diverse opinions and ideas."),
             html.Br(), 
-            html.Br(),   
+            html.Br(), 
+            html.Br(),  
         ])
     ]),
     dbc.CardBody([
