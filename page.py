@@ -86,7 +86,7 @@ card_content2 = [
 card_content3 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H3("65%", className="card-title"),
+            html.H1("65%", className="card-title"),
             html.H4(
                 "of staff members who identify as Black/African American strongly disagree or disagree that they have the same opportunities for advancement as other team members at FC with similar experience and performance levels.",
                 className="card-text",),
