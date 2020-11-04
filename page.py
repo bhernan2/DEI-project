@@ -391,7 +391,7 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":6},),
             dbc.Col([
-                html.H5([
+                html.P([
                     html.Ul([
                         html.Li('22% of total respondents strongly disagree or disagree, 25% are neutral and 53% agree and strongly agree.'),
                         html.Li('FC staff who identify as Latino/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively).'),
