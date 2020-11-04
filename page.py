@@ -150,13 +150,13 @@ descriptive_stats = dbc.Jumbotron([
         html.Br(),
         dbc.Row([  
             dbc.Col(
-                dbc.Card(card_content1, color="primary", inverse=True), style={"display": "flex"}),
+                dbc.Card(card_content1, color="primary", inverse=True), style={"display": "flex"}, width=3),
             dbc.Col(
-                dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"}), 
+                dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"},width=3), 
             dbc.Col(
-                dbc.Card(card_content3, color="success", inverse=True), style={"display": "flex"}),
+                dbc.Card(card_content3, color="success", inverse=True), style={"display": "flex"},width=3),
             dbc.Col(
-                dbc.Card(card_content4, color="dark", inverse=True), style={"display": "flex"}),
+                dbc.Card(card_content4, color="dark", inverse=True), style={"display": "flex"},width=3),
             ], className="mb-5"), 
         dbc.Row([
             html.H3("DEI efforts that FC staff would like to see prioritized", className='text-left', )
@@ -164,13 +164,13 @@ descriptive_stats = dbc.Jumbotron([
         html.Br(),       
         dbc.Row([
             dbc.Col(
-                dbc.Card(card_content5, color="warning", inverse=True),style={"display": "flex"}),
+                dbc.Card(card_content5, color="warning", inverse=True),style={"display": "flex"},width=3),
             dbc.Col(
-                dbc.Card(card_content6, color="danger", inverse=True),style={"display": "flex"}),
+                dbc.Card(card_content6, color="danger", inverse=True),style={"display": "flex"},width=3),
             dbc.Col(
-                dbc.Card(card_content7, color="info", inverse=True),style={"display": "flex"}),
+                dbc.Card(card_content7, color="info", inverse=True),style={"display": "flex"},width=3),
             dbc.Col(
-                dbc.Card(card_content8, color="light", inverse=True),style={"display": "flex"}),
+                dbc.Card(card_content8, color="light", inverse=True),style={"display": "flex"},width=3),
             ], className="mb-5"),
     ], fluid=True),
 ])
@@ -237,7 +237,7 @@ output_row=dbc.Jumbotron([
                             #'fillFrame':True 
                             },
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
-            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
+            ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
                 html.H4('This is where we will add figure summary.'),
             ]),
@@ -255,7 +255,7 @@ output_row=dbc.Jumbotron([
                             #'fillFrame':True 
                             },
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
-            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
+            ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
                 html.H4('This is where we will add figure summary.'),
             ]),
@@ -273,7 +273,7 @@ output_row=dbc.Jumbotron([
                             #'fillFrame':True 
                             },
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
-            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
+            ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
                 html.H4('This is where we will add figure summary.'),
             ]),
@@ -309,7 +309,7 @@ output_row=dbc.Jumbotron([
                             #'fillFrame':True 
                             },
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
-            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
+            ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
                 html.H4('This is where we will add figure summary.'),
             ]),
@@ -327,7 +327,7 @@ output_row=dbc.Jumbotron([
                             #'fillFrame':True 
                             },
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
-            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
+            ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
                 html.H4('This is where we will add figure summary.'),
             ]),
@@ -345,7 +345,7 @@ output_row=dbc.Jumbotron([
                             #'fillFrame':True 
                             },
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
-            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
+            ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
                 html.H4('This is where we will add figure summary.'),
             ]),
@@ -363,7 +363,7 @@ output_row=dbc.Jumbotron([
                             #'fillFrame':True 
                             },
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
-            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
+            ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
                 html.H4('22% of respondents strongly disagree or disagree, 25% neither agree or disagree and 53% agree and strongly agree. However, when focusing on race, we found that respondents who identified as Latino/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively), compared to their white counterparts at 20%.'),
             ]),
@@ -381,7 +381,7 @@ output_row=dbc.Jumbotron([
                             #'fillFrame':True 
                             },
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
-            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
+            ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
                 html.H4('This is where we will add figure summary.'),
             ]),
@@ -399,7 +399,7 @@ output_row=dbc.Jumbotron([
                             #'fillFrame':True 
                             },
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
-            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
+            ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
                 html.H4('This is where we will add figure summary.'),
             ]),
@@ -417,7 +417,7 @@ output_row=dbc.Jumbotron([
                             #'fillFrame':True 
                             },
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
-            ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
+            ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
                 html.H4('This is where we will add figure summary.'),
             ]),
