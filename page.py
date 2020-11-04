@@ -160,9 +160,9 @@ descriptive_stats = dbc.Jumbotron([
             ], className="mb-5"),
         dbc.Row([
             dbc.Col(
-                dbc.Card(card_content3, color="success", inverse=True), style={"display": "flex"},width=6),
+                dbc.Card(card_content3, color="light", inverse=True), style={"display": "flex"},width=6),
             dbc.Col(
-                dbc.Card(card_content4, color="dark", inverse=True), style={"display": "flex"},width=6),
+                dbc.Card(card_content4, color="success", inverse=True), style={"display": "flex"},width=6),
             ], className="mb-5"), 
         dbc.Row([
             html.H3("DEI efforts that FC staff would like to see prioritized", className='text-left', )
