@@ -70,10 +70,6 @@ card_content1 = [
             html.H1("34%", className="card-title"),
             html.H4([
                 'of LGBTQ+ staff members either strongly disagree or disagree that FC treasures diverse opnions',
-                html.Br(),
-                html.Br(),
-                html.Br(),
-                html.Br(),
                 ],className="card-text"),
         
         ]),
@@ -150,14 +146,14 @@ descriptive_stats = dbc.Jumbotron([
         html.Br(),
         dbc.Row([  
             dbc.Col(
-                dbc.Card(card_content1, color="primary", inverse=True)),
+                dbc.Card(card_content1, color="primary", inverse=True), style={"display": "flex"}),
             dbc.Col(
-                dbc.Card(card_content2, color="secondary", inverse=True)), 
+                dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"}), 
             dbc.Col(
-                dbc.Card(card_content3, color="success", inverse=True)),
+                dbc.Card(card_content3, color="success", inverse=True), style={"display": "flex"}),
             dbc.Col(
-                dbc.Card(card_content4, color="dark", inverse=True)),
-            ], className="mb-5", align="stretch"),        
+                dbc.Card(card_content4, color="dark", inverse=True), style={"display": "flex"}),
+            ], className="mb-5"),        
         dbc.Row([
             dbc.Col(
                 dbc.Card(card_content5, color="warning", inverse=True)),
@@ -167,7 +163,7 @@ descriptive_stats = dbc.Jumbotron([
                 dbc.Card(card_content7, color="info", inverse=True)),
             dbc.Col(
                 dbc.Card(card_content8, color="light", inverse=True)),
-            ], className="mb-5", ),
+            ], className="mb-5"),
     ], fluid=True),
 ])
 #figures row
