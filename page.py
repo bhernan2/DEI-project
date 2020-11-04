@@ -79,7 +79,7 @@ card_content2 = [
     dbc.CardBody([
             html.H1("33%", className="card-title"),
             html.H4(
-                "of Black employees strongly disagree with the statement that everyone at FC is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance",
+                "of staff members who identify Black/African American strongly disagree with the statement that everyone at FC is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance",
                 className="card-text",),
         ]),
 ]
@@ -95,45 +95,49 @@ card_content3 = [
 card_content4 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H3("Card title", className="card-title"),
+            html.H1("100%", className="card-title"),
             html.H4(
-                "This is some card content that we'll reuse",
+                "of staff who identify as Native American strongly disagree or disagree with the statement that FC openly discusses diversity and inclusiveness"),
+            html.H1("50%", className="card-title"),
+            html.H4(
+                "of staff who identify as Black/African American also strongly disagree or disagree with this statement", 
                 className="card-text",),
+                
         ]),
 ]
 card_content5 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H3("Card title", className="card-title"),
+            html.H1("No. 1", className="card-title"),
             html.H4(
-                "This is some card content that we'll reuse",
+                "Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions",
                 className="card-text",),
         ]),
 ] 
 card_content6 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H3("Card title", className="card-title"),
+            html.H1("No. 2", className="card-title"),
             html.H4(
-                "This is some card content that we'll reuse",
+                "Increase diverse representation on board and advisory committees",
                 className="card-text",),
         ]),
 ]
 card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H3("Card title", className="card-title"),
+            html.H1("No. 3", className="card-title"),
             html.H4(
-                "This is some card content that we'll reuse",
+                "Provide training for staff, leadership, and board",
                 className="card-text",),
         ]),
 ]
 card_content8 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H3("Card title", className="card-title"),
+            html.H1("No. 4", className="card-title"),
             html.H4(
-                "This is some card content that we'll reuse",
+                "Develop recruitment and hiring protocols and strategies that include implicit bias testing for managers and supervisors",
                 className="card-text",),
         ]),
 ]
@@ -153,7 +157,11 @@ descriptive_stats = dbc.Jumbotron([
                 dbc.Card(card_content3, color="success", inverse=True), style={"display": "flex"}),
             dbc.Col(
                 dbc.Card(card_content4, color="dark", inverse=True), style={"display": "flex"}),
-            ], className="mb-5"),        
+            ], className="mb-5"), 
+        dbc.Row([
+            html.H3("DEI efforts that FC staff would like to see prioritized", className='text-left', )
+        ]), 
+        html.Br(),       
         dbc.Row([
             dbc.Col(
                 dbc.Card(card_content5, color="warning", inverse=True),style={"display": "flex"}),
@@ -357,7 +365,7 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('22 percent of respondents strongly disagree or disagree, 25 percent neither agree or disagree and 53 percent agree and strongly agree. However, when focusing on race, we found that respondents who identified as Latino/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50 percent, respectively), compared to their white counterparts at 20 percent.'),
+                html.H4('22% of respondents strongly disagree or disagree, 25% neither agree or disagree and 53% agree and strongly agree. However, when focusing on race, we found that respondents who identified as Latino/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively), compared to their white counterparts at 20%.'),
             ]),
         ],align="center"), 
         html.Br(),
