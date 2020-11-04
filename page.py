@@ -71,6 +71,10 @@ card_content1 = [
             html.H4([
                 'of LGBTQ+ staff members either strongly disagree or disagree that FC treasures diverse opnions',
                 ],className="card-text"),
+            html.H1("~25%", className="card-title"),
+            html.H4([
+                'of employees who have been employeed between 1-10 years disagree or strongly disagree that FC treasures their diverse opinions',
+                ],className="card-text"),
         
         ]),
 ]
@@ -150,13 +154,15 @@ descriptive_stats = dbc.Jumbotron([
         html.Br(),
         dbc.Row([  
             dbc.Col(
-                dbc.Card(card_content1, color="primary", inverse=True), style={"display": "flex"}, width=3),
+                dbc.Card(card_content1, color="primary", inverse=True), style={"display": "flex"}, width=6),
             dbc.Col(
-                dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"},width=3), 
+                dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"},width=6), 
+            ], className="mb-5"),
+        dbc.Row([
             dbc.Col(
-                dbc.Card(card_content3, color="success", inverse=True), style={"display": "flex"},width=3),
+                dbc.Card(card_content3, color="success", inverse=True), style={"display": "flex"},width=6),
             dbc.Col(
-                dbc.Card(card_content4, color="dark", inverse=True), style={"display": "flex"},width=3),
+                dbc.Card(card_content4, color="dark", inverse=True), style={"display": "flex"},width=6),
             ], className="mb-5"), 
         dbc.Row([
             html.H3("DEI efforts that FC staff would like to see prioritized", className='text-left', )
@@ -257,7 +263,10 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summary.'),
+                html.H5([
+                    html.Li('77% of FC staff agree or strongly agree that they feel comforable being themselves at work.'),
+
+                ]),
             ]),
         ],align="center"), 
         html.Br(), 
@@ -363,11 +372,16 @@ output_row=dbc.Jumbotron([
                             #'fillFrame':True 
                             },
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
-            ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
+            ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":6},),
             dbc.Col([
-                html.H5('22% of respondents strongly disagree or disagree, 25% neither agree or disagree and 53% agree and strongly agree. However, when focusing on race, we found that respondents who identified as Latino/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively), compared to their white counterparts at 20%.'),
+                html.H5([
+                    html.Ul([
+                        html.Li('22% FC staff strongly disagree or disagree, 25% are neutral and 53% agree and strongly agree.'),
+                        html.Li('FC staff who identify as Latino/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively)'),
+                    ]),
+                ]),
             ]),
-        ],align="center"), 
+            ],align="center"), 
         html.Br(),
         dbc.Row([
             dbc.Col([
