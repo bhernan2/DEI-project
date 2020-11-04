@@ -66,45 +66,62 @@ about = dbc.Jumbotron([
 #descriptive stats cards 
 card_content1 = [
     #dbc.CardHeader("Descriptive Stats"),
+    html.H3([
+        dbc.CardHeader("My organization treasurese diverse opinions and ideas.")
+    ]),
     dbc.CardBody([
             html.H1("34%", className="card-title"),
             html.H4([
-                'of LGBTQ+ staff members either strongly disagree or disagree that FC treasures diverse opnions',
+                'of LGBTQ+ staff members either strongly disagree or disagree.',
                 ],className="card-text"),
-            html.H1("~25%", className="card-title"),
+            html.Br(),
+            html.H1("25%", className="card-title"),
             html.H4([
-                'of employees who have been employeed between 1-10 years disagree or strongly disagree that FC treasures their diverse opinions',
+                'of employees who have been employeed between 1-10 years disagree or strongly disagree.',
                 ],className="card-text"),
         
         ]),
 ]
 card_content2 = [
     #dbc.CardHeader("Descriptive Stats"),
+    html.H3([
+        dbc.CardHeader("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.")
+    ]),
     dbc.CardBody([
-            html.H1("33%", className="card-title"),
+            html.H1("54%", className="card-title"),
             html.H4(
-                "of staff members who identify Black/African American strongly disagree with the statement that everyone at FC is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance",
+                "of Black/African American identifying staff disagree or strongly disagree.",
                 className="card-text",),
         ]),
 ]
 card_content3 = [
-    #dbc.CardHeader("Descriptive Stats"),
+    html.H3([
+        dbc.CardHeader(" I have the same opportunities for advancement as other team members similar experience and performance levels.")
+    ]),
     dbc.CardBody([
             html.H1("65%", className="card-title"),
             html.H4(
-                "of staff members who identify as Black/African American strongly disagree or disagree that they have the same opportunities for advancement as other team members at FC with similar experience and performance levels.",
+                "of Black/African American identifying staff disagree or strongly disagree.",
+                className="card-text",),
+            html.Br(),
+            html.H1("27%", className="card-title"),
+            html.H4(
+                "of LGBTQ+ identigying staff disagree or strongly disagree.",
                 className="card-text",),
         ]),
 ]
 card_content4 = [
-    #dbc.CardHeader("Descriptive Stats"),
+    html.H3([
+        dbc.CardHeader("Diversity and inclusiveness issues are openly discussed at my organization.")
+    ]),
     dbc.CardBody([
             html.H1("100%", className="card-title"),
             html.H4(
-                "of staff who identify as Native American strongly disagree or disagree with the statement that FC openly discusses diversity and inclusiveness"),
+                "of Native American identifying staff disagree or strongly disagree."),
+            html.Br(),
             html.H1("50%", className="card-title"),
             html.H4(
-                "of staff who identify as Black/African American also strongly disagree or disagree with this statement", 
+                "of Black/African American identifying staff disagree or strongly disagree.", 
                 className="card-text",),
                 
         ]),
@@ -149,23 +166,23 @@ descriptive_stats = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
         dbc.Row([
-            html.H3("Interesting findings", className='text-left', )
+            html.H2("Interesting findings", className='text-left', )
         ]), 
         html.Br(),
         dbc.Row([  
             dbc.Col(
                 dbc.Card(card_content1, color="primary", inverse=True), style={"display": "flex"}, width=6),
             dbc.Col(
-                dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"},width=6), 
+                dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"}, width=6), 
             ], className="mb-5"),
         dbc.Row([
             dbc.Col(
-                dbc.Card(card_content3, color="light", inverse=True), style={"display": "flex"},width=6),
+                dbc.Card(card_content3, color="dark", inverse=True), style={"display": "flex"}, width=6),
             dbc.Col(
-                dbc.Card(card_content4, color="success", inverse=True), style={"display": "flex"},width=6),
+                dbc.Card(card_content4, color="success", inverse=True), style={"display": "flex"}, width=6),
             ], className="mb-5"), 
         dbc.Row([
-            html.H3("DEI efforts that FC staff would like to see prioritized", className='text-left', )
+            html.H2("DEI efforts that FC staff would like to see prioritized", className='text-left', )
         ]), 
         html.Br(),       
         dbc.Row([
@@ -376,8 +393,10 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.H5([
                     html.Ul([
-                        html.Li('22% FC staff strongly disagree or disagree, 25% are neutral and 53% agree and strongly agree.'),
-                        html.Li('FC staff who identify as Latino/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively)'),
+                        html.Li('22% of total respondents strongly disagree or disagree, 25% are neutral and 53% agree and strongly agree.'),
+                        html.Li('FC staff who identify as Latino/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively).'),
+                        html.Li('Younger (18-24) and older (65-74) staff generally agree or sttronly agree.'),
+                        html.Li('Nearly 25% of staff in the 25-34 and 35-44 age ranges disagree or strongly disagree.')
                     ]),
                 ]),
             ]),
