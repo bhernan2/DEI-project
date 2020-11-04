@@ -86,9 +86,9 @@ card_content2 = [
 card_content3 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H3("Card title", className="card-title"),
+            html.H3("65%", className="card-title"),
             html.H4(
-                "This is some card content that we'll reuse",
+                "of staff members who identify as Black/African American strongly disagree or disagree that they have the same opportunities for advancement as other team members at FC with similar experience and performance levels.",
                 className="card-text",),
         ]),
 ]
@@ -156,13 +156,13 @@ descriptive_stats = dbc.Jumbotron([
             ], className="mb-5"),        
         dbc.Row([
             dbc.Col(
-                dbc.Card(card_content5, color="warning", inverse=True)),
+                dbc.Card(card_content5, color="warning", inverse=True),style={"display": "flex"}),
             dbc.Col(
-                dbc.Card(card_content6, color="danger", inverse=True)),
+                dbc.Card(card_content6, color="danger", inverse=True),style={"display": "flex"}),
             dbc.Col(
-                dbc.Card(card_content7, color="info", inverse=True)),
+                dbc.Card(card_content7, color="info", inverse=True),style={"display": "flex"}),
             dbc.Col(
-                dbc.Card(card_content8, color="light", inverse=True)),
+                dbc.Card(card_content8, color="light", inverse=True),style={"display": "flex"}),
             ], className="mb-5"),
     ], fluid=True),
 ])
