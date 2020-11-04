@@ -365,7 +365,7 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('22% of respondents strongly disagree or disagree, 25% neither agree or disagree and 53% agree and strongly agree. However, when focusing on race, we found that respondents who identified as Latino/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively), compared to their white counterparts at 20%.'),
+                html.H5('22% of respondents strongly disagree or disagree, 25% neither agree or disagree and 53% agree and strongly agree. However, when focusing on race, we found that respondents who identified as Latino/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively), compared to their white counterparts at 20%.'),
             ]),
         ],align="center"), 
         html.Br(),
