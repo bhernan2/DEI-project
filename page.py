@@ -67,7 +67,11 @@ about = dbc.Jumbotron([
 card_content1 = [
     #dbc.CardHeader("Descriptive Stats"),
     html.H3([
-        dbc.CardHeader("My organization treasurese diverse opinions and ideas.")
+        dbc.CardHeader([
+            ("My organization treasurese diverse opinions and ideas."),
+            html.Br(), 
+            html.Br(),   
+        ])
     ]),
     dbc.CardBody([
             html.H1("34%", className="card-title"),
@@ -112,7 +116,11 @@ card_content3 = [
 ]
 card_content4 = [
     html.H3([
-        dbc.CardHeader("Diversity and inclusiveness issues are openly discussed at my organization.")
+        dbc.CardHeader([
+            ("Diversity and inclusiveness issues are openly discussed at my organization."),
+            html.Br(),
+            html.Br(),
+            ])
     ]),
     dbc.CardBody([
             html.H1("100%", className="card-title"),
