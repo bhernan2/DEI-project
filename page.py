@@ -279,7 +279,7 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('The majority (86%) of all staff survey respondents agree or strongly agree that they are treated with respect at work and a similar trend is seen across race, age, sexual orientation and tenure.'),
+                        html.Li('The majority (86%) of all staff survey respondents agree + strongly agree that they are treated with respect at work and a similar trend is seen across race, age, sexual orientation and tenure.'),
                     ]),
                 ]),
             ]),
@@ -301,7 +301,7 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('The majority (77%) of all staff survey respondents agree or strongly agree that they feel comforable being themselves at work and a similar trend is seen across race, age, sexual orientation and tenure.'),
+                        html.Li('The majority (77%) of all staff survey respondents agree + strongly agree that they feel comforable being themselves at work and a similar trend is seen across race, age, sexual orientation and tenure.'),
                     ]),   
                 ]),
             ]),
@@ -323,10 +323,10 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('65% of all staff survey respondents agree or strongly agree that employees at FC are treated with respect and dignigty.'),
-                        html.Li('However, 25% of staff survey respondents who identify as Black/African American disgaree or strongly disagree with this statement.'),
+                        html.Li('65% of all staff survey respondents agree + strongly agree that employees at FC are treated with respect and dignigty.'),
+                        html.Li('However, 25% of staff survey respondents who identify as Black/African American disgaree + strongly disagree with this statement.'),
                         html.Li('75% of survey respondents within the 18-24 age range agree with this statement.'),
-                        html.Li('Nearly half (46%) of survey respondents in the tenure category of 5-10 years employed remained neutral to this statement.')
+                        html.Li('Nearly half (46%) of survey respondents in the tenure category of 5-10 years employed are neutral to this statement.')
                     ]),
                 ]),
             ]),
@@ -348,10 +348,10 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('Nearly half (47%) of all staff survey respondents agree or strongly agree that diversity and inclusiveness are openly discussed'),
-                        html.Li('83% of survey respondents in the 18-24 age range agree or strongly agree with this statement.'),
-                        html.Li('31% of LGBTQ+ and 23% straight survey respondents disagree or strongly disagree with this statement.'),
-                        html.Li('20% of White and 24% of Latinx/Hispanic survey respondents disagree or strongly disagree with this statement.')
+                        html.Li('Nearly half (47%) of all staff survey respondents agree + strongly agree that diversity and inclusiveness are openly discussed'),
+                        html.Li('83% of survey respondents in the 18-24 age range agree + strongly agree with this statement.'),
+                        html.Li('31% of LGBTQ+ and 23% straight survey respondents disagree + strongly disagree with this statement.'),
+                        html.Li('20% of White and 24% of Latinx/Hispanic survey respondents disagree + strongly disagree with this statement.')
                     ]),
                 ]),
             ]),
@@ -373,9 +373,9 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('Survey respondents in the 18-24 age range agree or strongly agree (83%) that everyone at this organization is treated fairy regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'),
-                        html.Li('71% of survey respondents who have worked af FC less than one year agree or strongly agree with this statement'),
-                        html.Li('45%, 32%, 23% of survey respndents who have worked at FC for one year, 1-3 and 3-5 years disagree or strongly disagree with this statement, respectively'),
+                        html.Li('Survey respondents in the 18-24 age range agree + strongly agree (83%) that everyone at this organization is treated fairy regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'),
+                        html.Li('71% of survey respondents who have worked af FC less than one year agree + strongly agree with this statement'),
+                        html.Li('45%, 32%, 23% of survey respndents who have worked at FC for one year, 1-3 and 3-5 years disagree + strongly disagree with this statement, respectively'),
                     ]),
                 ]),
             ]),
@@ -397,10 +397,8 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li('')
+                        html.Li('58%, 22% and 19% of all staff survey respndents either agree + strongly agree, are neutral, or disagree + strongly disgree that they have the same opportunities as other team members at FC with similar experience and performance levels, respectively.'),
+                        html.Li('20%, 25%, 20% and 19% of employees who have worked at FC for one year, 1-3 years, 3-5 years and 5-10 years disagree + strongly disagree with this statement'),
                     ]),
                 ]),
             ]),
