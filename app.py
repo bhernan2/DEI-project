@@ -5,27 +5,28 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 import sys
 
-from page import DEI_title, FC_output,  about_, FC_stats #FC_dropdown_row, FC_demo_row
+from page import DEI_title, FC_output,  about_, FC_stats, FC_video, FC_wordcloud #FC_dropdown_row, FC_demo_row
 
 
 dei_title = DEI_title()
 dei_stats = FC_stats()
 dei_about = about_()
+dei_video = FC_video()
 #dei_demo = FC_demo_row()
 #dei_dropdown = FC_dropdown_row()
 dei_output = FC_output()
-
-#dei_wordcloud = FC_wordcloud()
+dei_wordcloud = FC_wordcloud()
 #this is just to save
 def Dashboard():
     layout = html.Div([
     dei_title,
-    dei_stats,
     dei_about,
+    dei_wordcloud,
+    dei_video,
+    dei_stats,
+    dei_output
     #dei_demo,
     #dei_dropdown,
-    dei_output,
-    #dei_wordcloud
     ])
     return layout 
 
