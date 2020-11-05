@@ -98,8 +98,8 @@ card_content2 = [
                 "of Black/African American identifying staff disagree or strongly disagree.",
                 className="card-text",),
             html.Br(),
-            html.H2("45%, 32%, 23%", className="card-title"),
-            html.H5("of survey respndents who have worked at FC for one year, 1-3 and 3-5 years disagree + strongly disagree with this statement.", className="card-text",),
+            html.H2("45%", className="card-title"),
+            html.H5("of survey respndents who have worked at FC for one year disagree + strongly disagree with this statement.", className="card-text",),
         ]),
 ]
 card_content3 = [
