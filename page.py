@@ -326,7 +326,7 @@ output_row=dbc.Jumbotron([
                         html.Li('65% of all staff survey respondents agree or strongly agree that employees at FC are treated with respect and dignigty.'),
                         html.Li('However, 25% of staff survey respondents who identify as Black/African American disgaree or strongly disagree with this statement.'),
                         html.Li('75% of survey respondents within the 18-24 age range agree with this statement.'),
-                        html.Li('46% of survey respondents in the tenure category of 5-10 years employed remained neutral to this statement.')
+                        html.Li('Nearly half (46%) of survey respondents in the tenure category of 5-10 years employed remained neutral to this statement.')
                     ]),
                 ]),
             ]),
