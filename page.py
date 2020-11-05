@@ -263,7 +263,10 @@ output_row=dbc.Jumbotron([
             html.Br(),
         ]),
         dbc.Row([
-        html.P('*Total of totals shows when app first downloads. Select a category (total responses, race, age, etc.) to further explore the date')
+        html.P('*Total of totals shows when app first downloads. Select a category (total responses, race, age, etc.) to further explore the date.'),
+        ]),
+        dbc.Row([
+        html.P('All figures are interactive! Hover over bars to see individual exerience ranking counts or select individual subcategories from the legend.'),
         ]),
         html.Br(), 
         dbc.Row([
