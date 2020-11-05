@@ -259,7 +259,7 @@ output_row=dbc.Jumbotron([
     dbc.Container([
         dbc.Row([
             html.Br(),
-            html.H3("Individual experience X demographics", className='text-center', ),
+            html.H3("Demographics X individual experience", className='text-center', ),
             html.Br(),
         ]),
         html.Br(), 
@@ -323,10 +323,10 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('65% of all staff survey respondents agree or strongly agree that employees at FC are treated with respect and dignigty'),
-                        html.Li('However, 25% of staff survey respondents who identify as Black/African American disgaree or strongly disagree with this statement'),
+                        html.Li('65% of all staff survey respondents agree or strongly agree that employees at FC are treated with respect and dignigty.'),
+                        html.Li('However, 25% of staff survey respondents who identify as Black/African American disgaree or strongly disagree with this statement.'),
                         html.Li('75% of survey respondents within the 18-24 age range agree with this statement.'),
-                        html.Li('46% of survey respondents in the tenure category of 5-10 years remained neutral.')
+                        html.Li('46% of survey respondents in the tenure category of 5-10 years employed remained neutral to this statement.')
                     ]),
                 ]),
             ]),
