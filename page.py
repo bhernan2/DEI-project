@@ -44,7 +44,7 @@ title = dbc.Jumbotron([
         dbc.Row([
             html.Br(),
             html.Br(),
-            html.H5('The Diversity, Equity and Inclusion (DEI) Survey team created a survey to gather more information about your experience working at Foundation Communities. We researched two surveys: 1) Gallup Diversity and Inclusion and 2) <a href="https://racetolead.org/the-survey/">Building Movement Project Race to Lead.</a> We decided to merge questions from both surveys to create the FC DEI Survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.', className='text-justify', ),                                                                                                                                              
+            html.H5('The Diversity, Equity and Inclusion (DEI) Survey team created a survey to gather more information about your experience working at Foundation Communities. We researched two surveys: 1) Gallup Diversity and Inclusion and 2) Building Movement Project Race to Lead. We decided to merge questions from both surveys to create the FC DEI Survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.', className='text-justify', ),                                                                                                                                              
             ]),
         ], fluid=True), 
     ])     
@@ -272,7 +272,14 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summary.'),
+                html.P([
+                    html.Ul([
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li('')
+                    ]),
+                ]),
             ]),
         ],align="center"), 
         html.Br(), 
@@ -290,7 +297,7 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H5([
+                html.P([
                     html.Li('77% of FC staff agree or strongly agree that they feel comforable being themselves at work.'),
 
                 ]),
@@ -311,7 +318,14 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summary.'),
+                html.P([
+                    html.Ul([
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li('')
+                    ]),
+                ]),
             ]),
         ],align="center"), 
         html.Br(),
@@ -329,7 +343,14 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 8, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summary.'),
+                html.P([
+                    html.Ul([
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li('')
+                    ]),
+                ]),
             ]),
         ],align="center"), 
         html.Br(),
@@ -347,7 +368,14 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summary.'),
+                html.P([
+                    html.Ul([
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li('')
+                    ]),
+                ]),
             ]),
         ],align="center"), 
         html.Br(),
@@ -365,7 +393,14 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summary.'),
+                html.P([
+                    html.Ul([
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li('')
+                    ]),
+                ]),
             ]),
         ],align="center"), 
         html.Br(),
@@ -383,7 +418,14 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summary.'),
+                html.P([
+                    html.Ul([
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li('')
+                    ]),
+                ]),
             ]),
         ],align="center"), 
         html.Br(),
@@ -426,7 +468,14 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summary.'),
+                html.P([
+                    html.Ul([
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li('')
+                    ]),
+                ]),
             ]),
         ],align="center"), 
         html.Br(), 
@@ -444,7 +493,14 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summary.'),
+                html.P([
+                    html.Ul([
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li('')
+                    ]),
+                ]),
             ]),
         ],align="center"), 
         html.Br(),
@@ -462,7 +518,14 @@ output_row=dbc.Jumbotron([
                     style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
             ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
-                html.H4('This is where we will add figure summary.'),
+                html.P([
+                    html.Ul([
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li('')
+                    ]),
+                ]),
             ]),
         ],align="center"), 
         html.Br(),   
