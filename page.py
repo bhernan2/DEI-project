@@ -266,7 +266,7 @@ output_row=dbc.Jumbotron([
             html.Br(),
         ]),
         dbc.Row([
-        html.P('*Total of totals shows when app first downloads. Select a category (total responses, race, age, etc.) to further explore the date.'),
+        html.P('*Total of totals shows when app first downloads. Select a category (total responses, race, age, etc.) to further explore the data.'),
         ]),
         dbc.Row([
         html.P('*All figures are interactive! Hover over bars to see individual exerience ranking counts or select individual subcategories from the legend.'),
@@ -454,7 +454,7 @@ output_row=dbc.Jumbotron([
                 html.P([
                     html.Ul([
                         html.Li('22% of total respondents strongly disagree or disagree, 25% are neutral and 53% agree and strongly agree.'),
-                        html.Li('FC staff who identify as Latino/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively).'),
+                        html.Li('FC staff who identify as Latinx/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively).'),
                         html.Li('Younger (18-24) and older (65-74) staff generally agree or sttronly agree.'),
                         html.Li('Nearly 25% of staff in the 25-34 and 35-44 age ranges disagree or strongly disagree.')
                     ]),
@@ -523,7 +523,7 @@ output_row=dbc.Jumbotron([
                 html.P([
                     html.Ul([
                         html.Li('Over 60% of all staff survery respondents agree + strongle agree that their workplace is committed to building the strengths of each employee.'),
-                        html.Li('38% of Black respondents disagree + strongly disagree with this statement compared to 12% of White and LatinX respondents.'),
+                        html.Li('38% of Black respondents disagree + strongly disagree with this statement compared to 12% of White and Latinx respondents.'),
                         html.Li('23% of LGBTQ respondents disagree + strongly disagree with this statement compared to 14% of Straight respondents.'),
                         html.Li('Over 50% of all tenure age ranges agree + strongly agree with this statement')
                     ]),
