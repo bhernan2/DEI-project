@@ -47,7 +47,24 @@ title = dbc.Jumbotron([
             html.H5('The Diversity, Equity and Inclusion (DEI) Survey team created a survey to gather more information about your experience working at Foundation Communities. We researched two surveys: 1) Gallup Diversity and Inclusion and 2) Building Movement Project Race to Lead. We decided to merge questions from both surveys to create the FC DEI Survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.', className='text-justify', ),                                                                                                                                              
             ]),
         ], fluid=True), 
-    ])     
+    ]) 
+video= about = dbc.Jumbotron([
+        dbc.Container([
+            dbc.Row([
+            html.H3("Dashboard how-to", className='text-left', ),
+            html.Br(),
+            html.Br(),
+        ]), 
+            dbc.Row([
+                html.H5("Space for video"),
+                html.Video(title="Dashboard how-to", src="", width=4),  
+            ]),
+        ], fluid=True),
+        #dbc.Container([
+            #html.Ul(id='my-list', children=[html.Li(i) for i in dei_list], className= 'mb-10 lead text-left'),  
+            #])
+           
+])    
 
 about = dbc.Jumbotron([
         dbc.Container([
@@ -536,12 +553,27 @@ output_row=dbc.Jumbotron([
             
 wordcloud = dbc.Jumbotron([
     dbc.Container([
-                    html.Img(
-                        src='assets/final_word_cloud.png', 
-                        style={'height': '100%','width': '100%'}, 
-                        className='image-center')
+        html.Br(),
+        dbc.Row([
+            html.H3("Efforts that you would like to see priortized (wordcloud)", className='text-left', ),
+            html.Br(),
+            html.Br(),
+        ]), 
+        dbc.Row([
+            dbc.Col([
+            html.Img(
+                        # src='assets/word_cloud3.png', 
+                        # style={'height': '100%','width': '100%'}, 
+                        # className='image-center')
+                    )
+                    ]),
+            dbc.Col([
+                html.H5("Space for wordcloud description", className='text-left', ),
+                html.H5("Still need to define STOPWORDS for wordcloud function. This will eliminate words like, 'see', 'well', etc.", className='text-left', )
                 ])
-            ])
+            ], align='center')       
+            ], fluid=True),
+        ])
                 
 
 def DEI_title():
@@ -550,6 +582,10 @@ def DEI_title():
 
 def about_():
     heading = about
+    return heading 
+
+def FC_video():
+    heading = video
     return heading 
 
 def FC_stats():
