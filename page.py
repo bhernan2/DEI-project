@@ -279,7 +279,7 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('The majority (86%) of all staff survey respondents agree or strongly agree that they are treated with respect at work and the same trend is seen across race, age, sexual orientation and tenure.'),
+                        html.Li('The majority (86%) of all staff survey respondents agree or strongly agree that they are treated with respect at work and a similar trend is seen across race, age, sexual orientation and tenure.'),
                     ]),
                 ]),
             ]),
@@ -301,7 +301,7 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('The majority (77%) of all staff survey respondents agree or strongly agree that they feel comforable being themselves at work and the same trend is seen across race, age, sexual orientation and tenure.'),
+                        html.Li('The majority (77%) of all staff survey respondents agree or strongly agree that they feel comforable being themselves at work and a similar trend is seen across race, age, sexual orientation and tenure.'),
                     ]),   
                 ]),
             ]),
