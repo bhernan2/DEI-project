@@ -52,9 +52,8 @@ video = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
             html.H3("Dashboard how-to", className='text-left', ),
+            ]),
             html.Br(),
-            html.Br(),
-        ]), 
             dbc.Row([
                 html.H5("Space for video"),
                 html.Video(title="Dashboard how-to", src="", width=4),  
@@ -69,9 +68,7 @@ video = dbc.Jumbotron([
 about = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
-                
-                html.H5("The subcommittee gathered on __/__/__ to develop the all staff survey, it was relased on __/__/__ and participants had X # of days to complete it. Survey participants were asked to rank individual experience questions from 1 to 5 (1 = strongly disagree, 2 = disagree, 3 = neutral, 4 = agree, 5 = strongly agree). The team investigated 1) how the distribution of demographics compared to the individual expierence question responses, 2) to see if there were any correlations between individual experience question responses and 3) designed a wordcloud to analyze an open ended question.", className='text-justify', ),  
-                      
+                html.H5("The subcommittee gathered on __/__/__ to develop the all staff survey, it was relased on __/__/__ and participants had X # of days to complete it. Survey participants were asked to rank individual experience questions from 1 to 5 (1 = strongly disagree, 2 = disagree, 3 = neutral, 4 = agree, 5 = strongly agree). The team investigated 1) how the distribution of demographics compared to the individual expierence question responses, 2) to see if there were any correlations between individual experience question responses and 3) designed a wordcloud to analyze an open ended question.", className='text-justify', ),   
             ]),
         ], fluid=True),
         #dbc.Container([
@@ -553,7 +550,6 @@ output_row=dbc.Jumbotron([
             
 wordcloud = dbc.Jumbotron([
     dbc.Container([
-        html.Br(),
         dbc.Row([
             html.H3("Efforts that you would like to see priortized (wordcloud)", className='text-left', ),
         ]), 
