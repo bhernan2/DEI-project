@@ -375,7 +375,7 @@ output_row=dbc.Jumbotron([
                     html.Ul([
                         html.Li('Survey respondents in the 18-24 age range agree or strongly agree (83%) that everyone at this organization is treated fairy regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'),
                         html.Li('71% of survey respondents who have worked af FC less than one year agree or strongly agree with this statement'),
-                        html.Li('45% and 32% of survey respndents who have worked at FC for one year and 3-5 years disagree or strongly disagree with this statement, respectively'),
+                        html.Li('45%, 32%, 23% of survey respndents who have worked at FC for one year, 1-3 and 3-5 years disagree or strongly disagree with this statement, respectively'),
                     ]),
                 ]),
             ]),
