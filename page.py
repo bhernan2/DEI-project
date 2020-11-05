@@ -348,10 +348,10 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li('')
+                        html.Li('Nearly half (47%) of all staff survey respondents agree or strongly agree that diversity and inclusiveness are openly discussed'),
+                        html.Li('75% of survey respondents in the 18-24 age range agree or strongly agree with this statement.'),
+                        html.Li('31% of LGBTQ+ and 23% straight survey respondents disagree or strongly disagree with this statement.'),
+                        html.Li('20% of White and 24% of Latinx/Hispanic survey respondents disagree or strongly disagree with this statement.')
                     ]),
                 ]),
             ]),
