@@ -262,6 +262,9 @@ output_row=dbc.Jumbotron([
             html.H3("Demographics X individual experience", className='text-center', ),
             html.Br(),
         ]),
+        dbc.Row([
+        html.P('*Total of totals shows when app first downloads. Select a category (total responses, race, age, etc.) to further explore the date')
+        ]),
         html.Br(), 
         dbc.Row([
             dbc.Col([
@@ -279,7 +282,7 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('The majority (86%) of all staff survey respondents agree + strongly agree that they are treated with respect at work and a similar trend is seen across race, age, sexual orientation and tenure.'),
+                        html.Li('The majority of all staff survey respondents agree + strongly agree that they are treated with respect at work and a similar trend is seen across race, age, sexual orientation and tenure.'),
                     ]),
                 ]),
             ]),
@@ -301,7 +304,7 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('The majority (77%) of all staff survey respondents agree + strongly agree that they feel comforable being themselves at work and a similar trend is seen across race, age, sexual orientation and tenure.'),
+                        html.Li('The majority of all staff survey respondents agree + strongly agree that they feel comforable being themselves at work and a similar trend is seen across race, age, sexual orientation and tenure.'),
                     ]),   
                 ]),
             ]),
@@ -348,7 +351,7 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('Nearly half (47%) of all staff survey respondents agree + strongly agree that diversity and inclusiveness are openly discussed'),
+                        html.Li('Nearly half of all staff survey respondents agree + strongly agree that diversity and inclusiveness are openly discussed'),
                         html.Li('83% of survey respondents in the 18-24 age range agree + strongly agree with this statement.'),
                         html.Li('31% of LGBTQ+ and 23% straight survey respondents disagree + strongly disagree with this statement.'),
                         html.Li('20% of White and 24% of Latinx/Hispanic survey respondents disagree + strongly disagree with this statement.')
@@ -420,10 +423,10 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('22% of employees who identify as Latinx disagree with the statement "If I raised a concern about ethics and integrity, I am confident my employer would is what is right".'),
+                        html.Li('22% of employees who identify as Latinx disagree with this statement.'),
                         html.Li('38% of Black/African Americans neither agree nor disagree with the statement.'),
-                        html.Li('75% of respondants aged 18-24 strongly agree that Foundation Communities would do what is right if a concern of ethics and intergity was raised whereas only 14% of employees within the age group 45-54 stronly agree.'),
-                        html.Li('20% of employees with tenure of 3-5years strongly disagree with the statement "If I raised a concern about ethics and integrity I am confident my employer will do what is right" compared to 50% of employees with less than one year of tenure who strongly agree with the statement.')
+                        html.Li('75% of respondants aged 18-24 strongly agree that FC would do what is right if a concern of ethics and intergity was raised whereas only 14% of employees within the age group 45-54 stronly agree.'),
+                        html.Li('20% of employees with tenure of 3-5years strongly disagree with this statement compared to 50% of employees with less than one year of tenure who strongly agree with the statement.')
                     ]),
                 ]),
             ]),
@@ -470,7 +473,7 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('86% of all staff survey respondents agree + strongly agree that their team members appreciate their contributions and a similar trend is seen across race, age, sexual orientation and tenure.'),
+                        html.Li('The majority of all staff survey respondents agree + strongly agree that their team members appreciate their contributions and a similar trend is seen across race, age, sexual orientation and tenure.'),
                     ]),
                 ]),
             ]),
