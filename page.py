@@ -71,17 +71,16 @@ card_content1 = [
             ("My organization treasurese diverse opinions and ideas."),
             html.Br(),
             html.Br(),
-            html.Br(),
         ], style={"display": "flex"}),
     ]),
     dbc.CardBody([
-            html.H1("34%", className="card-title"),
-            html.H4([
+            html.H2("34%", className="card-title"),
+            html.H5([
                 'of LGBTQ+ staff members either strongly disagree or disagree.',
                 ],className="card-text"),
             html.Br(),
-            html.H1("25%", className="card-title"),
-            html.H4([
+            html.H2("25%", className="card-title"),
+            html.H5([
                 'of employees who have been employeed between 1-10 years disagree or strongly disagree.',
                 ],className="card-text"),
         
@@ -93,8 +92,8 @@ card_content2 = [
         dbc.CardHeader("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.")
     ],style={"display": "flex"}),
     dbc.CardBody([
-            html.H1("54%", className="card-title"),
-            html.H4(
+            html.H2("54%", className="card-title"),
+            html.H5(
                 "of Black/African American identifying staff disagree or strongly disagree.",
                 className="card-text",),
         ]),
@@ -104,13 +103,13 @@ card_content3 = [
         dbc.CardHeader(" I have the same opportunities for advancement as other team members similar experience and performance levels.")
     ],style={"display": "flex"}),
     dbc.CardBody([
-            html.H1("63%", className="card-title"),
-            html.H4(
+            html.H2("63%", className="card-title"),
+            html.H5(
                 "of Black/African American identifying staff disagree or strongly disagree.",
                 className="card-text",),
             html.Br(),
-            html.H1("27%", className="card-title"),
-            html.H4(
+            html.H2("27%", className="card-title"),
+            html.H5(
                 "of LGBTQ+ identigying staff disagree or strongly disagree.",
                 className="card-text",),
         ]),
@@ -124,12 +123,12 @@ card_content4 = [
             ], style={"display": "flex"})
     ]),
     dbc.CardBody([
-            html.H1("100%", className="card-title"),
-            html.H4(
+            html.H2("100%", className="card-title"),
+            html.H5(
                 "of Native American identifying staff disagree or strongly disagree."),
             html.Br(),
-            html.H1("50%", className="card-title"),
-            html.H4(
+            html.H2("50%", className="card-title"),
+            html.H5(
                 "of Black/African American identifying staff disagree or strongly disagree.", 
                 className="card-text",),
                 
@@ -138,8 +137,8 @@ card_content4 = [
 card_content5 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H1("No. 1", className="card-title"),
-            html.H4(
+            html.H2("No. 1", className="card-title"),
+            html.H5(
                 "Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions",
                 className="card-text",),
         ]),
@@ -147,8 +146,8 @@ card_content5 = [
 card_content6 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H1("No. 2", className="card-title"),
-            html.H4(
+            html.H2("No. 2", className="card-title"),
+            html.H5(
                 "Increase diverse representation on board and advisory committees",
                 className="card-text",),
         ]),
@@ -156,8 +155,8 @@ card_content6 = [
 card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H1("No. 3", className="card-title"),
-            html.H4(
+            html.H2("No. 3", className="card-title"),
+            html.H5(
                 "Provide training for staff, leadership, and board",
                 className="card-text",),
         ]),
@@ -165,8 +164,8 @@ card_content7 = [
 card_content8 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H1("No. 4", className="card-title"),
-            html.H4(
+            html.H2("No. 4", className="card-title"),
+            html.H5(
                 "Develop recruitment and hiring protocols and strategies that include implicit bias testing for managers and supervisors",
                 className="card-text",),
         ]),
