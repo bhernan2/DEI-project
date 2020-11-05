@@ -69,7 +69,9 @@ card_content1 = [
     html.H3([
         dbc.CardHeader([
             ("My organization treasurese diverse opinions and ideas."),
-        ], style={"display": "flex"})
+            html.Br(),
+            html.Br(),
+        ], style={"display": "flex"}),
     ]),
     dbc.CardBody([
             html.H1("34%", className="card-title"),
@@ -298,8 +300,12 @@ output_row=dbc.Jumbotron([
             ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
             dbc.Col([
                 html.P([
-                    html.Li('77% of FC staff agree or strongly agree that they feel comforable being themselves at work.'),
-
+                    html.Ul([
+                        html.Li('77% of FC staff agree or strongly agree that they feel comforable being themselves at work.'),
+                        html.Li(''),
+                        html.Li(''),
+                        html.Li('')
+                    ]),   
                 ]),
             ]),
         ],align="center"), 
