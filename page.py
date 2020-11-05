@@ -492,10 +492,7 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li('')
+                        html.Li('81% of all staff survey respondents agree + strongly agree that their superviors tru to understand their point of views and a similar trend is seen across race, age, sexual orientation and tenure.'),
                     ]),
                 ]),
             ]),
@@ -517,10 +514,10 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li('')
+                        html.Li('Over 60% of all staff survery respondents agree + strongle agree that their workplace is committed to building the strengths of each employee.'),
+                        html.Li('38% of Black respondents disagree + strongly disagree with this statement compared to 12% of White and LatinX respondents.'),
+                        html.Li('23% of LGBTQ respondents disagree + strongly disagree with this statement compared to 14% of Straight respondents.'),
+                        html.Li('Over 50% of all tenure age ranges agree + strongly agree with this statement')
                     ]),
                 ]),
             ]),
