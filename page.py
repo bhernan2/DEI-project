@@ -48,7 +48,7 @@ title = dbc.Jumbotron([
             ]),
         ], fluid=True), 
     ]) 
-video= about = dbc.Jumbotron([
+video = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
             html.H3("Dashboard how-to", className='text-left', ),
