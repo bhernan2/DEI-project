@@ -420,10 +420,10 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li('')
+                        html.Li('22% of employees who identify as Latinx disagree with the statement "If I raised a concern about ethics and integrity, I am confident my employer would is what is right".'),
+                        html.Li('38% of Black/African Americans neither agree nor disagree with the statement.'),
+                        html.Li('75% of respondants aged 18-24 strongly agree that Foundation Communities would do what is right if a concern of ethics and intergity was raised whereas only 14% of employees within the age group 45-54 stronly agree.'),
+                        html.Li('20% of employees with tenure of 3-5years strongly disagree with the statement "If I raised a concern about ethics and integrity I am confident my employer will do what is right" compared to 50% of employees with less than one year of tenure who strongly agree with the statement.')
                     ]),
                 ]),
             ]),
