@@ -69,10 +69,7 @@ card_content1 = [
     html.H3([
         dbc.CardHeader([
             ("My organization treasurese diverse opinions and ideas."),
-            html.Br(), 
-            html.Br(), 
-            html.Br(),  
-        ])
+        ], style={"display": "flex"})
     ]),
     dbc.CardBody([
             html.H1("34%", className="card-title"),
@@ -91,7 +88,7 @@ card_content2 = [
     #dbc.CardHeader("Descriptive Stats"),
     html.H3([
         dbc.CardHeader("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.")
-    ]),
+    ],style={"display": "flex"}),
     dbc.CardBody([
             html.H1("54%", className="card-title"),
             html.H4(
@@ -102,7 +99,7 @@ card_content2 = [
 card_content3 = [
     html.H3([
         dbc.CardHeader(" I have the same opportunities for advancement as other team members similar experience and performance levels.")
-    ]),
+    ],style={"display": "flex"}),
     dbc.CardBody([
             html.H1("65%", className="card-title"),
             html.H4(
@@ -119,9 +116,7 @@ card_content4 = [
     html.H3([
         dbc.CardHeader([
             ("Diversity and inclusiveness issues are openly discussed at my organization."),
-            html.Br(),
-            html.Br(),
-            ])
+            ], style={"display": "flex"})
     ]),
     dbc.CardBody([
             html.H1("100%", className="card-title"),
@@ -178,23 +173,28 @@ descriptive_stats = dbc.Jumbotron([
             html.H2("Interesting findings", className='text-left', )
         ]), 
         html.Br(),
-        dbc.Row([  
-            dbc.Col(
-                dbc.Card(card_content1, color="primary", inverse=True), style={"display": "flex"}, width=6),
-            dbc.Col(
-                dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"}, width=6), 
-            ], className="mb-5"),
         dbc.Row([
+            dbc.CardDeck([ 
+                dbc.Col(
+                    dbc.Card(card_content1, color="primary", inverse=True), style={"display": "flex"}, width=6),
+                dbc.Col(
+                    dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"}, width=6), 
+            ]),
+        ], className="mb-5"),
+        dbc.Row([
+            dbc.CardDeck([
             dbc.Col(
                 dbc.Card(card_content3, color="dark", inverse=True), style={"display": "flex"}, width=6),
             dbc.Col(
                 dbc.Card(card_content4, color="success", inverse=True), style={"display": "flex"}, width=6),
+            ]),
             ], className="mb-5"), 
         dbc.Row([
             html.H2("DEI efforts that FC staff would like to see prioritized", className='text-left', )
         ]), 
         html.Br(),       
         dbc.Row([
+            dbc.CardDeck([
             dbc.Col(
                 dbc.Card(card_content5, color="warning", inverse=True),style={"display": "flex"},width=3),
             dbc.Col(
@@ -203,6 +203,7 @@ descriptive_stats = dbc.Jumbotron([
                 dbc.Card(card_content7, color="info", inverse=True),style={"display": "flex"},width=3),
             dbc.Col(
                 dbc.Card(card_content8, color="light", inverse=True),style={"display": "flex"},width=3),
+            ]),
             ], className="mb-5"),
     ], fluid=True),
 ])
