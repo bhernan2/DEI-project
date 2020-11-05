@@ -99,7 +99,7 @@ card_content2 = [
                 className="card-text",),
             html.Br(),
             html.H2("45%, 32%, 23%", className="card-title"),
-            html.H5("of survey respndents who have worked at FC for one year, 1-3 and 3-5 years disagree + strongly disagree with this statement, respectively", className="card-text",),
+            html.H5("of survey respndents who have worked at FC for one year, 1-3 and 3-5 years disagree + strongly disagree with this statement.", className="card-text",),
         ]),
 ]
 card_content3 = [
@@ -500,7 +500,7 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('81% of all staff survey respondents agree + strongly agree that their superviors tru to understand their point of views and a similar trend is seen across race, age, sexual orientation and tenure.'),
+                        html.Li('81% of all staff survey respondents agree + strongly agree that their superviors try to understand their point of views and a similar trend is seen across race, age, sexual orientation and tenure.'),
                     ]),
                 ]),
             ]),
