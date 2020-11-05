@@ -556,20 +556,18 @@ wordcloud = dbc.Jumbotron([
         html.Br(),
         dbc.Row([
             html.H3("Efforts that you would like to see priortized (wordcloud)", className='text-left', ),
-            html.Br(),
-            html.Br(),
         ]), 
+        html.Br(),
         dbc.Row([
             dbc.Col([
-            html.Img(
+            html.P("Space for wordcloud", className='text-left'),
                         # src='assets/word_cloud3.png', 
                         # style={'height': '100%','width': '100%'}, 
-                        # className='image-center')
-                    )
+                        # className='image-center'
                     ], width=6),
             dbc.Col([
-                html.H5("Space for wordcloud description", className='text-left', ),
-                html.H5("Still need to define STOPWORDS for wordcloud function. This will eliminate words like, 'see', 'well', etc.", className='text-left', )
+                html.P("Space for wordcloud description", className='text-left', ),
+                html.P("Still need to define STOPWORDS for wordcloud function. This will eliminate words like, 'see', 'well', etc.", className='text-left', )
                 ], width=6)
             ], align='center')       
             ], fluid=True),
