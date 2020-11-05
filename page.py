@@ -97,6 +97,9 @@ card_content2 = [
             html.H5(
                 "of Black/African American identifying staff disagree or strongly disagree.",
                 className="card-text",),
+            html.Br(),
+            html.H2("45%, 32%, 23%", className="card-title"),
+            html.H5("of survey respndents who have worked at FC for one year, 1-3 and 3-5 years disagree + strongly disagree with this statement, respectively", className="card-text",),
         ]),
 ]
 card_content3 = [
@@ -381,7 +384,6 @@ output_row=dbc.Jumbotron([
                     html.Ul([
                         html.Li('Survey respondents in the 18-24 age range agree + strongly agree (83%) that everyone at this organization is treated fairy regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'),
                         html.Li('71% of survey respondents who have worked af FC less than one year agree + strongly agree with this statement'),
-                        html.Li('45%, 32%, 23% of survey respndents who have worked at FC for one year, 1-3 and 3-5 years disagree + strongly disagree with this statement, respectively'),
                     ]),
                 ]),
             ]),
