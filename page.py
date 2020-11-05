@@ -279,10 +279,7 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li('')
+                        html.Li('The majority (86%) of all staff survey respondents agree or strongly agree that they are treated with respect at work and the same trend is seen across race, age, sexual orientation and tenure.'),
                     ]),
                 ]),
             ]),
@@ -304,10 +301,7 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li('77% of FC staff agree or strongly agree that they feel comforable being themselves at work.'),
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li('')
+                        html.Li('The majority (77%) of all staff survey respondents agree or strongly agree that they feel comforable being themselves at work and the same trend is seen across race, age, sexual orientation and tenure.'),
                     ]),   
                 ]),
             ]),
@@ -329,10 +323,10 @@ output_row=dbc.Jumbotron([
             dbc.Col([
                 html.P([
                     html.Ul([
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li(''),
-                        html.Li('')
+                        html.Li('65% of all staff survey respondents agree or strongly agree that employees at FC are treated with respect and dignigty'),
+                        html.Li('However, 25% of staff survey respondents who identify as Black/African American disgaree or strongly disagree with this statement'),
+                        html.Li('75% of survey respondents within the 18-24 age range agree with this statement.'),
+                        html.Li('46% of survey respondents in the tenure category of 5-10 years remained neutral.')
                     ]),
                 ]),
             ]),
