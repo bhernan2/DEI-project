@@ -119,6 +119,8 @@ card_content4 = [
     html.H3([
         dbc.CardHeader([
             ("Diversity and inclusiveness issues are openly discussed at my organization."),
+            html.Br(),
+            html.Br(),
             ], style={"display": "flex"})
     ]),
     dbc.CardBody([
