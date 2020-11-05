@@ -429,8 +429,8 @@ output_row=dbc.Jumbotron([
                 html.P([
                     html.Ul([
                         html.Li('22% of employees who identify as Latinx disagree with this statement.'),
-                        html.Li('38% of Black/African Americans neither agree nor disagree with the statement.'),
-                        html.Li('75% of respondants aged 18-24 strongly agree that FC would do what is right if a concern of ethics and intergity was raised whereas only 14% of employees within the age group 45-54 stronly agree.'),
+                        html.Li('38% of Black/African Americans neither agree nor disagree with this statement.'),
+                        html.Li('75% of respondants aged 18-24 strongly agree with this statement whereas only 14% of employees within the age group 45-54 stronly agree.'),
                         html.Li('20% of employees with tenure of 3-5years strongly disagree with this statement compared to 50% of employees with less than one year of tenure who strongly agree with the statement.')
                     ]),
                 ]),
@@ -523,8 +523,8 @@ output_row=dbc.Jumbotron([
                 html.P([
                     html.Ul([
                         html.Li('Over 60% of all staff survery respondents agree + strongle agree that their workplace is committed to building the strengths of each employee.'),
-                        html.Li('38% of Black respondents disagree + strongly disagree with this statement compared to 12% of White and Latinx respondents.'),
-                        html.Li('23% of LGBTQ respondents disagree + strongly disagree with this statement compared to 14% of Straight respondents.'),
+                        html.Li('38% of Black/African American respondents disagree + strongly disagree with this statement compared to 12% of White and Latinx respondents.'),
+                        html.Li('23% of LGBTQ+ respondents disagree + strongly disagree with this statement compared to 14% of straight respondents.'),
                         html.Li('Over 50% of all tenure age ranges agree + strongly agree with this statement')
                     ]),
                 ]),
