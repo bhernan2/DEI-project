@@ -71,6 +71,7 @@ card_content1 = [
             ("My organization treasurese diverse opinions and ideas."),
             html.Br(),
             html.Br(),
+            html.Br(),
         ], style={"display": "flex"}),
     ]),
     dbc.CardBody([
