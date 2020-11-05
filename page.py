@@ -66,7 +66,7 @@ about = dbc.Jumbotron([
 #descriptive stats cards 
 card_content1 = [
     #dbc.CardHeader("Descriptive Stats"),
-    html.H3([
+    html.H4([
         dbc.CardHeader([
             ("My organization treasurese diverse opinions and ideas."),
             html.Br(),
@@ -89,7 +89,7 @@ card_content1 = [
 ]
 card_content2 = [
     #dbc.CardHeader("Descriptive Stats"),
-    html.H3([
+    html.H4([
         dbc.CardHeader("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.")
     ],style={"display": "flex"}),
     dbc.CardBody([
@@ -100,7 +100,7 @@ card_content2 = [
         ]),
 ]
 card_content3 = [
-    html.H3([
+    html.H4([
         dbc.CardHeader(" I have the same opportunities for advancement as other team members similar experience and performance levels.")
     ],style={"display": "flex"}),
     dbc.CardBody([
@@ -116,7 +116,7 @@ card_content3 = [
         ]),
 ]
 card_content4 = [
-    html.H3([
+    html.H4([
         dbc.CardHeader([
             ("Diversity and inclusiveness issues are openly discussed at my organization."),
             html.Br(),
@@ -175,7 +175,7 @@ descriptive_stats = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
         dbc.Row([
-            html.H2("Interesting findings", className='text-left', )
+            html.H3("Room for improvement", className='text-left', )
         ]), 
         html.Br(),
         dbc.Row([
@@ -195,7 +195,7 @@ descriptive_stats = dbc.Jumbotron([
             ]),
             ], className="mb-5"), 
         dbc.Row([
-            html.H2("DEI efforts that FC staff would like to see prioritized", className='text-left', )
+            html.H3("DEI efforts that FC staff would like to see prioritized", className='text-left', )
         ]), 
         html.Br(),       
         dbc.Row([
