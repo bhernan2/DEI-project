@@ -91,12 +91,12 @@ card_content1 = [
     dbc.CardBody([
             html.H2("34%", className="card-title"),
             html.H5([
-                'of LGBTQ+ staff members either strongly disagree or disagree.',
+                'of LGBTQ+ staff members either strongly disagree + disagree.',
                 ],className="card-text"),
             html.Br(),
             html.H2("25%", className="card-title"),
             html.H5([
-                'of employees who have been employeed between 1-10 years disagree or strongly disagree.',
+                'of employees who have been employeed between 1-10 years disagree + strongly disagree.',
                 ],className="card-text"),
         
         ]),
@@ -109,7 +109,7 @@ card_content2 = [
     dbc.CardBody([
             html.H2("54%", className="card-title"),
             html.H5(
-                "of Black/African American identifying staff disagree or strongly disagree.",
+                "of Black/African American identifying staff disagree + strongly disagree.",
                 className="card-text",),
             html.Br(),
             html.H2("45%", className="card-title"),
@@ -123,12 +123,12 @@ card_content3 = [
     dbc.CardBody([
             html.H2("63%", className="card-title"),
             html.H5(
-                "of Black/African American identifying staff disagree or strongly disagree.",
+                "of Black/African American identifying staff disagree + strongly disagree.",
                 className="card-text",),
             html.Br(),
             html.H2("27%", className="card-title"),
             html.H5(
-                "of LGBTQ+ identigying staff disagree or strongly disagree.",
+                "of LGBTQ+ identigying staff disagree + strongly disagree.",
                 className="card-text",),
         ]),
 ]
@@ -143,11 +143,11 @@ card_content4 = [
     dbc.CardBody([
             html.H2("100%", className="card-title"),
             html.H5(
-                "of Native American identifying staff disagree or strongly disagree."),
+                "of Native American identifying staff disagree + strongly disagree."),
             html.Br(),
             html.H2("50%", className="card-title"),
             html.H5(
-                "of Black/African American identifying staff disagree or strongly disagree.", 
+                "of Black/African American identifying staff disagree + strongly disagree.", 
                 className="card-text",),
                 
         ]),
