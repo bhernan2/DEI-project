@@ -94,7 +94,7 @@ card_content = [
     dbc.CardBody([
             html.H2("81%", className="card-title"),
             html.H5([
-                'of all staff members either strongly agree + sagree.',
+                'of all staff members agree + strongly agree.',
                 ],className="card-text"),
             html.Br(),
             html.H2("88%", className="card-title"),
