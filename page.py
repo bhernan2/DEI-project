@@ -146,7 +146,7 @@ card_content2 = [
 ]
 card_content3 = [
     html.H4([
-        dbc.CardHeader(" I have the same opportunities for advancement as other team members similar experience and performance levels.")
+        dbc.CardHeader(" I have the same opportunities for advancement as other team members with similar experience and performance levels.")
     ],style={"display": "flex"}),
     dbc.CardBody([
             html.H2("63%", className="card-title"),
