@@ -78,6 +78,31 @@ about = dbc.Jumbotron([
 ])
 
 #descriptive stats cards 
+
+card_content = [
+    #dbc.CardHeader("Descriptive Stats"),
+    html.H4([
+        dbc.CardHeader([
+            ("My supervisor tries to understand my point of view."),
+            html.Br(),
+            ("At work I am treated with respect."),
+            html.Br(),
+            html.Br(),
+        ], style={"display": "flex"}),
+    ]),
+    dbc.CardBody([
+            html.H2("81%", className="card-title"),
+            html.H5([
+                'of all staff members either strongly agree + sagree.',
+                ],className="card-text"),
+            html.Br(),
+            html.H2("88%", className="card-title"),
+            html.H5([
+                'of all staff survey particapnts agree + strongly agree.',
+                ],className="card-text"),
+        
+        ]),
+]
 card_content1 = [
     #dbc.CardHeader("Descriptive Stats"),
     html.H4([
@@ -192,15 +217,17 @@ descriptive_stats = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
         dbc.Row([
-            html.H3("Room for improvement", className='text-left', )
+            html.H3("Key findings", className='text-left', )
         ]), 
         html.Br(),
         dbc.Row([
-            dbc.CardDeck([ 
+            dbc.CardDeck([
                 dbc.Col(
-                    dbc.Card(card_content1, color="primary", inverse=True), style={"display": "flex"}, width=6),
+                    dbc.Card(card_content, color="light", inverse=True), style={"display": "flex"}, width=4),
                 dbc.Col(
-                    dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"}, width=6), 
+                    dbc.Card(card_content1, color="primary", inverse=True), style={"display": "flex"}, width=4),
+                dbc.Col(
+                    dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"}, width=4), 
             ]),
         ], className="mb-5"),
         dbc.Row([
@@ -556,11 +583,13 @@ wordcloud = dbc.Jumbotron([
         html.Br(),
         dbc.Row([
             dbc.Col([
-            html.P("Space for wordcloud", className='text-left'),
-                        # src='assets/word_cloud3.png', 
-                        # style={'height': '100%','width': '100%'}, 
-                        # className='image-center'
-                    ], width=6),
+                html.H4([
+                    dbc.CardHeader("Wordcloud", className='text-left'),
+                        ]),
+                    dbc.CardBody([
+                         dbc.CardImg(src="/assets/word_cloud3.png", bottom=True),
+                    ])
+                    ], align="left", width=6),
             dbc.Col([
                 html.P("Space for wordcloud description", className='text-left', ),
                 html.P("Still need to define STOPWORDS for wordcloud function. This will eliminate words like, 'see', 'well', etc.", className='text-left', )
@@ -568,7 +597,24 @@ wordcloud = dbc.Jumbotron([
             ], align='center')       
             ], fluid=True),
         ])
-                
+
+
+# card_content3 = [
+#     html.H4([
+#         dbc.CardHeader(" I have the same opportunities for advancement as other team members similar experience and performance levels.")
+#     ],style={"display": "flex"}),
+#     dbc.CardBody([
+#             html.H2("63%", className="card-title"),
+#             html.H5(
+#                 "of Black/African American identifying staff disagree + strongly disagree.",
+#                 className="card-text",),
+#             html.Br(),
+#             html.H2("27%", className="card-title"),
+#             html.H5(
+#                 "of LGBTQ+ identigying staff disagree + strongly disagree.",
+#                 className="card-text",),
+#         ]),
+# ]
 
 def DEI_title():
     heading = title
