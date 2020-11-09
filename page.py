@@ -85,9 +85,8 @@ card_content = [
         dbc.CardHeader([
             ("My supervisor tries to understand my point of view."),
             html.Br(),
+            html.Br().
             ("At work I am treated with respect."),
-            html.Br(),
-            html.Br(),
         ], style={"display": "flex"}),
     ]),
     dbc.CardBody([
