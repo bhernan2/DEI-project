@@ -88,6 +88,7 @@ card_content = [
             html.Br(),
             ("At work I am treated with respect."),
             html.Br(),
+            html.Br(),
         ], style={"display": "flex"}),
     ]),
     dbc.CardBody([
