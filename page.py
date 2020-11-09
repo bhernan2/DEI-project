@@ -181,7 +181,7 @@ card_content5 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
             html.H2("No. 1", className="card-title"),
-            html.H3("135 survey participants"),
+            html.H3("N=135"),
             html.H5(
                 "Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions.",
                 className="card-text",),
@@ -191,7 +191,7 @@ card_content6 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
             html.H2("No. 2", className="card-title"),
-            html.H3("122 survey participants"),
+            html.H3("N=122"),
             html.H5(
                 "Provide training for staff, leadership and board.",
                 className="card-text",),
@@ -201,7 +201,7 @@ card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
             html.H2("No. 3", className="card-title"),
-            html.H3("90 survey participants"),
+            html.H3("N=90"),
             html.H5(
                 "Increase diverse representation on board and advisory committees.",
                 className="card-text",),
@@ -241,6 +241,12 @@ descriptive_stats = dbc.Jumbotron([
                 dbc.Card(card_content4, color="success", inverse=True), style={"display": "flex"}, width=6),
             ]),
             ], className="mb-5"), 
+    ], fluid=True),
+])
+
+priorities = dbc.Jumbotron([
+    dbc.Container([
+        html.Br(),
         dbc.Row([
             html.H3("DEI efforts that FC staff would like to see prioritized", className='text-left', )
         ]), 
@@ -256,8 +262,8 @@ descriptive_stats = dbc.Jumbotron([
             # dbc.Col(
             #     dbc.Card(card_content8, color="light", inverse=True),style={"display": "flex"},width=3),
             ]),
-            ], className="mb-5"),
-    ], fluid=True),
+            ], className="mb-5"), 
+    ], fluid=True)
 ])
 #figures row
 demo_row = html.Div([
@@ -581,7 +587,7 @@ output_row=dbc.Jumbotron([
 wordcloud = dbc.Jumbotron([
     dbc.Container([
         dbc.Row([
-            html.H3("Efforts that you would like to see priortized (wordcloud)", className='text-left', ),
+            html.H3("Other (please let us know what other efforts you'd like to see prioritized)", className='text-left', ),
         ]), 
         html.Br(),
         dbc.Row([
@@ -634,6 +640,10 @@ def FC_video():
 def FC_stats():
     cards = descriptive_stats
     return cards 
+
+def FC_prior():
+    heading = priorities
+    return heading
 
 def FC_demo_row():
     heading = demo_row
