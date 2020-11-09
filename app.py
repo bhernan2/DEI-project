@@ -21,8 +21,8 @@ def Dashboard():
     layout = html.Div([
     dei_title,
     dei_about,
-    dei_wordcloud,
     dei_video,
+    dei_wordcloud,
     dei_stats,
     dei_output
     #dei_demo,
