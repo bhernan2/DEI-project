@@ -87,6 +87,7 @@ card_content = [
             html.Br(),
             html.Br(),
             ("At work I am treated with respect."),
+            html.Br(),
         ], style={"display": "flex"}),
     ]),
     dbc.CardBody([
@@ -107,6 +108,7 @@ card_content1 = [
     html.H4([
         dbc.CardHeader([
             ("My organization treasurese diverse opinions and ideas."),
+            html.Br(),
             html.Br(),
             html.Br(),
             html.Br(),
