@@ -166,9 +166,9 @@ card_content4 = [
             ], style={"display": "flex"})
     ]),
     dbc.CardBody([
-            html.H2("100%", className="card-title"),
-            html.H5(
-                "of Native American identifying staff disagree + strongly disagree."),
+            # html.H2("100%", className="card-title"),
+            # html.H5(
+            #     "of Native American identifying staff disagree + strongly disagree."),
             html.Br(),
             html.H2("50%", className="card-title"),
             html.H5(
@@ -181,8 +181,9 @@ card_content5 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
             html.H2("No. 1", className="card-title"),
+            html.H3("135 survey participants"),
             html.H5(
-                "Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions",
+                "Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions.",
                 className="card-text",),
         ]),
 ] 
@@ -190,8 +191,9 @@ card_content6 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
             html.H2("No. 2", className="card-title"),
+            html.H3("122 survey participants"),
             html.H5(
-                "Increase diverse representation on board and advisory committees",
+                "Provide training for staff, leadership and board.",
                 className="card-text",),
         ]),
 ]
@@ -199,8 +201,9 @@ card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
             html.H2("No. 3", className="card-title"),
+            html.H3("90 survey participants"),
             html.H5(
-                "Provide training for staff, leadership, and board",
+                "Increase diverse representation on board and advisory committees.",
                 className="card-text",),
         ]),
 ]
@@ -245,13 +248,13 @@ descriptive_stats = dbc.Jumbotron([
         dbc.Row([
             dbc.CardDeck([
             dbc.Col(
-                dbc.Card(card_content5, color="warning", inverse=True),style={"display": "flex"},width=3),
+                dbc.Card(card_content5, color="warning", inverse=True),style={"display": "flex"},width=4),
             dbc.Col(
-                dbc.Card(card_content6, color="danger", inverse=True),style={"display": "flex"},width=3),
+                dbc.Card(card_content6, color="danger", inverse=True),style={"display": "flex"},width=4),
             dbc.Col(
-                dbc.Card(card_content7, color="info", inverse=True),style={"display": "flex"},width=3),
-            dbc.Col(
-                dbc.Card(card_content8, color="light", inverse=True),style={"display": "flex"},width=3),
+                dbc.Card(card_content7, color="info", inverse=True),style={"display": "flex"},width=4),
+            # dbc.Col(
+            #     dbc.Card(card_content8, color="light", inverse=True),style={"display": "flex"},width=3),
             ]),
             ], className="mb-5"),
     ], fluid=True),
@@ -587,11 +590,11 @@ wordcloud = dbc.Jumbotron([
                     dbc.CardHeader("Wordcloud", className='text-left'),
                         ]),
                     dbc.CardBody([
-                         dbc.CardImg(src="/assets/word_cloud3.png", bottom=True),
+                         dbc.CardImg(),
                     ])
                     ], align="left", width=6),
             dbc.Col([
-                html.P("Space for wordcloud description", className='text-left', ),
+                html.P("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text.", className='text-left', ),
                 html.P("Still need to define STOPWORDS for wordcloud function. This will eliminate words like, 'see', 'well', etc.", className='text-left', )
                 ], width=6)
             ], align='center')       
