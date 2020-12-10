@@ -617,7 +617,17 @@ collapse2 = html.Div([
                 ),
                 ],className="mt-3",),
     ])
-
+collapse3 = html.Div([
+        dbc.Button(
+            "Everyone at this organization is treated fairly.", size="lg", color="primary", id="left3", className="mr-1"),
+        dbc.Row([
+                dbc.Col(
+                    dbc.Collapse(
+                        dbc.Card("FC response rank avg compared to Gallup responses.", body=True),
+                        id="left-collapse3",)
+                ),
+                ],className="mt-3",),
+    ])
 
 
 wordcloud = dbc.Jumbotron([
@@ -641,7 +651,9 @@ wordcloud = dbc.Jumbotron([
                     html.Br(),
                     collapse1,
                     html.Br(),
-                    collapse2
+                    collapse2,
+                    html.Br(),
+                    collapse3
                 ], width=6)
             ], align='center')       
             ], fluid=True),
