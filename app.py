@@ -23,9 +23,9 @@ def Dashboard():
     dei_title,
     dei_about,
     dei_video,
-    dei_wordcloud,
     dei_stats,
-    dei_prior, 
+    dei_prior,
+    dei_wordcloud, 
     dei_output
     #dei_demo,
     #dei_dropdown,
