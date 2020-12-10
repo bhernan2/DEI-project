@@ -582,7 +582,7 @@ output_row=dbc.Jumbotron([
                         html.Li('Over 50% of all tenure age ranges agree + strongly agree with this statement')
                     ]),
                 ]),
-            ]),
+            ], align="left", width=3),
         ],align="center"), 
         html.Br(),   
     ], fluid=True), 
@@ -591,22 +591,19 @@ output_row=dbc.Jumbotron([
 wordcloud = dbc.Jumbotron([
     dbc.Container([
         dbc.Row([
-            html.H3("Other (please let us know what other efforts you'd like to see prioritized)", className='text-left', ),
+            html.H3("Please let us know what other efforts you'd like to see prioritized", className='text-left', ),
         ]), 
         html.Br(),
         dbc.Row([
             dbc.Col([
-                html.H4([
-                    dbc.CardHeader("Wordcloud", className='text-left'),
-                        ]),
+                dbc.Card([
+                    dbc.CardImg(src='assets/word_cloud3.png'),
                     dbc.CardBody([
-                         dbc.CardImg(src='assets/word_cloud3.png'),
-                    ])
-                    ], align="left", width=6),
-            dbc.Col([
-                html.P("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text.", className='text-left', ),
-                html.P("Still need to define STOPWORDS for wordcloud function. This will eliminate words like, 'see', 'well', etc.", className='text-left', )
-                ], width=6)
+                        html.H4("Wordcloud", className="card-title"),
+                        html.P("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text.")   
+                        ])
+                    ]),
+                ], width=6),
             ], align='center')       
             ], fluid=True),
         ])
