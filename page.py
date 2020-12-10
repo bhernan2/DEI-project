@@ -587,11 +587,43 @@ output_row=dbc.Jumbotron([
         html.Br(),   
     ], fluid=True), 
 ])            
-            
+
+collapse1 = html.Div(
+    [
+        dbc.Button(
+            "At work I feel comfortable being myself.", size="lg", color="primary", id="left", className="mr-1"
+        ),
+        dbc.Row(
+            [
+                dbc.Col(
+                    dbc.Collapse(
+                        dbc.Card("FC response rank avg compared to Gallup responses.", body=True),
+                        id="left-collapse",
+                    )
+                ),
+            ],
+            className="mt-3",
+        ),
+    ]
+)
+collapse2 = html.Div([
+        dbc.Button(
+            "Employees in my organization are treated with respect and dignity.", size="lg", color="primary", id="left2", className="mr-1"),
+        dbc.Row([
+                dbc.Col(
+                    dbc.Collapse(
+                        dbc.Card("FC response rank avg compared to Gallup responses.", body=True),
+                        id="left-collapse2",)
+                ),
+                ],className="mt-3",),
+    ])
+
+
+
 wordcloud = dbc.Jumbotron([
     dbc.Container([
         dbc.Row([
-            html.H3("Please let us know what other efforts you'd like to see prioritized", className='text-left', ),
+            html.H3("Other efforts you'd like to see prioritized", className='text-left', ),
         ]), 
         html.Br(),
         dbc.Row([
@@ -604,6 +636,13 @@ wordcloud = dbc.Jumbotron([
                         ])
                     ]),
                 ], width=6),
+            dbc.Col([
+                    html.H3("FC DEI response scores compared to Gallup response scores"),
+                    html.Br(),
+                    collapse1,
+                    html.Br(),
+                    collapse2
+                ], width=6)
             ], align='center')       
             ], fluid=True),
         ])
