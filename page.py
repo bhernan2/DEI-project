@@ -77,6 +77,7 @@ about = dbc.Jumbotron([
            
 ])
 
+
 #descriptive stats cards 
 
 card_content = [
@@ -599,7 +600,7 @@ wordcloud = dbc.Jumbotron([
                     dbc.CardHeader("Wordcloud", className='text-left'),
                         ]),
                     dbc.CardBody([
-                         dbc.CardImg(),
+                         dbc.CardImg(src='assets/word_cloud3.png'),
                     ])
                     ], align="left", width=6),
             dbc.Col([
