@@ -23,9 +23,9 @@ def FC_fig1():
         {'label': 'Tenure',
         'method': 'update',
         'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
-        # {'label': 'Status',
-        # 'method': 'update',
-        # 'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'At work, I am treated with respect.'}]}
+        {'label': 'Gender',
+        'method': 'update',
+        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'At work, I am treated with respect.'}]}
                    ]
     #defining graph objects
     x_total = dei['At work, I am treated with respect.  ']
@@ -51,10 +51,10 @@ def FC_fig1():
     x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["At work, I am treated with respect.  "]
     x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["At work, I am treated with respect.  "]
     x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["At work, I am treated with respect.  "]
-    # x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["At work, I am treated with respect.  "]
-    # x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["At work, I am treated with respect.  "]
-    # x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["At work, I am treated with respect.  "]
-    # x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["At work, I am treated with respect.  "]
+    x_gender1 = dei[dei["What is your gender?"]=="Female"]["At work, I am treated with respect.  "]
+    x_gender2 = dei[dei["What is your gender?"]=="Male"]["At work, I am treated with respect.  "]
+    x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["At work, I am treated with respect.  "]
+    x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["At work, I am treated with respect.  "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -80,10 +80,10 @@ def FC_fig1():
         go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
         go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
         go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
-        # go.Histogram(x=x_status1,name='Full-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75) 
+        go.Histogram(x=x_gender1,name='Female',opacity = .75),
+        go.Histogram(x=x_gender2,name='Male',opacity = .75),
+        go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75) 
      ]
 
     #defining layout
@@ -122,7 +122,7 @@ def FC_fig1():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.15,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -168,9 +168,9 @@ def FC_fig2():
                    {'label': 'Tenure',
                      'method': 'update',
                      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
-                #    {'label': 'Status',
-                #      'method': 'update',
-                #      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'At work, I feel comfortable being myself.'}]}
+                   {'label': 'Gender',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'At work, I feel comfortable being myself.'}]}
                    ]
 #defining graph objects
     x_total = dei['At work, I feel comfortable being myself.  ']
@@ -196,10 +196,10 @@ def FC_fig2():
     x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["At work, I feel comfortable being myself.  "]
     x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["At work, I feel comfortable being myself.  "]
     x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["At work, I feel comfortable being myself.  "]
-    # x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["At work, I feel comfortable being myself.  "]
-    # x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["At work, I feel comfortable being myself.  "]
-    # x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["At work, I feel comfortable being myself.  "]
-    # x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["At work, I feel comfortable being myself.  "]
+    x_gender1 = dei[dei["What is your gender?"]=="Female"]["At work, I feel comfortable being myself.  "]
+    x_gender2 = dei[dei["What is your gender?"]=="Male"]["At work, I feel comfortable being myself.  "]
+    x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["At work, I feel comfortable being myself.  "]
+    x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["At work, I feel comfortable being myself.  "]
 #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -225,10 +225,10 @@ def FC_fig2():
         go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
         go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
         go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
-        # go.Histogram(x=x_status1,name='Full-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75)
+        go.Histogram(x=x_gender1,name='Female',opacity = .75),
+        go.Histogram(x=x_gender2,name='Male',opacity = .75),
+        go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
      
      ]
 #defining layout
@@ -267,7 +267,7 @@ def FC_fig2():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.15,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -313,9 +313,9 @@ def FC_fig3():
                    {'label': 'Tenure',
                      'method': 'update',
                      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
-                #    {'label': 'Status',
-                #      'method': 'update',
-                #      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]}
+                   {'label': 'Gender',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]}
                    ]
     #defining graph objects
     x_total = dei["Employees in my organization are treated with respect and dignity.  "]
@@ -341,10 +341,10 @@ def FC_fig3():
     x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["Employees in my organization are treated with respect and dignity.  "]
     x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["Employees in my organization are treated with respect and dignity.  "]
     x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["Employees in my organization are treated with respect and dignity.  "]
-    # x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["Employees in my organization are treated with respect and dignity.  "]
-    # x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["Employees in my organization are treated with respect and dignity.  "]
-    # x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["Employees in my organization are treated with respect and dignity.  "]
-    # x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["Employees in my organization are treated with respect and dignity.  "]
+    x_gender1 = dei[dei["What is your gender?"]=="Female"]["Employees in my organization are treated with respect and dignity.  "]
+    x_gender2 = dei[dei["What is your gender?"]=="Male"]["Employees in my organization are treated with respect and dignity.  "]
+    x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["Employees in my organization are treated with respect and dignity.  "]
+    x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["Employees in my organization are treated with respect and dignity.  "]
 
     #defining data
     data=[
@@ -371,10 +371,10 @@ def FC_fig3():
         go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
         go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
         go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
-        # go.Histogram(x=x_status1,name='Full-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75)
+        go.Histogram(x=x_gender1,name='Female',opacity = .75),
+        go.Histogram(x=x_gender2,name='Male',opacity = .75),
+        go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
      
      ]
 
@@ -414,7 +414,7 @@ def FC_fig3():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.15,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -464,9 +464,9 @@ def FC_fig4():
                    {'label': 'Tenure',
                      'method': 'update',
                      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.  '}]},
-                #    {'label': 'Status',
-                #      'method': 'update',
-                #      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Diversity and nclusiveness issues are openly discussed.  '}]}
+                   {'label': 'Gender',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Diversity and inclusiveness issues are openly discussed.  '}]}
                    ]
     #defining graph objects
     x_total = dei["Diversity and Inclusiveness issues are openly discussed.  "]
@@ -492,10 +492,10 @@ def FC_fig4():
     x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["Diversity and Inclusiveness issues are openly discussed.  "]
     x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["Diversity and Inclusiveness issues are openly discussed.  "]
     x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["Diversity and Inclusiveness issues are openly discussed.  "]
-    # x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["Diversity and Inclusiveness issues are openly discussed.  "]
-    # x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["Diversity and Inclusiveness issues are openly discussed.  "]
-    # x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["Diversity and Inclusiveness issues are openly discussed.  "]
-    # x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["Diversity and Inclusiveness issues are openly discussed.  "]
+    x_gender1 = dei[dei["What is your gender?"]=="Female"]["Diversity and Inclusiveness issues are openly discussed.  "]
+    x_gender2 = dei[dei["What is your gender?"]=="Male"]["Diversity and Inclusiveness issues are openly discussed.  "]
+    x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["Diversity and Inclusiveness issues are openly discussed.  "]
+    x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["Diversity and Inclusiveness issues are openly discussed.  "]
 #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -521,10 +521,10 @@ def FC_fig4():
         go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
         go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
         go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
-        # go.Histogram(x=x_status1,name='Full-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75)
+        go.Histogram(x=x_gender1,name='Female',opacity = .75),
+        go.Histogram(x=x_gender2,name='Male',opacity = .75),
+        go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
      
      ]
 
@@ -565,7 +565,7 @@ def FC_fig4():
             buttons= list_updatemenus, 
             active=0,
             showactive=True,
-            x = 0.15,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -607,9 +607,9 @@ def FC_fig5():
                    {'label': 'Tenure',
                      'method': 'update',
                      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
-                #    {'label': 'Status',
-                #      'method': 'update',
-                #      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]}
+                   {'label': 'Gender',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]}
                    ]
     #defining graph objects
     x_total = dei["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
@@ -635,10 +635,10 @@ def FC_fig5():
     x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
     x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
     x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    # x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    # x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    # x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
-    # x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_gender1 = dei[dei["What is your gender?"]=="Female"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_gender2 = dei[dei["What is your gender?"]=="Male"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -664,10 +664,10 @@ def FC_fig5():
         go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
         go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
         go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
-        # go.Histogram(x=x_status1,name='Full-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75)
+        go.Histogram(x=x_gender1,name='Female',opacity = .75),
+        go.Histogram(x=x_gender2,name='Male',opacity = .75),
+        go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
      
      ]
 
@@ -708,7 +708,7 @@ def FC_fig5():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.15,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -750,9 +750,9 @@ def FC_fig6():
                    {'label': 'Tenure',
                      'method': 'update',
                      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
-                #    {'label': 'Status',
-                #      'method': 'update',
-                #      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]}
+                   {'label': 'Gender',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]}
                    ]
                    
     x_total = dei["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
@@ -778,10 +778,10 @@ def FC_fig6():
     x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
     x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
     x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
-    # x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
-    # x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
-    # x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
-    # x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_gender1 = dei[dei["What is your gender?"]=="Female"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_gender2 = dei[dei["What is your gender?"]=="Male"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -807,10 +807,10 @@ def FC_fig6():
         go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
         go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
         go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
-        # go.Histogram(x=x_status1,name='Full-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75)
+        go.Histogram(x=x_gender1,name='Female',opacity = .75),
+        go.Histogram(x=x_gender2,name='Male',opacity = .75),
+        go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
      
      ]
     layout=go.Layout(
@@ -848,7 +848,7 @@ def FC_fig6():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.15,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -890,9 +890,9 @@ def FC_fig7():
                    {'label': 'Tenure',
                      'method': 'update',
                      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
-                #    {'label': 'Status',
-                #      'method': 'update',
-                #      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]}
+                   {'label': 'Gender',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]}
                    ]
                    
     x_total = dei["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
@@ -918,10 +918,10 @@ def FC_fig7():
     x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
     x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
     x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
-    # x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
-    # x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
-    # x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
-    # x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_gender1 = dei[dei["What is your gender?"]=="Female"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_gender2 = dei[dei["What is your gender?"]=="Male"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -947,10 +947,10 @@ def FC_fig7():
         go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
         go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
         go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
-        # go.Histogram(x=x_status1,name='Full-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75)
+        go.Histogram(x=x_gender1,name='Female',opacity = .75),
+        go.Histogram(x=x_gender2,name='Male',opacity = .75),
+        go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
      
      ]
     layout=go.Layout(
@@ -988,7 +988,7 @@ def FC_fig7():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.15,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -1030,9 +1030,9 @@ def FC_fig8():
                    {'label': 'Tenure',
                      'method': 'update',
                      'args': [{'visible': [False, False, False,False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
-                #    {'label': 'Status',
-                #      'method': 'update',
-                #      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My organization treasures diverse opinions and ideas.'}]}
+                   {'label': 'Gender',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My organization treasures diverse opinions and ideas.'}]}
                    ]
                    
     x_total = dei["My organization treasures diverse opinions and ideas."]
@@ -1058,10 +1058,10 @@ def FC_fig8():
     x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["My organization treasures diverse opinions and ideas."]
     x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["My organization treasures diverse opinions and ideas."]
     x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["My organization treasures diverse opinions and ideas."]
-    # x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["My organization treasures diverse opinions and ideas."]
-    # x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["My organization treasures diverse opinions and ideas."]
-    # x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["My organization treasures diverse opinions and ideas."]
-    # x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["My organization treasures diverse opinions and ideas."] 
+    x_gender1 = dei[dei["What is your gender?"]=="Female"]["My organization treasures diverse opinions and ideas."]
+    x_gender2 = dei[dei["What is your gender?"]=="Male"]["My organization treasures diverse opinions and ideas."]
+    x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["My organization treasures diverse opinions and ideas."]
+    x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["My organization treasures diverse opinions and ideas."]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -1087,10 +1087,10 @@ def FC_fig8():
         go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
         go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
         go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
-        # go.Histogram(x=x_status1,name='Full-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75)
+        go.Histogram(x=x_gender1,name='Female',opacity = .75),
+        go.Histogram(x=x_gender2,name='Male',opacity = .75),
+        go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
      
      ]
     layout=go.Layout(
@@ -1128,7 +1128,7 @@ def FC_fig8():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.15,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -1170,9 +1170,9 @@ def FC_fig9():
                    {'label': 'Tenure',
                      'method': 'update',
                      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
-                #    {'label': 'Status',
-                #      'method': 'update',
-                #      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My team members appreciate my contributions.'}]}
+                   {'label': 'Gender',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My team members appreciate my contributions.'}]}
                    ]
                    
     x_total = dei["My team members appreciate my contributions. "]
@@ -1198,10 +1198,10 @@ def FC_fig9():
     x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["My team members appreciate my contributions. "]
     x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["My team members appreciate my contributions. "]
     x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["My team members appreciate my contributions. "]
-    # x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["My team members appreciate my contributions. "]
-    # x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["My team members appreciate my contributions. "]
-    # x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["My team members appreciate my contributions. "]
-    # x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["My team members appreciate my contributions. "]
+    x_gender1 = dei[dei["What is your gender?"]=="Female"]["My team members appreciate my contributions. "]
+    x_gender2 = dei[dei["What is your gender?"]=="Male"]["My team members appreciate my contributions. "]
+    x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["My team members appreciate my contributions. "]
+    x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["My team members appreciate my contributions. "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -1227,10 +1227,10 @@ def FC_fig9():
         go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
         go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
         go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
-        # go.Histogram(x=x_status1,name='Full-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75)
+        go.Histogram(x=x_gender1,name='Female',opacity = .75),
+        go.Histogram(x=x_gender2,name='Male',opacity = .75),
+        go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
      
      ]
     layout=go.Layout(
@@ -1268,7 +1268,7 @@ def FC_fig9():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.15,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -1310,9 +1310,9 @@ def FC_fig10():
                    {'label': 'Tenure',
                      'method': 'update',
                      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
-                #    {'label': 'Status',
-                #      'method': 'update',
-                #      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My supervisor tries to understand my point of view.'}]}
+                   {'label': 'Gender',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My supervisor tries to understand my point of view.'}]}
                    ]
                    
     x_total = dei["My supervisor tries to understand my point of view.  "]
@@ -1338,10 +1338,10 @@ def FC_fig10():
     x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["My supervisor tries to understand my point of view.  "]
     x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["My supervisor tries to understand my point of view.  "]
     x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["My supervisor tries to understand my point of view.  "]
-    # x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["My supervisor tries to understand my point of view.  "]
-    # x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["My supervisor tries to understand my point of view.  "]
-    # x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["My supervisor tries to understand my point of view.  "]
-    # x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["My supervisor tries to understand my point of view.  "]
+    x_gender1 = dei[dei["What is your gender?"]=="Female"]["My supervisor tries to understand my point of view.  "]
+    x_gender2 = dei[dei["What is your gender?"]=="Male"]["My supervisor tries to understand my point of view.  "]
+    x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["My supervisor tries to understand my point of view.  "]
+    x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["My supervisor tries to understand my point of view.  "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -1367,10 +1367,10 @@ def FC_fig10():
         go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
         go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
         go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
-        # go.Histogram(x=x_status1,name='Full-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75)
+        go.Histogram(x=x_gender1,name='Female',opacity = .75),
+        go.Histogram(x=x_gender2,name='Male',opacity = .75),
+        go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
      
      ]
     layout=go.Layout(
@@ -1408,7 +1408,7 @@ def FC_fig10():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.15,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -1450,9 +1450,9 @@ def FC_fig11():
                    {'label': 'Tenure',
                      'method': 'update',
                      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
-                #    {'label': 'Status',
-                #      'method': 'update',
-                #      'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]}
+                   {'label': 'Gender',
+                     'method': 'update',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]}
                    ]
                    
     x_total = dei["My workplace is committed to building the strengths of each employee.   "]
@@ -1478,10 +1478,10 @@ def FC_fig11():
     x_tenure4 = dei[dei["How long have you worked for FC?"]=="5-10 years"]["My workplace is committed to building the strengths of each employee.   "]
     x_tenure5 = dei[dei["How long have you worked for FC?"]=="10+ years"]["My workplace is committed to building the strengths of each employee.   "]
     x_tenure6 = dei[dei["How long have you worked for FC?"]=="1 year"]["My workplace is committed to building the strengths of each employee.   "]
-    # x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["My workplace is committed to building the strengths of each employee.   "]
-    # x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["My workplace is committed to building the strengths of each employee.   "]
-    # x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["My workplace is committed to building the strengths of each employee.   "]
-    # x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["My workplace is committed to building the strengths of each employee.   "]
+    x_gender1 = dei[dei["What is your gender?"]=="Female"]["My workplace is committed to building the strengths of each employee.   "]
+    x_gender2 = dei[dei["What is your gender?"]=="Male"]["My workplace is committed to building the strengths of each employee.   "]
+    x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["My workplace is committed to building the strengths of each employee.   "]
+    x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["My workplace is committed to building the strengths of each employee.   "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -1507,10 +1507,10 @@ def FC_fig11():
         go.Histogram(x=x_tenure4,name='5-10 years',opacity = .75),
         go.Histogram(x=x_tenure5,name='10+ years',opacity = .75),
         go.Histogram(x=x_tenure6,name='1 year',opacity = .75),
-        # go.Histogram(x=x_status1,name='Full-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time',opacity = .75),
-        # go.Histogram(x=x_status2,name='Seasonal',opacity = .75),
-        # go.Histogram(x=x_status2,name='Part-time, Seasonal',opacity = .75)
+        go.Histogram(x=x_gender1,name='Female',opacity = .75),
+        go.Histogram(x=x_gender2,name='Male',opacity = .75),
+        go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
      
      ]
     layout=go.Layout(
@@ -1548,7 +1548,7 @@ def FC_fig11():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.15,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
