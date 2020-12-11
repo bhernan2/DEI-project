@@ -598,7 +598,7 @@ output_row=dbc.Jumbotron([
                         html.Li('Over 50% of all tenure age ranges agree + strongly agree with this statement')
                     ]),
                 ]),
-            ], align="left", width=3),
+            ]),
         ],align="center"), 
         html.Br(),   
     ], fluid=True), 
