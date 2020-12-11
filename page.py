@@ -65,6 +65,22 @@ video = dbc.Jumbotron([
            
 ])    
 
+big_picture = dbc.Jumbotron([
+        dbc.Container([
+            dbc.Row([
+                html.H3("Big picture", className='text-left', ),   
+            ]),
+            html.Br(),
+            dbc.Row([
+                html.H5("Include big picture figure: interactive pie chart")
+            ])
+        ], fluid=True),
+        #dbc.Container([
+            #html.Ul(id='my-list', children=[html.Li(i) for i in dei_list], className= 'mb-10 lead text-left'),  
+            #])
+           
+])
+
 about = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
@@ -687,6 +703,9 @@ def about_():
 
 def FC_video():
     heading = video
+    return heading 
+def FC_big_pic():
+    heading = big_picture
     return heading 
 
 def FC_stats():
