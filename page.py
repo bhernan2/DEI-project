@@ -655,7 +655,7 @@ wordcloud = dbc.Jumbotron([
         dbc.Row([
             dbc.Col([
                 dbc.Card([
-                    dbc.CardImg(src='assets/word_cloud3.png'),
+                    dbc.CardImg(src='assets/word_cloud7.png'),
                     dbc.CardBody([
                         html.H4("Wordcloud", className="card-title"),
                         html.P("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text.")   
