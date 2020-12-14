@@ -285,47 +285,52 @@ priorities = dbc.Jumbotron([
             ], className="mb-5"), 
     ], fluid=True)
 ])
-#figures row
-demo_row = html.Div([
-    html.Br(),
-    dbc.Row([
-        
-        html.H3("Personal experience X demographics", className='lead text-center', ), 
-          
-            ]),
-    html.Br()
-    
-])
 #dropdown row
-
-
 dropdown_row = html.Div([
-    dbc.Row([
-        dbc.Container([
-            dcc.Dropdown(
-            id='dei-dropdown', 
-            value = 'item1',
-            style={'backgroundColor': '#cdd3dc', 'maxWidth': '1460px'},
-            options=[
-                ({"label":"At work I am treated with respect.", "value":"item1"}),
-                ({"label":"At work, I feel comfortable being myself.", "value":'item2'}),
-                #dbc.DropdownMenuItem("Diversity and inclusiveness issues are openly discussed.", id='item3'),
-                #dbc.DropdownMenuItem("Employees in my organization are treated with respect and dignity", id='item4'),
-                #dbc.DropdownMenuItem("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.", id='item5'),
-                #dbc.DropdownMenuItem("I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.", id='item6'),
-                #dbc.DropdownMenuItem("If I raised a concern about ethics and integrity, I am confident my employer would do what is right.", id='item7'),
-                #dbc.DropdownMenuItem("My organization treasures diverse opinions and ideas.", id='item8'),
-                #dbc.DropdownMenuItem("My team members appreciate my contributions.", id='item9'),
-                #dbc.DropdownMenuItem("My supervisor tries to understand my point of view.", id='item10'),
-                #dbc.DropdownMenuItem("My workplace is committed to building the strengths of each employee.", id='item11')
-                    ]
+    dbc.Jumbotron([
+    dbc.Container([
+            dbc.Row([
+                html.Br(),
+                html.H3("Demographics X individual experience", className='text-center', ),
+                html.Br(),
+        ]),
+            dbc.Row([
+                html.P('*Total of totals shows when app first downloads. Select a category (total responses, race, age, etc.) to further explore the data.'),
+            ]),
+            dbc.Row([
+                html.P('*All figures are interactive! Hover over bars to see individual exerience ranking counts or select individual subcategories from the legend.'),
+            ]),
+                html.Br(),
+            dbc.Row([
+                dbc.Col([
+                dcc.Dropdown(
+                    id='dei-dropdown', 
+                    clearable=False,
+                    style={'backgroundColor': '#cdd3dc', 'width': '100%'},
+                    options=[
+                        {'label': 'At work, I am treated with respect.', 'value': 'plot1-info'},
+                        {'label': 'At work, I feel comfortable being myself.', 'value': 'plot2-info'},
+                        {'label': 'Employees in my organization are treated with respect and dignity.', 'value': 'plot3-info'},
+                        {'label': 'Diversity and inclusiveness issues are openly discussed.', 'value': 'plot4-info'},
+                        {'label': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.', 'value': 'plot5-info'},
+                        {'label': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.', 'value': 'plot6-info'},
+                        {'label': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.', 'value': 'plot7-info'},
+                        {'label': 'My organization treasures diverse opinions and ideas.', 'value': 'plot8-info'},
+                        {'label': 'My team members appreciate my contributions.', 'value': 'plot9-info'},
+                        {'label': 'My supervisor tries to understand my point of view.', 'value': 'plot10-info'},
+                        {'label': 'My workplace is committed to building the strengths of each employee.', 'value': 'plot11-info'},        
+                        ],
+                    placeholder='Select a question'
                 )
-
-        ], className="mb-5"),
-         
-        
-    ])
+                ], width=6),
+            ], className="mb-5"),
+            dbc.Row(id='dd-output-container'),
+            html.Br(),
+        ], fluid=True),
+    ]),
 ])
+           
+
 
 #output row
 output_row=dbc.Jumbotron([
@@ -362,7 +367,7 @@ output_row=dbc.Jumbotron([
                     ]),
                 ]),
             ]),
-        ],align="center"), 
+        ],id='fig1-info', align="center"), 
         html.Br(), 
         dbc.Row([
             dbc.Col([
@@ -663,13 +668,19 @@ wordcloud = dbc.Jumbotron([
                     ]),
                 ], width=6),
             dbc.Col([
+                dbc.Row([
                     html.H3("FC DEI response scores compared to Gallup response scores"),
-                    html.Br(),
-                    collapse1,
-                    html.Br(),
-                    collapse2,
-                    html.Br(),
-                    collapse3
+                ]),
+                dbc.Card([
+                    dbc.CardBody([
+                        html.Br(),
+                        dbc.Row([collapse1]),
+                        html.Br(),
+                        dbc.Row([collapse2]),
+                        html.Br(),
+                        dbc.Row([collapse3])
+                        ]),
+                    ]),
                 ], width=6)
             ], align='center')       
             ], fluid=True),
@@ -730,3 +741,6 @@ def FC_output():
 def FC_wordcloud():
     heading = wordcloud
     return heading 
+def FC_graph1():
+    plot = graph1
+    return plot
