@@ -220,22 +220,27 @@ card_content6 = [
 card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H2("No. 3", className="card-title"),
-            html.H3("N=90"),
-            html.H5(
-                "Increase diverse representation on board and advisory committees.",
-                className="card-text",),
+        html.H2("No.3", className="card-title"),
+        dbc.Button("Priority", id='popover-target', color='info', size='lg', block=True),
+        dbc.Popover([
+            dbc.PopoverHeader("90 survey respondents"),
+            dbc.PopoverBody("Increase diverse representation on board and advisory committees.")
+        ], 
+        id="popover",
+        is_open=False,
+        target="popover-target"
+        )
         ]),
 ]
-card_content8 = [
-    #dbc.CardHeader("Descriptive Stats"),
-    dbc.CardBody([
-            html.H2("No. 4", className="card-title"),
-            html.H5(
-                "Develop recruitment and hiring protocols and strategies that include implicit bias testing for managers and supervisors",
-                className="card-text",),
-        ]),
-]
+# card_content8 = [
+#     #dbc.CardHeader("Descriptive Stats"),
+#     dbc.CardBody([
+#             html.H2("No. 4", className="card-title"),
+#             html.H5(
+#                 "Develop recruitment and hiring protocols and strategies that include implicit bias testing for managers and supervisors",
+#                 className="card-text",),
+#         ]),
+# ]
 descriptive_stats = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
@@ -393,22 +398,16 @@ wordcloud = dbc.Jumbotron([
                 dbc.Row([
                     html.H3("FC DEI response scores compared to Gallup response scores"),
                 ]),
-                dbc.Card([
-                    dbc.CardBody([
-                        html.Br(),
-                        dbc.Row([collapse1]),
-                        html.Br(),
-                        dbc.Row([collapse2]),
-                        html.Br(),
-                        dbc.Row([collapse3])
-                        ]),
-                    ]),
+                html.Br(),
+                dbc.Row([collapse1]),
+                html.Br(),
+                dbc.Row([collapse2]),
+                html.Br(),
+                dbc.Row([collapse3])        
                 ], width=6)
             ], align='center')       
             ], fluid=True),
         ])
-
-
 
 def DEI_title():
     heading = title
