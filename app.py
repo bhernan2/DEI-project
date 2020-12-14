@@ -5,7 +5,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output, State
 import sys
 
-from page import DEI_title, about_, FC_stats, FC_prior, FC_video, FC_wordcloud, FC_big_pic, FC_dropdown_row #FC_output
+from page import DEI_title, about_, FC_stats, FC_prior, FC_video, FC_wordcloud, FC_big_pic, FC_dropdown_row 
 from figures import FC_fig1, FC_fig2, FC_fig3, FC_fig4, FC_fig5, FC_fig6, FC_fig7, FC_fig8, FC_fig9, FC_fig10, FC_fig11
 
 dei_title = DEI_title()
@@ -15,7 +15,6 @@ dei_about = about_()
 dei_video = FC_video()
 dei_big_pic = FC_big_pic()
 dei_dropdown = FC_dropdown_row()
-#dei_output = FC_output()
 dei_wordcloud = FC_wordcloud()
 
 #this is just to save
@@ -28,9 +27,7 @@ def Dashboard():
     dei_stats,
     dei_prior,
     dei_wordcloud, 
-    #dei_output,
     dei_dropdown,
-    #FC_graph1
     ])
     return layout 
 
@@ -313,7 +310,7 @@ def update_plot(value):
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
                         html.P([
-                            hhtml.Ul([
+                            html.Ul([
                                 html.Li('The majority of all staff survey respondents agree + strongly agree that their team members appreciate their contributions and a similar trend is seen across race, age, sexual orientation and tenure.'),
                             ]),
                         ]),
