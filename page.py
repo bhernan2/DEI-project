@@ -312,9 +312,9 @@ dropdown_row = html.Div([
                         {'label': 'At work, I feel comfortable being myself.', 'value': 'plot2-info'},
                         {'label': 'Employees in my organization are treated with respect and dignity.', 'value': 'plot3-info'},
                         {'label': 'Diversity and inclusiveness issues are openly discussed.', 'value': 'plot4-info'},
-                        {'label': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.', 'value': 'plot5-info'},
-                        {'label': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.', 'value': 'plot6-info'},
-                        {'label': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.', 'value': 'plot7-info'},
+                        {'label': 'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.', 'value': 'plot5-info'},
+                        {'label': 'I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.', 'value': 'plot6-info'},
+                        {'label': 'If I raised a concern about ethics and integrity, I am confident my employer would do what is right.', 'value': 'plot7-info'},
                         {'label': 'My organization treasures diverse opinions and ideas.', 'value': 'plot8-info'},
                         {'label': 'My team members appreciate my contributions.', 'value': 'plot9-info'},
                         {'label': 'My supervisor tries to understand my point of view.', 'value': 'plot10-info'},
@@ -322,7 +322,7 @@ dropdown_row = html.Div([
                         ],
                     placeholder='Select a question'
                 )
-                ], width=6),
+                ]),
             ], className="mb-5"),
             dbc.Row(id='dd-output-container'),
             html.Br(),
