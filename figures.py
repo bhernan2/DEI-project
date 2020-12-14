@@ -10,22 +10,25 @@ def FC_fig1():
     list_updatemenus = [
         {'label': 'Total responses',
         'method': 'update',
-        'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+        'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False,]}, {'title': 'At work, I am treated with respect.'}]},
         {'label': 'Race',
         'method': 'update',
-        'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+        'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False,]}, {'title': 'At work, I am treated with respect.'}]},
         {'label': 'Age',
         'method': 'update',
-        'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+        'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False,]}, {'title': 'At work, I am treated with respect.'}]},
         {'label': 'Sexual Orientation',
         'method': 'update',
-        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False,]}, {'title': 'At work, I am treated with respect.'}]},
         {'label': 'Tenure',
         'method': 'update',
-        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'At work, I am treated with respect.'}]},
+        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False,]}, {'title': 'At work, I am treated with respect.'}]},
         {'label': 'Gender',
         'method': 'update',
-        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'At work, I am treated with respect.'}]}
+        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, False, False, False, False,]}, {'title': 'At work, I am treated with respect.'}]},
+        {'label': 'Status',
+        'method': 'update',
+        'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'At work, I am treated with respect.'}]}
                    ]
     #defining graph objects
     x_total = dei['At work, I am treated with respect.  ']
@@ -55,6 +58,12 @@ def FC_fig1():
     x_gender2 = dei[dei["What is your gender?"]=="Male"]["At work, I am treated with respect.  "]
     x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["At work, I am treated with respect.  "]
     x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["At work, I am treated with respect.  "]
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["At work, I am treated with respect.  "]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["At work, I am treated with respect.  "]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["At work, I am treated with respect.  "]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["At work, I am treated with respect.  "]
+    
+    
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -83,7 +92,11 @@ def FC_fig1():
         go.Histogram(x=x_gender1,name='Female',opacity = .75),
         go.Histogram(x=x_gender2,name='Male',opacity = .75),
         go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
-        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75) 
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75), 
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status3,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status4,name='Part-time, Seasonal',opacity = .75)
      ]
 
     #defining layout
@@ -122,7 +135,7 @@ def FC_fig1():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.1,
+            x = 0.05,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -155,22 +168,25 @@ def FC_fig2():
 #defining list_updatemenus
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False,]}, {'title': 'At work, I feel comfortable being myself.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False,]}, {'title': 'At work, I feel comfortable being myself.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False,]}, {'title': 'At work, I feel comfortable being myself.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False,]}, {'title': 'At work, I feel comfortable being myself.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False,]}, {'title': 'At work, I feel comfortable being myself.'}]},
                    {'label': 'Gender',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'At work, I feel comfortable being myself.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, False, False, False, False]}, {'title': 'At work, I feel comfortable being myself.'}]},
+                    {'label': 'Status',
+                    'method': 'update',
+                    'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'At work, I feel comfortable being myself.'}]}
                    ]
 #defining graph objects
     x_total = dei['At work, I feel comfortable being myself.  ']
@@ -200,6 +216,10 @@ def FC_fig2():
     x_gender2 = dei[dei["What is your gender?"]=="Male"]["At work, I feel comfortable being myself.  "]
     x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["At work, I feel comfortable being myself.  "]
     x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["At work, I feel comfortable being myself.  "]
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["At work, I feel comfortable being myself.  "]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["At work, I feel comfortable being myself.  "]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["At work, I feel comfortable being myself.  "]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["At work, I feel comfortable being myself.  "]
 #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -228,7 +248,11 @@ def FC_fig2():
         go.Histogram(x=x_gender1,name='Female',opacity = .75),
         go.Histogram(x=x_gender2,name='Male',opacity = .75),
         go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
-        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75),
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status3,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status4,name='Part-time, Seasonal',opacity = .75)
      
      ]
 #defining layout
@@ -267,7 +291,7 @@ def FC_fig2():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.1,
+            x = 0.05,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -300,22 +324,25 @@ def FC_fig3():
     #defining list_updatemenus
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False,]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False,]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False,]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False,]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False,]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
                    {'label': 'Gender',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True,False, False, False, False, ]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]},
+                     {'label': 'Status',
+                    'method': 'update',
+                    'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Employees in my organization are treated with respect and dignity.'}]}
                    ]
     #defining graph objects
     x_total = dei["Employees in my organization are treated with respect and dignity.  "]
@@ -345,7 +372,10 @@ def FC_fig3():
     x_gender2 = dei[dei["What is your gender?"]=="Male"]["Employees in my organization are treated with respect and dignity.  "]
     x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["Employees in my organization are treated with respect and dignity.  "]
     x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["Employees in my organization are treated with respect and dignity.  "]
-
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["Employees in my organization are treated with respect and dignity.  "]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["Employees in my organization are treated with respect and dignity.  "]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["Employees in my organization are treated with respect and dignity.  "]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["Employees in my organization are treated with respect and dignity.  "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -374,7 +404,11 @@ def FC_fig3():
         go.Histogram(x=x_gender1,name='Female',opacity = .75),
         go.Histogram(x=x_gender2,name='Male',opacity = .75),
         go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
-        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75),
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status3,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status4,name='Part-time, Seasonal',opacity = .75)
      
      ]
 
@@ -414,7 +448,7 @@ def FC_fig3():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.1,
+            x = 0.05,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -451,22 +485,25 @@ def FC_fig3():
 def FC_fig4():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
-                   {'label': 'Tenure',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]},
+                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.  '}]},
-                   {'label': 'Gender',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.  '}]},
+                    {'label': 'Gender',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Diversity and inclusiveness issues are openly discussed.  '}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, False, False, False, False]}, {'title': 'Diversity and inclusiveness issues are openly discussed.  '}]},
+                    {'label': 'Status',
+                    'method': 'update',
+                    'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Diversity and inclusiveness issues are openly discussed.'}]}
                    ]
     #defining graph objects
     x_total = dei["Diversity and Inclusiveness issues are openly discussed.  "]
@@ -496,6 +533,10 @@ def FC_fig4():
     x_gender2 = dei[dei["What is your gender?"]=="Male"]["Diversity and Inclusiveness issues are openly discussed.  "]
     x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["Diversity and Inclusiveness issues are openly discussed.  "]
     x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["Diversity and Inclusiveness issues are openly discussed.  "]
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["Diversity and Inclusiveness issues are openly discussed.  "]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["Diversity and Inclusiveness issues are openly discussed.  "]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["Diversity and Inclusiveness issues are openly discussed.  "]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["Diversity and Inclusiveness issues are openly discussed.  "]
 #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -524,8 +565,11 @@ def FC_fig4():
         go.Histogram(x=x_gender1,name='Female',opacity = .75),
         go.Histogram(x=x_gender2,name='Male',opacity = .75),
         go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
-        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
-     
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75),
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status3,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status4,name='Part-time, Seasonal',opacity = .75)
      ]
 
      #defining layout
@@ -565,7 +609,7 @@ def FC_fig4():
             buttons= list_updatemenus, 
             active=0,
             showactive=True,
-            x = 0.1,
+            x = 0.05,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -594,22 +638,25 @@ def FC_fig4():
 def FC_fig5():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
-                   {'label': 'Tenure',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
+                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
-                   {'label': 'Gender',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
+                    {'label': 'Gender',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, False, False, False, False]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]},
+                    {'label': 'Status',
+                    'method': 'update',
+                    'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'Everyone at this organization is treated fairly regardless of ethnic background, race, <br>gender, age, disability, or other differences not related to job performance.'}]}
                    ]
     #defining graph objects
     x_total = dei["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
@@ -639,6 +686,11 @@ def FC_fig5():
     x_gender2 = dei[dei["What is your gender?"]=="Male"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
     x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
     x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.  "]
+    
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -667,7 +719,11 @@ def FC_fig5():
         go.Histogram(x=x_gender1,name='Female',opacity = .75),
         go.Histogram(x=x_gender2,name='Male',opacity = .75),
         go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
-        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75),
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status3,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status4,name='Part-time, Seasonal',opacity = .75)
      
      ]
 
@@ -708,7 +764,7 @@ def FC_fig5():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.1,
+            x = 0.05,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -737,22 +793,25 @@ def FC_fig5():
 def FC_fig6():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
-                   {'label': 'Tenure',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
+                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
-                   {'label': 'Gender',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
+                    {'label': 'Gender',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, False, False, False, False]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]},
+                    {'label': 'Status',
+                    'method': 'update',
+                    'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'I have the same opportunities for advancement as other team members <br>at my organization with similar experience and performance levels.'}]}
                    ]
                    
     x_total = dei["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
@@ -782,6 +841,10 @@ def FC_fig6():
     x_gender2 = dei[dei["What is your gender?"]=="Male"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
     x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
     x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.  "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -810,7 +873,11 @@ def FC_fig6():
         go.Histogram(x=x_gender1,name='Female',opacity = .75),
         go.Histogram(x=x_gender2,name='Male',opacity = .75),
         go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
-        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75),
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status3,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status4,name='Part-time, Seasonal',opacity = .75)
      
      ]
     layout=go.Layout(
@@ -848,7 +915,7 @@ def FC_fig6():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.1,
+            x = 0.05,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -877,22 +944,25 @@ def FC_fig6():
 def FC_fig7():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
-                   {'label': 'Tenure',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
+                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
-                   {'label': 'Gender',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
+                    {'label': 'Gender',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, False, False, False, False]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]},
+                    {'label': 'Status',
+                    'method': 'update',
+                    'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'If I raised a concern about ethics and integrity, I am <br>confident my employer would do what is right.'}]}
                    ]
                    
     x_total = dei["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
@@ -922,6 +992,10 @@ def FC_fig7():
     x_gender2 = dei[dei["What is your gender?"]=="Male"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
     x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
     x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["If I raised a concern about ethics and integrity, I am confident my employer would do what is right. "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -950,7 +1024,11 @@ def FC_fig7():
         go.Histogram(x=x_gender1,name='Female',opacity = .75),
         go.Histogram(x=x_gender2,name='Male',opacity = .75),
         go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
-        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75),
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status3,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status4,name='Part-time, Seasonal',opacity = .75)
      
      ]
     layout=go.Layout(
@@ -988,7 +1066,7 @@ def FC_fig7():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.1,
+            x = 0.05,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -1017,22 +1095,25 @@ def FC_fig7():
 def FC_fig8():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
-                   {'label': 'Tenure',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
+                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False,False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
-                   {'label': 'Gender',
+                     'args': [{'visible': [False, False, False,False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
+                    {'label': 'Gender',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My organization treasures diverse opinions and ideas.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, False, False, False, False]}, {'title': 'My organization treasures diverse opinions and ideas.'}]},
+                    {'label': 'Status',
+                    'method': 'update',
+                    'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My organization treasures diverse opinions and ideas.'}]}
                    ]
                    
     x_total = dei["My organization treasures diverse opinions and ideas."]
@@ -1062,6 +1143,10 @@ def FC_fig8():
     x_gender2 = dei[dei["What is your gender?"]=="Male"]["My organization treasures diverse opinions and ideas."]
     x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["My organization treasures diverse opinions and ideas."]
     x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["My organization treasures diverse opinions and ideas."]
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["My organization treasures diverse opinions and ideas."]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["My organization treasures diverse opinions and ideas."]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["My organization treasures diverse opinions and ideas."]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["My organization treasures diverse opinions and ideas."]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -1090,7 +1175,11 @@ def FC_fig8():
         go.Histogram(x=x_gender1,name='Female',opacity = .75),
         go.Histogram(x=x_gender2,name='Male',opacity = .75),
         go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
-        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75),
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status3,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status4,name='Part-time, Seasonal',opacity = .75)
      
      ]
     layout=go.Layout(
@@ -1128,7 +1217,7 @@ def FC_fig8():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.1,
+            x = 0.05,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -1157,22 +1246,25 @@ def FC_fig8():
 def FC_fig9():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
-                   {'label': 'Tenure',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
+                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
-                   {'label': 'Gender',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
+                    {'label': 'Gender',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My team members appreciate my contributions.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, False, False, False, False]}, {'title': 'My team members appreciate my contributions.'}]},
+                    {'label': 'Status',
+                    'method': 'update',
+                    'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My team members appreciate my contributions.'}]}
                    ]
                    
     x_total = dei["My team members appreciate my contributions. "]
@@ -1202,6 +1294,10 @@ def FC_fig9():
     x_gender2 = dei[dei["What is your gender?"]=="Male"]["My team members appreciate my contributions. "]
     x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["My team members appreciate my contributions. "]
     x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["My team members appreciate my contributions. "]
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["My team members appreciate my contributions. "]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["My team members appreciate my contributions. "]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["My team members appreciate my contributions. "]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["My team members appreciate my contributions. "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -1230,7 +1326,11 @@ def FC_fig9():
         go.Histogram(x=x_gender1,name='Female',opacity = .75),
         go.Histogram(x=x_gender2,name='Male',opacity = .75),
         go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
-        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75),
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status3,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status4,name='Part-time, Seasonal',opacity = .75)
      
      ]
     layout=go.Layout(
@@ -1268,7 +1368,7 @@ def FC_fig9():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.1,
+            x = 0.05,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -1297,23 +1397,26 @@ def FC_fig9():
 def FC_fig10():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
-                   {'label': 'Tenure',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
+                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
-                   {'label': 'Gender',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
+                    {'label': 'Gender',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My supervisor tries to understand my point of view.'}]}
-                   ]
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, False, False, False, False]}, {'title': 'My supervisor tries to understand my point of view.'}]},
+                    {'label': 'Status',
+                    'method': 'update',
+                    'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My supervisor tries to understand my point of view.'}]}
+                    ]
                    
     x_total = dei["My supervisor tries to understand my point of view.  "]
     x_white = dei[dei['What is your race? ']=="White"]["My supervisor tries to understand my point of view.  "]
@@ -1342,6 +1445,10 @@ def FC_fig10():
     x_gender2 = dei[dei["What is your gender?"]=="Male"]["My supervisor tries to understand my point of view.  "]
     x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["My supervisor tries to understand my point of view.  "]
     x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["My supervisor tries to understand my point of view.  "]
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["My supervisor tries to understand my point of view.  "]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["My supervisor tries to understand my point of view.  "]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["My supervisor tries to understand my point of view.  "]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["My supervisor tries to understand my point of view.  "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -1370,8 +1477,11 @@ def FC_fig10():
         go.Histogram(x=x_gender1,name='Female',opacity = .75),
         go.Histogram(x=x_gender2,name='Male',opacity = .75),
         go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
-        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
-     
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75),
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status3,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status4,name='Part-time, Seasonal',opacity = .75)
      ]
     layout=go.Layout(
         title=dict(
@@ -1408,7 +1518,7 @@ def FC_fig10():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.1,
+            x = 0.05,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -1437,22 +1547,25 @@ def FC_fig10():
 def FC_fig11():
     list_updatemenus = [{'label': 'Total responses',
                      'method': 'update',
-                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
+                     'args': [{'visible': [True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
                     {'label': 'Race',
                      'method': 'update',
-                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
+                     'args': [{'visible': [False, True, True, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
                     {'label': 'Age',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
                     {'label': 'Sexual Orientation',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
-                   {'label': 'Tenure',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
+                    {'label': 'Tenure',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
-                   {'label': 'Gender',
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, True, True, False, False, False, False, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
+                    {'label': 'Gender',
                      'method': 'update',
-                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]}
+                     'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True, False, False, False, False]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]},
+                    {'label': 'Status',
+                    'method': 'update',
+                    'args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True, True, True]}, {'title': 'My workplace is committed to building the strengths of each employee.'}]}
                    ]
                    
     x_total = dei["My workplace is committed to building the strengths of each employee.   "]
@@ -1482,6 +1595,10 @@ def FC_fig11():
     x_gender2 = dei[dei["What is your gender?"]=="Male"]["My workplace is committed to building the strengths of each employee.   "]
     x_gender3 = dei[dei["What is your gender?"]=="Non-Binary"]["My workplace is committed to building the strengths of each employee.   "]
     x_gender4 = dei[dei["What is your gender?"]=="Woman/Non-Binary"]["My workplace is committed to building the strengths of each employee.   "]
+    x_status1 = dei[dei["What is your employment status?"]=="Full-time"]["My workplace is committed to building the strengths of each employee.   "]
+    x_status2 = dei[dei["What is your employment status?"]=="Part-time"]["My workplace is committed to building the strengths of each employee.   "]
+    x_status3 = dei[dei["What is your employment status?"]=="Seasonal"]["My workplace is committed to building the strengths of each employee.   "]
+    x_status4 = dei[dei["What is your employment status?"]=="Part-time, Seasonal"]["My workplace is committed to building the strengths of each employee.   "]
     #defining data
     data=[
         go.Histogram(x=x_total,name='   ',opacity = .75),
@@ -1510,7 +1627,11 @@ def FC_fig11():
         go.Histogram(x=x_gender1,name='Female',opacity = .75),
         go.Histogram(x=x_gender2,name='Male',opacity = .75),
         go.Histogram(x=x_gender3,name='Non-Binary',opacity = .75),
-        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75)
+        go.Histogram(x=x_gender4,name='Woman/Non-Binary',opacity = .75),
+        go.Histogram(x=x_status1,name='Full-time',opacity = .75),
+        go.Histogram(x=x_status2,name='Part-time',opacity = .75),
+        go.Histogram(x=x_status3,name='Seasonal',opacity = .75),
+        go.Histogram(x=x_status4,name='Part-time, Seasonal',opacity = .75)
      
      ]
     layout=go.Layout(
@@ -1548,7 +1669,7 @@ def FC_fig11():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.1,
+            x = 0.05,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
