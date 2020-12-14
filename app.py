@@ -237,7 +237,145 @@ def update_plot(value):
                 ], align="center"),  
             ], fluid=True),
         ])
-
+    elif value == "plot7-info":
+        return html.Div([
+            dbc.Container([
+                dbc.Row([
+                    dbc.Col([
+                        dcc.Graph(
+                            figure = FC_fig7(),
+                            id='plot7', 
+                            config={
+                                'displayModeBar': False, 
+                                'responsive': True, 
+                                #'autosizable':True,
+                                #'fillFrame':True 
+                                },
+                            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+                        ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
+                    dbc.Col([
+                        html.P([
+                            html.Ul([
+                                html.Li('22% of employees who identify as Latinx disagree with this statement.'),
+                                html.Li('38% of Black/African Americans neither agree nor disagree with this statement.'),
+                                html.Li('75% of respondants aged 18-24 strongly agree with this statement whereas only 14% of employees within the age group 45-54 stronly agree.'),
+                                html.Li('20% of employees with tenure of 3-5years strongly disagree with this statement compared to 50% of employees with less than one year of tenure who strongly agree with the statement.')
+                            ]),
+                        ]),
+                    ]),
+                ], align="center"),  
+            ], fluid=True),
+        ])
+    elif value == "plot8-info":
+        return html.Div([
+            dbc.Container([
+                dbc.Row([
+                    dbc.Col([
+                        dcc.Graph(
+                            figure = FC_fig8(),
+                            id='plot8', 
+                            config={
+                                'displayModeBar': False, 
+                                'responsive': True, 
+                                #'autosizable':True,
+                                #'fillFrame':True 
+                                },
+                            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+                        ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
+                    dbc.Col([
+                        html.P([
+                            html.Ul([
+                                html.Li('22% of total respondents strongly disagree or disagree, 25% are neutral and 53% agree and strongly agree.'),
+                                html.Li('FC staff who identify as Latinx/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively).'),
+                                html.Li('Younger (18-24) and older (65-74) staff generally agree or sttronly agree.'),
+                                html.Li('Nearly 25% of staff in the 25-34 and 35-44 age ranges disagree or strongly disagree.')
+                    ]),
+                        ]),
+                    ]),
+                ], align="center"),  
+            ], fluid=True),
+        ])
+    elif value == "plot9-info":
+        return html.Div([
+            dbc.Container([
+                dbc.Row([
+                    dbc.Col([
+                        dcc.Graph(
+                            figure = FC_fig9(),
+                            id='plot9', 
+                            config={
+                                'displayModeBar': False, 
+                                'responsive': True, 
+                                #'autosizable':True,
+                                #'fillFrame':True 
+                                },
+                            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+                        ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
+                    dbc.Col([
+                        html.P([
+                            hhtml.Ul([
+                                html.Li('The majority of all staff survey respondents agree + strongly agree that their team members appreciate their contributions and a similar trend is seen across race, age, sexual orientation and tenure.'),
+                            ]),
+                        ]),
+                    ]),
+                ], align="center"),  
+            ], fluid=True),
+        ])
+    elif value == "plot10-info":
+        return html.Div([
+            dbc.Container([
+                dbc.Row([
+                    dbc.Col([
+                        dcc.Graph(
+                            figure = FC_fig10(),
+                            id='plot10', 
+                            config={
+                                'displayModeBar': False, 
+                                'responsive': True, 
+                                #'autosizable':True,
+                                #'fillFrame':True 
+                                },
+                            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+                        ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
+                    dbc.Col([
+                        html.P([
+                            html.Ul([
+                                html.Li('81% of all staff survey respondents agree + strongly agree that their superviors try to understand their point of views and a similar trend is seen across race, age, sexual orientation and tenure.'),
+                            ]),
+                        ]),
+                    ]),
+                ], align="center"),  
+            ], fluid=True),
+        ])
+    elif value == "plot11-info":
+        return html.Div([
+            dbc.Container([
+                dbc.Row([
+                    dbc.Col([
+                        dcc.Graph(
+                            figure = FC_fig11(),
+                            id='plot11', 
+                            config={
+                                'displayModeBar': False, 
+                                'responsive': True, 
+                                #'autosizable':True,
+                                #'fillFrame':True 
+                                },
+                            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+                        ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
+                    dbc.Col([
+                        html.P([
+                            html.Ul([
+                                html.Li('Over 60% of all staff survery respondents agree + strongle agree that their workplace is committed to building the strengths of each employee.'),
+                                html.Li('38% of Black/African American respondents disagree + strongly disagree with this statement compared to 12% of White and Latinx respondents.'),
+                                html.Li('23% of LGBTQ+ respondents disagree + strongly disagree with this statement compared to 14% of straight respondents.'),
+                                html.Li('Over 50% of all tenure age ranges agree + strongly agree with this statement')
+                            ]),
+                        ]),
+                    ]),
+                ], align="center"),  
+            ], fluid=True),
+        ])
 server = app.server
 if __name__ == "__main__":
     app.run_server(debug=True)
