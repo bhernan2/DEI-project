@@ -200,35 +200,48 @@ card_content4 = [
 card_content5 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H2("No. 1", className="card-title"),
-            html.H3("N=135"),
-            html.H5(
-                "Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions.",
-                className="card-text",),
+            html.H2("No.1", className="card-title"),
+            dbc.Button("click here to find out", id='popover-target1', color='warning', size='lg', block=True),
+            dbc.Popover([
+            dbc.PopoverHeader("135 responses"),
+            dbc.PopoverBody("Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions.")
+        ], 
+        id="popover1",
+        is_open=False,
+        target="popover-target1",
+        placement="bottom"
+        )
         ]),
 ] 
 card_content6 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
-            html.H2("No. 2", className="card-title"),
-            html.H3("N=122"),
-            html.H5(
-                "Provide training for staff, leadership and board.",
-                className="card-text",),
+        html.H2("No.2", className="card-title"),
+        dbc.Button("click here to find out", id='popover-target2', color='danger', size='lg', block=True),
+        dbc.Popover([
+            dbc.PopoverHeader("122 responses"),
+            dbc.PopoverBody("Provide training for staff, leadership and board.")
+        ], 
+        id="popover2",
+        is_open=False,
+        target="popover-target2",
+        placement="bottom"
+        )
         ]),
 ]
 card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
         html.H2("No.3", className="card-title"),
-        dbc.Button("Priority", id='popover-target', color='info', size='lg', block=True),
+        dbc.Button("click here to find out", id='popover-target3', color='info', size='lg', block=True),
         dbc.Popover([
-            dbc.PopoverHeader("90 survey respondents"),
+            dbc.PopoverHeader("90 responses"),
             dbc.PopoverBody("Increase diverse representation on board and advisory committees.")
         ], 
-        id="popover",
+        id="popover3",
         is_open=False,
-        target="popover-target"
+        target="popover-target3",
+        placement="bottom"
         )
         ]),
 ]
