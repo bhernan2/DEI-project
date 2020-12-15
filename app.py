@@ -66,34 +66,34 @@ def toggle_popover3(n, is_open):
         return not is_open
     return is_open
 
-@app.callback(
-    Output("left-collapse", "is_open"),
-    [Input("left", "n_clicks")],
-    [State("left-collapse", "is_open")],
-)
-def toggle_left(n_left, is_open):
-    if n_left:
-        return not is_open
-    return is_open
-@app.callback(
-    Output("left-collapse2", "is_open"),
-    [Input("left2", "n_clicks")],
-    [State("left-collapse2", "is_open")],
-)
-def toggle_left2(n_left, is_open):
-    if n_left:
-        return not is_open
-    return is_open
+# @app.callback(
+#     Output("left-collapse", "is_open"),
+#     [Input("left", "n_clicks")],
+#     [State("left-collapse", "is_open")],
+# )
+# def toggle_left(n_left, is_open):
+#     if n_left:
+#         return not is_open
+#     return is_open
+# @app.callback(
+#     Output("left-collapse2", "is_open"),
+#     [Input("left2", "n_clicks")],
+#     [State("left-collapse2", "is_open")],
+# )
+# def toggle_left2(n_left, is_open):
+#     if n_left:
+#         return not is_open
+#     return is_open
 
-@app.callback(
-    Output("left-collapse3", "is_open"),
-    [Input("left3", "n_clicks")],
-    [State("left-collapse3", "is_open")],
-)
-def toggle_left3(n_left, is_open):
-    if n_left:
-        return not is_open
-    return is_open
+# @app.callback(
+#     Output("left-collapse3", "is_open"),
+#     [Input("left3", "n_clicks")],
+#     [State("left-collapse3", "is_open")],
+# )
+# def toggle_left3(n_left, is_open):
+#     if n_left:
+#         return not is_open
+#     return is_open
 
 @app.callback(
     dash.dependencies.Output('dd-output-container', 'children'),
