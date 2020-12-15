@@ -201,7 +201,7 @@ card_content5 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
             html.H2("No.1", className="card-title"),
-            dbc.Button("click here to find out", id='popover-target1', color='warning', size='lg', block=True),
+            dbc.Button(html.Img(src="assets/icons8-survey-96.png"), id='popover-target1', color='warning', size='lg', block=True),
             dbc.Popover([
             dbc.PopoverHeader("135 responses"),
             dbc.PopoverBody("Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions.")
@@ -217,7 +217,7 @@ card_content6 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
         html.H2("No.2", className="card-title"),
-        dbc.Button("click here to find out", id='popover-target2', color='danger', size='lg', block=True),
+        dbc.Button(html.Img(src="assets/icons8-survey-96.png"), id='popover-target2', color='danger', size='lg', block=True),
         dbc.Popover([
             dbc.PopoverHeader("122 responses"),
             dbc.PopoverBody("Provide training for staff, leadership and board.")
@@ -233,7 +233,7 @@ card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
         html.H2("No.3", className="card-title"),
-        dbc.Button("click here to find out", id='popover-target3', color='info', size='lg', block=True),
+        dbc.Button(html.Img(src="assets/icons8-survey-96.png"), id='popover-target3', color='info', size='lg', block=True),
         dbc.Popover([
             dbc.PopoverHeader("90 responses"),
             dbc.PopoverBody("Increase diverse representation on board and advisory committees.")
@@ -286,21 +286,19 @@ priorities = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
         dbc.Row([
-            html.H3("DEI efforts that FC staff would like to see prioritized", className='text-left', )
+            html.H3("Top 3 DEI efforts that FC staff would like to see prioritized", className='text-left', )
         ]), 
         html.Br(),       
         dbc.Row([
-            dbc.CardDeck([
             dbc.Col(
-                dbc.Card(card_content5, color="warning", inverse=True),style={"display": "flex"},width=4),
+                dbc.Card(card_content5, color="warning", inverse=True), width = 4),
             dbc.Col(
-                dbc.Card(card_content6, color="danger", inverse=True),style={"display": "flex"},width=4),
+                dbc.Card(card_content6, color="danger", inverse=True),width = 4),
             dbc.Col(
-                dbc.Card(card_content7, color="info", inverse=True),style={"display": "flex"},width=4),
+                dbc.Card(card_content7, color="info", inverse=True),width = 4),
             # dbc.Col(
             #     dbc.Card(card_content8, color="light", inverse=True),style={"display": "flex"},width=3),
-            ]),
-            ], className="mb-5"), 
+            ], align="center"), 
     ], fluid=True)
 ])
 #dropdown row
