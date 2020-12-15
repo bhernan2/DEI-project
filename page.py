@@ -347,46 +347,46 @@ dropdown_row = html.Div([
 ])
            
 
-collapse1 = html.Div(
-    [
-        dbc.Button(
-            "At work I feel comfortable being myself.", size="lg", color="primary", id="left", className="mr-1"
-        ),
-        dbc.Row(
-            [
-                dbc.Col(
-                    dbc.Collapse(
-                        dbc.Card("FC response rank avg compared to Gallup responses.", body=True),
-                        id="left-collapse",
-                    )
-                ),
-            ],
-            className="mt-3",
-        ),
-    ]
-)
-collapse2 = html.Div([
-        dbc.Button(
-            "Employees in my organization are treated with respect and dignity.", size="lg", color="primary", id="left2", className="mr-1"),
-        dbc.Row([
-                dbc.Col(
-                    dbc.Collapse(
-                        dbc.Card("FC response rank avg compared to Gallup responses.", body=True),
-                        id="left-collapse2",)
-                ),
-                ],className="mt-3",),
-    ])
-collapse3 = html.Div([
-        dbc.Button(
-            "Everyone at this organization is treated fairly.", size="lg", color="primary", id="left3", className="mr-1"),
-        dbc.Row([
-                dbc.Col(
-                    dbc.Collapse(
-                        dbc.Card("FC response rank avg compared to Gallup responses.", body=True),
-                        id="left-collapse3",)
-                ),
-                ],className="mt-3",),
-    ])
+# collapse1 = html.Div(
+#     [
+#         dbc.Button(
+#             "At work I feel comfortable being myself.", size="lg", color="primary", id="left", className="mr-1"
+#         ),
+#         dbc.Row(
+#             [
+#                 dbc.Col(
+#                     dbc.Collapse(
+#                         dbc.Card("FC response rank avg compared to Gallup responses.", body=True),
+#                         id="left-collapse",
+#                     )
+#                 ),
+#             ],
+#             className="mt-3",
+#         ),
+#     ]
+# )
+# collapse2 = html.Div([
+#         dbc.Button(
+#             "Employees in my organization are treated with respect and dignity.", size="lg", color="primary", id="left2", className="mr-1"),
+#         dbc.Row([
+#                 dbc.Col(
+#                     dbc.Collapse(
+#                         dbc.Card("FC response rank avg compared to Gallup responses.", body=True),
+#                         id="left-collapse2",)
+#                 ),
+#                 ],className="mt-3",),
+#     ])
+# collapse3 = html.Div([
+#         dbc.Button(
+#             "Everyone at this organization is treated fairly.", size="lg", color="primary", id="left3", className="mr-1"),
+#         dbc.Row([
+#                 dbc.Col(
+#                     dbc.Collapse(
+#                         dbc.Card("FC response rank avg compared to Gallup responses.", body=True),
+#                         id="left-collapse3",)
+#                 ),
+#                 ],className="mt-3",),
+#     ])
 
 
 wordcloud = dbc.Jumbotron([
@@ -396,7 +396,7 @@ wordcloud = dbc.Jumbotron([
         ]), 
         html.Br(),
         dbc.Row([
-            dbc.Col(width=3),
+            dbc.Col(width=2),
             dbc.Col([
                 dbc.Card([
                     dbc.CardImg(src='assets/word_cloud7.png'),
@@ -405,8 +405,8 @@ wordcloud = dbc.Jumbotron([
                         html.P("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text.")   
                         ])
                     ]),
-                ], width=6),
-                dbc.Col(width=3),
+                ], width=8),
+                dbc.Col(width=2),
             # dbc.Col([
             #     dbc.Row([
             #         html.H3("FC DEI response scores compared to Gallup response scores"),
