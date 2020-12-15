@@ -396,6 +396,7 @@ wordcloud = dbc.Jumbotron([
         ]), 
         html.Br(),
         dbc.Row([
+            dbc.Col(width=3),
             dbc.Col([
                 dbc.Card([
                     dbc.CardImg(src='assets/word_cloud7.png'),
@@ -405,17 +406,18 @@ wordcloud = dbc.Jumbotron([
                         ])
                     ]),
                 ], width=6),
-            dbc.Col([
-                dbc.Row([
-                    html.H3("FC DEI response scores compared to Gallup response scores"),
-                ]),
-                html.Br(),
-                dbc.Row([collapse1]),
-                html.Br(),
-                dbc.Row([collapse2]),
-                html.Br(),
-                dbc.Row([collapse3])        
-                ], width=6)
+                dbc.Col(width=3),
+            # dbc.Col([
+            #     dbc.Row([
+            #         html.H3("FC DEI response scores compared to Gallup response scores"),
+            #     ]),
+            #     html.Br(),
+            #     dbc.Row([collapse1]),
+            #     html.Br(),
+            #     dbc.Row([collapse2]),
+            #     html.Br(),
+            #     dbc.Row([collapse3])        
+            #     ], width=6)
             ], align='center')       
             ], fluid=True),
         ])
