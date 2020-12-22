@@ -346,7 +346,6 @@ key_findings1 = dbc.Jumbotron([
                                 html.Br(),
                                 html.H1("25%"), 
                                 html.H4('employees who have been employeed between 1-10 years'),
-                                html.Br(),
                                 html.H2('disagree + strongly disagree')
                                 ]),
                             ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
@@ -370,7 +369,6 @@ key_findings1 = dbc.Jumbotron([
                                 html.Br(),
                                 html.H1("45%"), 
                                 html.H4('of employees who have worked for one year'),
-                                html.Br(),
                                 html.H2('disagree + strongly disagree'),
                                 ]),
                             ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
