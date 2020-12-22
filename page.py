@@ -301,7 +301,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.Br(),
                                 html.H4('agree + strongly agree')
                                 ]),
-                            ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
+                            ],className="flip-card-back", color="danger", inverse=True,)
                     ],className="flip-card-inner",), 
                 ],className="flip-card"),
             dbc.Row([
@@ -317,7 +317,7 @@ key_findings1 = dbc.Jumbotron([
                                 dbc.CardImg(src="/assets/icons8-high-five-80.png", style={"width":"25%"}),
 
                                 ]),
-                            ], className="flip-card-front", color="light", inverse=True, style={"display": "flex"},),
+                            ], className="flip-card-front", color="light", inverse=True,),
                         dbc.Card([
                             dbc.CardBody([
                                 html.H4("88%"),
@@ -326,7 +326,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.H4('agree + strongly agree'),
                                 html.Br(),
                                 ]), 
-                            ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
+                            ],className="flip-card-back", color="danger", inverse=True,)
                     ],className="flip-card-inner",),
             
                 ],className="flip-card"),
@@ -340,7 +340,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.Br(),
                                 dbc.CardImg(src="/assets/icons8-learning-80.png", alt="Avatar", style={"width":"25%"}),
                                 ]),
-                            ], className="flip-card-front", color="light", inverse=True, style={"display": "flex"},),
+                            ], className="flip-card-front", color="light", inverse=True,),
                         dbc.Card([
                             dbc.CardBody([
                                 html.H4("34%"), 
@@ -350,7 +350,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.P('employees who have been employeed between 1-10 years'),
                                 html.H4('disagree + strongly disagree')
                                 ]),
-                            ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
+                            ],className="flip-card-back", color="danger", inverse=True,)
                     ],className="flip-card-inner",),
                 ],className="flip-card"),
         # html.Br(),
@@ -361,7 +361,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.H4("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance."),
                                 dbc.CardImg(src="/assets/icons8-handshake-80.png", alt="Avatar", style={"width":"25%"}),
                                 ]),
-                            ], className="flip-card-front", color="light", inverse=True, style={"display": "flex"},),
+                            ], className="flip-card-front", color="light", inverse=True,),
                         dbc.Card([
                             dbc.CardBody([
                                 html.H4("54%"), 
@@ -371,7 +371,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.P('of employees who have worked for one year'),
                                 html.H4('disagree + strongly disagree'),
                                 ]),
-                            ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
+                            ],className="flip-card-back", color="danger", inverse=True,)
                     ],className="flip-card-inner",align="center",),
                 ],className="flip-card", align="center"),
             dbc.Row([
@@ -383,7 +383,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.Br(),
                                 dbc.CardImg(src="/assets/icons8-circled-up-right-80.png", alt="Avatar", style={"width":"25%"}),
                                 ]),
-                            ], className="flip-card-front", color="light", inverse=True, style={"display": "flex"},),
+                            ], className="flip-card-front", color="light", inverse=True,),
                         dbc.Card([
                             dbc.CardBody([
                                 html.H4("63%"), 
@@ -393,7 +393,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.P('of LGBTQ+ employees'),
                                 html.H4('disagree + strongly disagree'),
                                 ]),
-                            ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
+                            ],className="flip-card-back", color="danger", inverse=True,)
                     ],className="flip-card-inner",align="center",),
                 ],className="flip-card", align="center"),
 
@@ -407,19 +407,19 @@ key_findings1 = dbc.Jumbotron([
                                 html.Br(),
                                 dbc.CardImg(src="/assets/icons8-meeting-room-80.png", alt="Avatar", style={"width":"25%"}),
                                 ]),
-                            ], className="flip-card-front", color="light", inverse=True, style={"display": "flex"},),
+                            ], className="flip-card-front", color="light", inverse=True,),
                         dbc.Card([
                             dbc.CardBody([
                                 html.H4("50%"), 
                                 html.P('of Black/African American identifying staff'),
                                 html.H4('disagree + strongly disagree'),
                                 ]),
-                            ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
-                    ],className="flip-card-inner",align="center", width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
+                            ],className="flip-card-back", color="danger", inverse=True,)
+                    ],className="flip-card-inner",align="center",),
                 ],className="flip-card", align="center"),
 
-            ], className="cards", fluid=True),
-])
+            ], className="cards", fluid=True, style={'textAlign': 'center'}),
+], fluid=True)
 priorities = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
