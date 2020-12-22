@@ -353,7 +353,9 @@ key_findings1 = dbc.Jumbotron([
                             ],className="flip-card-back", color="warning", inverse=True,)
                     ],className="flip-card-inner",),
                 ],className="flip-card"),
-        # html.Br(),
+            ], className="cards", fluid=True, style={'textAlign': 'center'}),
+        html.Br(),
+        dbc.Container([
             dbc.Row([
                     dbc.Col([
                         dbc.Card([
