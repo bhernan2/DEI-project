@@ -96,112 +96,112 @@ about = dbc.Jumbotron([
 
 #descriptive stats cards 
 
-card_content = [
-    #dbc.CardHeader("Descriptive Stats"),
-    html.H4([
-        dbc.CardHeader([
-            ("My supervisor tries to understand my point of view."),
-            html.Br(),
-            html.Br(),
-            ("At work I am treated with respect."),
-            html.Br(),
-            html.Br(),
-        ], style={"display": "flex"}),
-    ]),
-    dbc.CardBody([
-            html.H2("81%", className="card-title"),
-            html.H5([
-                'of all staff members agree + strongly agree.',
-                ],className="card-text"),
-            html.Br(),
-            html.H2("88%", className="card-title"),
-            html.H5([
-                'of all staff survey particapnts agree + strongly agree.',
-                ],className="card-text"),
+# card_content = [
+#     #dbc.CardHeader("Descriptive Stats"),
+#     html.H4([
+#         dbc.CardHeader([
+#             ("My supervisor tries to understand my point of view."),
+#             html.Br(),
+#             html.Br(),
+#             ("At work I am treated with respect."),
+#             html.Br(),
+#             html.Br(),
+#         ], style={"display": "flex"}),
+#     ]),
+#     dbc.CardBody([
+#             html.H2("81%", className="card-title"),
+#             html.H5([
+#                 'of all staff members agree + strongly agree.',
+#                 ],className="card-text"),
+#             html.Br(),
+#             html.H2("88%", className="card-title"),
+#             html.H5([
+#                 'of all staff survey particapnts agree + strongly agree.',
+#                 ],className="card-text"),
         
-        ]),
-]
-card_content1 = [
-    #dbc.CardHeader("Descriptive Stats"),
-    html.H4([
-        dbc.CardHeader([
-            ("My organization treasurese diverse opinions and ideas."),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-        ], style={"display": "flex"}),
-    ]),
-    dbc.CardBody([
-            html.H2("34%", className="card-title"),
-            html.H5([
-                'of LGBTQ+ staff members either strongly disagree + disagree.',
-                ],className="card-text"),
-            html.Br(),
-            html.H2("25%", className="card-title"),
-            html.H5([
-                'of employees who have been employeed between 1-10 years disagree + strongly disagree.',
-                ],className="card-text"),
+#         ]),
+# ]
+# card_content1 = [
+#     #dbc.CardHeader("Descriptive Stats"),
+#     html.H4([
+#         dbc.CardHeader([
+#             ("My organization treasurese diverse opinions and ideas."),
+#             html.Br(),
+#             html.Br(),
+#             html.Br(),
+#             html.Br(),
+#             html.Br(),
+#         ], style={"display": "flex"}),
+#     ]),
+#     dbc.CardBody([
+#             html.H2("34%", className="card-title"),
+#             html.H5([
+#                 'of LGBTQ+ staff members either strongly disagree + disagree.',
+#                 ],className="card-text"),
+#             html.Br(),
+#             html.H2("25%", className="card-title"),
+#             html.H5([
+#                 'of employees who have been employeed between 1-10 years disagree + strongly disagree.',
+#                 ],className="card-text"),
         
-        ]),
-]
-card_content2 = [
-    #dbc.CardHeader("Descriptive Stats"),
-    html.H4([
-        dbc.CardHeader("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.")
-    ],style={"display": "flex"}),
-    dbc.CardBody([
-            html.H2("54%", className="card-title"),
-            html.H5(
-                "of Black/African American identifying staff disagree + strongly disagree.",
-                className="card-text",),
-            html.Br(),
-            html.H2("45%", className="card-title"),
-            html.H5("of survey respndents who have worked at FC for one year disagree + strongly disagree with this statement.", className="card-text",),
-        ]),
-]
-card_content3 = [
-    html.H4([
-        dbc.CardHeader(" I have the same opportunities for advancement as other team members with similar experience and performance levels.")
-    ],style={"display": "flex"}),
-    dbc.CardBody([
-            html.H2("63%", className="card-title"),
-            html.H5(
-                "of Black/African American identifying staff disagree + strongly disagree.",
-                className="card-text",),
-            html.Br(),
-            html.H2("27%", className="card-title"),
-            html.H5(
-                "of LGBTQ+ identigying staff disagree + strongly disagree.",
-                className="card-text",),
-        ]),
-]
-card_content4 = [
-    html.H4([
-        dbc.CardHeader([
-            ("Diversity and inclusiveness issues are openly discussed at my organization."),
-            html.Br(),
-            html.Br(),
-            ], style={"display": "flex"})
-    ]),
-    dbc.CardBody([
-            # html.H2("100%", className="card-title"),
-            # html.H5(
-            #     "of Native American identifying staff disagree + strongly disagree."),
-            html.Br(),
-            html.H2("50%", className="card-title"),
-            html.H5(
-                "of Black/African American identifying staff disagree + strongly disagree.", 
-                className="card-text",),
+#         ]),
+# ]
+# card_content2 = [
+#     #dbc.CardHeader("Descriptive Stats"),
+#     html.H4([
+#         dbc.CardHeader("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.")
+#     ],style={"display": "flex"}),
+#     dbc.CardBody([
+#             html.H2("54%", className="card-title"),
+#             html.H5(
+#                 "of Black/African American identifying staff disagree + strongly disagree.",
+#                 className="card-text",),
+#             html.Br(),
+#             html.H2("45%", className="card-title"),
+#             html.H5("of survey respndents who have worked at FC for one year disagree + strongly disagree with this statement.", className="card-text",),
+#         ]),
+# ]
+# card_content3 = [
+#     html.H4([
+#         dbc.CardHeader(" I have the same opportunities for advancement as other team members with similar experience and performance levels.")
+#     ],style={"display": "flex"}),
+#     dbc.CardBody([
+#             html.H2("63%", className="card-title"),
+#             html.H5(
+#                 "of Black/African American identifying staff disagree + strongly disagree.",
+#                 className="card-text",),
+#             html.Br(),
+#             html.H2("27%", className="card-title"),
+#             html.H5(
+#                 "of LGBTQ+ identigying staff disagree + strongly disagree.",
+#                 className="card-text",),
+#         ]),
+# ]
+# card_content4 = [
+#     html.H4([
+#         dbc.CardHeader([
+#             ("Diversity and inclusiveness issues are openly discussed at my organization."),
+#             html.Br(),
+#             html.Br(),
+#             ], style={"display": "flex"})
+#     ]),
+#     dbc.CardBody([
+#             # html.H2("100%", className="card-title"),
+#             # html.H5(
+#             #     "of Native American identifying staff disagree + strongly disagree."),
+#             html.Br(),
+#             html.H2("50%", className="card-title"),
+#             html.H5(
+#                 "of Black/African American identifying staff disagree + strongly disagree.", 
+#                 className="card-text",),
                 
-        ]),
-]
+#         ]),
+# ]
 card_content5 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
             html.H2("No.1", className="card-title"),
-            dbc.Button(html.Img(src="assets/icons8-survey-96.png"), id='popover-target1', color='warning', size='lg', block=True),
+            dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target1', color='danger', size='sm',),
             dbc.Popover([
             dbc.PopoverHeader("135 responses"),
             dbc.PopoverBody("Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions.")
@@ -217,7 +217,7 @@ card_content6 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
         html.H2("No.2", className="card-title"),
-        dbc.Button(html.Img(src="assets/icons8-survey-96.png"), id='popover-target2', color='danger', size='lg', block=True),
+        dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target2', color='danger', size='sm',),
         dbc.Popover([
             dbc.PopoverHeader("122 responses"),
             dbc.PopoverBody("Provide training for staff, leadership and board.")
@@ -233,7 +233,7 @@ card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
         html.H2("No.3", className="card-title"),
-        dbc.Button(html.Img(src="assets/icons8-survey-96.png"), id='popover-target3', color='info', size='lg', block=True),
+        dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target3', color='danger', size="sm",),
         dbc.Popover([
             dbc.PopoverHeader("90 responses"),
             dbc.PopoverBody("Increase diverse representation on board and advisory committees.")
@@ -254,33 +254,33 @@ card_content7 = [
 #                 className="card-text",),
 #         ]),
 # ]
-descriptive_stats = dbc.Jumbotron([
-    dbc.Container([
-        html.Br(),
-        dbc.Row([
-            html.H3("Key findings", className='text-left', )
-        ]), 
-        html.Br(),
-        dbc.Row([
-            dbc.CardDeck([
-                dbc.Col(
-                    dbc.Card(card_content, color="light", inverse=True), style={"display": "flex"}, width=4),
-                dbc.Col(
-                    dbc.Card(card_content1, color="primary", inverse=True), style={"display": "flex"}, width=4),
-                dbc.Col(
-                    dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"}, width=4), 
-            ]),
-        ], className="mb-5"),
-        dbc.Row([
-            dbc.CardDeck([
-            dbc.Col(
-                dbc.Card(card_content3, color="dark", inverse=True), style={"display": "flex"}, width=6),
-            dbc.Col(
-                dbc.Card(card_content4, color="success", inverse=True), style={"display": "flex"}, width=6),
-            ]),
-            ], className="mb-5"), 
-    ], fluid=True),
-])
+# descriptive_stats = dbc.Jumbotron([
+#     dbc.Container([
+#         html.Br(),
+#         dbc.Row([
+#             html.H3("Key findings", className='text-left', )
+#         ]), 
+#         html.Br(),
+#         dbc.Row([
+#             dbc.CardDeck([
+#                 dbc.Col(
+#                     dbc.Card(card_content, color="light", inverse=True), style={"display": "flex"}, width=4),
+#                 dbc.Col(
+#                     dbc.Card(card_content1, color="primary", inverse=True), style={"display": "flex"}, width=4),
+#                 dbc.Col(
+#                     dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"}, width=4), 
+#             ]),
+#         ], className="mb-5"),
+#         dbc.Row([
+#             dbc.CardDeck([
+#             dbc.Col(
+#                 dbc.Card(card_content3, color="dark", inverse=True), style={"display": "flex"}, width=6),
+#             dbc.Col(
+#                 dbc.Card(card_content4, color="success", inverse=True), style={"display": "flex"}, width=6),
+#             ]),
+#             ], className="mb-5"), 
+#     ], fluid=True),
+# ])
 key_findings1 = dbc.Jumbotron([
     dbc.Container([
             dbc.Row([
@@ -301,7 +301,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.Br(),
                                 html.H4('agree + strongly agree')
                                 ]),
-                            ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
+                            ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
                     ],className="flip-card-inner",), 
                 ],className="flip-card"),
             dbc.Row([
@@ -326,7 +326,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.H4('agree + strongly agree'),
                                 html.Br(),
                                 ]), 
-                            ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
+                            ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
                     ],className="flip-card-inner",),
             
                 ],className="flip-card"),
@@ -350,7 +350,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.P('employees who have been employeed between 1-10 years'),
                                 html.H4('disagree + strongly disagree')
                                 ]),
-                            ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
+                            ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
                     ],className="flip-card-inner",),
                 ],className="flip-card"),
             ], className="cards", fluid=True),
@@ -374,7 +374,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.P('of employees who have worked for one year'),
                                 html.H4('disagree + strongly disagree'),
                                 ]),
-                            ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
+                            ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
                     ],className="flip-card-inner",align="center"),
                 ],className="flip-card", align="center"),
             dbc.Row([
@@ -396,7 +396,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.P('of LGBTQ+ employees'),
                                 html.H4('disagree + strongly disagree'),
                                 ]),
-                            ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
+                            ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
                     ],className="flip-card-inner",align="center"),
                 ],className="flip-card", align="center"),
 
@@ -417,7 +417,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.P('of Black/African American identifying staff'),
                                 html.H4('disagree + strongly disagree'),
                                 ]),
-                            ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
+                            ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
                     ],className="flip-card-inner",align="center"),
                 ],className="flip-card", align="center"),
 
@@ -427,20 +427,19 @@ priorities = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
         dbc.Row([
-            html.H3("Top 3 DEI efforts that FC staff would like to see prioritized", className='text-left', )
-        ]), 
+            html.H3("Top DEI efforts that FC staff would like to see prioritized", className='text-left', )
+        ], justify="center"), 
         html.Br(),       
         dbc.Row([
             dbc.Col(
-                dbc.Card(card_content5, color="warning", inverse=True), width = 4),
+                dbc.Card(card_content5, color="light", inverse=True), width=2),
+            
             dbc.Col(
-                dbc.Card(card_content6, color="danger", inverse=True),width = 4),
+                dbc.Card(card_content6, color="light", inverse=True), width=2),
             dbc.Col(
-                dbc.Card(card_content7, color="info", inverse=True),width = 4),
-            # dbc.Col(
-            #     dbc.Card(card_content8, color="light", inverse=True),style={"display": "flex"},width=3),
-            ], align="center"), 
-    ], fluid=True)
+                dbc.Card(card_content7, color="light", inverse=True), width=2),
+            ], justify="center"), 
+    ], fluid=True, style={'textAlign': 'center'}),
 ])
 #dropdown row
 dropdown_row = html.Div([
