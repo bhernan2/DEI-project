@@ -289,15 +289,15 @@ key_findings1 = dbc.Jumbotron([
                             dbc.CardBody([
                                 #dbc.CardImg(src="/assets/icons8-pie-chart-100.png", style={"width":"25%"}),
                                 html.Br(),
-                                html.H3("My supervisor tries to understand my point of view."),
+                                html.H4("My supervisor tries to understand my point of view."),
                                 html.Br()
                                 ])
                             ], className="flip-card-front", color="light", inverse=True, style={"display": "flex"},),
                         dbc.Card([
                             dbc.CardBody([
                                 html.Br(),
-                                html.H1("81%"),
-                                html.H4('of all staff members'),
+                                html.H2("81%"),
+                                html.H5('of all staff members'),
                                 html.Br(),
                                 html.H2('agree + strongly agree')
                                 ]),
@@ -311,15 +311,15 @@ key_findings1 = dbc.Jumbotron([
                             dbc.CardBody([
                                 #dbc.CardImg(src="/assets/icons8-pie-chart-100.png", alt="Avatar", style={"width":"25%"}),
                                 html.Br(),
-                                html.H3("At work I am treated with respect."),
+                                html.H4("At work I am treated with respect."),
                                 html.Br()
                                 ]),
                             ], className="flip-card-front", color="light", inverse=True, style={"display": "flex"},),
                         dbc.Card([
                             dbc.CardBody([
                                 html.Br(),
-                                html.H1("88%"),
-                                html.H4('of all staff survey particapnts'),
+                                html.H2("88%"),
+                                html.H5('of all staff survey particapnts'),
                                 html.Br(),
                                 html.H2('agree + strongly agree'),
                                 html.Br(),
@@ -335,17 +335,17 @@ key_findings1 = dbc.Jumbotron([
                             dbc.CardBody([
                                 #dbc.CardImg(src="/assets/icons8-pie-chart-100.png", alt="Avatar", style={"width":"25%"}),
                                 html.Br(),
-                                html.H3("My organization treasurese diverse opinions and ideas."),
+                                html.H4("My organization treasurese diverse opinions and ideas."),
                                 html.Br()
                                 ]),
                             ], className="flip-card-front", color="light", inverse=True, style={"display": "flex"},),
                         dbc.Card([
                             dbc.CardBody([
-                                html.H1("34%"), 
-                                html.H4('of LGBTQ+ and'),
+                                html.H2("34%"), 
+                                html.H5('of LGBTQ+ and'),
                                 html.Br(),
-                                html.H1("25%"), 
-                                html.H4('employees who have been employeed between 1-10 years'),
+                                html.H2("25%"), 
+                                html.H5('employees who have been employeed between 1-10 years'),
                                 html.H2('disagree + strongly disagree')
                                 ]),
                             ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
@@ -358,17 +358,17 @@ key_findings1 = dbc.Jumbotron([
                             dbc.CardBody([
                                 #dbc.CardImg(src="/assets/icons8-pie-chart-100.png", alt="Avatar", style={"width":"25%"}),
                                 html.Br(),
-                                html.H3("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance."),
+                                html.H4("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance."),
                                 html.Br()
                                 ]),
                             ], className="flip-card-front", color="light", inverse=True, style={"display": "flex"},),
                         dbc.Card([
                             dbc.CardBody([
-                                html.H1("54%"), 
-                                html.H4('of Black/African American identifying staff and'),
+                                html.H2("54%"), 
+                                html.H5('of Black/African American identifying staff and'),
                                 html.Br(),
-                                html.H1("45%"), 
-                                html.H4('of employees who have worked for one year'),
+                                html.H2("45%"), 
+                                html.H5('of employees who have worked for one year'),
                                 html.H2('disagree + strongly disagree'),
                                 ]),
                             ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
