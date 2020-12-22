@@ -5,12 +5,13 @@ import dash_html_components as html
 from dash.dependencies import Input, Output, State
 import sys
 
-from page import DEI_title, about_, FC_stats, FC_prior, FC_video, FC_wordcloud, FC_big_pic, FC_dropdown_row 
+from page import DEI_title, about_, FC_stats, FC_prior, FC_video, FC_wordcloud, FC_big_pic, FC_dropdown_row, FC_key_findings
 from figures import FC_fig1, FC_fig2, FC_fig3, FC_fig4, FC_fig5, FC_fig6, FC_fig7, FC_fig8, FC_fig9, FC_fig10, FC_fig11
 
 dei_title = DEI_title()
 dei_stats = FC_stats()
 dei_prior=FC_prior()
+dei_key_findings=FC_key_findings()
 dei_about = about_()
 dei_video = FC_video()
 dei_big_pic = FC_big_pic()
@@ -26,6 +27,7 @@ def Dashboard():
     dei_big_pic,
     dei_stats,
     dei_prior,
+    dei_key_findings,
     dei_wordcloud, 
     dei_dropdown,
     ])
