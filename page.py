@@ -304,7 +304,6 @@ key_findings1 = dbc.Jumbotron([
                             ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
                     ],className="flip-card-inner",), 
                 ],className="flip-card"),
-           
             dbc.Row([
                     dbc.Col([
                         dbc.Card([
@@ -331,12 +330,11 @@ key_findings1 = dbc.Jumbotron([
                     ],className="flip-card-inner",),
             
                 ],className="flip-card"),
-            
             dbc.Row([
                     dbc.Col([
                         dbc.Card([
                             dbc.CardBody([
-                                html.H4("My organization treasurese diverse opinions and ideas."),
+                                html.H4("My organization treasures diverse opinions and ideas."),
                                 html.Br(),
                                 html.Br(),
                                 html.Br(),
@@ -355,9 +353,9 @@ key_findings1 = dbc.Jumbotron([
                             ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
                     ],className="flip-card-inner",),
                 ],className="flip-card"),
-            dbc.Row([], align="center"),
-            dbc.Row([], align="center"),
-            dbc.Row([], align="center"),
+            ], className="cards", fluid=True),
+        html.Br(),
+        dbc.Container([ 
             dbc.Row([
                     dbc.Col([
                         dbc.Card([
@@ -379,8 +377,6 @@ key_findings1 = dbc.Jumbotron([
                             ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
                     ],className="flip-card-inner",align="center"),
                 ],className="flip-card", align="center"),
-            
-            #dbc.Row([], align="center"),
             dbc.Row([
                     dbc.Col([
                         dbc.Card([
