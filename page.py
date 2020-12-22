@@ -281,7 +281,103 @@ descriptive_stats = dbc.Jumbotron([
             ], className="mb-5"), 
     ], fluid=True),
 ])
-
+key_findings1 = dbc.Jumbotron([
+    dbc.Container([
+            dbc.Row([
+                    dbc.Col([
+                        dbc.Card([
+                            dbc.CardBody([
+                                #dbc.CardImg(src="/assets/icons8-pie-chart-100.png", style={"width":"25%"}),
+                                html.Br(),
+                                html.H3("My supervisor tries to understand my point of view."),
+                                html.Br()
+                                ])
+                            ], className="flip-card-front", color="light", inverse=True),
+                        dbc.Card([
+                            dbc.CardBody([
+                                html.Br(),
+                                html.H1("81%"),
+                                html.H4('of all staff members'),
+                                html.Br(),
+                                html.H2('agree + strongly agree')
+                                ]),
+                            ],className="flip-card-back", color="warning", inverse=True)
+                    ],className="flip-card-inner",), 
+                ],className="flip-card"),
+           
+            dbc.Row([
+                    dbc.Col([
+                        dbc.Card([
+                            dbc.CardBody([
+                                #dbc.CardImg(src="/assets/icons8-pie-chart-100.png", alt="Avatar", style={"width":"25%"}),
+                                html.Br(),
+                                html.H3("At work I am treated with respect."),
+                                html.Br()
+                                ]),
+                            ], className="flip-card-front", color="light", inverse=True),
+                        dbc.Card([
+                            dbc.CardBody([
+                                html.Br(),
+                                html.H1("88%"),
+                                html.H4('of all staff survey particapnts'),
+                                html.Br(),
+                                html.H2('agree + strongly agree'),
+                                html.Br(),
+                                ]), 
+                            ],className="flip-card-back", color="warning", inverse=True)
+                    ],className="flip-card-inner",),
+            
+                ],className="flip-card"),
+            
+            dbc.Row([
+                    dbc.Col([
+                        dbc.Card([
+                            dbc.CardBody([
+                                #dbc.CardImg(src="/assets/icons8-pie-chart-100.png", alt="Avatar", style={"width":"25%"}),
+                                html.Br(),
+                                html.H3("My organization treasurese diverse opinions and ideas."),
+                                html.Br()
+                                ]),
+                            ], className="flip-card-front", color="light", inverse=True),
+                        dbc.Card([
+                            dbc.CardBody([
+                                html.H1("34%"), 
+                                html.H4('of LGBTQ+ and'),
+                                html.Br(),
+                                html.H1("25%"), 
+                                html.H4('employees who have been employeed between 1-10 years'),
+                                html.Br(),
+                                html.H2('disagree + strongly disagree')
+                                ]),
+                            ],className="flip-card-back", color="warning", inverse=True)
+                    ],className="flip-card-inner",),
+                ],className="flip-card"),
+            
+            dbc.Row([
+                    dbc.Col([
+                        dbc.Card([
+                            dbc.CardBody([
+                                #dbc.CardImg(src="/assets/icons8-pie-chart-100.png", alt="Avatar", style={"width":"25%"}),
+                                html.Br(),
+                                html.H3("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance."),
+                                html.Br()
+                                ]),
+                            ], className="flip-card-front", color="light", inverse=True),
+                        dbc.Card([
+                            dbc.CardBody([
+                                html.H1("54%"), 
+                                html.H4('of Black/African American identifying staff and'),
+                                html.Br(),
+                                html.H1("45%"), 
+                                html.H4('of employees who have worked for one year'),
+                                html.Br(),
+                                html.H2('disagree + strongly disagree'),
+                                ]),
+                            ],className="flip-card-back", color="warning", inverse=True)
+                    ],className="flip-card-inner",),
+                ],className="flip-card"),
+            ], className="cards", fluid=True),
+])
 priorities = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
@@ -440,6 +536,9 @@ def FC_big_pic():
 def FC_stats():
     cards = descriptive_stats
     return cards 
+def FC_key_findings():
+    flipcards = key_findings1
+    return flipcards
 
 def FC_prior():
     heading = priorities
