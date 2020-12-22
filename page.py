@@ -360,7 +360,6 @@ key_findings1 = dbc.Jumbotron([
                     dbc.Col([
                         dbc.Card([
                             dbc.CardBody([
-                                #dbc.CardImg(src="/assets/icons8-handshake-80.png", alt="Avatar", style={"width":"25%"}),
                                 html.H4("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance."),
                                 dbc.CardImg(src="/assets/icons8-handshake-80.png", alt="Avatar", style={"width":"25%"}),
                                 ]),
