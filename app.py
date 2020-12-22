@@ -9,7 +9,7 @@ from page import DEI_title, about_, FC_stats, FC_prior, FC_video, FC_wordcloud, 
 from figures import FC_fig1, FC_fig2, FC_fig3, FC_fig4, FC_fig5, FC_fig6, FC_fig7, FC_fig8, FC_fig9, FC_fig10, FC_fig11
 
 dei_title = DEI_title()
-dei_stats = FC_stats()
+#dei_stats = FC_stats()
 dei_prior=FC_prior()
 dei_key_findings=FC_key_findings()
 dei_about = about_()
@@ -24,10 +24,10 @@ def Dashboard():
     dei_title,
     dei_about,
     dei_video,
-    dei_big_pic,
-    dei_stats,
-    dei_prior,
+    #dei_big_pic,
+    #dei_stats,
     dei_key_findings,
+    dei_prior,
     dei_wordcloud, 
     dei_dropdown,
     ])
