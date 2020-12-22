@@ -201,7 +201,7 @@ card_content5 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
             html.H2("No.1", className="card-title"),
-            dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target1', color='danger', size='sm',),
+            dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target1', color='light', size='sm',),
             dbc.Popover([
             dbc.PopoverHeader("135 responses"),
             dbc.PopoverBody("Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions.")
@@ -217,7 +217,7 @@ card_content6 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
         html.H2("No.2", className="card-title"),
-        dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target2', color='danger', size='sm',),
+        dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target2', color='light', size='sm',),
         dbc.Popover([
             dbc.PopoverHeader("122 responses"),
             dbc.PopoverBody("Provide training for staff, leadership and board.")
@@ -233,7 +233,7 @@ card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
         html.H2("No.3", className="card-title"),
-        dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target3', color='danger', size="sm",),
+        dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target3', color='light', size="sm",),
         dbc.Popover([
             dbc.PopoverHeader("90 responses"),
             dbc.PopoverBody("Increase diverse representation on board and advisory committees.")
@@ -354,6 +354,7 @@ key_findings1 = dbc.Jumbotron([
                     ],className="flip-card-inner",),
                 ],className="flip-card"),
             ], className="cards", fluid=True),
+        html.Br(),
         dbc.Container([ 
             dbc.Row([
                     dbc.Col([
@@ -373,7 +374,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.H4('disagree + strongly disagree'),
                                 ]),
                             ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
-                    ],className="flip-card-inner",align="center"),
+                    ],className="flip-card-inner",align="center", width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                 ],className="flip-card", align="center"),
             dbc.Row([
                     dbc.Col([
@@ -395,7 +396,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.H4('disagree + strongly disagree'),
                                 ]),
                             ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
-                    ],className="flip-card-inner",align="center"),
+                    ],className="flip-card-inner",align="center", width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                 ],className="flip-card", align="center"),
 
             dbc.Row([
@@ -416,7 +417,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.H4('disagree + strongly disagree'),
                                 ]),
                             ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
-                    ],className="flip-card-inner",align="center"),
+                    ],className="flip-card-inner",align="center", width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                 ],className="flip-card", align="center"),
 
             ], className="cards", fluid=True),
