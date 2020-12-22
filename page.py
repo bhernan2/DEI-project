@@ -432,12 +432,12 @@ priorities = dbc.Jumbotron([
         html.Br(),       
         dbc.Row([
             dbc.Col(
-                dbc.Card(card_content5, color="light", inverse=True), width=2),
+                dbc.Card(card_content5, color="light", inverse=True), width=3),
             
             dbc.Col(
-                dbc.Card(card_content6, color="light", inverse=True), width=2),
+                dbc.Card(card_content6, color="light", inverse=True), width=3),
             dbc.Col(
-                dbc.Card(card_content7, color="light", inverse=True), width=2),
+                dbc.Card(card_content7, color="light", inverse=True), width=3),
             ], justify="center"), 
     ], fluid=True, style={'textAlign': 'center'}),
 ])
