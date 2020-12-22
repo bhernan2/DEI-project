@@ -314,6 +314,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.Br(),
                                 html.Br(),
                                 html.Br(),
+                                html.Br(),
                                 dbc.CardImg(src="/assets/icons8-high-five-80.png", style={"width":"25%"}),
 
                                 ]),
@@ -376,7 +377,8 @@ key_findings1 = dbc.Jumbotron([
                             ],className="flip-card-back", color="warning", inverse=True, style={"display": "flex"},)
                     ],className="flip-card-inner",align="center"),
                 ],className="flip-card", align="center"),
-            
+            dbc.Row([], align="center"),
+            dbc.Row([], align="center"),
             dbc.Row([
                     dbc.Col([
                         dbc.Card([
