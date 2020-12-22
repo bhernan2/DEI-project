@@ -1,12 +1,23 @@
 .cards {
   display: grid;
+  grid-template-columns: repeat(autofit, minmax(1700px, 1fr));
+  grid-template-columns: repeat(autofit, minmax(1600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(1200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
-  grid-template-rows: repeat(2, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   row-gap: 50px;
   object-fit: cover;
   justify-items: center;
+
 }
 
+@media (min-width: 1630px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     display: flex;
