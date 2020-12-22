@@ -353,9 +353,7 @@ key_findings1 = dbc.Jumbotron([
                             ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
                     ],className="flip-card-inner",),
                 ],className="flip-card"),
-            ], className="cards", fluid=True),
         # html.Br(),
-        dbc.Container([ 
             dbc.Row([
                     dbc.Col([
                         dbc.Card([
@@ -374,7 +372,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.H4('disagree + strongly disagree'),
                                 ]),
                             ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
-                    ],className="flip-card-inner",align="center", width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
+                    ],className="flip-card-inner",align="center",),
                 ],className="flip-card", align="center"),
             dbc.Row([
                     dbc.Col([
@@ -396,7 +394,7 @@ key_findings1 = dbc.Jumbotron([
                                 html.H4('disagree + strongly disagree'),
                                 ]),
                             ],className="flip-card-back", color="danger", inverse=True, style={"display": "flex"},)
-                    ],className="flip-card-inner",align="center", width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
+                    ],className="flip-card-inner",align="center",),
                 ],className="flip-card", align="center"),
 
             dbc.Row([
