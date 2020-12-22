@@ -1,17 +1,17 @@
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 0fr)); 
-  grid-auto-rows: minmax(400px, auto);
-  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 0fr)); 
+  grid-auto-rows: minmax(600px, auto);
+  grid-gap: 300px;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    height: 500px;
-    width: 400px;
+    height: 400px;
+    width: 600px;
     border: 1px solid #f1f1f1;
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 0rem;
     display: flex;
     -ms-flex-direction: column;
