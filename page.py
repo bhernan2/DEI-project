@@ -541,7 +541,7 @@ wordcloud = dbc.Jumbotron([
             dbc.Col([
                 dbc.Card([ 
                     dbc.Button("Open", id="open-centered", size="sm")
-                    ], color="light",),
+                    ], color="light"),
                 ], width=1),     
         dbc.Row([
             dbc.Modal([
