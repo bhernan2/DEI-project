@@ -528,36 +528,69 @@ dropdown_row = html.Div([
 #     ])
 
 
+        
+  
+        
+
 wordcloud = dbc.Jumbotron([
     dbc.Container([
         dbc.Row([
-            html.H3("Other efforts you'd like to see prioritized", className='text-left', ),
-        ]), 
-        html.Br(),
-        dbc.Row([
-            dbc.Col(width=2),
             dbc.Col([
-                dbc.Card([
+                html.H3("Other efforts you'd like to see prioritized", className='text-left', ),]
+                , width=3),
+            dbc.Col([
+                dbc.Card([ 
+                    dbc.Button("Open", id="open-centered", size="sm")
+                    ], color="light",),
+                ], width=1),     
+        dbc.Row([
+            dbc.Modal([
+                dbc.ModalHeader("Wordcloud"),
+                dbc.ModalBody([
+                    dbc.Card([
                     dbc.CardImg(src='assets/word_cloud7.png'),
                     dbc.CardBody([
                         html.H4("Wordcloud", className="card-title"),
                         html.P("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text.")   
                         ])
                     ]),
-                ], width=8),
-                dbc.Col(width=2),
-            # dbc.Col([
-            #     dbc.Row([
-            #         html.H3("FC DEI response scores compared to Gallup response scores"),
-            #     ]),
-            #     html.Br(),
-            #     dbc.Row([collapse1]),
-            #     html.Br(),
-            #     dbc.Row([collapse2]),
-            #     html.Br(),
-            #     dbc.Row([collapse3])        
-            #     ], width=6)
-            ], align='center')       
+                ]),
+                dbc.ModalFooter(
+                    dbc.Button("Close", id="close-centered", className="ml-auto", size="lg")
+                ),
+            ],
+            id="modal-centered",
+            centered=True,
+            size="xl",
+        ),
+        ], align="center")
+    
+    ], align="left"), 
+        # html.Br(),
+        # dbc.Row([
+        #     dbc.Col(width=2),
+        #     dbc.Col([
+        #         dbc.Card([
+        #             dbc.CardImg(src='assets/word_cloud7.png'),
+        #             dbc.CardBody([
+        #                 html.H4("Wordcloud", className="card-title"),
+        #                 html.P("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text.")   
+        #                 ])
+        #             ]),
+        #         ], width=8),
+        #         dbc.Col(width=2),
+        #     # dbc.Col([
+        #     #     dbc.Row([
+        #     #         html.H3("FC DEI response scores compared to Gallup response scores"),
+        #     #     ]),
+        #     #     html.Br(),
+        #     #     dbc.Row([collapse1]),
+        #     #     html.Br(),
+        #     #     dbc.Row([collapse2]),
+        #     #     html.Br(),
+        #     #     dbc.Row([collapse3])        
+        #     #     ], width=6)
+        #     ], align='center')       
             ], fluid=True),
         ])
 
