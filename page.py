@@ -383,7 +383,7 @@ contributors = dbc.Jumbotron([
         dbc.Row([
             dbc.Col([
                 dbc.Button(
-                    html.Img(src="assets/IMG_2474.png", id="open", className="circle-img")),
+                    html.Img(src="assets/IMG_2474.png", id="open", className="circle-img"), size="sm"),
                 dbc.Modal([
                     dbc.ModalHeader("Boris Antonio Hernandez"),
                     dbc.Card([
@@ -401,7 +401,7 @@ contributors = dbc.Jumbotron([
                     size="lg",
                     ),
 
-            ]),
+            ], className="circle"),
 
             # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
             # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
@@ -411,7 +411,7 @@ contributors = dbc.Jumbotron([
             # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
             # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
             # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
-            ])
+            ], className="circles")
                       
         ],fluid=True, style={'textAlign': 'center'}),
     ],)

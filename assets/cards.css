@@ -127,7 +127,6 @@
   height: 100px;
   background-size: cover;
   display: inline-block;
-  border-radius: 50%;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
    }
@@ -137,7 +136,8 @@
   height: 100px;
   overflow: hidden;
   position: absolute; 
-  border-radius: 50%
+  
+  
   
 }
 
@@ -145,7 +145,6 @@
   display: inline-block; 
   width: 100px;
   height: 100px;
-  overflow: hidden;
   border-radius: 50%;
   background-size: cover;
   
