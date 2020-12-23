@@ -15,22 +15,7 @@ from datetime import datetime
 
 from figures import FC_fig1, FC_fig2, FC_fig3, FC_fig4, FC_fig5, FC_fig6, FC_fig7, FC_fig8, FC_fig9, FC_fig10, FC_fig11
 
-dei_list = ['At work I am treated with respect.', 
-            'At work, I feel comfortable being myself.', 
-            'Diversity and inclusiveness issues are openly discussed.', 
-            'Employees in my organization are treated with respect and dignity.', 
-            'Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.',
-            'I have the same opportunities for advancement as other team members at my organization with similar experience and performance levels.',
-            'If I raised a concern about ethics and integrity, I am confident my employer would do what is right.',
-            'My organization treasures diverse opinions and ideas.',
-            'My team members appreciate my contributions.',
-            'My supervisor tries to understand my point of view.',
-            'My workplace is committed to building the strengths of each employee.']
-
-word_heading = html.H2(children="Let us know what other efforts you'd like to see prioritized", className='lead text-center')
-#word_title
 #title and survey info 
-
 title = dbc.Jumbotron([
     dbc.Container([
         html.Img(src='assets/foundcom-logo-ffce54.png')
@@ -47,7 +32,8 @@ title = dbc.Jumbotron([
             html.H5('The Diversity, Equity and Inclusion (DEI) Survey team created a survey to gather more information about your experience working at Foundation Communities. We researched two surveys: 1) Gallup Diversity and Inclusion and 2) Building Movement Project Race to Lead. We decided to merge questions from both surveys to create the FC DEI Survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.', className='text-justify', ),                                                                                                                                              
             ]),
         ], fluid=True), 
-    ]) 
+    ])
+#how to video jumbo
 video = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
@@ -58,13 +44,10 @@ video = dbc.Jumbotron([
                 html.H5("Space for video"),
                 html.Video(title="Dashboard how-to", src="", width=4),  
             ]),
-        ], fluid=True),
-        #dbc.Container([
-            #html.Ul(id='my-list', children=[html.Li(i) for i in dei_list], className= 'mb-10 lead text-left'),  
-            #])
-           
-])    
+        ], fluid=True),       
+    ])    
 
+#big pic jumbo
 big_picture = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
@@ -74,129 +57,19 @@ big_picture = dbc.Jumbotron([
             dbc.Row([
                 html.H5("Include big picture figure: interactive pie chart")
             ])
-        ], fluid=True),
-        #dbc.Container([
-            #html.Ul(id='my-list', children=[html.Li(i) for i in dei_list], className= 'mb-10 lead text-left'),  
-            #])
-           
-])
+        ], fluid=True),      
+    ])
 
+# about jumbo
 about = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
                 html.H5("The subcommittee gathered on __/__/__ to develop the all staff survey, it was relased on __/__/__ and participants had X # of days to complete it. Survey participants were asked to rank individual experience questions from 1 to 5 (1 = strongly disagree, 2 = disagree, 3 = neutral, 4 = agree, 5 = strongly agree). The team investigated 1) how the distribution of demographics compared to the individual expierence question responses, 2) to see if there were any correlations between individual experience question responses and 3) designed a wordcloud to analyze an open ended question.", className='text-justify', ),   
             ]),
         ], fluid=True),
-        #dbc.Container([
-            #html.Ul(id='my-list', children=[html.Li(i) for i in dei_list], className= 'mb-10 lead text-left'),  
-            #])
-           
-])
+    ])
 
-
-#descriptive stats cards 
-
-# card_content = [
-#     #dbc.CardHeader("Descriptive Stats"),
-#     html.H4([
-#         dbc.CardHeader([
-#             ("My supervisor tries to understand my point of view."),
-#             html.Br(),
-#             html.Br(),
-#             ("At work I am treated with respect."),
-#             html.Br(),
-#             html.Br(),
-#         ], style={"display": "flex"}),
-#     ]),
-#     dbc.CardBody([
-#             html.H2("81%", className="card-title"),
-#             html.H5([
-#                 'of all staff members agree + strongly agree.',
-#                 ],className="card-text"),
-#             html.Br(),
-#             html.H2("88%", className="card-title"),
-#             html.H5([
-#                 'of all staff survey particapnts agree + strongly agree.',
-#                 ],className="card-text"),
-        
-#         ]),
-# ]
-# card_content1 = [
-#     #dbc.CardHeader("Descriptive Stats"),
-#     html.H4([
-#         dbc.CardHeader([
-#             ("My organization treasurese diverse opinions and ideas."),
-#             html.Br(),
-#             html.Br(),
-#             html.Br(),
-#             html.Br(),
-#             html.Br(),
-#         ], style={"display": "flex"}),
-#     ]),
-#     dbc.CardBody([
-#             html.H2("34%", className="card-title"),
-#             html.H5([
-#                 'of LGBTQ+ staff members either strongly disagree + disagree.',
-#                 ],className="card-text"),
-#             html.Br(),
-#             html.H2("25%", className="card-title"),
-#             html.H5([
-#                 'of employees who have been employeed between 1-10 years disagree + strongly disagree.',
-#                 ],className="card-text"),
-        
-#         ]),
-# ]
-# card_content2 = [
-#     #dbc.CardHeader("Descriptive Stats"),
-#     html.H4([
-#         dbc.CardHeader("Everyone at this organization is treated fairly regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.")
-#     ],style={"display": "flex"}),
-#     dbc.CardBody([
-#             html.H2("54%", className="card-title"),
-#             html.H5(
-#                 "of Black/African American identifying staff disagree + strongly disagree.",
-#                 className="card-text",),
-#             html.Br(),
-#             html.H2("45%", className="card-title"),
-#             html.H5("of survey respndents who have worked at FC for one year disagree + strongly disagree with this statement.", className="card-text",),
-#         ]),
-# ]
-# card_content3 = [
-#     html.H4([
-#         dbc.CardHeader(" I have the same opportunities for advancement as other team members with similar experience and performance levels.")
-#     ],style={"display": "flex"}),
-#     dbc.CardBody([
-#             html.H2("63%", className="card-title"),
-#             html.H5(
-#                 "of Black/African American identifying staff disagree + strongly disagree.",
-#                 className="card-text",),
-#             html.Br(),
-#             html.H2("27%", className="card-title"),
-#             html.H5(
-#                 "of LGBTQ+ identigying staff disagree + strongly disagree.",
-#                 className="card-text",),
-#         ]),
-# ]
-# card_content4 = [
-#     html.H4([
-#         dbc.CardHeader([
-#             ("Diversity and inclusiveness issues are openly discussed at my organization."),
-#             html.Br(),
-#             html.Br(),
-#             ], style={"display": "flex"})
-#     ]),
-#     dbc.CardBody([
-#             # html.H2("100%", className="card-title"),
-#             # html.H5(
-#             #     "of Native American identifying staff disagree + strongly disagree."),
-#             html.Br(),
-#             html.H2("50%", className="card-title"),
-#             html.H5(
-#                 "of Black/African American identifying staff disagree + strongly disagree.", 
-#                 className="card-text",),
-                
-#         ]),
-# ]
+# top 3 priorities card definitions
 card_content5 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
@@ -245,42 +118,8 @@ card_content7 = [
         )
         ]),
 ]
-# card_content8 = [
-#     #dbc.CardHeader("Descriptive Stats"),
-#     dbc.CardBody([
-#             html.H2("No. 4", className="card-title"),
-#             html.H5(
-#                 "Develop recruitment and hiring protocols and strategies that include implicit bias testing for managers and supervisors",
-#                 className="card-text",),
-#         ]),
-# ]
-# descriptive_stats = dbc.Jumbotron([
-#     dbc.Container([
-#         html.Br(),
-#         dbc.Row([
-#             html.H3("Key findings", className='text-left', )
-#         ]), 
-#         html.Br(),
-#         dbc.Row([
-#             dbc.CardDeck([
-#                 dbc.Col(
-#                     dbc.Card(card_content, color="light", inverse=True), style={"display": "flex"}, width=4),
-#                 dbc.Col(
-#                     dbc.Card(card_content1, color="primary", inverse=True), style={"display": "flex"}, width=4),
-#                 dbc.Col(
-#                     dbc.Card(card_content2, color="secondary", inverse=True), style={"display": "flex"}, width=4), 
-#             ]),
-#         ], className="mb-5"),
-#         dbc.Row([
-#             dbc.CardDeck([
-#             dbc.Col(
-#                 dbc.Card(card_content3, color="dark", inverse=True), style={"display": "flex"}, width=6),
-#             dbc.Col(
-#                 dbc.Card(card_content4, color="success", inverse=True), style={"display": "flex"}, width=6),
-#             ]),
-#             ], className="mb-5"), 
-#     ], fluid=True),
-# ])
+
+#key findings jumbo
 key_findings1 = dbc.Jumbotron([
     html.Br(),
         dbc.Row([
@@ -358,9 +197,6 @@ key_findings1 = dbc.Jumbotron([
                             ],className="flip-card-back", color="warning", inverse=True,)
                     ],className="flip-card-inner",),
                 ],className="flip-card"),
-            # ], className="cards", fluid=True, style={'textAlign': 'center'}),
-        # html.Br(),
-        # dbc.Container([
             dbc.Row([
                     dbc.Col([
                         dbc.Card([
@@ -427,6 +263,8 @@ key_findings1 = dbc.Jumbotron([
 
             ], className="cards", fluid=True, style={'textAlign': 'center'}),
 ], fluid=True)
+
+#top 3 priorities jumbo
 priorities = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
@@ -436,16 +274,17 @@ priorities = dbc.Jumbotron([
         html.Br(),       
         dbc.Row([
             dbc.Col(
-                dbc.Card(card_content5, color="light", inverse=True), width=3),
+                dbc.Card(card_content5, color="light", inverse=True), width=4),
             
             dbc.Col(
-                dbc.Card(card_content6, color="light", inverse=True), width=3),
+                dbc.Card(card_content6, color="light", inverse=True), width=4),
             dbc.Col(
-                dbc.Card(card_content7, color="light", inverse=True), width=3),
+                dbc.Card(card_content7, color="light", inverse=True), width=4),
             ], justify="center"), 
     ], fluid=True, style={'textAlign': 'center'}),
 ])
-#dropdown row
+
+#dropdown jumbo
 dropdown_row = html.Div([
     dbc.Jumbotron([
     dbc.Container([
@@ -489,54 +328,8 @@ dropdown_row = html.Div([
         ], fluid=True),
     ]),
 ])
-           
 
-# collapse1 = html.Div(
-#     [
-#         dbc.Button(
-#             "At work I feel comfortable being myself.", size="lg", color="primary", id="left", className="mr-1"
-#         ),
-#         dbc.Row(
-#             [
-#                 dbc.Col(
-#                     dbc.Collapse(
-#                         dbc.Card("FC response rank avg compared to Gallup responses.", body=True),
-#                         id="left-collapse",
-#                     )
-#                 ),
-#             ],
-#             className="mt-3",
-#         ),
-#     ]
-# )
-# collapse2 = html.Div([
-#         dbc.Button(
-#             "Employees in my organization are treated with respect and dignity.", size="lg", color="primary", id="left2", className="mr-1"),
-#         dbc.Row([
-#                 dbc.Col(
-#                     dbc.Collapse(
-#                         dbc.Card("FC response rank avg compared to Gallup responses.", body=True),
-#                         id="left-collapse2",)
-#                 ),
-#                 ],className="mt-3",),
-#     ])
-# collapse3 = html.Div([
-#         dbc.Button(
-#             "Everyone at this organization is treated fairly.", size="lg", color="primary", id="left3", className="mr-1"),
-#         dbc.Row([
-#                 dbc.Col(
-#                     dbc.Collapse(
-#                         dbc.Card("FC response rank avg compared to Gallup responses.", body=True),
-#                         id="left-collapse3",)
-#                 ),
-#                 ],className="mt-3",),
-#     ])
-
-
-        
-  
-        
-
+#wordlcoud jumbo
 wordcloud = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
@@ -545,7 +338,7 @@ wordcloud = dbc.Jumbotron([
         ], justify="center"), 
         html.Br(),
         dbc.Row([
-            dbc.Col(width=4),
+            dbc.Col(width=2),
             dbc.Col([
                 dbc.Card([ 
                     dbc.CardBody([
@@ -553,8 +346,8 @@ wordcloud = dbc.Jumbotron([
                         dbc.Button(html.Img(src="assets/icons8-open-sign-80.png"), id='open-centered', color='light', size='sm',),
                         ]),
                     ], color="light"),
-                    ], width=4),
-            dbc.Col(width=4),     
+                    ], width=8),
+            dbc.Col(width=2),     
         dbc.Row([
             dbc.Modal([
                 dbc.ModalHeader("Wordcloud"),
@@ -572,37 +365,11 @@ wordcloud = dbc.Jumbotron([
             id="modal-centered",
             centered=True,
             size="xl",
-        ),
-        ], align="center")
-    
-    ], align="center"), 
-        # html.Br(),
-        # dbc.Row([
-        #     dbc.Col(width=2),
-        #     dbc.Col([
-        #         dbc.Card([
-        #             dbc.CardImg(src='assets/word_cloud7.png'),
-        #             dbc.CardBody([
-        #                 html.H4("Wordcloud", className="card-title"),
-        #                 html.P("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text.")   
-        #                 ])
-        #             ]),
-        #         ], width=8),
-        #         dbc.Col(width=2),
-        #     # dbc.Col([
-        #     #     dbc.Row([
-        #     #         html.H3("FC DEI response scores compared to Gallup response scores"),
-        #     #     ]),
-        #     #     html.Br(),
-        #     #     dbc.Row([collapse1]),
-        #     #     html.Br(),
-        #     #     dbc.Row([collapse2]),
-        #     #     html.Br(),
-        #     #     dbc.Row([collapse3])        
-        #     #     ], width=6)
-        #     ], align='center')       
-            ], fluid=True, style={'textAlign': 'center'}),
-        ])
+            ),
+        ]),
+        ], justify="center"),     
+    ], fluid=True, style={'textAlign': 'center'}),
+])
 
 def DEI_title():
     heading = title
