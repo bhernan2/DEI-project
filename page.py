@@ -377,7 +377,6 @@ wordcloud = dbc.Jumbotron([
 
 contributors = dbc.Jumbotron([
     dbc.Container([
-        html.Br(),
         dbc.Row(html.H5("Meet the dashboard contributors")),
         html.Br(),
         dbc.Row([
