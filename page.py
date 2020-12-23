@@ -23,7 +23,7 @@ title = dbc.Jumbotron([
     dbc.Container([
             html.H1("FC DEI Survey Dashboard", className='display-3 text-center'),
             html.Br(),
-            html.H6("Contributors: DeShan Allison, Bianca A. Hernandez, Michelle Le, Kenya Lewis, Stephanie Perrone, Julie Roebuck, Ebonie Trice, Mary Young and Tiffany Nicely-Williams", className='lead text-center', ),
+            # html.H6("Contributors: DeShan Allison, Bianca A. Hernandez, Michelle Le, Kenya Lewis, Stephanie Perrone, Julie Roebuck, Ebonie Trice, Mary Young and Tiffany Nicely-Williams", className='lead text-center', ),
             html.Br(),
             html.Br(),
         dbc.Row([
@@ -123,8 +123,9 @@ card_content7 = [
 key_findings1 = dbc.Jumbotron([
     html.Br(),
         dbc.Row([
-            html.H3("Key findings",)
-        ], justify="center"), 
+            dbc.Col(width=1),
+            dbc.Col(html.H3("Key findings",))
+        ]), 
     html.Br(),
     dbc.Container([
             dbc.Row([
@@ -269,17 +270,19 @@ priorities = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
         dbc.Row([
+            dbc.Col(width=1),
             html.H3("Top DEI efforts that FC staff would like to see prioritized", className='text-left', )
-        ], justify="center"), 
+        ], justify="left"), 
         html.Br(),       
         dbc.Row([
+
             dbc.Col(
-                dbc.Card(card_content5, color="light", inverse=True), width=4),
+                dbc.Card(card_content5, color="light", inverse=True), width=3),
             
             dbc.Col(
-                dbc.Card(card_content6, color="light", inverse=True), width=4),
+                dbc.Card(card_content6, color="light", inverse=True), width=3),
             dbc.Col(
-                dbc.Card(card_content7, color="light", inverse=True), width=4),
+                dbc.Card(card_content7, color="light", inverse=True), width=3),
             ], justify="center"), 
     ], fluid=True, style={'textAlign': 'center'}),
 ])
@@ -334,8 +337,9 @@ wordcloud = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
         dbc.Row([
+            dbc.Col(width=1),
             html.H3("Other efforts staff would like to see prioritized",)
-        ], justify="center"), 
+        ], justify="left"), 
         html.Br(),
         dbc.Row([
             dbc.Col(width=2),
@@ -343,7 +347,7 @@ wordcloud = dbc.Jumbotron([
                 dbc.Card([ 
                     dbc.CardBody([
                         html.H5("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text. Click open to see our wordcloud analysis for the open ended question of the survey."),
-                        dbc.Button(html.Img(src="assets/icons8-open-sign-80.png"), id='open-centered', color='light', size='sm',),
+                        dbc.Button(html.Img(src="assets/icons8-open-sign-80.png"), id='open-centered', color='light', size='md',),
                         ]),
                     ], color="light"),
                     ], width=8),
@@ -370,6 +374,48 @@ wordcloud = dbc.Jumbotron([
         ], justify="center"),     
     ], fluid=True, style={'textAlign': 'center'}),
 ])
+
+contributors = dbc.Jumbotron([
+    dbc.Container([
+        html.Br(),
+        dbc.Row(html.H5("Meet the dashboard contributors")),
+        html.Br(),
+        dbc.Row([
+            dbc.Col([
+                dbc.Button(
+                    html.Img(src="assets/IMG_2474.png", id="open", className="circle-img")),
+                dbc.Modal([
+                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.Card([
+                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardBody([
+                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                        ],style={'justify': 'center'}),
+                    ]),
+                    dbc.ModalFooter([
+                        dbc.Button("Close", id="close", className="ml-auto", size="lg")
+                    ]),
+                    ],
+                    id="modal",
+                    centered=True,
+                    size="lg",
+                    ),
+
+            ]),
+
+            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            ])
+                      
+        ],fluid=True, style={'textAlign': 'center'}),
+    ],)
+
 
 def DEI_title():
     heading = title
@@ -403,4 +449,7 @@ def FC_dropdown_row():
 
 def FC_wordcloud():
     heading = wordcloud
+    return heading 
+def FC_contributors():
+    heading = contributors
     return heading 

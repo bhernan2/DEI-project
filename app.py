@@ -5,7 +5,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output, State
 import sys
 
-from page import DEI_title, about_, FC_stats, FC_prior, FC_video, FC_wordcloud, FC_big_pic, FC_dropdown_row, FC_key_findings
+from page import DEI_title, about_, FC_stats, FC_prior, FC_video, FC_wordcloud, FC_big_pic, FC_dropdown_row, FC_key_findings, FC_contributors
 from figures import FC_fig1, FC_fig2, FC_fig3, FC_fig4, FC_fig5, FC_fig6, FC_fig7, FC_fig8, FC_fig9, FC_fig10, FC_fig11
 
 dei_title = DEI_title()
@@ -17,6 +17,7 @@ dei_video = FC_video()
 dei_big_pic = FC_big_pic()
 dei_dropdown = FC_dropdown_row()
 dei_wordcloud = FC_wordcloud()
+dei_contributors = FC_contributors()
 
 #this is just to save
 def Dashboard():
@@ -30,6 +31,7 @@ def Dashboard():
     dei_prior,
     dei_wordcloud, 
     dei_dropdown,
+    dei_contributors
     ])
     return layout 
 
@@ -72,6 +74,15 @@ def toggle_popover3(n, is_open):
     Output("modal-centered", "is_open"),
     [Input("open-centered", "n_clicks"), Input("close-centered", "n_clicks")],
     [State("modal-centered", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+@app.callback(
+    Output("modal", "is_open"),
+    [Input("open", "n_clicks"), Input("close", "n_clicks")],
+    [State("modal", "is_open")],
 )
 def toggle_modal(n1, n2, is_open):
     if n1 or n2:
