@@ -368,7 +368,7 @@ wordcloud = dbc.Jumbotron([
             ],
             id="modal-centered",
             centered=True,
-            size="xl",
+            size="lg",
             ),
         ]),
         ], justify="center"),     
