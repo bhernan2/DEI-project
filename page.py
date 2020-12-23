@@ -403,14 +403,14 @@ contributors = dbc.Jumbotron([
 
             ]),
 
-            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
-            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
-            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
-            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
-            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
-            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
-            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
-            dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
+            # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
             ])
                       
         ],fluid=True, style={'textAlign': 'center'}),

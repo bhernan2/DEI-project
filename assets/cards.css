@@ -117,31 +117,36 @@
 }
 
 @media (min-width: 1630px) {
-  .circle {
+  .circles {
     grid-template-columns: repeat(3, 1fr);
   }
 
   /* Circles for contibutor images */
-  .circles {
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    display: block;
-    border-radius: 50%;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
+  .circle {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
    }
 .circle-container {
-  /* display: block; */
-  /* overflow: hidden; */
-  /* position: absolute; */
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute; 
+  border-radius: 50%
   
 }
 
 .circle-img {
-  display: inline;
+  display: inline-block; 
   width: 100px;
   height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
   background-size: cover;
-  border-radius: 100%;
+  
 }
