@@ -282,6 +282,11 @@ card_content7 = [
 #     ], fluid=True),
 # ])
 key_findings1 = dbc.Jumbotron([
+    html.Br(),
+        dbc.Row([
+            html.H3("Key findings",)
+        ], justify="center"), 
+    html.Br(),
     dbc.Container([
             dbc.Row([
                     dbc.Col([
@@ -534,15 +539,22 @@ dropdown_row = html.Div([
 
 wordcloud = dbc.Jumbotron([
     dbc.Container([
+        html.Br(),
         dbc.Row([
-            dbc.Col([
-                html.H3("Other efforts you'd like to see prioritized", className='text-left', ),]
-                , width=3),
+            html.H3("Other efforts staff would like to see prioritized",)
+        ], justify="center"), 
+        html.Br(),
+        dbc.Row([
+            dbc.Col(width=4),
             dbc.Col([
                 dbc.Card([ 
-                    dbc.Button("Open", id="open-centered", size="sm")
+                    dbc.CardBody([
+                        html.H5("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text. Click open to see our wordcloud analysis for the open ended question of the survey."),
+                        dbc.Button(html.Img(src="assets/icons8-open-sign-80.png"), id='open-centered', color='light', size='sm',),
+                        ]),
                     ], color="light"),
-                ], width=1),     
+                    ], width=4),
+            dbc.Col(width=4),     
         dbc.Row([
             dbc.Modal([
                 dbc.ModalHeader("Wordcloud"),
@@ -550,9 +562,7 @@ wordcloud = dbc.Jumbotron([
                     dbc.Card([
                     dbc.CardImg(src='assets/word_cloud7.png'),
                     dbc.CardBody([
-                        html.H4("Wordcloud", className="card-title"),
-                        html.P("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text.")   
-                        ])
+                        ]),
                     ]),
                 ]),
                 dbc.ModalFooter(
@@ -565,7 +575,7 @@ wordcloud = dbc.Jumbotron([
         ),
         ], align="center")
     
-    ], align="left"), 
+    ], align="center"), 
         # html.Br(),
         # dbc.Row([
         #     dbc.Col(width=2),
@@ -591,7 +601,7 @@ wordcloud = dbc.Jumbotron([
         #     #     dbc.Row([collapse3])        
         #     #     ], width=6)
         #     ], align='center')       
-            ], fluid=True),
+            ], fluid=True, style={'textAlign': 'center'}),
         ])
 
 def DEI_title():
