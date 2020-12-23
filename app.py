@@ -40,6 +40,7 @@ def Dashboard():
 app = dash.Dash(__name__, external_stylesheets = [dbc.themes.SUPERHERO])
 
 app.layout = Dashboard()
+#top priorities popover callbacks
 @app.callback(
     Output("popover1", "is_open"),
     [Input("popover-target1", "n_clicks")],
@@ -70,6 +71,7 @@ def toggle_popover3(n, is_open):
         return not is_open
     return is_open
 
+#wordcloud modal callback
 @app.callback(
     Output("modal-centered", "is_open"),
     [Input("open-centered", "n_clicks"), Input("close-centered", "n_clicks")],
@@ -79,6 +81,8 @@ def toggle_modal(n1, n2, is_open):
     if n1 or n2:
         return not is_open
     return is_open
+
+#dashboard contributors modal callbacks
 @app.callback(
     Output("modal", "is_open"),
     [Input("open", "n_clicks"), Input("close", "n_clicks")],
@@ -88,36 +92,71 @@ def toggle_modal(n1, n2, is_open):
     if n1 or n2:
         return not is_open
     return is_open
+@app.callback(
+    Output("modal2", "is_open"),
+    [Input("open2", "n_clicks"), Input("close2", "n_clicks")],
+    [State("modal2", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+@app.callback(
+    Output("modal3", "is_open"),
+    [Input("open3", "n_clicks"), Input("close3", "n_clicks")],
+    [State("modal3", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+@app.callback(
+    Output("modal4", "is_open"),
+    [Input("open4", "n_clicks"), Input("close4", "n_clicks")],
+    [State("modal4", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+@app.callback(
+    Output("modal5", "is_open"),
+    [Input("open5", "n_clicks"), Input("close5", "n_clicks")],
+    [State("modal5", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+@app.callback(
+    Output("modal6", "is_open"),
+    [Input("open6", "n_clicks"), Input("close6", "n_clicks")],
+    [State("modal6", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+@app.callback(
+    Output("modal7", "is_open"),
+    [Input("open7", "n_clicks"), Input("close7", "n_clicks")],
+    [State("modal7", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
+@app.callback(
+    Output("modal8", "is_open"),
+    [Input("open8", "n_clicks"), Input("close8", "n_clicks")],
+    [State("modal8", "is_open")],
+)
+def toggle_modal(n1, n2, is_open):
+    if n1 or n2:
+        return not is_open
+    return is_open
 
-# @app.callback(
-#     Output("left-collapse", "is_open"),
-#     [Input("left", "n_clicks")],
-#     [State("left-collapse", "is_open")],
-# )
-# def toggle_left(n_left, is_open):
-#     if n_left:
-#         return not is_open
-#     return is_open
-# @app.callback(
-#     Output("left-collapse2", "is_open"),
-#     [Input("left2", "n_clicks")],
-#     [State("left-collapse2", "is_open")],
-# )
-# def toggle_left2(n_left, is_open):
-#     if n_left:
-#         return not is_open
-#     return is_open
-
-# @app.callback(
-#     Output("left-collapse3", "is_open"),
-#     [Input("left3", "n_clicks")],
-#     [State("left-collapse3", "is_open")],
-# )
-# def toggle_left3(n_left, is_open):
-#     if n_left:
-#         return not is_open
-#     return is_open
-
+#dropdown figures callbacks
 @app.callback(
     dash.dependencies.Output('dd-output-container', 'children'),
     [dash.dependencies.Input('dei-dropdown', 'value')])

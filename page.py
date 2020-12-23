@@ -402,6 +402,156 @@ contributors = dbc.Jumbotron([
                     ),
 
             ], className="circle"),
+            dbc.Col([
+                dbc.Button(
+                    html.Img(src="assets/IMG_2474.png", id="open2", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                dbc.Modal([
+                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.Card([
+                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardBody([
+                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                        ],style={'justify': 'center'}),
+                    ]),
+                    dbc.ModalFooter([
+                        dbc.Button("Close", id="close2", className="ml-auto", size="lg")
+                    ]),
+                    ],
+                    id="modal2",
+                    centered=True,
+                    size="lg",
+                    ),
+
+            ], className="circle"),
+            dbc.Col([
+                dbc.Button(
+                    html.Img(src="assets/IMG_2474.png", id="open3", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                dbc.Modal([
+                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.Card([
+                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardBody([
+                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                        ],style={'justify': 'center'}),
+                    ]),
+                    dbc.ModalFooter([
+                        dbc.Button("Close", id="close3", className="ml-auto", size="lg")
+                    ]),
+                    ],
+                    id="modal3",
+                    centered=True,
+                    size="lg",
+                    ),
+
+            ], className="circle"),
+            dbc.Col([
+                dbc.Button(
+                    html.Img(src="assets/IMG_2474.png", id="open4", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                dbc.Modal([
+                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.Card([
+                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardBody([
+                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                        ],style={'justify': 'center'}),
+                    ]),
+                    dbc.ModalFooter([
+                        dbc.Button("Close", id="close4", className="ml-auto", size="lg")
+                    ]),
+                    ],
+                    id="modal4",
+                    centered=True,
+                    size="lg",
+                    ),
+
+            ], className="circle"),
+            dbc.Col([
+                dbc.Button(
+                    html.Img(src="assets/IMG_2474.png", id="open5", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                dbc.Modal([
+                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.Card([
+                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardBody([
+                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                        ],style={'justify': 'center'}),
+                    ]),
+                    dbc.ModalFooter([
+                        dbc.Button("Close", id="close5", className="ml-auto", size="lg")
+                    ]),
+                    ],
+                    id="modal5",
+                    centered=True,
+                    size="lg",
+                    ),
+
+            ], className="circle"),
+
+            dbc.Col([
+                dbc.Button(
+                    html.Img(src="assets/IMG_2474.png", id="open6", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                dbc.Modal([
+                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.Card([
+                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardBody([
+                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                        ],style={'justify': 'center'}),
+                    ]),
+                    dbc.ModalFooter([
+                        dbc.Button("Close", id="close6", className="ml-auto", size="lg")
+                    ]),
+                    ],
+                    id="modal6",
+                    centered=True,
+                    size="lg",
+                    ),
+
+            ], className="circle"),
+
+            dbc.Col([
+                dbc.Button(
+                    html.Img(src="assets/IMG_2474.png", id="open7", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                dbc.Modal([
+                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.Card([
+                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardBody([
+                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                        ],style={'justify': 'center'}),
+                    ]),
+                    dbc.ModalFooter([
+                        dbc.Button("Close", id="close7", className="ml-auto", size="lg")
+                    ]),
+                    ],
+                    id="modal7",
+                    centered=True,
+                    size="lg",
+                    ),
+
+            ], className="circle"),
+
+            dbc.Col([
+                dbc.Button(
+                    html.Img(src="assets/IMG_2474.png", id="open8", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                dbc.Modal([
+                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.Card([
+                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardBody([
+                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                        ],style={'justify': 'center'}),
+                    ]),
+                    dbc.ModalFooter([
+                        dbc.Button("Close", id="close8", className="ml-auto", size="lg")
+                    ]),
+                    ],
+                    id="modal8",
+                    centered=True,
+                    size="lg",
+                    ),
+
+            ]),
 
             # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
             # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
@@ -411,7 +561,7 @@ contributors = dbc.Jumbotron([
             # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
             # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
             # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
-            ], className="circles")
+            ],)
                       
         ],fluid=True, style={'textAlign': 'center'}),
     ],)
