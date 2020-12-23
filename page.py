@@ -383,7 +383,7 @@ contributors = dbc.Jumbotron([
         dbc.Row([
             dbc.Col([
                 dbc.Button(
-                    html.Img(src="assets/IMG_2474.png", id="open", className="circle-img",style={"width":"25%", "height":"25%"}), size="sm"),
+                    html.Img(src="assets/IMG_2474.png", id="open", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
                 dbc.Modal([
                     dbc.ModalHeader("Boris Antonio Hernandez"),
                     dbc.Card([
