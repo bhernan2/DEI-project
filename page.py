@@ -64,7 +64,7 @@ big_picture = dbc.Jumbotron([
 about = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
-                html.H5("The subcommittee gathered on __/__/__ to develop the all staff survey, it was relased on __/__/__ and participants had X # of days to complete it. Survey participants were asked to rank individual experience questions from 1 to 5 (1 = strongly disagree, 2 = disagree, 3 = neutral, 4 = agree, 5 = strongly agree). The team investigated 1) how the distribution of demographics compared to the individual expierence question responses, 2) to see if there were any correlations between individual experience question responses and 3) designed a wordcloud to analyze an open ended question.", className='text-justify', ),   
+                html.H5("The subcommittee gathered in early July, 2020 to begin discussion for developing the staff survey. It was released on September 15th, 2020 and staff had two weeks time period to complete it. The survey was composed of three parts:  1) demographic data from participants; 2) DEI efforts that staff want to see prioritized (participants chose three priorities and also had the option of filling out an open field for additional thoughts; and 3) gather data about individual lived experiences as FC staff members. Participants could choose from 1 to 5 (1 = strongly disagree (SD), 2 = disagree (D), 3 = neutral (N), 4 = agree (A), 5 = strongly agree (SA)) for each individual lived experience question.", className='text-justify', ),   
             ]),
         ], fluid=True),
     ])
