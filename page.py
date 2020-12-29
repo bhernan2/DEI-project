@@ -29,7 +29,7 @@ title = dbc.Jumbotron([
         dbc.Row([
             html.Br(),
             html.Br(),
-            html.H5('The Diversity, Equity and Inclusion (DEI) Survey team created a survey to help answer three questions: 1) What would staff like to see the DE&I committee prioritize? 2) How do staff personally feel at the workplace? 3) How does staff feel about the organization when it comes to diversity, equity and inclusion? We researched two surveys: 1) Gallup Diversity and Inclusion and 2) Building Movement Project Race to Lead. We decided to merge questions from both surveys to create the FC DEI Survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.', className='text-justify', ),                                                                                                                                              
+            html.H5('The Diversity, Equity and Inclusion (DEI) Survey team created a survey to help answer the following questions: 1) What would staff like to see the DE&I committee prioritize? 2) How do staff personally feel at the workplace? 3) How does staff feel about the organization when it comes to diversity, equity and inclusion? We researched two surveys: 1) Gallup Diversity and Inclusion and 2) Building Movement Project Race to Lead. We decided to merge questions from both surveys to create the FC DEI Survey. The Gallup survey questions are more focused on individual experience while the Building Movement Project survey is more focused on the racial leadership gap in nonprofit organizations. Both are leaders in collecting data about diversity, equity and inclusion in the workplace. Your responses were important to us and helped us learn more about the racial biases, discriminatory practices and unconscious prejudices that affect staff of color and those who belong to marginalized groups within the agency.', className='text-justify', ),                                                                                                                                              
             ]),
         ], fluid=True), 
     ])
@@ -75,7 +75,7 @@ card_content5 = [
     
             html.H2("No.1", className="card-title"),
             dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target1', color='', size='sm',),
-            html.P("Click here"),
+            html.P("Click on clipboard"),
             dbc.Popover([
             dbc.PopoverHeader("135 responses", className="pop-header"),
             dbc.PopoverBody("Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions.", className="pop-body")
@@ -100,7 +100,7 @@ card_content6 = [
         target="popover-target2",
         placement="bottom"
         ),
-        html.P("Click here"),
+        html.P("Click on clipboard"),
 ]
 card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
@@ -115,7 +115,7 @@ card_content7 = [
         target="popover-target3",
         placement="bottom"
         ),
-        html.P("Click here"),
+        html.P("Click on clipboard"),
 ]
 
 #key findings jumbo
