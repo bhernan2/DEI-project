@@ -64,7 +64,7 @@ big_picture = dbc.Jumbotron([
 about = dbc.Jumbotron([
         dbc.Container([
             dbc.Row([
-                html.H5("The subcommittee gathered in early July, 2020 to begin discussion for developing the staff survey. It was released on September 15th, 2020 and staff had two weeks time period to complete it. The survey was composed of three parts:  1) demographic data from participants; 2) DEI efforts that staff want to see prioritized (participants chose three priorities and also had the option of filling out an open field for additional thoughts; and 3) gather data about individual lived experiences as FC staff members. Participants could choose from 1 to 5 (1 = strongly disagree (SD), 2 = disagree (D), 3 = neutral (N), 4 = agree (A), 5 = strongly agree (SA)) for each individual lived experience question.", className='text-justify', ),   
+                html.H5("The subcommittee gathered in early July, 2020 to begin discussion for developing the staff survey. It was released on September 15th, 2020 and staff had two weeks time period to complete it. The survey was composed of three parts:  1) demographic data from participants; 2) DEI efforts that staff want to see prioritized (participants chose three priorities and also had the option of filling out an open field for additional thoughts); and 3) gather data about individual lived experiences as FC staff members. Participants could choose from 1 to 5 (1 = strongly disagree (SD), 2 = disagree (D), 3 = neutral (N), 4 = agree (A), 5 = strongly agree (SA)) for each individual lived experience question.", className='text-justify', ),   
             ]),
         ], fluid=True),
     ])
@@ -343,13 +343,13 @@ wordcloud = dbc.Jumbotron([
         dbc.Row([
             dbc.Col(width=4),
             dbc.Col([
-                dbc.Card([ 
-                    dbc.CardBody([
-                        html.H5("A word cloud is a collection of words depicted in different sizes. The bigger and **bolder** the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text. Click open to see our wordcloud analysis for the open ended question of the survey."),
-                        dbc.Button("OPEN", id='open-centered', color="light", size='lg'),
-                        ]),
-                    ],),
-                    ], width=4),
+                dbc.Row([
+                html.H5("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text. Click open to see our wordcloud analysis for the open ended question of the survey.", style={'TextAlign': 'left'}),  
+                ], style={"textAlign":"left"}),
+                html.Br(),
+                dbc.Button("OPEN", id='open-centered', color="light", size='lg',),    
+                    ], width=4,),
+              
             dbc.Col(width=4),     
         dbc.Row([
             dbc.Modal([
