@@ -74,7 +74,7 @@ card_content5 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
             html.H2("No.1", className="card-title"),
-            dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target1', color='light', size='sm',),
+            dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target1', color='', size='sm',),
             dbc.Popover([
             dbc.PopoverHeader("135 responses", className="pop-header"),
             dbc.PopoverBody("Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions.", className="pop-body")
@@ -90,7 +90,7 @@ card_content6 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
         html.H2("No.2", className="card-title"),
-        dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target2', color='light', size='sm',),
+        dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target2', color='', size='sm',),
         dbc.Popover([
             dbc.PopoverHeader("122 responses", className="pop-header"),
             dbc.PopoverBody("Provide training for staff, leadership and board.", className="pop-body")
@@ -106,7 +106,7 @@ card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
     dbc.CardBody([
         html.H2("No.3", className="card-title"),
-        dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target3', color='light', size="sm",),
+        dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target3', color='', size="sm",),
         dbc.Popover([
             dbc.PopoverHeader("90 responses", className="pop-header"),
             dbc.PopoverBody("Increase diverse representation on board and advisory committees.", className="pop-body")
@@ -121,10 +121,10 @@ card_content7 = [
 
 #key findings jumbo
 key_findings1 = dbc.Jumbotron([
+    dbc.Container([
     html.Br(),
         dbc.Row([
-            dbc.Col(width=1),
-            dbc.Col(html.H3("Key findings",))
+            html.H3("Key findings",),
         ]), 
     html.Br(),
     dbc.Container([
@@ -263,26 +263,26 @@ key_findings1 = dbc.Jumbotron([
                 ],className="flip-card", align="center"),
 
             ], className="cards", fluid=True, style={'textAlign': 'center'}),
-], fluid=True)
+    ],fluid=True, style={'textAlign': 'center'}),
+],)
 
 #top 3 priorities jumbo
 priorities = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
         dbc.Row([
-            dbc.Col(width=1),
             html.H3("Top DEI efforts that FC staff would like to see prioritized", className='text-left', )
         ], justify="left"), 
         html.Br(),       
         dbc.Row([
 
             dbc.Col(
-                dbc.Card(card_content5, color="light", inverse=True), width=3),
+                dbc.Card(card_content5, color="", inverse=True), width=3),
             
             dbc.Col(
-                dbc.Card(card_content6, color="light", inverse=True), width=3),
+                dbc.Card(card_content6, color="", inverse=True), width=3),
             dbc.Col(
-                dbc.Card(card_content7, color="light", inverse=True), width=3),
+                dbc.Card(card_content7, color="", inverse=True), width=3),
             ], justify="center"), 
     ], fluid=True, style={'textAlign': 'center'}),
 ])
@@ -328,7 +328,7 @@ dropdown_row = html.Div([
             ], className="mb-5"),
             dbc.Row(id='dd-output-container'),
             html.Br(),
-        ], fluid=True),
+        ],fluid=True, style={'textAlign': 'left'}),
     ]),
 ])
 
@@ -337,21 +337,20 @@ wordcloud = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
         dbc.Row([
-            dbc.Col(width=1),
             html.H3("Other efforts staff would like to see prioritized",)
         ], justify="left"), 
         html.Br(),
         dbc.Row([
-            dbc.Col(width=2),
+            dbc.Col(width=4),
             dbc.Col([
                 dbc.Card([ 
                     dbc.CardBody([
-                        html.H5("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text. Click open to see our wordcloud analysis for the open ended question of the survey."),
-                        dbc.Button(html.Img(src="assets/icons8-open-sign-80.png"), id='open-centered', color='light', size='md',),
+                        html.H5("A word cloud is a collection of words depicted in different sizes. The bigger and **bolder** the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text. Click open to see our wordcloud analysis for the open ended question of the survey."),
+                        dbc.Button("OPEN", id='open-centered', color="light", size='lg'),
                         ]),
-                    ], color="light"),
-                    ], width=8),
-            dbc.Col(width=2),     
+                    ],),
+                    ], width=4),
+            dbc.Col(width=4),     
         dbc.Row([
             dbc.Modal([
                 dbc.ModalHeader("Wordcloud"),
