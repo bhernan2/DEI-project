@@ -207,6 +207,7 @@ def update_plot(value):
                         html.P([
                             html.Ul([
                                 html.Li('The majority of all staff survey respondents agree + strongly agree that they feel comforable being themselves at work and a similar trend is seen across race, age, sexual orientation and tenure.'),
+                                html.Li('Rank average mean is 4.10 and falls within the 50th mean percentile rank when compared to Gallup .'),
                             ]),
                         ]),
                     ]),
@@ -264,7 +265,9 @@ def update_plot(value):
                                 html.Li('Nearly half of all staff survey respondents agree + strongly agree that diversity and inclusiveness are openly discussed'),
                                 html.Li('83% of survey respondents in the 18-24 age range agree + strongly agree with this statement.'),
                                 html.Li('31% of LGBTQ+ and 23% straight survey respondents disagree + strongly disagree with this statement.'),
-                                html.Li('20% of White and 24% of Latinx/Hispanic survey respondents disagree + strongly disagree with this statement.')
+                                html.Li('20% of White and 24% of Latinx/Hispanic survey respondents disagree + strongly disagree with this statement.'),
+                                html.Li('Rank average mean is 3.86 and falls within the 25th mean percentile rank when compared to Gallup .'),
+
                             ]),
                         ]),
                     ]),
@@ -293,6 +296,8 @@ def update_plot(value):
                             html.Ul([
                                 html.Li('Survey respondents in the 18-24 age range agree + strongly agree (83%) that everyone at this organization is treated fairy regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'),
                                 html.Li('71% of survey respondents who have worked af FC less than one year agree + strongly agree with this statement'),
+                                html.Li('Rank average mean is 3.49 and falls within the 25th mean percentile rank when compared to Gallup .'),
+
                             ]),
                         ]),
                     ]),
@@ -377,7 +382,9 @@ def update_plot(value):
                                 html.Li('22% of total respondents strongly disagree or disagree, 25% are neutral and 53% agree and strongly agree.'),
                                 html.Li('FC staff who identify as Latinx/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively).'),
                                 html.Li('Younger (18-24) and older (65-74) staff generally agree or sttronly agree.'),
-                                html.Li('Nearly 25% of staff in the 25-34 and 35-44 age ranges disagree or strongly disagree.')
+                                html.Li('Nearly 25% of staff in the 25-34 and 35-44 age ranges disagree or strongly disagree.'),
+                                html.Li('Rank average mean is 3.53 and falls within the 25th mean percentile rank when compared to Gallup .'),
+
                     ]),
                         ]),
                     ]),
@@ -404,6 +411,8 @@ def update_plot(value):
                         html.P([
                             html.Ul([
                                 html.Li('The majority of all staff survey respondents agree + strongly agree that their team members appreciate their contributions and a similar trend is seen across race, age, sexual orientation and tenure.'),
+                                html.Li('Rank average mean is 4.31 and falls within the 75th mean percentile rank when compared to Gallup .'),
+
                             ]),
                         ]),
                     ]),

@@ -342,6 +342,7 @@ wordcloud = dbc.Jumbotron([
         dbc.Row([
             dbc.Col(width=3),
             dbc.Col([
+                html.Br(),
                 dbc.Row([
                 html.H5("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text. Click the open button to see analysis for the open ended question of the survey.", style={'TextAlign': 'left'}),  
                 ], style={"textAlign":"left"}),
