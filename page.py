@@ -75,7 +75,7 @@ card_content5 = [
     
             html.H2("No.1", className="card-title"),
             dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target1', color='', size='sm',),
-            html.P("Click on clipboard"),
+            # html.P("Click on clipboard"),
             dbc.Popover([
             dbc.PopoverHeader("135 responses", className="pop-header"),
             dbc.PopoverBody("Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions.", className="pop-body")
@@ -100,7 +100,7 @@ card_content6 = [
         target="popover-target2",
         placement="bottom"
         ),
-        html.P("Click on clipboard"),
+        # html.P("Click on clipboard"),
 ]
 card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
@@ -115,7 +115,7 @@ card_content7 = [
         target="popover-target3",
         placement="bottom"
         ),
-        html.P("Click on clipboard"),
+        # html.P("Click on clipboard"),
 ]
 
 #key findings jumbo
@@ -270,7 +270,7 @@ priorities = dbc.Jumbotron([
     dbc.Container([
         html.Br(),
         dbc.Row([
-            html.H3("Top DEI efforts that FC staff would like to see prioritized", className='text-left', )
+            html.H3('Top DEI efforts that FC staff would like to see prioritized (click on clipboard)', className='text-left', )
         ], justify="left"), 
         html.Br(),       
         dbc.Row([
