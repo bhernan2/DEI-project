@@ -72,7 +72,7 @@ about = dbc.Jumbotron([
 # top 3 priorities card definitions
 card_content5 = [
     #dbc.CardHeader("Descriptive Stats"),
-    dbc.CardBody([
+    
             html.H2("No.1", className="card-title"),
             dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target1', color='', size='sm',),
             dbc.Popover([
@@ -84,11 +84,10 @@ card_content5 = [
         target="popover-target1",
         placement="bottom"
         )
-        ]),
 ] 
 card_content6 = [
     #dbc.CardHeader("Descriptive Stats"),
-    dbc.CardBody([
+    
         html.H2("No.2", className="card-title"),
         dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target2', color='', size='sm',),
         dbc.Popover([
@@ -100,11 +99,9 @@ card_content6 = [
         target="popover-target2",
         placement="bottom"
         )
-        ]),
 ]
 card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
-    dbc.CardBody([
         html.H2("No.3", className="card-title"),
         dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target3', color='', size="sm",),
         dbc.Popover([
@@ -116,7 +113,6 @@ card_content7 = [
         target="popover-target3",
         placement="bottom"
         )
-        ]),
 ]
 
 #key findings jumbo
@@ -277,12 +273,12 @@ priorities = dbc.Jumbotron([
         dbc.Row([
 
             dbc.Col(
-                dbc.Card(card_content5, color="", inverse=True), width=3),
+                card_content5, width=3),
             
             dbc.Col(
-                dbc.Card(card_content6, color="", inverse=True), width=3),
+                card_content6, width=3),
             dbc.Col(
-                dbc.Card(card_content7, color="", inverse=True), width=3),
+                card_content7, width=3),
             ], justify="center"), 
     ], fluid=True, style={'textAlign': 'center'}),
 ])
