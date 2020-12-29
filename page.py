@@ -75,6 +75,7 @@ card_content5 = [
     
             html.H2("No.1", className="card-title"),
             dbc.Button(html.Img(src="assets/icons8-survey-80.png"), id='popover-target1', color='', size='sm',),
+            html.P("Click here"),
             dbc.Popover([
             dbc.PopoverHeader("135 responses", className="pop-header"),
             dbc.PopoverBody("Address ways that racial inequity/systemic bias impact issues the organization works on and hold senior team members accountable for anti-racists actions.", className="pop-body")
@@ -83,7 +84,7 @@ card_content5 = [
         is_open=False,
         target="popover-target1",
         placement="bottom"
-        )
+        ),
 ] 
 card_content6 = [
     #dbc.CardHeader("Descriptive Stats"),
@@ -98,7 +99,8 @@ card_content6 = [
         is_open=False,
         target="popover-target2",
         placement="bottom"
-        )
+        ),
+        html.P("Click here"),
 ]
 card_content7 = [
     #dbc.CardHeader("Descriptive Stats"),
@@ -112,7 +114,8 @@ card_content7 = [
         is_open=False,
         target="popover-target3",
         placement="bottom"
-        )
+        ),
+        html.P("Click here"),
 ]
 
 #key findings jumbo
@@ -337,16 +340,16 @@ wordcloud = dbc.Jumbotron([
         ], justify="left"), 
         html.Br(),
         dbc.Row([
-            dbc.Col(width=4),
+            dbc.Col(width=3),
             dbc.Col([
                 dbc.Row([
-                html.H5("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text. Click open to see our wordcloud analysis for the open ended question of the survey.", style={'TextAlign': 'left'}),  
+                html.H5("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text. Click the open button to see analysis for the open ended question of the survey.", style={'TextAlign': 'left'}),  
                 ], style={"textAlign":"left"}),
                 html.Br(),
                 dbc.Button("OPEN", id='open-centered', color="light", size='lg',),    
-                    ], width=4,),
+                    ], width=6,),
               
-            dbc.Col(width=4),     
+            dbc.Col(width=3),     
         dbc.Row([
             dbc.Modal([
                 dbc.ModalHeader("Wordcloud"),
