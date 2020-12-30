@@ -162,7 +162,7 @@ def toggle_modal(n1, n2, is_open):
     [dash.dependencies.Input('dei-dropdown', 'value')])
 def update_plot(value):
     if value == "plot1-info":
-        return html.Div([
+        return dbc.Jumbotron([
             dbc.Container([
                 dbc.Row([
                     dbc.Col([
@@ -178,9 +178,24 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
+                        html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
-                                html.Li('The majority of all staff survey respondents agree + strongly agree that they are treated with respect at work and a similar trend is seen across race, age, sexual orientation and tenure.'),
+                                html.Li('86% agree + strongly agree'),
+                                html.Li('6% disagree + strongly disagree'),
+                                html.Li('8% neither agree or disagree'),
+                            ]),
+                        ]),
+                        html.Br(),
+                        html.H5('Disagree + strongly disagree by specific identities:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('21% of Black/African American identifying staff'),
+                                html.Li('10% of staff between the ages 35 - 44'),
+                                html.Li('10% of staff employed 3-5 years'),
+                                html.Li('8% of LatinX identifying staff'),
+                                html.Li('8% of staff between the ages 55 - 64'),
+                                
                             ]),
                         ]),
                     ]),
@@ -188,7 +203,7 @@ def update_plot(value):
             ], fluid=True),
         ])
     elif value == 'plot2-info':
-        return html.Div([
+        return dbc.Jumbotron([
             dbc.Container([
                 dbc.Row([
                     dbc.Col([
@@ -204,10 +219,25 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
+                        html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
-                                html.Li('The majority of all staff survey respondents agree + strongly agree that they feel comforable being themselves at work and a similar trend is seen across race, age, sexual orientation and tenure.'),
-                                html.Li('Rank average mean is 4.10 and falls within the 50th mean percentile rank when compared to Gallup .'),
+                                html.Li('77% agree + strongly agree'),
+                                html.Li('8% disagree + strongly disagree'),
+                                html.Li('15% neither agree or disagree'),
+                            ]),
+                        ]),
+                        html.Br(),
+                        html.H5('Disagree + strongly disagree by specific identities:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('21% of Black/African American identifying staff'),
+                                html.Li('13% of staff who have been employed for 3-5 years'),
+                                html.Li('12% of staff between the ages 35 - 44'),
+                                html.Li('10% of staff between the ages 45 - 54'),
+                                html.Li('9% of LatinX identifying staff'),
+                                html.Li('9% of staff who have been employed for one year'),
+                                
                             ]),
                         ]),
                     ]),
@@ -231,12 +261,21 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
+                        html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
-                                html.Li('65% of all staff survey respondents agree + strongly agree that employees at FC are treated with respect and dignigty.'),
-                                html.Li('However, 25% of staff survey respondents who identify as Black/African American disgaree + strongly disagree with this statement.'),
-                                html.Li('75% of survey respondents within the 18-24 age range agree with this statement.'),
-                                html.Li('Nearly half (46%) of survey respondents in the tenure category of 5-10 years employed are neutral to this statement.')
+                                html.Li('60% agree + strongly agree'),
+                                html.Li('10% disagree + strongly disagree'),
+                                html.Li('24% neither agree or disagree'),
+                            ]),
+                        ]),
+                        html.Br(),
+                        html.H5('Disagree + strongly disagree by specific identities:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('25% of Black/African American identifying staff'),
+                                html.Li('17% of staff between the ages 18 - 24'),
+                                html.Li('17% of staff who have been employed for one year'),
                             ]),
                         ]),
                     ]),
@@ -260,14 +299,27 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
+                        html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
-                                html.Li('Nearly half of all staff survey respondents agree + strongly agree that diversity and inclusiveness are openly discussed'),
-                                html.Li('83% of survey respondents in the 18-24 age range agree + strongly agree with this statement.'),
-                                html.Li('31% of LGBTQ+ and 23% straight survey respondents disagree + strongly disagree with this statement.'),
-                                html.Li('20% of White and 24% of Latinx/Hispanic survey respondents disagree + strongly disagree with this statement.'),
-                                html.Li('Rank average mean is 3.86 and falls within the 25th mean percentile rank when compared to Gallup .'),
-
+                                html.Li('47% agree + strongly agree'),
+                                html.Li('25% disagree + strongly disagree'),
+                                html.Li('28% neither agree or disagree'),
+                            ]),
+                        ]),
+                        html.Br(),
+                        html.H5('Disagree + strongly disagree by specific identities:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('100% of Native American identifying staff'),
+                                html.Li('50% of Black/African American identifying staff'),
+                                html.Li('36% of staff who have been employed for one year'),
+                                html.Li('36% of staff who have been employed for one year'),
+                                html.Li('33% of non-binary identifying staff'),
+                                html.Li('31% of of LGBTQ+ identifying staff'),
+                                html.Li('30% of staff between the ages 35 - 44'),
+                                html.Li('13% of staff who have been employed for 5-10 years'),
+                                
                             ]),
                         ]),
                     ]),
@@ -292,12 +344,21 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
+                        html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
-                                html.Li('Survey respondents in the 18-24 age range agree + strongly agree (83%) that everyone at this organization is treated fairy regardless of ethnic background, race, gender, age, disability, or other differences not related to job performance.'),
-                                html.Li('71% of survey respondents who have worked af FC less than one year agree + strongly agree with this statement'),
-                                html.Li('Rank average mean is 3.49 and falls within the 25th mean percentile rank when compared to Gallup .'),
-
+                                html.Li('50% agree + strongly agree'),
+                                html.Li('23% disagree + strongly disagree'),
+                                html.Li('27% neither agree or disagree'),
+                            ]),
+                        ]),
+                        html.Br(),
+                        html.H5('Disagree + strongly disagree by specific identities:'),
+                        html.P([
+                            html.Ul([
+                                html.Li(''),
+                                html.Li(''),
+                                html.Li(''),
                             ]),
                         ]),
                     ]),
@@ -321,10 +382,26 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
+                        html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
-                                html.Li('58%, 22% and 19% of all staff survey respndents either agree + strongly agree, are neutral, or disagree + strongly disgree that they have the same opportunities as other team members at FC with similar experience and performance levels, respectively.'),
-                                html.Li('20%, 25%, 20% and 19% of employees who have worked at FC for one year, 1-3 years, 3-5 years and 5-10 years disagree + strongly disagree with this statement'),
+                                html.Li('58% agree + strongly agree'),
+                                html.Li('19% disagree + strongly disagree'),
+                                html.Li('22% neither agree or disagree'),
+                            ]),
+                        ]),
+                        html.Br(),
+                        html.H5('Disagree + strongly disagree by specific identities:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('63% of Black/African American identifying staff'),
+                                html.Li('50% of Native American identifying staff'),
+                                html.Li('33% of seasonal staff'),
+                                html.Li('33% of non-binary identifying staff'),
+                                html.Li('27% of of LGBTQ+ identifying staff'),
+                                html.Li('27% of staff between the ages 55 - 64'),
+                                html.Li('25% of staff who have been employed for 1-3 years'),
+                                html.Li('24% of staff between the ages 35 - 44'),
                             ]),
                         ]),
                     ]),
@@ -348,12 +425,25 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
+                        html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
-                                html.Li('22% of employees who identify as Latinx disagree with this statement.'),
-                                html.Li('38% of Black/African Americans neither agree nor disagree with this statement.'),
-                                html.Li('75% of respondants aged 18-24 strongly agree with this statement whereas only 14% of employees within the age group 45-54 stronly agree.'),
-                                html.Li('20% of employees with tenure of 3-5years strongly disagree with this statement compared to 50% of employees with less than one year of tenure who strongly agree with the statement.')
+                                html.Li('55% agree + strongly agree'),
+                                html.Li('26% disagree + strongly disagree'),
+                                html.Li('19% neither agree or disagree'),
+                            ]),
+                        ]),
+                        html.Br(),
+                        html.H5('Disagree + strongly disagree by specific identities:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('41% of Black/African American identifying staff'),
+                                html.Li('32% of LatinX identifying staff'),
+                                html.Li('32% of staff who have been employed for 1-3 years'),
+                                html.Li('31% of LGBTQ+ identifying staff'),
+                                html.Li('30% of staff who have been employed for 3-5 years'),
+                                html.Li('29% of full time staff'),
+                                html.Li('29% of female identifying staff'),     
                             ]),
                         ]),
                     ]),
@@ -377,15 +467,29 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
+                        html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
-                                html.Li('22% of total respondents strongly disagree or disagree, 25% are neutral and 53% agree and strongly agree.'),
-                                html.Li('FC staff who identify as Latinx/Hispanic, Black/African American and Native American strongly disagree or disagree (25, 33 and 50%, respectively).'),
-                                html.Li('Younger (18-24) and older (65-74) staff generally agree or sttronly agree.'),
-                                html.Li('Nearly 25% of staff in the 25-34 and 35-44 age ranges disagree or strongly disagree.'),
-                                html.Li('Rank average mean is 3.53 and falls within the 25th mean percentile rank when compared to Gallup .'),
-
-                    ]),
+                                html.Li('55% agree + strongly agree'),
+                                html.Li('21% disagree + strongly disagree'),
+                                html.Li('24% neither agree or disagree'),
+                            ]),
+                        ]),
+                        html.Br(),
+                        html.H5('Disagree + strongly disagree by specific identities:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('50% of Native American identifying staff'),
+                                html.Li('34% of Black/African American identifying staff'),
+                                html.Li('27% of staff who have been employed for 1-3 years'),
+                                html.Li('34% of LGBTQ+ identifying staff'),
+                                html.Li('26% of staff who have been employed for 3-5 years'),
+                                html.Li('24% of staff who have been employed for 5-10 years'),
+                                html.Li('24% of full time staff'),
+                                html.Li('24% of staff between the ages 35 - 44'),
+                                html.Li('23% of staff between the ages 25 - 34'),
+                                html.Li('23% of female identifying staff'),     
+                            ]),
                         ]),
                     ]),
                 ], align="center"),  
@@ -408,11 +512,21 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
+                        html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
-                                html.Li('The majority of all staff survey respondents agree + strongly agree that their team members appreciate their contributions and a similar trend is seen across race, age, sexual orientation and tenure.'),
-                                html.Li('Rank average mean is 4.31 and falls within the 75th mean percentile rank when compared to Gallup .'),
-
+                                html.Li('85% agree + strongly agree'),
+                                html.Li('3% disagree + strongly disagree'),
+                                html.Li('12% neither agree or disagree'),
+                            ]),
+                        ]),
+                        html.Br(),
+                        html.H5('Disagree + strongly disagree by specific identities:'),
+                        html.P([
+                            html.Ul([
+                                html.Li(''),
+                                html.Li(''),
+                                html.Li(''),    
                             ]),
                         ]),
                     ]),
@@ -436,9 +550,24 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
+                        html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
-                                html.Li('81% of all staff survey respondents agree + strongly agree that their superviors try to understand their point of views and a similar trend is seen across race, age, sexual orientation and tenure.'),
+                                html.Li('81% agree + strongly agree'),
+                                html.Li('9% disagree + strongly disagree'),
+                                html.Li('12% neither agree or disagree'),
+                            ]),
+                        ]),
+                        html.Br(),
+                        html.H5('Disagree + strongly disagree by specific identities:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('50% of Native American identifying staff'),
+                                html.Li('33% of seasonal staff'),
+                                html.Li('16% of staff between the ages 55 - 64'),
+                                html.Li('13% of Black/African American identifying staff'), 
+                                html.Li('11% of staff who have been employed for 1-3 years'), 
+                                html.Li('10% of staff who have been employed for 3-5 years'),     
                             ]),
                         ]),
                     ]),
@@ -462,12 +591,27 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
+                        html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
-                                html.Li('Over 60% of all staff survery respondents agree + strongle agree that their workplace is committed to building the strengths of each employee.'),
-                                html.Li('38% of Black/African American respondents disagree + strongly disagree with this statement compared to 12% of White and Latinx respondents.'),
-                                html.Li('23% of LGBTQ+ respondents disagree + strongly disagree with this statement compared to 14% of straight respondents.'),
-                                html.Li('Over 50% of all tenure age ranges agree + strongly agree with this statement')
+                                html.Li('63% agree + strongly agree'),
+                                html.Li('15% disagree + strongly disagree'),
+                                html.Li('22% neither agree or disagree'),
+                            ]),
+                        ]),
+                        html.Br(),
+                        html.H5('Disagree + strongly disagree by specific identities:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('50% of Native American identifying staff'),
+                                html.Li('38% of Black/African American identifying staff'),
+                                html.Li('33% of non-binary identifying staff'),
+                                html.Li('27% of staff who have been employed for 1-3 years'),
+                                html.Li('24% of staff between the ages 55 - 64'),
+                                html.Li('23% of LGBTQ+ identifying staff'),
+                                html.Li('20% of staff who have been employed for 3-5 years'), 
+                                html.Li('19% of male identifying staff'), 
+                                html.Li('18% of staff between the ages 45 - 54'),
                             ]),
                         ]),
                     ]),
