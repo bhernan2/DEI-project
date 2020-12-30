@@ -285,10 +285,10 @@ priorities = dbc.Jumbotron([
                     dbc.Col(
                         card_content7, width=2),
                     dbc.Col(width=2),
-                ], justify="center"),
+                ], justify="left"),
                     ]),
                 ], color="light", outline=True, style={"textAlign":"center"}), 
-    ], fluid=True, style={'textAlign': 'center'}),
+    ], fluid=True, style={'textAlign': 'left'}),
 ])
 
 #dropdown jumbo
