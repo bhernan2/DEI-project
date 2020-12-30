@@ -198,7 +198,7 @@ def update_plot(value):
                                 
                             ]),
                         ]),
-                    ]),
+                    ],width=6, style={'textAlign': 'left'}),
                 ], align="center"),  
             ], fluid=True),
         ])
