@@ -273,16 +273,21 @@ priorities = dbc.Jumbotron([
             html.H3('Top DEI efforts that FC staff would like to see prioritized (click on clipboard)', className='text-left', )
         ], justify="left"), 
         html.Br(),       
-        dbc.Row([
-
-            dbc.Col(
-                card_content5, width=3),
+        dbc.Card([
+            dbc.CardBody([
+                dbc.Row([
+                    dbc.Col(width=3),
+                    dbc.Col(
+                        card_content5, width=2),
             
-            dbc.Col(
-                card_content6, width=3),
-            dbc.Col(
-                card_content7, width=3),
-            ], justify="center"), 
+                    dbc.Col(
+                        card_content6, width=2),
+                    dbc.Col(
+                        card_content7, width=2),
+                    dbc.Col(width=2),
+                ], justify="center"),
+                    ]),
+                ], color="light", outline=True, style={"textAlign":"center"}), 
     ], fluid=True, style={'textAlign': 'center'}),
 ])
 
@@ -339,38 +344,41 @@ wordcloud = dbc.Jumbotron([
             html.H3("Other efforts staff would like to see prioritized",)
         ], justify="left"), 
         html.Br(),
-        dbc.Row([
-            dbc.Col(width=3),
-            dbc.Col([
-                html.Br(),
+        dbc.Card([
+            dbc.CardBody([
                 dbc.Row([
-                html.H5("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text. Click the open button to see analysis for the open ended question of the survey.", style={'TextAlign': 'left'}),  
-                ], style={"textAlign":"left"}),
-                html.Br(),
-                dbc.Button("OPEN", id='open-centered', color="light", size='lg',),    
+                    dbc.Col(width=3),
+                    dbc.Col([
+                    html.Br(),
+                        dbc.Row([
+                            html.H5("A word cloud is a collection of words depicted in different sizes. The bigger and bolder the word appears, the more often it is mentioned within a given text and the more important it is. This is an ideal way to pull the most pertinent parts of textual data and helps users compare and contrast pieces of text. Click the open button to see analysis for the open ended question of the survey.", style={'TextAlign': 'left'}),  
+                        ], style={"textAlign":"left"}),
+                    html.Br(),
+                    dbc.Button("OPEN", id='open-centered', color="light", size='lg',),    
                     ], width=6,),
-              
-            dbc.Col(width=3),     
-        dbc.Row([
-            dbc.Modal([
-                dbc.ModalHeader("Wordcloud"),
-                dbc.ModalBody([
-                    dbc.Card([
-                    dbc.CardImg(src='assets/word_cloud7.png'),
-                    dbc.CardBody([
+                    dbc.Col(width=3),     
+                dbc.Row([
+                    dbc.Modal([
+                        dbc.ModalHeader("Wordcloud"),
+                        dbc.ModalBody([
+                            dbc.Card([
+                                dbc.CardImg(src='assets/word_cloud7.png'),
+                            dbc.CardBody([
+                            ]),
                         ]),
                     ]),
-                ]),
-                dbc.ModalFooter(
-                    dbc.Button("Close", id="close-centered", className="ml-auto", size="lg")
+                    dbc.ModalFooter(
+                        dbc.Button("Close", id="close-centered", className="ml-auto", size="lg")
+                    ),
+                ],
+                id="modal-centered",
+                centered=True,
+                size="lg",
                 ),
-            ],
-            id="modal-centered",
-            centered=True,
-            size="lg",
-            ),
+            ]),
+            ], justify="center"),
         ]),
-        ], justify="center"),     
+    ], color="light", outline=True,),
     ], fluid=True, style={'textAlign': 'center'}),
 ])
 
