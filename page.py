@@ -47,19 +47,6 @@ video = dbc.Jumbotron([
         ], fluid=True),       
     ])    
 
-#big pic jumbo
-big_picture = dbc.Jumbotron([
-        dbc.Container([
-            dbc.Row([
-                html.H3("Big picture", className='text-left', ),   
-            ]),
-            html.Br(),
-            dbc.Row([
-                html.H5("Include big picture figure: interactive pie chart")
-            ])
-        ], fluid=True),      
-    ])
-
 # about jumbo
 about = dbc.Jumbotron([
         dbc.Container([
@@ -583,13 +570,7 @@ def about_():
 def FC_video():
     heading = video
     return heading 
-def FC_big_pic():
-    heading = big_picture
-    return heading 
 
-def FC_stats():
-    cards = descriptive_stats
-    return cards 
 def FC_key_findings():
     flipcards = key_findings1
     return flipcards
