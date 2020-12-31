@@ -35,17 +35,65 @@ title = dbc.Jumbotron([
     ])
 #how to video jumbo
 video = dbc.Jumbotron([
-        dbc.Container([
-            dbc.Row([
-            html.H3("Dashboard how-to", className='text-left', ),
+    dbc.Container([
+        html.Br(),
+        dbc.Row([
+            html.H3("Dashboard explanation",)
+        ], justify="left"), 
+        html.Br(),
+        dbc.Card([
+            dbc.CardBody([
+                dbc.Row([
+                    dbc.Col(width=3),
+                    dbc.Col([
+                        dbc.Row([
+                            html.H5("Thank you for taking time to view this dashboard! Each component for the dashboard is explained in a brief how-to video. Click the open button below to see.", style={'TextAlign': 'left'}),  
+                        ], style={"justify":"center"}),
+                    html.Br(),
+                    dbc.Button("OPEN", id='video-open', color="light", size='lg',),    
+                    ], width=6,),
+                    dbc.Col(width=3),     
+                dbc.Row([
+                    dbc.Modal([
+                        dbc.ModalHeader("How-to video"),
+                        dbc.ModalBody([
+                            dbc.Card([
+                                html.Video(title="Dashboard how-to", src="", width=4),
+                            dbc.CardBody([
+                            ]),
+                        ]),
+                    ]),
+                    dbc.ModalFooter(
+                        dbc.Button("Close", id="video-close", className="ml-auto", size="lg")
+                    ),
+                ],
+                id="video-centered",
+                centered=True,
+                size="lg",
+                ),
             ]),
-            html.Br(),
-            dbc.Row([
-                html.H5("Space for video"),
-                html.Video(title="Dashboard how-to", src="", width=4),  
-            ]),
-        ], fluid=True),       
-    ])    
+            ], justify="center"),
+        ]),
+    ], color="light", outline=True,),
+    ], fluid=True, style={'textAlign': 'center'}),
+]) 
+
+# dbc.Jumbotron([
+#         dbc.Container([
+#             dbc.Row([
+#             html.H3("Dashboard how-to", className='text-left', ),
+#             ]),
+#             html.Br(),
+#             dbc.Card([
+#                 dbc.CardBody([
+#                     dbc.Row([
+#                         html.H5("Space for video"),
+#                         html.Video(title="Dashboard how-to", src="", width=4),  
+#                 ]),
+#                 ]),
+#             ], color="light", outline=True, style={"textAlign":"center"}),
+#         ], fluid=True),       
+#     ])    
 
 # about jumbo
 about = dbc.Jumbotron([
@@ -271,7 +319,7 @@ priorities = dbc.Jumbotron([
                         card_content6, width=2),
                     dbc.Col(
                         card_content7, width=2),
-                    dbc.Col(width=2),
+                    dbc.Col(width=3),
                 ], justify="left"),
                     ]),
                 ], color="light", outline=True, style={"textAlign":"center"}), 
