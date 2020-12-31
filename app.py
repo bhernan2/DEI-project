@@ -5,16 +5,14 @@ import dash_html_components as html
 from dash.dependencies import Input, Output, State
 import sys
 
-from page import DEI_title, about_, FC_stats, FC_prior, FC_video, FC_wordcloud, FC_big_pic, FC_dropdown_row, FC_key_findings, FC_contributors
+from page import DEI_title, about_, FC_prior, FC_video, FC_wordcloud, FC_dropdown_row, FC_key_findings, FC_contributors
 from figures import FC_fig1, FC_fig2, FC_fig3, FC_fig4, FC_fig5, FC_fig6, FC_fig7, FC_fig8, FC_fig9, FC_fig10, FC_fig11
 
 dei_title = DEI_title()
-#dei_stats = FC_stats()
 dei_prior=FC_prior()
 dei_key_findings=FC_key_findings()
 dei_about = about_()
 dei_video = FC_video()
-dei_big_pic = FC_big_pic()
 dei_dropdown = FC_dropdown_row()
 dei_wordcloud = FC_wordcloud()
 dei_contributors = FC_contributors()
@@ -25,8 +23,6 @@ def Dashboard():
     dei_title,
     dei_about,
     dei_video,
-    #dei_big_pic,
-    #dei_stats,
     dei_key_findings,
     dei_prior,
     dei_wordcloud, 
@@ -218,7 +214,7 @@ def update_plot(value):
                                 #'fillFrame':True 
                                 },
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
-                        ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
+                        ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4}),
                     dbc.Col([
                         html.H5('Total % across demographic categories:'),
                         html.P([
@@ -241,8 +237,8 @@ def update_plot(value):
                                 
                             ]),
                         ]),
-                    ]),
-                ], align="center"),  
+                    ], align='center'),
+                ], className='justify-content-around' ),  
             ], fluid=True),
         ])
     elif value == 'plot3-info':
