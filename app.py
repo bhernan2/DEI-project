@@ -177,6 +177,7 @@ def update_plot(value):
                                 },
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
+                    html.Br(),
                     dbc.Col([
                         html.H5('Total % across demographic categories:'),
                         html.P([
