@@ -368,9 +368,12 @@ def update_plot(value):
                         html.H5('Disagree + strongly disagree by specific identities:'),
                         html.P([
                             html.Ul([
-                                html.Li(''),
-                                html.Li(''),
-                                html.Li(''),
+                                html.Li('53% of Black/African American identifying staff'),
+                                html.Li('45% of staff who have been employed for one year'),
+                                html.Li('32% of staff who have been employed for 1-3 years'),
+                                html.Li('26% of of LGBTQ+ identifying staff'),
+                                html.Li('26% of staff between the ages 35 - 44'),
+                                html.Li('24% of staff between the ages 45 - 54'),
                             ]),
                         ]),
                     ]),
@@ -540,9 +543,11 @@ def update_plot(value):
                         html.H5('Disagree + strongly disagree by specific identities:'),
                         html.P([
                             html.Ul([
-                                html.Li(''),
-                                html.Li(''),
-                                html.Li(''),    
+                                html.Li('10% of staff who have been employed for 10+ years'),
+                                html.Li('8% of staff between the ages 55 - 64'),
+                                html.Li('4% of Black/African American identifying staff'),
+                                html.Li('4% of staff between the ages 35 - 44'),
+                                html.Li('4% of staff who have been employed for 1-3 years'),
                             ]),
                         ]),
                     ]),
