@@ -335,7 +335,7 @@ dropdown_row = dbc.Jumbotron([
                 html.Br(),
         ]),
             dbc.Row([
-                html.P('*Total of totals shows when app first downloads. Select a category (total responses, race, age, etc.) to further explore the data.'),
+                html.P('*Total of totals shows when figure first downloads. Select a category (total responses, race, age, etc.) to further explore the data.'),
             ]),
             dbc.Row([
                 html.P('*All figures are interactive! Hover over bars to see individual exerience ranking counts or select individual subcategories from the legend.'),
@@ -365,7 +365,6 @@ dropdown_row = dbc.Jumbotron([
                 ]),
             ], className="mb-5"),
             dbc.Row(id='dd-output-container'),
-            html.Br(),
         ],fluid=True, style={'textAlign': 'left'}),
     ])
 
