@@ -423,13 +423,14 @@ contributors = dbc.Jumbotron([
         dbc.Row([
             dbc.Col([
                 dbc.Button(
-                    html.Img(src="assets/IMG_2474.png", id="open", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                    html.Img(src="assets/kenya.png", id="open", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
                 dbc.Modal([
-                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.ModalHeader("Kenya Lewis, Support Services Program Manager @ Skyline Terrace"),
                     dbc.Card([
-                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardImg(src="assets/kenya.png"),
                         dbc.CardBody([
-                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                            html.H5("Contributions: Survey formatting, communication, analysis and summary"),
+                            html.H5('About: Enjoys bringing people together, knitting, Bhangra, Raas and Bollywood dance. Enjoys watching Bollywood films and reading the works of James Baldwin and June Jordan'),
                         ],style={'justify': 'center'}),
                     ]),
                     dbc.ModalFooter([
@@ -444,13 +445,14 @@ contributors = dbc.Jumbotron([
             ], className="circle"),
             dbc.Col([
                 dbc.Button(
-                    html.Img(src="assets/IMG_2474.png", id="open2", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                    html.Img(src="assets/stephanie.png", id="open2", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
                 dbc.Modal([
-                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.ModalHeader("Stephanie Perrone, Operations Director"),
                     dbc.Card([
-                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardImg(src="assets/stephanie.png"),
                         dbc.CardBody([
-                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                            html.H5("Contributions: ", ),
+                            html.H5("About: "),
                         ],style={'justify': 'center'}),
                     ]),
                     dbc.ModalFooter([
