@@ -185,7 +185,6 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
-                        html.Br(),
                         html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
@@ -214,7 +213,7 @@ def update_plot(value):
                                 html.Li('No gallup comparison'),
                             ]),
                         ]),
-                    ], style={'textAlign': 'justify'}),
+                    ], align="baseline"),
                 ]),
             ], fluid=True),
         ])
@@ -235,7 +234,6 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4}),
                     dbc.Col([
-                        html.Br(),
                         html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
@@ -257,8 +255,16 @@ def update_plot(value):
                                 
                             ]),
                         ]),
-                    ], align='center'),
-                ], className='justify-content-around' ),  
+                        html.Br(),
+                        html.H5('Rank mean average & Gallup comparison:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('Avg - 4.10'),
+                                html.Li('FC ranks in the 50th percentile when compared to Gallup data.'),
+                            ]),
+                        ]),
+                    ], align='baseline'),
+                ],),  
             ], fluid=True),
         ])
     elif value == 'plot3-info':
@@ -278,7 +284,6 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
-                        html.Br(),
                         html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
@@ -296,8 +301,17 @@ def update_plot(value):
                                 html.Li('17% of staff who have been employed for one year'),
                             ]),
                         ]),
-                    ]),
-                ], align="center"),  
+                        html.Br(),
+                        html.H5('Rank mean average & Gallup comparison:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('Avg - 3.86'),
+                                html.Li('FC ranks in the 25th percentile when compared to Gallup data.'),
+                            ]),
+                        ]),
+                        
+                    ],align="baseline"),
+                ],),  
             ], fluid=True),
         ])
     elif value == "plot4-info":
@@ -317,7 +331,6 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
-                        html.Br(),
                         html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
@@ -341,8 +354,17 @@ def update_plot(value):
                                 
                             ]),
                         ]),
-                    ]),
-                ], align="center"),  
+                        html.Br(),
+                        html.H5('Rank mean average & Gallup comparison:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('Avg - 3.40'),
+                                html.Li('No gallup comparison'),
+                            ]),
+                        ]),
+                        
+                    ],align="baseline"),
+                ],),  
             ], fluid=True),
         ])
 
@@ -363,7 +385,6 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
-                        html.Br(),
                         html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
@@ -384,8 +405,16 @@ def update_plot(value):
                                 html.Li('24% of staff between the ages 45 - 54'),
                             ]),
                         ]),
-                    ]),
-                ], align="center"),  
+                        html.Br(),
+                        html.H5('Rank mean average & Gallup comparison:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('Avg - 3.53'),
+                                html.Li('FC ranks in the 25th percentile when compared to Gallup data.'),
+                            ]),
+                        ]),
+                    ], align="baseline"),
+                ],),  
             ], fluid=True),
         ])
     elif value == "plot6-info":
@@ -405,7 +434,6 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
-                        html.Br(),
                         html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
@@ -428,8 +456,16 @@ def update_plot(value):
                                 html.Li('24% of staff between the ages 35 - 44'),
                             ]),
                         ]),
-                    ]),
-                ], align="center"),  
+                        html.Br(),
+                        html.H5('Rank mean average & Gallup comparison:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('Avg - 3.63'),
+                                html.Li('No gallup comparison'),
+                            ]),
+                        ]),
+                    ], align="baseline"),
+                ], ),  
             ], fluid=True),
         ])
     elif value == "plot7-info":
@@ -449,7 +485,6 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
-                        html.Br(),
                         html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
@@ -471,8 +506,16 @@ def update_plot(value):
                                 html.Li('29% of female identifying staff'),     
                             ]),
                         ]),
-                    ]),
-                ], align="center"),  
+                        html.Br(),
+                        html.H5('Rank mean average & Gallup comparison:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('Avg - 3.48'),
+                                html.Li('No gallup comparison'),
+                            ]),
+                        ]),
+                    ], align="baseline"),
+                ], ),  
             ], fluid=True),
         ])
     elif value == "plot8-info":
@@ -492,7 +535,6 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
-                        html.Br(),
                         html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
@@ -517,8 +559,16 @@ def update_plot(value):
                                 html.Li('23% of female identifying staff'),     
                             ]),
                         ]),
-                    ]),
-                ], align="center"),  
+                        html.Br(),
+                        html.H5('Rank mean average & Gallup comparison:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('Avg - 3.53'),
+                                html.Li('FC ranks in the 25th percentile when compared to Gallup data.'),
+                            ]),
+                        ]),
+                    ], align="baseline"),
+                ], ),  
             ], fluid=True),
         ])
     elif value == "plot9-info":
@@ -538,7 +588,6 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
-                        html.Br(),
                         html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
@@ -558,8 +607,16 @@ def update_plot(value):
                                 html.Li('4% of staff who have been employed for 1-3 years'),
                             ]),
                         ]),
-                    ]),
-                ], align="center"),  
+                        html.Br(),
+                        html.H5('Rank mean average & Gallup comparison:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('Avg - 4.31'),
+                                html.Li('FC ranks in the 75th percentile when compared to Gallup data.'),
+                            ]),
+                        ]),
+                    ],  align="baseline"),
+                ],),  
             ], fluid=True),
         ])
     elif value == "plot10-info":
@@ -579,7 +636,6 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
-                        html.Br(),
                         html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
@@ -600,8 +656,16 @@ def update_plot(value):
                                 html.Li('10% of staff who have been employed for 3-5 years'),     
                             ]),
                         ]),
-                    ]),
-                ], align="center"),  
+                        html.Br(),
+                        html.H5('Rank mean average & Gallup comparison:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('Avg - 4.23'),
+                                html.Li('No Gallup comparison.'),
+                            ]),
+                        ]),
+                    ], align="baseline"),
+                ], ),  
             ], fluid=True),
         ])
     elif value == "plot11-info":
@@ -621,7 +685,6 @@ def update_plot(value):
                             style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
                         ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
                     dbc.Col([
-                        html.Br(),
                         html.H5('Total % across demographic categories:'),
                         html.P([
                             html.Ul([
@@ -645,8 +708,16 @@ def update_plot(value):
                                 html.Li('18% of staff between the ages 45 - 54'),
                             ]),
                         ]),
-                    ]),
-                ], align="center"),  
+                        html.Br(),
+                        html.H5('Rank mean average & Gallup comparison:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('Avg - 3.75'),
+                                html.Li('No Gallup comparison.'),
+                            ]),
+                        ]),
+                    ], align="baseline"),
+                ],),  
             ], fluid=True),
         ])
 server = app.server

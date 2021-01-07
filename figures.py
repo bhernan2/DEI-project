@@ -135,7 +135,7 @@ def FC_fig1():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.05,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -151,7 +151,7 @@ def FC_fig1():
         ]),
         barmode='stack',
         width=900, 
-        height=400,
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -291,7 +291,7 @@ def FC_fig2():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.05,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -307,7 +307,7 @@ def FC_fig2():
         ]),
         barmode='stack',
         width=900, 
-        height=400,
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
     
@@ -448,7 +448,7 @@ def FC_fig3():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.05,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -464,7 +464,7 @@ def FC_fig3():
         ]),
         barmode='stack',
         width=900, 
-        height=400,
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -609,7 +609,7 @@ def FC_fig4():
             buttons= list_updatemenus, 
             active=0,
             showactive=True,
-            x = 0.05,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -625,7 +625,7 @@ def FC_fig4():
         ]),
         barmode='stack',
         width=900, 
-        height=400,
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -764,7 +764,7 @@ def FC_fig5():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.05,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -780,7 +780,7 @@ def FC_fig5():
         ]),
         barmode='stack',
         width=900, 
-        height=400,
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -915,7 +915,7 @@ def FC_fig6():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.05,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -931,7 +931,7 @@ def FC_fig6():
         ]),
         barmode='stack',
         width=900, 
-        height=400,
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -1066,7 +1066,7 @@ def FC_fig7():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.05,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -1082,7 +1082,7 @@ def FC_fig7():
         ]),
         barmode='stack',
         width=900, 
-        height=400,
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -1217,7 +1217,7 @@ def FC_fig8():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.05,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -1233,7 +1233,7 @@ def FC_fig8():
         ]),
         barmode='stack',
         width=900, 
-        height=400,
+        height=525,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -1368,7 +1368,7 @@ def FC_fig9():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.05,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -1384,7 +1384,7 @@ def FC_fig9():
         ]),
         barmode='stack',
         width=900, 
-        height=400,
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -1518,7 +1518,7 @@ def FC_fig10():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.05,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -1534,7 +1534,7 @@ def FC_fig10():
         ]),
         barmode='stack',
         width=900, 
-        height=400,
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc')
 
@@ -1669,7 +1669,7 @@ def FC_fig11():
         updatemenus=list([dict(
             buttons= list_updatemenus, 
             active=0,
-            x = 0.05,
+            x = 0.1,
             y = -0.5,
             type = 'buttons', 
             bordercolor = "#000000",
@@ -1686,7 +1686,7 @@ def FC_fig11():
         ]),
         barmode='stack',
         width=900, 
-        height=400,
+        height=500,
         paper_bgcolor='#cdd3dc',
         plot_bgcolor='#cdd3dc'
         )
