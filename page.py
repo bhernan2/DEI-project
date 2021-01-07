@@ -329,18 +329,18 @@ priorities = dbc.Jumbotron([
 #dropdown jumbo
 dropdown_row = dbc.Jumbotron([
     dbc.Container([
+        html.Br(),
             dbc.Row([
-                html.Br(),
-                html.H3("Demographics X individual experience", className='text-center', ),
-                html.Br(),
+                html.H3("Demographics compared to individual experience at FC", className='text-center', ),
         ]),
             dbc.Row([
-                html.P('*Total of totals shows when figure first downloads. Select a category (total responses, race, age, etc.) to further explore the data.'),
+                html.P([
+                    html.Ul([
+                        html.Li('Total of totals shows when figure first downloads. Select a category (total responses, race, age, etc.) to further explore the data.'),
+                        html.Li('All figures are interactive! Hover over bars to see individual exerience ranking counts or select individual subcategories from the legend.'),
+                    ]),
+                ]),    
             ]),
-            dbc.Row([
-                html.P('*All figures are interactive! Hover over bars to see individual exerience ranking counts or select individual subcategories from the legend.'),
-            ]),
-                html.Br(),
             dbc.Row([
                 dcc.Dropdown(
                     id='dei-dropdown', 
@@ -446,7 +446,7 @@ contributors = dbc.Jumbotron([
                     dbc.Card([
                         dbc.CardImg(src="assets/stephanie.png"),
                         dbc.CardBody([
-                            html.H5("Contributions: Survey formatting, coordinating, communication, analysis and summary", ),
+                            html.H5("Contributions: Survey formatting, coordinating, communication, analysis tool creation, analysis and summary", ),
                             html.H5("About: "),
                         ],style={'justify': 'center'}),
                     ]),
