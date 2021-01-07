@@ -206,8 +206,16 @@ def update_plot(value):
                                 
                             ]),
                         ]),
-                    ], style={'textAlign': 'left'}),
-                ], align="center"),
+                        html.Br(),
+                        html.H5('Rank mean average & Gallup comparison:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('Avg - 4.33'),
+                                html.Li('No gallup comparison'),
+                            ]),
+                        ]),
+                    ], style={'textAlign': 'justify'}),
+                ]),
             ], fluid=True),
         ])
     elif value == 'plot2-info':
