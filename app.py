@@ -171,48 +171,43 @@ def update_plot(value):
     if value == "plot1-info":
         return dbc.Jumbotron([
             dbc.Container([
-                dbc.Card([
-                    dbc.CardBody([
-                        dbc.Row([
-                            dbc.Col([
-                                dcc.Graph(
-                                    figure = FC_fig1(),
-                                    id='plot1', 
-                                    config={
-                                    'displayModeBar': False, 
-                                    'responsive': True, 
-                                    #'autosizable':True,
-                                    #'fillFrame':True 
-                                    },
-                                    style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
-                                ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
-                            dbc.Col([
-                            html.Br(),
-                            html.H5('Total % across demographic categories:'),
-                            html.P([
-                                html.Ul([
-                                    html.Li('86% agree + strongly agree'),
-                                    html.Li('6% disagree + strongly disagree'),
-                                    html.Li('8% neither agree or disagree'),
-                                ]),
+                dbc.Row([
+                    dbc.Col([
+                        dcc.Graph(
+                            figure = FC_fig1(),
+                            id='plot1', 
+                            config={
+                                'displayModeBar': False, 
+                                'responsive': True, 
+                                #'autosizable':True,
+                                #'fillFrame':True 
+                                },
+                            style={'width': '49%', 'display': 'inline-block', 'vertical-align': 'middle'}),                      
+                        ], width={"sm": 12, "md": {"size": 6, "order": 1}, "lg":4},),
+                    dbc.Col([
+                        html.Br(),
+                        html.H5('Total % across demographic categories:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('86% agree + strongly agree'),
+                                html.Li('6% disagree + strongly disagree'),
+                                html.Li('8% neither agree or disagree'),
                             ]),
-                            html.Br(),
-                            html.H5('Disagree + strongly disagree by specific identities:'),
-                            html.P([
-                                html.Ul([
-                                    html.Li('21% of Black/African American identifying staff'),
-                                    html.Li('10% of staff between the ages 35 - 44'),
-                                    html.Li('10% of staff employed 3-5 years'),
-                                    html.Li('8% of LatinX identifying staff'),
-                                    html.Li('8% of staff between the ages 55 - 64'),
+                        ]),
+                        html.Br(),
+                        html.H5('Disagree + strongly disagree by specific identities:'),
+                        html.P([
+                            html.Ul([
+                                html.Li('21% of Black/African American identifying staff'),
+                                html.Li('10% of staff between the ages 35 - 44'),
+                                html.Li('10% of staff employed 3-5 years'),
+                                html.Li('8% of LatinX identifying staff'),
+                                html.Li('8% of staff between the ages 55 - 64'),
                                 
-                                ]),
                             ]),
-                        ], style={'textAlign': 'left'}),
-                    ], align="center"),  
-                
-                    ]),
-                ], color="light", outline=True,)
+                        ]),
+                    ], style={'textAlign': 'left'}),
+                ], align="center"),  
             ], fluid=True),
         ])
     elif value == 'plot2-info':
