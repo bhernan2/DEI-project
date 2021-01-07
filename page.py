@@ -327,8 +327,7 @@ priorities = dbc.Jumbotron([
 ])
 
 #dropdown jumbo
-dropdown_row = html.Div([
-    dbc.Jumbotron([
+dropdown_row = dbc.Jumbotron([
     dbc.Container([
             dbc.Row([
                 html.Br(),
@@ -368,8 +367,7 @@ dropdown_row = html.Div([
             dbc.Row(id='dd-output-container'),
             html.Br(),
         ],fluid=True, style={'textAlign': 'left'}),
-    ]),
-])
+    ])
 
 #wordlcoud jumbo
 wordcloud = dbc.Jumbotron([
@@ -418,14 +416,14 @@ wordcloud = dbc.Jumbotron([
 
 contributors = dbc.Jumbotron([
     dbc.Container([
-        dbc.Row(html.H5("Meet the dashboard contributors")),
+        dbc.Row(html.H5("Meet the team")),
         html.Br(),
         dbc.Row([
             dbc.Col([
                 dbc.Button(
                     html.Img(src="assets/kenya.png", id="open", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
                 dbc.Modal([
-                    dbc.ModalHeader("Kenya Lewis, Support Services Program Manager @ Skyline Terrace"),
+                    dbc.ModalHeader("Kenya Lewis, Support Services Program Manager at Skyline Terrace"),
                     dbc.Card([
                         dbc.CardImg(src="assets/kenya.png"),
                         dbc.CardBody([
@@ -467,13 +465,14 @@ contributors = dbc.Jumbotron([
             ], className="circle"),
             dbc.Col([
                 dbc.Button(
-                    html.Img(src="assets/IMG_2474.png", id="open3", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                    html.Img(src="assets/bianca.png", id="open3", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
                 dbc.Modal([
-                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.ModalHeader("Bianca Alexandra Hernandez, Sustainability Education Coordinator"),
                     dbc.Card([
-                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardImg(src="assets/bianca.png"),
                         dbc.CardBody([
-                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                            html.H5("Contributions: lead designer for UX development, visual and graphic design, interactive design and information structuring.", ),
+                            html.H5("About: Enjoys spending time outdoors swimming, kayaking, camping, fishing (both spin and fly) and hiking. Enjoys gardening, cooking, reading and recently got into weight lifting."),
                         ],style={'justify': 'center'}),
                     ]),
                     dbc.ModalFooter([
