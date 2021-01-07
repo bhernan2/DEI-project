@@ -169,9 +169,9 @@ def toggle_modal(n1, n2, is_open):
     [dash.dependencies.Input('dei-dropdown', 'value')])
 def update_plot(value):
     if value == "plot1-info":
-        return dbc.Jumbotron([
+        return html.Div([
             dbc.Container([
-                dbc.Row([
+            dbc.Row([
                     dbc.Col([
                         dcc.Graph(
                             figure = FC_fig1(),
@@ -207,11 +207,11 @@ def update_plot(value):
                             ]),
                         ]),
                     ], style={'textAlign': 'left'}),
-                ], align="center"),  
+                ], align="center"),
             ], fluid=True),
         ])
     elif value == 'plot2-info':
-        return dbc.Jumbotron([
+        return html.Div([
             dbc.Container([
                 dbc.Row([
                     dbc.Col([
@@ -254,7 +254,7 @@ def update_plot(value):
             ], fluid=True),
         ])
     elif value == 'plot3-info':
-        return dbc.Jumbotron([
+        return html.Div([
             dbc.Container([
                 dbc.Row([
                     dbc.Col([
@@ -293,7 +293,7 @@ def update_plot(value):
             ], fluid=True),
         ])
     elif value == "plot4-info":
-        return dbc.Jumbotron([
+        return html.Div([
             dbc.Container([
                 dbc.Row([
                     dbc.Col([
@@ -339,7 +339,7 @@ def update_plot(value):
         ])
 
     elif value == "plot5-info":
-        return dbc.Jumbotron([
+        return html.Div([
             dbc.Container([
                 dbc.Row([
                     dbc.Col([
@@ -381,7 +381,7 @@ def update_plot(value):
             ], fluid=True),
         ])
     elif value == "plot6-info":
-        return dbc.Jumbotron([
+        return html.Div([
             dbc.Container([
                 dbc.Row([
                     dbc.Col([
@@ -425,7 +425,7 @@ def update_plot(value):
             ], fluid=True),
         ])
     elif value == "plot7-info":
-        return dbc.Jumbotron([
+        return html.Div([
             dbc.Container([
                 dbc.Row([
                     dbc.Col([
@@ -468,7 +468,7 @@ def update_plot(value):
             ], fluid=True),
         ])
     elif value == "plot8-info":
-        return dbc.Jumbotron([
+        return html.Div([
             dbc.Container([
                 dbc.Row([
                     dbc.Col([
@@ -514,7 +514,7 @@ def update_plot(value):
             ], fluid=True),
         ])
     elif value == "plot9-info":
-        return dbc.Jumbotron([
+        return html.Div([
             dbc.Container([
                 dbc.Row([
                     dbc.Col([
@@ -555,7 +555,7 @@ def update_plot(value):
             ], fluid=True),
         ])
     elif value == "plot10-info":
-        return dbc.Jumbotron([
+        return html.Div([
             dbc.Container([
                 dbc.Row([
                     dbc.Col([
@@ -597,7 +597,7 @@ def update_plot(value):
             ], fluid=True),
         ])
     elif value == "plot11-info":
-        return dbc.Jumbotron([
+        return html.Div([
             dbc.Container([
                 dbc.Row([
                     dbc.Col([

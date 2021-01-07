@@ -342,7 +342,6 @@ dropdown_row = dbc.Jumbotron([
             ]),
                 html.Br(),
             dbc.Row([
-                dbc.Col([
                 dcc.Dropdown(
                     id='dei-dropdown', 
                     clearable=False,
@@ -362,10 +361,9 @@ dropdown_row = dbc.Jumbotron([
                         ],
                     placeholder='Select a question'
                 )
-                ]),
-            ], className="mb-5"),
+            ], className="mb-3"),
             dbc.Row(id='dd-output-container'),
-        ],fluid=True, style={'textAlign': 'left'}),
+        ],fluid=True),
     ])
 
 #wordlcoud jumbo
@@ -436,7 +434,7 @@ contributors = dbc.Jumbotron([
                     ],
                     id="modal",
                     centered=True,
-                    size="lg",
+                    size="m",
                     ),
 
             ], className="circle"),
@@ -448,7 +446,7 @@ contributors = dbc.Jumbotron([
                     dbc.Card([
                         dbc.CardImg(src="assets/stephanie.png"),
                         dbc.CardBody([
-                            html.H5("Contributions: ", ),
+                            html.H5("Contributions: Survey formatting, coordinating, communication, analysis and summary", ),
                             html.H5("About: "),
                         ],style={'justify': 'center'}),
                     ]),
@@ -458,7 +456,7 @@ contributors = dbc.Jumbotron([
                     ],
                     id="modal2",
                     centered=True,
-                    size="lg",
+                    size="m",
                     ),
 
             ], className="circle"),
@@ -470,7 +468,7 @@ contributors = dbc.Jumbotron([
                     dbc.Card([
                         dbc.CardImg(src="assets/bianca.png"),
                         dbc.CardBody([
-                            html.H5("Contributions: lead designer for UX development, visual and graphic design, interactive design and information structuring.", ),
+                            html.H5("Contributions: lead designer for UX development, visual and graphic design, interactive design and information and data structuring.", ),
                             html.H5("About: Enjoys spending time outdoors swimming, kayaking, camping, fishing (both spin and fly) and hiking. Enjoys gardening, cooking, reading and recently got into weight lifting."),
                         ],style={'justify': 'center'}),
                     ]),
@@ -480,7 +478,7 @@ contributors = dbc.Jumbotron([
                     ],
                     id="modal3",
                     centered=True,
-                    size="lg",
+                    size="m",
                     ),
 
             ], className="circle"),
@@ -501,7 +499,7 @@ contributors = dbc.Jumbotron([
                     ],
                     id="modal4",
                     centered=True,
-                    size="lg",
+                    size="m",
                     ),
 
             ], className="circle"),
