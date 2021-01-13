@@ -424,8 +424,8 @@ contributors = dbc.Jumbotron([
                     dbc.Card([
                         dbc.CardImg(src="assets/kenya.png"),
                         dbc.CardBody([
-                            html.H5("Contributions: Survey formatting, communication, analysis and summary"),
-                            html.H5('About: Enjoys bringing people together, knitting, Bhangra, Raas and Bollywood dance. Enjoys watching Bollywood films and reading the works of James Baldwin and June Jordan'),
+                            # html.H5("Contributions: Survey formatting, communication, analysis and summary"),
+                            html.H5('Kenya Enjoys bringing people together, knitting, Bhangra, Raas and Bollywood dance. She enjoys watching Bollywood films and reading the works of James Baldwin and June Jordan'),
                         ],style={'justify': 'center'}),
                     ]),
                     dbc.ModalFooter([
@@ -434,20 +434,20 @@ contributors = dbc.Jumbotron([
                     ],
                     id="modal",
                     centered=True,
-                    size="m",
+                    size="s",
                     ),
 
             ], className="circle"),
             dbc.Col([
                 dbc.Button(
-                    html.Img(src="assets/stephanie.png", id="open2", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                    html.Img(src="assets/stephanie2.png", id="open2", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
                 dbc.Modal([
-                    dbc.ModalHeader("Stephanie Perrone, Operations Director"),
+                    dbc.ModalHeader("Stephanie Perrone, Operations Director, PMP"),
                     dbc.Card([
-                        dbc.CardImg(src="assets/stephanie.png"),
+                        dbc.CardImg(src="assets/stephanie2.png"),
                         dbc.CardBody([
-                            html.H5("Contributions: Survey formatting, coordinating, communication, analysis tool creation, analysis and summary", ),
-                            html.H5("About: "),
+                            # html.H5("Contributions: Survey formatting, coordinating, communication, analysis tool creation, analysis and summary", ),
+                            html.H5("Stephanie has been in Austin for 20+ years. She enjoys hanging out with her 10 year old son. Riding bicycles is an activity of choice along with playing with their dog, Aussie. She is actively involved in her neighborhood community and son's elementary school, Maplewood."),
                         ],style={'justify': 'center'}),
                     ]),
                     dbc.ModalFooter([
@@ -456,7 +456,7 @@ contributors = dbc.Jumbotron([
                     ],
                     id="modal2",
                     centered=True,
-                    size="m",
+                    size="s",
                     ),
 
             ], className="circle"),
@@ -464,12 +464,12 @@ contributors = dbc.Jumbotron([
                 dbc.Button(
                     html.Img(src="assets/bianca.png", id="open3", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
                 dbc.Modal([
-                    dbc.ModalHeader("Bianca Alexandra Hernandez, Sustainability Education Coordinator"),
+                    dbc.ModalHeader("Bianca Alexandra Hernandez, Sustainability Education Coordinator, MS"),
                     dbc.Card([
                         dbc.CardImg(src="assets/bianca.png"),
                         dbc.CardBody([
-                            html.H5("Contributions: lead designer for UX development, visual and graphic design, interactive design and information and data structuring.", ),
-                            html.H5("About: Enjoys spending time outdoors swimming, kayaking, camping, fishing (both spin and fly) and hiking. Enjoys gardening, cooking, reading and recently got into weight lifting."),
+                            # html.H5("Contributions: lead designer for UX development, visual and graphic design, interactive design and information and data structuring.", ),
+                            html.H5("Bianca enjoys spending time outdoors: swimming, kayaking, camping, fishing (both spin and fly) and hiking. She enjoys gardening, cooking, reading and recently got into weight lifting. In her free time, she enjoys exploring the latest advancements in data science and freshwater ecology."),
                         ],style={'justify': 'center'}),
                     ]),
                     dbc.ModalFooter([
@@ -478,19 +478,19 @@ contributors = dbc.Jumbotron([
                     ],
                     id="modal3",
                     centered=True,
-                    size="m",
+                    size="s",
                     ),
 
             ], className="circle"),
             dbc.Col([
                 dbc.Button(
-                    html.Img(src="assets/IMG_2474.png", id="open4", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                    html.Img(src="assets/tiffany.png", id="open4", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
                 dbc.Modal([
-                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.ModalHeader("Tiffany Nicely-Williams, Clinical Support Services Manager, LMSW"),
                     dbc.Card([
-                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardImg(src="assets/tiffany.png"),
                         dbc.CardBody([
-                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                            html.H5("Tiffany Nicely-Williams is a social worker, educator and performer. She is the Program manager for Health Initiatives' Clinical Support Services. You can reach her at her foundcom email for support in areas of trauma informed care, self-care and counseling services for residents.",),
                         ],style={'justify': 'center'}),
                     ]),
                     dbc.ModalFooter([
@@ -499,19 +499,19 @@ contributors = dbc.Jumbotron([
                     ],
                     id="modal4",
                     centered=True,
-                    size="m",
+                    size="s",
                     ),
 
             ], className="circle"),
             dbc.Col([
                 dbc.Button(
-                    html.Img(src="assets/IMG_2474.png", id="open5", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                    html.Img(src="assets/yumi.png", id="open5", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
                 dbc.Modal([
-                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.ModalHeader("Heidi (usually go by Yumi) Tran, Administrative Assistant at Spring Terrace"),
                     dbc.Card([
-                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardImg(src="assets/yumi.png"),
                         dbc.CardBody([
-                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                            html.H5("Yumi is new to the Inform Subcommittee and we're excited to have her on the team. She enjoys playing video games and likes red lipstick, animals, watching the news and the Bachelorette.", ),
                         ],style={'justify': 'center'}),
                     ]),
                     dbc.ModalFooter([
@@ -520,20 +520,20 @@ contributors = dbc.Jumbotron([
                     ],
                     id="modal5",
                     centered=True,
-                    size="lg",
+                    size="s",
                     ),
 
             ], className="circle"),
 
             dbc.Col([
                 dbc.Button(
-                    html.Img(src="assets/IMG_2474.png", id="open6", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                    html.Img(src="assets/mary.png", id="open6", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
                 dbc.Modal([
-                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.ModalHeader("Mary Tillman-Young, Education Programs Manager"),
                     dbc.Card([
-                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardImg(src="assets/mary.png"),
                         dbc.CardBody([
-                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                            html.H5("", ),
                         ],style={'justify': 'center'}),
                     ]),
                     dbc.ModalFooter([
@@ -542,20 +542,20 @@ contributors = dbc.Jumbotron([
                     ],
                     id="modal6",
                     centered=True,
-                    size="lg",
+                    size="s",
                     ),
 
             ], className="circle"),
 
             dbc.Col([
                 dbc.Button(
-                    html.Img(src="assets/IMG_2474.png", id="open7", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+                    html.Img(src="assets/julie.png", id="open7", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
                 dbc.Modal([
-                    dbc.ModalHeader("Boris Antonio Hernandez"),
+                    dbc.ModalHeader("Julie Roebuck, HR Director, MA, SHRM-SCP"),
                     dbc.Card([
-                        dbc.CardImg(src="assets/IMG_2474.png"),
+                        dbc.CardImg(src="assets/julie.png"),
                         dbc.CardBody([
-                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+                            html.H5("When not doing HR related things, Julie loves spending time in her garder, doing yoga, reading and hanging out with her 19-year old cat, Ruby. She also has a certificate in health and life coaching.", ),
                         ],style={'justify': 'center'}),
                     ]),
                     dbc.ModalFooter([
@@ -564,32 +564,32 @@ contributors = dbc.Jumbotron([
                     ],
                     id="modal7",
                     centered=True,
-                    size="lg",
+                    size="s",
                     ),
 
             ], className="circle"),
 
-            dbc.Col([
-                dbc.Button(
-                    html.Img(src="assets/IMG_2474.png", id="open8", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
-                dbc.Modal([
-                    dbc.ModalHeader("Boris Antonio Hernandez"),
-                    dbc.Card([
-                        dbc.CardImg(src="assets/IMG_2474.png"),
-                        dbc.CardBody([
-                            html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
-                        ],style={'justify': 'center'}),
-                    ]),
-                    dbc.ModalFooter([
-                        dbc.Button("Close", id="close8", className="ml-auto", size="lg")
-                    ]),
-                    ],
-                    id="modal8",
-                    centered=True,
-                    size="lg",
-                    ),
+            # dbc.Col([
+            #     dbc.Button(
+            #         html.Img(src="assets/IMG_2474.png", id="open8", style={"width":"100px", "height":"100px", "border-radius":"50%"}), size="sm"),
+            #     dbc.Modal([
+            #         dbc.ModalHeader("Boris Antonio Hernandez"),
+            #         dbc.Card([
+            #             dbc.CardImg(src="assets/IMG_2474.png"),
+            #             dbc.CardBody([
+            #                 html.H5("Boris brings joy and happiness to everyone he encounters! He loves to play catch and is an exceptional retriever. He's been by his mama's side for 11 years and absolutely loves that she's working from home the last several months.", ),
+            #             ],style={'justify': 'center'}),
+            #         ]),
+            #         dbc.ModalFooter([
+            #             dbc.Button("Close", id="close8", className="ml-auto", size="lg")
+            #         ]),
+            #         ],
+            #         id="modal8",
+            #         centered=True,
+            #         size="s",
+            #         ),
 
-            ]),
+            # ]),
 
             # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
             # dbc.Col(html.Img(src="assets/IMG_2474.png", className="circle-img"),),
