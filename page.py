@@ -58,7 +58,7 @@ video = dbc.Jumbotron([
                         dbc.ModalHeader("How-to video"),
                         dbc.ModalBody([
                             dbc.Card([
-                                html.Video(title="Dashboard how-to", src="", width=4),
+                                html.Video(title="Dashboard how-to", src="assets/howto.mp4", width=1100, autoPlay=False, controls=True),
                             dbc.CardBody([
                             ]),
                         ]),
@@ -69,7 +69,7 @@ video = dbc.Jumbotron([
                 ],
                 id="video-centered",
                 centered=True,
-                size="lg",
+                size="xl",
                 ),
             ]),
             ], justify="center"),
